@@ -8,7 +8,7 @@ builddrafts = false
   category = "categories"
   tag = "tags"
 [permalinks]
-  post = "/:year/:month/:slug/"
+  posts = "/:year/:month/:slug/"
 
 [params]
   project   = "blog"
