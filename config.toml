@@ -1,0 +1,18 @@
+baseurl = "http://grimrose.github.io/blog"
+languageCode = "ja"
+title = "open build/reports/life/index.html"
+
+canonifyurls = true
+builddrafts = false
+[indexes]
+  category = "categories"
+  tag = "tags"
+[permalinks]
+  post = "/:year/:month/:slug/"
+
+[params]
+  project   = "blog"
+  logo      = "assets/images/logo.jpg"
+  copyright = "grimrose All rights reserved."
+  twitter   = "https://twitter.com/grimrose"
+  github    = "https://github.com/grimrose/"
