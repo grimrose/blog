@@ -2,7 +2,7 @@
 
 http://grimrose.github.io/blog
 
-based on [Hugo], [hugo-zen]
+based on [Hugo], [hugo-zen], [Font-Awesome]
 
 ## status
 
@@ -10,3 +10,4 @@ based on [Hugo], [hugo-zen]
 
 [Hugo]: http://gohugo.io/
 [hugo-zen]: https://github.com/rakuishi/hugo-zen
+[Font-Awesome]: http://fortawesome.github.io/Font-Awesome/
