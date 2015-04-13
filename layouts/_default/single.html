@@ -1,0 +1,31 @@
+{{ partial "header.html" . }}
+
+<main role="main">
+    <article itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 class="entry-title" itemprop="headline">{{ .Title }}</h1>
+        <span class="entry-meta">
+            <time itemprop="datePublished" datetime="{{ .Date.Format " 2006-01-02" }}">{{ .Date.Format "January 02, 2006" }}</time>
+            {{ if isset .Params "categories" }}
+                {{ $baseUrl := .Site.BaseUrl }}
+                {{ range .Params.categories }}<a class="label" href="{{ $baseUrl }}categories/{{ . | urlize }}">{{ . }}</a>{{ end }}
+            {{ end }}
+        </span>
+        <section itemprop="entry-text">
+            {{ .Content }}
+        </section>
+
+        <div>
+            {{ if .Prev }}
+            <i class="fa fa-arrow-left"></i>
+            <a class="previous" href="{{ .Prev.Permalink }}"> {{ .Prev.Title }}</a>
+            {{ end }}
+            {{ if .Next }}
+            <a class="next" href="{{ .Next.Permalink }}"> {{ .Next.Title }}</a>
+            <i class="fa fa-arrow-right"></i>
+            {{ end }}
+        </div>
+        {{ partial "share.html" . }}
+    </article>
+</main>
+
+{{ partial "footer.html" . }}

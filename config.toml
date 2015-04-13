@@ -4,6 +4,8 @@ title = "open build/reports/life/index.html"
 
 canonifyurls = true
 builddrafts = false
+paginate = 10
+
 [indexes]
   category = "categories"
   tag = "tags"
