@@ -7,7 +7,7 @@
             <time itemprop="datePublished" datetime="{{ .Date.Format " 2006-01-02" }}">{{ .Date.Format "January 02, 2006" }}</time>
             {{ if isset .Params "categories" }}
                 {{ $baseUrl := .Site.BaseUrl }}
-                {{ range .Params.categories }}<a class="label" href="{{ $baseUrl }}categories/{{ . | urlize }}">{{ . }}</a>{{ end }}
+                {{ range .Params.categories }}<a class="label" href="{{ $baseUrl }}/categories/{{ . | urlize }}">{{ . }}</a>{{ end }}
             {{ end }}
         </span>
         <section itemprop="entry-text">
