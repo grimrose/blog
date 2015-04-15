@@ -15,6 +15,6 @@ paginate = 10
 [params]
   project   = "blog"
   logo      = "assets/images/logo.jpg"
-  copyright = "grimrose All rights reserved."
   twitter   = "https://twitter.com/grimrose"
   github    = "https://github.com/grimrose/"
+  homeUrl   = "http://grimrose.github.io/"

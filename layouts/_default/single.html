@@ -2,27 +2,32 @@
 
 <main role="main">
     <article itemscope itemtype="http://schema.org/BlogPosting">
-        <h1 class="entry-title" itemprop="headline">{{ .Title }}</h1>
+        <h1 class="entry-title" itemprop="headline"><i class="fa fa-book"></i>&nbsp;{{ .Title }}</h1>
         <span class="entry-meta">
             <time itemprop="datePublished" datetime="{{ .Date.Format " 2006-01-02" }}">{{ .Date.Format "January 02, 2006" }}</time>
-            {{ if isset .Params "categories" }}
-                {{ $baseUrl := .Site.BaseUrl }}
-                {{ range .Params.categories }}<a class="label" href="{{ $baseUrl }}/categories/{{ . | urlize }}">{{ . }}</a>{{ end }}
-            {{ end }}
+        </span>
+        <span class="entry-meta">
+          {{ if isset .Params "categories" }}
+              {{ $baseUrl := .Site.BaseUrl }}
+              {{ range .Params.categories }}
+              <i class="fa fa-pencil"></i>
+              <a class="label" href="{{ $baseUrl }}/categories/{{ . | urlize }}">{{ . }}</a>&nbsp;
+              {{ end }}
+          {{ end }}
         </span>
         <section itemprop="entry-text">
             {{ .Content }}
         </section>
-
+        <div class="hr"></div>
         <div>
-            {{ if .Prev }}
-            <i class="fa fa-arrow-left"></i>
-            <a class="previous" href="{{ .Prev.Permalink }}"> {{ .Prev.Title }}</a>
-            {{ end }}
-            {{ if .Next }}
-            <a class="next" href="{{ .Next.Permalink }}"> {{ .Next.Title }}</a>
-            <i class="fa fa-arrow-right"></i>
-            {{ end }}
+          {{ if .Prev }}
+          <a class="previous" href="{{ .Prev.Permalink }}"> {{ .Prev.Title }}</a>
+          <i class="fa fa-arrow-left"></i>
+          {{ end }}
+          {{ if .Next }}
+          <i class="fa fa-arrow-right"></i>
+          <a class="next" href="{{ .Next.Permalink }}"> {{ .Next.Title }}</a>
+          {{ end }}
         </div>
         {{ partial "share.html" . }}
     </article>
