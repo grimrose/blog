@@ -14,6 +14,7 @@ paginate = 10
 
 [params]
   project   = "blog"
+  description = "Life Weblog"
   logo      = "assets/images/logo.jpg"
   twitter   = "https://twitter.com/grimrose"
   github    = "https://github.com/grimrose/"
