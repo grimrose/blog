@@ -2,7 +2,7 @@
 categories = ["Blog", "JVM"]
 date = "2015-04-21T00:05:36+09:00"
 description = "渋谷 JVM"
-draft = true
+draft = false
 slug = "shibuya-jvm"
 title = "渋谷JVMに参加してきました。 #渋谷JVM"
 
