@@ -20,14 +20,18 @@
         </section>
         <div class="hr"></div>
         <div>
-          {{ if .Prev }}
-          <a class="previous" href="{{ .Prev.Permalink }}"> {{ .Prev.Title }}</a>
-          <i class="fa fa-arrow-left"></i>
-          {{ end }}
-          {{ if .Next }}
-          <i class="fa fa-arrow-right"></i>
-          <a class="next" href="{{ .Next.Permalink }}"> {{ .Next.Title }}</a>
-          {{ end }}
+            {{ if .Prev }}
+            <div>
+              <a class="previous" href="{{ .Prev.Permalink }}"> {{ .Prev.Title }}</a>
+              <i class="fa fa-arrow-left"></i>
+            </div>
+            {{ end }}
+            {{ if .Next }}
+            <div>
+              <i class="fa fa-arrow-right"></i>
+              <a class="next" href="{{ .Next.Permalink }}"> {{ .Next.Title }}</a>
+            </div>
+            {{ end }}
         </div>
         {{ partial "share.html" . }}
     </article>
