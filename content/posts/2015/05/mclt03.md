@@ -2,7 +2,7 @@
 categories = ["Blog", "Machine Learning"]
 date = "2015-05-04T11:49:15+09:00"
 description = "Machine Learning"
-draft = true
+draft = false
 slug = "mclt03"
 title = "Machine Learning Casual Talks #3 に参加してきました。 #MCLT"
 
