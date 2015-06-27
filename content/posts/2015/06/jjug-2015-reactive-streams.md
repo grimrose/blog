@@ -62,6 +62,8 @@ JDK9にどこまで採用されるか分かりませんが、データフロー�
 
 JVMでデータフロー制御でお困りの方は、使ってみてはいかがでしょうか。
 
+JJUGのスタッフ、参加者の皆様、[@okapies]さん、ありがとうございました。
+
 [@okapies]: https://twitter.com/okapies
 [Vert.x3]: http://vertx.io
 [Reactor]: http://projectreactor.io
