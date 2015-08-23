@@ -11,3 +11,17 @@ based on [Hugo], [hugo-zen], [Font-Awesome]
 [Hugo]: http://gohugo.io/
 [hugo-zen]: https://github.com/rakuishi/hugo-zen
 [Font-Awesome]: http://fortawesome.github.io/Font-Awesome/
+
+## local
+
+create new post
+
+``` sh
+$ hugo new posts/YYYY/MM/${_TITLE}.md
+```
+
+watch local server
+
+``` sh
+$ hugo server -w
+```
