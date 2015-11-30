@@ -8,3 +8,10 @@ deploy:
         token: $GIT_TOKEN
         basedir: public
         domain: grimrose.github.io
+  after-steps:
+    - sherzberg/slack-notify:
+        subdomain: grimrose
+        token: $SLACK_API_TOKEN
+        channel: "#general"
+        username: wercker
+        icon_url: https://avatars3.githubusercontent.com/u/1695193?s=140
