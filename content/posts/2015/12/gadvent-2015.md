@@ -1,6 +1,6 @@
 +++
 categories = ["Blog", "Java", "Groovy", "Spock"]
-date = "2015-12-13T19:45:32+09:00"
+date = "2015-12-19T00:00:00+09:00"
 description = "digital book about spock framework"
 draft = false
 slug = "gadvent-2015"
