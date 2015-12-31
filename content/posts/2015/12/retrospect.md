@@ -30,7 +30,7 @@ GitHubに草を生やす活動も兼ねてやっていこうかと思います�
 
 ミドルウェア、インフラ周りの基礎に関しては、引き続きDockerを中心に学んで行ければと思っています。
 
-得に[Docker Cookbook](http://shop.oreilly.com/product/0636920036791.do)を購入して
+特に[Docker Cookbook](http://shop.oreilly.com/product/0636920036791.do)を購入して
 自分たちが使えるものが無いか探したり、どのようにDockerで構成していけば良いのかを学んだりしています。
 
 また、[Microsoft Azure](https://azure.microsoft.com/ja-jp/)のアカウントを作って、[Tutum](https://www.tutum.co)でデプロイしてみたりしてました。
@@ -55,7 +55,7 @@ Rubotyも結局触ってみました程度で終わってしまったので、Ru
 ### Try
 
 仕事での今後やりたいことは、[転職して１年が経ちました。](/2015/12/career-change/)に書いてしまったので、
-privateでやってみたい事は、OSSを一つリリースする(ライブラリ、Webサービス問わず)。
+privateでやってみたい事は、OSSを一つリリースする(ライブラリ、Webサービス問わず)です。
 
 仕事で使うようなライブラリを作るのが一番自分にとって勉強にもなるし、フィードバックも得やすいのではないかと思います。
 
