@@ -1,7 +1,7 @@
-box: wercker/default
+box: debian
 build:
   steps:
-    - arjen/hugo-build@1.1.0
+    - arjen/hugo-build
 deploy:
   steps:
     - lukevivier/gh-pages@0.2.1:
