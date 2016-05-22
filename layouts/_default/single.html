@@ -8,7 +8,7 @@
         </span>
         <span class="entry-meta">
           {{ if isset .Params "categories" }}
-              {{ $baseUrl := .Site.BaseUrl }}
+              {{ $baseUrl := .Site.BaseURL }}
               {{ range .Params.categories }}
               <i class="fa fa-pencil"></i>
               <a class="label" href="{{ $baseUrl }}/categories/{{ . | urlize }}">{{ . }}</a>&nbsp;
