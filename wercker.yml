@@ -5,11 +5,12 @@ build:
 deploy:
   steps:
     - install-packages:
-      packages: git ssh-client
-    - lukevivier/gh-pages@0.2.1:
-        token: $GIT_TOKEN
+        packages: git ssh-client
+    - leipert/git-push:
+        gh_oauth: $GIT_TOKEN
+        repo: grimrose/grimrose.github.io
+        branch: master
         basedir: public
-        domain: grimrose.github.io
   after-steps:
     - sherzberg/slack-notify:
         subdomain: grimrose
