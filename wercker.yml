@@ -12,9 +12,9 @@ deploy:
         branch: master
         basedir: public
   after-steps:
-    - sherzberg/slack-notify:
-        subdomain: grimrose
-        token: $SLACK_API_TOKEN
-        channel: "#general"
+    - install-packages:
+        packages: ruby
+    - wantedly/pretty-slack-notify:
+        webhook_url: $SLACK_WEBHOOK_URL
+        channel: "general"
         username: wercker
-        icon_url: https://avatars3.githubusercontent.com/u/1695193?s=140
