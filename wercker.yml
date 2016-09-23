@@ -8,8 +8,8 @@ deploy:
         packages: git ssh-client
     - leipert/git-push:
         gh_oauth: $GIT_TOKEN
-        repo: grimrose/grimrose.github.io
-        branch: master
+        repo: grimrose/blog
+        branch: gh-pages
         basedir: public
   after-steps:
     - install-packages:
