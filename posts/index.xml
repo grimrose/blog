@@ -6,8 +6,70 @@
     <description>Recent content in Posts on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 05 Sep 2016 21:11:45 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 25 Sep 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://grimrose.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>PyCon JP 2016 に参加してきました #pyconjp</title>
+      <link>http://grimrose.github.io/blog/2016/09/pyconjp-2016/</link>
+      <pubDate>Sun, 25 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2016/09/pyconjp-2016/</guid>
+      <description>
+
+&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/&#34;&gt;PyCon JP 2016&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;今後仕事でPythonを使う機会が増えるだろうということと、&lt;a href=&#34;scalamatsuri.org&#34;&gt;ScalaMatsuri&lt;/a&gt;の運営はPyCon JPの運営を参考にさせて頂いてるので、
+実際スタッフの人はどのように動いているのかを見てみたいと思い参加してみました。&lt;/p&gt;
+
+&lt;h2 id=&#34;セッション&#34;&gt;セッション&lt;/h2&gt;
+
+&lt;p&gt;選択したセッションは、以下のとおりです。
+両日の基調講演は、朝起きられず途中からでした。
+基準として仕事で使う際に必要そうなのを重点的に選んでみました。&lt;/p&gt;
+
+&lt;h3 id=&#34;1日目&#34;&gt;1日目&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/keynote/&#34;&gt;基調講演&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/schedule/presentation/72/&#34;&gt;週末サイエンティストのススメ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/schedule/presentation/54/&#34;&gt;データ分析スクリプトのツール化入門(GUI付与・EXE化)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/schedule/presentation/8/&#34;&gt;Getting started with chatops in python with errbot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/schedule/presentation/53/&#34;&gt;Robot Frameworkでブラウザテストやってみた話&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;2日目&#34;&gt;2日目&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/keynote/&#34;&gt;基調講演&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/schedule/presentation/24/&#34;&gt;Pythonではじめるfinance hack入門&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/schedule/presentation/20/&#34;&gt;Deep Learning with Python &amp;amp; TensorFlow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/schedule/presentation/5/&#34;&gt;Building Distributed System with Celery on Docker Swarm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/schedule/presentation/23/&#34;&gt;pandasによる時系列データ処理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/schedule/presentation/39/&#34;&gt;Building a data preparation pipeline with Pandas and AWS Lambda&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;特に、ChatOpsのPythonで書かれた&lt;a href=&#34;http://errbot.io/en/latest/&#34;&gt;errbot&lt;/a&gt;のセッションは、興味深かったです。
+hubotはcoffeescriptなのが微妙、botkitはほぼSlack専用、rubotyはRubyなのでチームでメンテナンスしていくのが難しそうだったので、
+Pythonのがあるならどんな感じなのかなと思ってました。&lt;/p&gt;
+
+&lt;p&gt;その他では、データ分析でよく使われているpandasに基本的な知識から実際にどう使っているかを知れて、勉強になりました。&lt;/p&gt;
+
+&lt;h2 id=&#34;カンファレンス運営&#34;&gt;カンファレンス運営&lt;/h2&gt;
+
+&lt;p&gt;当日の運営という視点から見たときは、相当準備されていたのか着実に実施していて素晴らしいと思いました。
+トラブルの対応も行動規範に沿って説明がされており、運営が一体となって解決に取り組んでいる姿勢を見せていたのが特に印象的でした。&lt;/p&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;仕事で必要になるということで初めて参加してみましたが、とても充実した2日間でした。
+今後は、Pythonのコミュニティイベントにも参加していこうと思います。&lt;/p&gt;
+
+&lt;p&gt;参加者、スタッフ、スポンサーの皆様、ありがとうございました。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>「独習Python入門―1日でプログラミングに強くなる！」を読み切りました</title>
@@ -1035,28 +1097,6 @@ Node.jsのライブラリがそのままWebアプリケーションから呼び�
 &lt;p&gt;自分のスキル足りなくてチームや顧客に迷惑をかける事があり、歯がゆい思いをすることもありました。&lt;/p&gt;
 
 &lt;p&gt;まだまだやりたいことも勉強しなければいけないことも沢山ありますが、エンジニアとしてやりたいことが出来る環境で仕事が出来るということが、どれほど楽しいことかを実感した半年でした。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Machine Learning Casual Talks #3 に参加してきました。 #MCLT</title>
-      <link>http://grimrose.github.io/blog/2015/05/mclt03/</link>
-      <pubDate>Mon, 04 May 2015 11:49:15 +0900</pubDate>
-      
-      <guid>http://grimrose.github.io/blog/2015/05/mclt03/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://mlct.connpass.com/event/13995/&#34;&gt;http://mlct.connpass.com/event/13995/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;チームの分析官の人が喋ってる内容を実際に運用している話が聞けそうなので、申し込んでみたところ運良く抽選に当たったので、参加してきました。&lt;/p&gt;
-
-&lt;p&gt;ある程度予習をして参加しましたが、やはり勉強不足であることは否めませんでした。&lt;/p&gt;
-
-&lt;p&gt;ただ、分析官がやりたいことがどういったことなのか、実現するとどうなるのかを知ることが出来ました。&lt;/p&gt;
-
-&lt;p&gt;まずは、機械学習の基本となる部分を勉強しておく必要があると感じました。&lt;/p&gt;
-
-&lt;p&gt;その為にも分析官が利用しているR言語を習得し、実現したいことがどういったものか理解してみたいと思いました。&lt;/p&gt;
-
-&lt;p&gt;参加者、発表者の皆様、主催の&lt;a href=&#34;https://twitter.com/chezou&#34;&gt;@chezou&lt;/a&gt;さん、会場を提供して下さったクックパッド株式会社様ありがとうございました。&lt;/p&gt;
 </description>
     </item>
     
