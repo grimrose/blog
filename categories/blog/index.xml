@@ -6,8 +6,78 @@
     <description>Recent content in Blog on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 25 Sep 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Oct 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://grimrose.github.io/blog/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Scala関西Summit 2016へ参加してきました #scala_ks</title>
+      <link>http://grimrose.github.io/blog/2016/10/scalakansai2016/</link>
+      <pubDate>Sun, 09 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2016/10/scalakansai2016/</guid>
+      <description>
+
+&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://summit.scala-kansai.org/&#34;&gt;http://summit.scala-kansai.org/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://skug.connpass.com/event/38349/&#34;&gt;http://skug.connpass.com/event/38349/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;去年の&lt;a href=&#34;http://summit.scala-kansai.org/2015/index.html&#34;&gt;Scala関西 Summit 2015&lt;/a&gt;に参加してまた参加したいと思っていたのと、
+&lt;a href=&#34;http://2017.scalamatsuri.org&#34;&gt;ScalaMatsuri&lt;/a&gt;の運営の参考になればと思い、参加しました。&lt;/p&gt;
+
+&lt;h2 id=&#34;セッション&#34;&gt;セッション&lt;/h2&gt;
+
+&lt;p&gt;今回は、どのセッションも面白そうだったのと、社内に持ち帰って共有したい内容が多かったので、悩みました。&lt;/p&gt;
+
+&lt;p&gt;その中で以下のセッションを選びました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;はてなにおけるマイクロサービスとScala&lt;/li&gt;
+&lt;li&gt;akka-stream を始めるときに覚えておきたいこと&lt;/li&gt;
+&lt;li&gt;Implicit 再入門&lt;/li&gt;
+&lt;li&gt;Play2+SlickだけじゃないScalaのWeb/DBフレームワーク事情&lt;/li&gt;
+&lt;li&gt;Akka Clusterのネットワーク分断耐性設計&lt;/li&gt;
+&lt;li&gt;今からはじめる Lens/Prism&lt;/li&gt;
+&lt;li&gt;scala.collection 再入門&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Scalaを使いつつDDDを導入しているのでDDDと相性が良いことは実感していましたが、
+一部とは言え、はてなのような大きなサービスのドメインを写し取りつつDDDを実践するという話は、とても参考になりました。
+Scalaの定石を探る会は、とても興味深かったので今後のカンファレンス等で話される機会があるのを願ってます。&lt;/p&gt;
+
+&lt;p&gt;akka-streamは、Reactive Streamsについてずっと勉強していたので、実際にプロダクトに導入するにはどうすればいいのかを学びたかったので、
+特に気になっていました。
+小さな部品を組み合わせて大きな部品を作っていくところや、どのように既存のAkkaのActorと連携していくのかを知ることが出来てとても勉強になりました。&lt;/p&gt;
+
+&lt;p&gt;Implicit 再入門については、様々な入門書や日本語のドキュメントで知ってはいたものの、若干の不安がありましたが、がくぞー先生の説明で改めてScalaのImplicitの機能を知ることが出来ました。&lt;/p&gt;
+
+&lt;p&gt;Scalaのフレームワーク事情で紹介されていた&lt;a href=&#34;http://scalikejdbc.org&#34;&gt;ScalikeJDBC&lt;/a&gt;は、現在のプロジェクトでも利用しており、
+フレームワークの標準機能としてDAOやActiveRecordのような使い方が出来て、
+さらにSQLの行数が多めの集計用クエリなどでもフレームワークを変えること無く利用出来るので、かなりおすすめです。
+特に、ログ周りの設定は、クエリチューニングの際にとても助かっています。&lt;/p&gt;
+
+&lt;p&gt;Akka Clusterを導入するかは今後の状況次第ではありますが、分散処理という文脈の中でClusterでどういう故障が起きるのか、
+故障が起きた際にどう対応すればいいのかを学ぶことが出来て、分散処理基盤を動かしていくことの難しさを知れました。&lt;/p&gt;
+
+&lt;p&gt;Monocle、Lens、Prismは名前だけ知っていて、コワイものだという印象でいましたが、
+広く一般的なgetter/setterは関数の世界ではどういったものかを知れました。
+case classのインスタンスのcopy hellは、ドメインオブジェクトの変換時にどうしても出てきてしまう問題の一つだと思うので、
+適切な局面で扱えるようになりたいと思いました。&lt;/p&gt;
+
+&lt;p&gt;社内のScala勉強会でScalaのcollectionをどう使って行けばいいのか説明する時に参考に出来ると思いました。
+特に計算量については、件数が多いデータを扱うことが多いプロジェクトなので、頭に入れながらやらないとパフォーマンスが出ないと思うので、ありがたい内容でした。&lt;/p&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;丸一日ずっとScala漬けだったので途中疲れてしまいましたが、懇親会でTLで気になっていた人と実際にお会いする機会があったり、
+お世話になっている人にお礼を伝えることが出来たりと、とても充実した一日でした。&lt;/p&gt;
+
+&lt;p&gt;また来年開催されることになったら、是非参加したいと思います。&lt;/p&gt;
+
+&lt;p&gt;参加者、スタッフ、スポンサーの皆様、ありがとうございました。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>PyCon JP 2016 に参加してきました #pyconjp</title>
@@ -1029,74 +1099,6 @@ Node.jsのライブラリがそのままWebアプリケーションから呼び�
 &lt;p&gt;JVMでデータフロー制御でお困りの方は、使ってみてはいかがでしょうか。&lt;/p&gt;
 
 &lt;p&gt;JJUGのスタッフ、参加者の皆様、&lt;a href=&#34;https://twitter.com/okapies&#34;&gt;@okapies&lt;/a&gt;さん、ありがとうございました。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>転職して半年が経ちました。</title>
-      <link>http://grimrose.github.io/blog/2015/06/career-change/</link>
-      <pubDate>Mon, 01 Jun 2015 00:08:51 +0900</pubDate>
-      
-      <guid>http://grimrose.github.io/blog/2015/06/career-change/</guid>
-      <description>
-
-&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
-
-&lt;p&gt;2014年12月に転職してから半年経ったので、振り返ってみます。&lt;/p&gt;
-
-&lt;p&gt;退職エントリは&lt;a href=&#34;http://grimrose.blogspot.jp/2014/12/blog-post.html&#34;&gt;こちら&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;所属&#34;&gt;所属&lt;/h2&gt;
-
-&lt;p&gt;今は、データ分析チームのエンジニアとして働いています。&lt;/p&gt;
-
-&lt;p&gt;転職時に希望したことが出来るチームなので、とてもやりがいがあります。&lt;/p&gt;
-
-&lt;p&gt;また、転職時にお世話になったマネージャーが、会社のエンジニアが働きやすい環境を作り上げたという話を聞いたので、足を向けて寝られません。&lt;/p&gt;
-
-&lt;p&gt;チームには分析官の方がいらっしゃるので、統計に関する知識やR言語についても学べる環境なのはありがたいです。&lt;/p&gt;
-
-&lt;p&gt;その他にも、Sparkや機械学習等新しい技術についても取り組むことが出来る環境でもあるので、積極的に学んで行こうと思います。&lt;/p&gt;
-
-&lt;p&gt;今のチームのマネージャーも理解のある人で、「分析」をどのように事業に活かすのかを真剣に考えていて、そのための武器をエンジニアと一緒に作っていこうとおっしゃってました。&lt;/p&gt;
-
-&lt;p&gt;自分が出来る事をチームに還元していければ、自ずと結果はついてくると思っているので、精一杯やっていこうと思います。&lt;/p&gt;
-
-&lt;h2 id=&#34;開発&#34;&gt;開発&lt;/h2&gt;
-
-&lt;p&gt;開発環境は自由に選べますが、私を含めほとんどの人はMBPの15インチを選んでます。&lt;/p&gt;
-
-&lt;p&gt;転職して最初の頃は、小さい社内Webサービスの引き継ぎをやってました。&lt;/p&gt;
-
-&lt;p&gt;言語は初めてのPHP、しかもPhalcon。&lt;/p&gt;
-
-&lt;p&gt;ひとまず、SQLを読むのと既存の機能の改善に注力してました。&lt;/p&gt;
-
-&lt;p&gt;今まで手作業やExcelでやっていた事を、Webサービスで置き換えていく途中だったので、実際に使われている人にとても喜ばれていました。&lt;/p&gt;
-
-&lt;p&gt;そこで社内でどのようにプロジェクトを進めていくのかなどを学べました。&lt;/p&gt;
-
-&lt;p&gt;しばらくして、別のプロジェクトの機能追加の案件も始まりました。&lt;/p&gt;
-
-&lt;p&gt;こちらは、FuelPHPでした。&lt;/p&gt;
-
-&lt;p&gt;このプロジェクトにメインで携わるとは、その時は思っていませんでした。&lt;/p&gt;
-
-&lt;p&gt;どちらもIntelliJ IDEAが無いと仕事が出来ないくらい四苦八苦してました。&lt;/p&gt;
-
-&lt;p&gt;幸い、このプロジェクトは、ユニットテストをしっかり書いて、JenkinsでCIまわして、ワンクリックでデプロイ出来るように運営されていました。&lt;/p&gt;
-
-&lt;p&gt;そのおかげもあって、なんとか求められていた機能もリリース出来て、現在も動いてます。&lt;/p&gt;
-
-&lt;p&gt;このプロジェクトの他の特徴としては、フロント周りにはAngularJS + TypeScriptを採用したりしています。&lt;/p&gt;
-
-&lt;p&gt;また、今後バッチ処理をScalaに置き換える為に、いろいろ検証や準備をしているところです。&lt;/p&gt;
-
-&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
-
-&lt;p&gt;自分のスキル足りなくてチームや顧客に迷惑をかける事があり、歯がゆい思いをすることもありました。&lt;/p&gt;
-
-&lt;p&gt;まだまだやりたいことも勉強しなければいけないことも沢山ありますが、エンジニアとしてやりたいことが出来る環境で仕事が出来るということが、どれほど楽しいことかを実感した半年でした。&lt;/p&gt;
 </description>
     </item>
     

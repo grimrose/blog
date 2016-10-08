@@ -6,8 +6,78 @@
     <description>Recent content in Scala on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 08 Feb 2016 20:31:14 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 09 Oct 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://grimrose.github.io/blog/categories/scala/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Scala関西Summit 2016へ参加してきました #scala_ks</title>
+      <link>http://grimrose.github.io/blog/2016/10/scalakansai2016/</link>
+      <pubDate>Sun, 09 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2016/10/scalakansai2016/</guid>
+      <description>
+
+&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://summit.scala-kansai.org/&#34;&gt;http://summit.scala-kansai.org/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://skug.connpass.com/event/38349/&#34;&gt;http://skug.connpass.com/event/38349/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;去年の&lt;a href=&#34;http://summit.scala-kansai.org/2015/index.html&#34;&gt;Scala関西 Summit 2015&lt;/a&gt;に参加してまた参加したいと思っていたのと、
+&lt;a href=&#34;http://2017.scalamatsuri.org&#34;&gt;ScalaMatsuri&lt;/a&gt;の運営の参考になればと思い、参加しました。&lt;/p&gt;
+
+&lt;h2 id=&#34;セッション&#34;&gt;セッション&lt;/h2&gt;
+
+&lt;p&gt;今回は、どのセッションも面白そうだったのと、社内に持ち帰って共有したい内容が多かったので、悩みました。&lt;/p&gt;
+
+&lt;p&gt;その中で以下のセッションを選びました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;はてなにおけるマイクロサービスとScala&lt;/li&gt;
+&lt;li&gt;akka-stream を始めるときに覚えておきたいこと&lt;/li&gt;
+&lt;li&gt;Implicit 再入門&lt;/li&gt;
+&lt;li&gt;Play2+SlickだけじゃないScalaのWeb/DBフレームワーク事情&lt;/li&gt;
+&lt;li&gt;Akka Clusterのネットワーク分断耐性設計&lt;/li&gt;
+&lt;li&gt;今からはじめる Lens/Prism&lt;/li&gt;
+&lt;li&gt;scala.collection 再入門&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Scalaを使いつつDDDを導入しているのでDDDと相性が良いことは実感していましたが、
+一部とは言え、はてなのような大きなサービスのドメインを写し取りつつDDDを実践するという話は、とても参考になりました。
+Scalaの定石を探る会は、とても興味深かったので今後のカンファレンス等で話される機会があるのを願ってます。&lt;/p&gt;
+
+&lt;p&gt;akka-streamは、Reactive Streamsについてずっと勉強していたので、実際にプロダクトに導入するにはどうすればいいのかを学びたかったので、
+特に気になっていました。
+小さな部品を組み合わせて大きな部品を作っていくところや、どのように既存のAkkaのActorと連携していくのかを知ることが出来てとても勉強になりました。&lt;/p&gt;
+
+&lt;p&gt;Implicit 再入門については、様々な入門書や日本語のドキュメントで知ってはいたものの、若干の不安がありましたが、がくぞー先生の説明で改めてScalaのImplicitの機能を知ることが出来ました。&lt;/p&gt;
+
+&lt;p&gt;Scalaのフレームワーク事情で紹介されていた&lt;a href=&#34;http://scalikejdbc.org&#34;&gt;ScalikeJDBC&lt;/a&gt;は、現在のプロジェクトでも利用しており、
+フレームワークの標準機能としてDAOやActiveRecordのような使い方が出来て、
+さらにSQLの行数が多めの集計用クエリなどでもフレームワークを変えること無く利用出来るので、かなりおすすめです。
+特に、ログ周りの設定は、クエリチューニングの際にとても助かっています。&lt;/p&gt;
+
+&lt;p&gt;Akka Clusterを導入するかは今後の状況次第ではありますが、分散処理という文脈の中でClusterでどういう故障が起きるのか、
+故障が起きた際にどう対応すればいいのかを学ぶことが出来て、分散処理基盤を動かしていくことの難しさを知れました。&lt;/p&gt;
+
+&lt;p&gt;Monocle、Lens、Prismは名前だけ知っていて、コワイものだという印象でいましたが、
+広く一般的なgetter/setterは関数の世界ではどういったものかを知れました。
+case classのインスタンスのcopy hellは、ドメインオブジェクトの変換時にどうしても出てきてしまう問題の一つだと思うので、
+適切な局面で扱えるようになりたいと思いました。&lt;/p&gt;
+
+&lt;p&gt;社内のScala勉強会でScalaのcollectionをどう使って行けばいいのか説明する時に参考に出来ると思いました。
+特に計算量については、件数が多いデータを扱うことが多いプロジェクトなので、頭に入れながらやらないとパフォーマンスが出ないと思うので、ありがたい内容でした。&lt;/p&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;丸一日ずっとScala漬けだったので途中疲れてしまいましたが、懇親会でTLで気になっていた人と実際にお会いする機会があったり、
+お世話になっている人にお礼を伝えることが出来たりと、とても充実した一日でした。&lt;/p&gt;
+
+&lt;p&gt;また来年開催されることになったら、是非参加したいと思います。&lt;/p&gt;
+
+&lt;p&gt;参加者、スタッフ、スポンサーの皆様、ありがとうございました。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>ScalaMatsuri2016に参加してきました。 #ScalaMatsuri</title>
