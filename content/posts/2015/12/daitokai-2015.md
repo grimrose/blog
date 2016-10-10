@@ -1,5 +1,5 @@
 +++
-categories = ["Blog","Life", "大都会岡山", "忘年会議"]
+categories = ["Blog", "大都会岡山", "忘年会議"]
 date = "2015-12-13T00:00:00+09:00"
 description = "合同勉強会 忘年会議"
 draft = false
