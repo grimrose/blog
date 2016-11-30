@@ -1,13 +1,56 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Life on open build/reports/life/index.html</title>
-    <link>http://grimrose.github.io/blog/categories/life/</link>
-    <description>Recent content in Life on open build/reports/life/index.html</description>
+    <title>open build/reports/life/index.html</title>
+    <link>http://grimrose.github.io/blog/categories/life/index.xml</link>
+    <description>Recent content on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 31 Dec 2015 23:59:59 +0900</lastBuildDate>
     <atom:link href="http://grimrose.github.io/blog/categories/life/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>転職して2年が経ちました。</title>
+      <link>http://grimrose.github.io/blog/2016/12/curriculum-vitae/</link>
+      <pubDate>Thu, 01 Dec 2016 00:00:00 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2016/12/curriculum-vitae/</guid>
+      <description>
+
+&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+
+&lt;p&gt;2014年12月に転職してから2年経ったので、振り返ってみました。&lt;/p&gt;
+
+&lt;p&gt;1年前は&lt;a href=&#34;http://grimrose.github.io/blog/2015/12/career-change&#34;&gt;こちら&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;引き続き、データ分析チームのエンジニアとして働いてます。&lt;/p&gt;
+
+&lt;h2 id=&#34;職務経歴書のoss化&#34;&gt;職務経歴書のOSS化&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;ja&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;転職して2年経ったし、やってみるか&lt;br&gt;職務経歴書OSS化 - Qiita &lt;a href=&#34;https://t.co/Yz5XAzR1uj&#34;&gt;https://t.co/Yz5XAzR1uj&lt;/a&gt;&lt;/p&gt;&amp;mdash; とーます (@grimrose) &lt;a href=&#34;https://twitter.com/grimrose/status/803596996724391937&#34;&gt;2016年11月29日&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/okoysm/items/abcad0b4aefa585bc50b&#34;&gt;職務経歴書OSS化&lt;/a&gt;を見て、ちょうどいい機会だと思ったので、作ってみました。&lt;/p&gt;
+
+&lt;p&gt;職務経歴書はこちらです -&amp;gt; &lt;a href=&#34;https://github.com/grimrose/Curriculum-Vitae&#34;&gt;grimrose/Curriculum-Vitae&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;前職の案件については、転職時に作成した資料を元にぼかして書きました。&lt;/p&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;今のところ、転職する意思はありませんが、転職のきっかけとなった方が新天地へ飛び立って行かれたので、
+自分が今の会社で何を成したいのかを考えるいいきっかけだと感じました。&lt;/p&gt;
+
+&lt;p&gt;久しぶりにスキル周りの見直しや転職時に作った資料の振り返りをしてみて、
+転職時にやりたいと思っていたことが実はそこまで重要視してなかったということが分かったり、
+今やっていることを挙げてみると、なかなか言葉にしにくかったりしました。&lt;/p&gt;
+
+&lt;p&gt;前職では、案件ごとに職務経歴書みたいなものを更新していたので、ある程度スキルセットの棚卸しをしていたのかもしれません。&lt;/p&gt;
+
+&lt;p&gt;2016年の振り返りを年末にする予定なので、それまでに職務経歴書の「やったことはないが興味があるもの」や、まだ書けていない箇所を埋めていこうと思います。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>2015年の振り返り</title>

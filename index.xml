@@ -2,12 +2,56 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>open build/reports/life/index.html</title>
-    <link>http://grimrose.github.io/blog/</link>
+    <link>http://grimrose.github.io/blog/index.xml</link>
     <description>Recent content on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 09 Oct 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Dec 2016 00:00:00 +0900</lastBuildDate>
     <atom:link href="http://grimrose.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>転職して2年が経ちました。</title>
+      <link>http://grimrose.github.io/blog/2016/12/curriculum-vitae/</link>
+      <pubDate>Thu, 01 Dec 2016 00:00:00 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2016/12/curriculum-vitae/</guid>
+      <description>
+
+&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+
+&lt;p&gt;2014年12月に転職してから2年経ったので、振り返ってみました。&lt;/p&gt;
+
+&lt;p&gt;1年前は&lt;a href=&#34;http://grimrose.github.io/blog/2015/12/career-change&#34;&gt;こちら&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;引き続き、データ分析チームのエンジニアとして働いてます。&lt;/p&gt;
+
+&lt;h2 id=&#34;職務経歴書のoss化&#34;&gt;職務経歴書のOSS化&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;ja&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;転職して2年経ったし、やってみるか&lt;br&gt;職務経歴書OSS化 - Qiita &lt;a href=&#34;https://t.co/Yz5XAzR1uj&#34;&gt;https://t.co/Yz5XAzR1uj&lt;/a&gt;&lt;/p&gt;&amp;mdash; とーます (@grimrose) &lt;a href=&#34;https://twitter.com/grimrose/status/803596996724391937&#34;&gt;2016年11月29日&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/okoysm/items/abcad0b4aefa585bc50b&#34;&gt;職務経歴書OSS化&lt;/a&gt;を見て、ちょうどいい機会だと思ったので、作ってみました。&lt;/p&gt;
+
+&lt;p&gt;職務経歴書はこちらです -&amp;gt; &lt;a href=&#34;https://github.com/grimrose/Curriculum-Vitae&#34;&gt;grimrose/Curriculum-Vitae&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;前職の案件については、転職時に作成した資料を元にぼかして書きました。&lt;/p&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;今のところ、転職する意思はありませんが、転職のきっかけとなった方が新天地へ飛び立って行かれたので、
+自分が今の会社で何を成したいのかを考えるいいきっかけだと感じました。&lt;/p&gt;
+
+&lt;p&gt;久しぶりにスキル周りの見直しや転職時に作った資料の振り返りをしてみて、
+転職時にやりたいと思っていたことが実はそこまで重要視してなかったということが分かったり、
+今やっていることを挙げてみると、なかなか言葉にしにくかったりしました。&lt;/p&gt;
+
+&lt;p&gt;前職では、案件ごとに職務経歴書みたいなものを更新していたので、ある程度スキルセットの棚卸しをしていたのかもしれません。&lt;/p&gt;
+
+&lt;p&gt;2016年の振り返りを年末にする予定なので、それまでに職務経歴書の「やったことはないが興味があるもの」や、まだ書けていない箇所を埋めていこうと思います。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Scala関西Summit 2016へ参加してきました #scala_ks</title>
@@ -1035,70 +1079,6 @@ Node.jsのライブラリがそのままWebアプリケーションから呼び�
 &lt;p&gt;今回で終わってしまうということで、残念だと思うこともありますが、こういった懐が深いカンファレンスがまた新しいコミュニティを生み出していくと思うので、楽しみです。&lt;/p&gt;
 
 &lt;p&gt;スタッフ、Speaker、スポンサー、参加者の皆さん、ありがとうございました。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>【東京】JJUG ナイトセミナー 「Reactive Streams特集」 に参加してきました。 #jjug</title>
-      <link>http://grimrose.github.io/blog/2015/06/jjug-2015-reactive-streams/</link>
-      <pubDate>Sat, 27 Jun 2015 18:19:34 +0900</pubDate>
-      
-      <guid>http://grimrose.github.io/blog/2015/06/jjug-2015-reactive-streams/</guid>
-      <description>
-
-&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://jjug.doorkeeper.jp/events/26547&#34;&gt;https://jjug.doorkeeper.jp/events/26547&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/making&#34;&gt;@making&lt;/a&gt;さんから、&lt;a href=&#34;https://twitter.com/okapies&#34;&gt;@okapies&lt;/a&gt;さんと一緒に「Reactive Streams」について話してくれと頼まれましたので、参加してきました。&lt;/p&gt;
-
-&lt;p&gt;元々は、&lt;a href=&#34;https://twitter.com/cero_t&#34;&gt;@cero_t&lt;/a&gt;さんが発端らしいです。&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;ja&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;ちなみに今日のReactive Streams勉強会の発端は、ゴールデンウィーク明けに &lt;a href=&#34;https://twitter.com/cero_t&#34;&gt;@cero_t&lt;/a&gt; さんがReactiveについてほげほげ言ってたことで、ナイトセミナーやろうぜって感じだったんだけど、当の本人は来ていないっていう&lt;/p&gt;&amp;mdash; Toshiaki Maki (@making) &lt;a href=&#34;https://twitter.com/making/status/613702257939353600&#34;&gt;2015, 6月 24&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;初めは、マイナーなネタならそんなに人集まらないだろうと思ってたのですが、キャンセル待ちが100人超えするくらいまで期待されてて正直びっくりしました。&lt;/p&gt;
-
-&lt;p&gt;当日のアンケートシステム、とても良かったので次回以降改善されるのを期待してます。&lt;/p&gt;
-
-&lt;h2 id=&#34;資料&#34;&gt;資料&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/okapies&#34;&gt;@okapies&lt;/a&gt;さんの資料は、こちらです。&lt;/p&gt;
-
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;df469560cc64424c98330aad22b19cda&#34; data-ratio=&#34;1.33333333333333&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;私の資料は、こちらです。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://grimrose.github.io/jjug-2015-reactive-streams/&#34;&gt;http://grimrose.github.io/jjug-2015-reactive-streams/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;利用したサンプルコードは、こちらです。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/grimrose/jjug-2015-reactive-streams&#34;&gt;https://github.com/grimrose/jjug-2015-reactive-streams&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;元々は、&lt;a href=&#34;http://vertx.io&#34;&gt;Vert.x3&lt;/a&gt;でやろうと思ってましたが、&lt;a href=&#34;http://projectreactor.io&#34;&gt;Reactor&lt;/a&gt;か&lt;a href=&#34;http://reactivex.io&#34;&gt;RxJava&lt;/a&gt;でと言われたので、使ったことがあるRxJavaを選びました。&lt;/p&gt;
-
-&lt;p&gt;確かに、当日のアンケートを見ると&lt;a href=&#34;http://vertx.io&#34;&gt;Vert.x3&lt;/a&gt;、&lt;a href=&#34;http://ratpack.io&#34;&gt;Ratpack&lt;/a&gt;の認知度が低すぎて、RxJavaを選択しておいてよかったと思いました。&lt;/p&gt;
-
-&lt;p&gt;ドキュメントの多さは、やはりRxJavaに分があるのですが、Reactorもかなり充実しています。&lt;/p&gt;
-
-&lt;p&gt;個人的には、&lt;a href=&#34;http://mongodb.github.io/mongo-java-driver-reactivestreams/&#34;&gt;MongoDB Reactive Streams Java Driver&lt;/a&gt;がチュートリアルとして、充実してると感じました。&lt;/p&gt;
-
-&lt;p&gt;初めてJavaでAkkaを使ってみたのですが、いろいろツライ印象しか受けませんでした。&lt;/p&gt;
-
-&lt;p&gt;あれなら、素直にScalaで使ったほうが分かりやすいと思います。&lt;/p&gt;
-
-&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
-
-&lt;p&gt;Reactive Streamsについては、それぞれのRuntimeの世界を繋ぐ為の仕様という認識が一番分かりやすいと思います。&lt;/p&gt;
-
-&lt;p&gt;実際の泥臭い部分は、Runtimeが頑張ってくれますが、何をやっているのか、どうやって実現しているのかを知っておくのは大切です。&lt;/p&gt;
-
-&lt;p&gt;どのRuntimeもReactive Streams向けに変換するライブラリがありますので、そのソースコードを読むのも勉強になると思います。&lt;/p&gt;
-
-&lt;p&gt;JDK9にどこまで採用されるか分かりませんが、データフロー制御についての共通インターフェースが採用されると、java.util.concurrentと併せて、非同期処理をもっと使いやすくなると思います。&lt;/p&gt;
-
-&lt;p&gt;JVMでデータフロー制御でお困りの方は、使ってみてはいかがでしょうか。&lt;/p&gt;
-
-&lt;p&gt;JJUGのスタッフ、参加者の皆様、&lt;a href=&#34;https://twitter.com/okapies&#34;&gt;@okapies&lt;/a&gt;さん、ありがとうございました。&lt;/p&gt;
 </description>
     </item>
     
