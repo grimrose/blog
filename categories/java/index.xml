@@ -9,6 +9,60 @@
     <atom:link href="http://grimrose.github.io/blog/categories/java/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>JJUG CCC 2016 Fallに参加してきました #jjug_ccc</title>
+      <link>http://grimrose.github.io/blog/2016/12/jjug-ccc-2016/</link>
+      <pubDate>Sun, 04 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2016/12/jjug-ccc-2016/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://www.java-users.jp/ccc2016fall/&#34;&gt;http://www.java-users.jp/ccc2016fall/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;参加したセッション&#34;&gt;参加したセッション&lt;/h2&gt;
+
+&lt;p&gt;今回参加したセッションは、以下のとおりです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;SIerもはじめる、わたしたちのDevOps&lt;/li&gt;
+&lt;li&gt;先取り Elasticsearch 5.0 ハンズオン！&lt;/li&gt;
+&lt;li&gt;JVMのトラブル解決のためにやったこと~メモリー/スレッド&lt;/li&gt;
+&lt;li&gt;Spring Cloudアプリケーションの開発にDockerを活用し、Kubernetes上にデプロイするまで&lt;/li&gt;
+&lt;li&gt;Featherweight JavaやGroovyの漸進的型付けについて&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;今回は、仕事でElasticsearchを検証している際に入門的なものを知らないと先に進めなさそうと感じたので、ハンズオンを優先的に選択しました。&lt;/p&gt;
+
+&lt;p&gt;その他のセッションについては、Javaのセッションよりも仕事で使うJVMやkubernetesに関するものや、数少ないGroovyのセッションを選んでみました。&lt;/p&gt;
+
+&lt;p&gt;寝坊してしまったため、午前の基調講演とそのあとのセッションの一部を聞けず、流れてくるTwitterを見ながら早く聞いて見たいと思ってました。&lt;/p&gt;
+
+&lt;p&gt;途中からでしたが、顧客が社内の人達ということで、自分の今の環境と照らし合わせて聞いていました。&lt;/p&gt;
+
+&lt;p&gt;裏でいろいろ教育や環境を整えているかわしまさんのスゴさを改めて知ることが出来たのと、その教えを忠実に守って継続していくしょぼちむさんのチームが素晴らしかったです。&lt;/p&gt;
+
+&lt;p&gt;R&amp;amp;D部門の阿佐さんのDockerのオーケストレーションの話がとても興味深かったです。まさか資料がkubernetesで動いてるとは思いませんでした。&lt;/p&gt;
+
+&lt;p&gt;Elasticsearchのハンズオンは、特にkibanaあたりの内容が足りていなかった自分にとって勉強になりました。&lt;/p&gt;
+
+&lt;p&gt;JVMのトラブルシューティングについては、初心者向けだったのか、JVMの基本的な概要とトラブルシューティングのツールの説明が主でした。
+なのでちょっと物足りなく感じましたが、JJUG CCCの参加者の多くが初めての人が多いことを考えれば、仕方ないと思います。&lt;/p&gt;
+
+&lt;p&gt;Spring Cloudの他のセッションをあらかじめ聞いておけば良かったと思えるほど、Spring CloudとKubernetesを連携させて動かすことができる環境を用意できる&lt;a href=&#34;https://fabric8.io/&#34;&gt;fabric8&lt;/a&gt;が凄かった印象でした。
+Kubernetesの設定ファイルとかその他の設定もよしなにしてくれるpluginがMavenしか最新版が無いのが本当に&lt;/p&gt;
+
+&lt;p&gt;Featherweight Javaは&lt;a href=&#34;http://togetter.com/li/362176&#34;&gt;Java基礎勉強会&lt;/a&gt;の時に説明されていたので、ある程度覚えていましたが論文自体を全部読んでいなかったので丁寧に説明してくださって助かりました。
+@TypeCheckedや@CompileStaticをそういう使い方もできるのかとGroovyの奥深さを新たに知ることが出来ました。&lt;/p&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;懇親会は、初めの方だけ参加させていただきましたが、いろいろな方とお話しできて良かったです。
+次回のJJUG CCCで時間の都合でご挨拶できなかった方にお会いしたいと思ってますので、よろしくお願いします。&lt;/p&gt;
+
+&lt;p&gt;JJUGのスタッフの皆様、スポンサーの皆様、講演者の皆様、参加者の皆様、ありがとうございました。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>JJUG CCC 2016 Springに参加してきました #jjug_ccc #ccc_m61</title>
       <link>http://grimrose.github.io/blog/2016/05/jjug-ccc-2016/</link>
       <pubDate>Thu, 26 May 2016 00:00:00 +0900</pubDate>
