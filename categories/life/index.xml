@@ -9,6 +9,60 @@
     <atom:link href="http://grimrose.github.io/blog/categories/life/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>MacBook Pro (13-inch, Late 2016, Two Thunderbolt 3 ports)とDELL P2715Q</title>
+      <link>http://grimrose.github.io/blog/2016/12/mbp-13-late-2016/</link>
+      <pubDate>Mon, 05 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2016/12/mbp-13-late-2016/</guid>
+      <description>
+
+&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+
+&lt;p&gt;MacBook Pro (13-inch, Late 2016, Two Thunderbolt 3 ports)モデルを購入したので、
+4Kモニタの&lt;a href=&#34;http://accessories.apj.dell.com/sna/productdetail.aspx?c=jp&amp;amp;cs=jpbsd1&amp;amp;l=ja&amp;amp;s=bsd&amp;amp;sku=210-AFRI&amp;amp;redirect=1&#34;&gt;P2715Q&lt;/a&gt;との動作検証を残しておこうと思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;macbook-pro-13-late-2016-non-touch-bar&#34;&gt;MacBook Pro 13 Late 2016 non-Touch Bar&lt;/h2&gt;
+
+&lt;p&gt;カスタマイズは、以下の通り。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;2.4 GHz Intel Core i7&lt;/li&gt;
+&lt;li&gt;16 GB 1867 MHz LPDDR3&lt;/li&gt;
+&lt;li&gt;512GB SSD&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;dell-p2715q&#34;&gt;DELL P2715Q&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://support.apple.com/ja-jp/HT206587&#34;&gt;ここ&lt;/a&gt;を見ると4K 60Hzで表示するには、HDMI 2.0かDisplay Portのモニタが必要です。&lt;/p&gt;
+
+&lt;p&gt;しかし、HDMI 2.0の選択肢が無さすぎたので、Display Portで4K 60Hzを表示できるモニタから、DELL P2715Qを購入しました。
+理由は、価格と店頭での印象でした。&lt;/p&gt;
+
+&lt;p&gt;MacBook ProとDisplay Portのモニタを接続するアダプタとして、&lt;a href=&#34;http://www.aukey.com/products/usb-c-to-dp-adapter/&#34;&gt;AUKEY USB-C to DisplayPort Adapter CB-C42&lt;/a&gt;を購入しました。&lt;/p&gt;
+
+&lt;p&gt;P2715QにはminiDP - DisplayPortのケーブルが付属しているので、必要になればDisplay Port - DisplayPortのケーブルを買おうと思い、モニタが届くのを待ってました。&lt;/p&gt;
+
+&lt;p&gt;接続は、こんな感じで出来ました。&lt;/p&gt;
+
+&lt;p&gt;[MacBook Pro] &amp;lt;&amp;ndash; [CB-C42] &amp;lt;&amp;ndash; [DisplayPort - miniDP] &amp;ndash;&amp;gt; [P2715Q]&lt;/p&gt;
+
+&lt;p&gt;3840 x 2160で60Hzで動くのを確認しました。ただ、広すぎて文字も見づらいので、普段使う場合は2560 x 1440の解像度で使用することになりそうです。
+動作確認として4Kの映像を見ていましたが、やっぱり綺麗ですね。&lt;/p&gt;
+
+&lt;p&gt;P2715Qにはスピーカーが付いていないので、小さくてもそれなりに音がいいのを探して見たいと思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;USB-Cに変わって今まで使ってたアダプタが使えなくなるのは、割と痛手です。
+また、個人的に痛いのはmagsafe 2みたいにうっかりケーブルを引っ掛けたりしても大丈夫だったのが、USB-Cになって本体ごと巻き込んで壊れそうなのが本当に怖いです。
+なので、まだ発売されていませんが、&lt;a href=&#34;https://www.kickstarter.com/projects/436147229/snapnator-your-macbook-snap-feature-is-back&#34;&gt;Snapnator&lt;/a&gt;がMacBook Proでも使えそうなのが楽しみです。
+今後はUSB-Cのケーブルはワット数も見る必要が出てきたり、 Apple以外のACアダプタとの相性等、汎用的なポートを利用することによる心配は今後も続きそうです。&lt;/p&gt;
+
+&lt;p&gt;久しぶりに自宅の環境を更新して、開封の儀が楽しいことを思い出しました。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>転職して2年が経ちました。</title>
       <link>http://grimrose.github.io/blog/2016/12/curriculum-vitae/</link>
       <pubDate>Thu, 01 Dec 2016 00:00:00 +0900</pubDate>

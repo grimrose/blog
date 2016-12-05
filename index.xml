@@ -6,8 +6,62 @@
     <description>Recent content on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 04 Dec 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Dec 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://grimrose.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>MacBook Pro (13-inch, Late 2016, Two Thunderbolt 3 ports)とDELL P2715Q</title>
+      <link>http://grimrose.github.io/blog/2016/12/mbp-13-late-2016/</link>
+      <pubDate>Mon, 05 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2016/12/mbp-13-late-2016/</guid>
+      <description>
+
+&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+
+&lt;p&gt;MacBook Pro (13-inch, Late 2016, Two Thunderbolt 3 ports)モデルを購入したので、
+4Kモニタの&lt;a href=&#34;http://accessories.apj.dell.com/sna/productdetail.aspx?c=jp&amp;amp;cs=jpbsd1&amp;amp;l=ja&amp;amp;s=bsd&amp;amp;sku=210-AFRI&amp;amp;redirect=1&#34;&gt;P2715Q&lt;/a&gt;との動作検証を残しておこうと思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;macbook-pro-13-late-2016-non-touch-bar&#34;&gt;MacBook Pro 13 Late 2016 non-Touch Bar&lt;/h2&gt;
+
+&lt;p&gt;カスタマイズは、以下の通り。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;2.4 GHz Intel Core i7&lt;/li&gt;
+&lt;li&gt;16 GB 1867 MHz LPDDR3&lt;/li&gt;
+&lt;li&gt;512GB SSD&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;dell-p2715q&#34;&gt;DELL P2715Q&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://support.apple.com/ja-jp/HT206587&#34;&gt;ここ&lt;/a&gt;を見ると4K 60Hzで表示するには、HDMI 2.0かDisplay Portのモニタが必要です。&lt;/p&gt;
+
+&lt;p&gt;しかし、HDMI 2.0の選択肢が無さすぎたので、Display Portで4K 60Hzを表示できるモニタから、DELL P2715Qを購入しました。
+理由は、価格と店頭での印象でした。&lt;/p&gt;
+
+&lt;p&gt;MacBook ProとDisplay Portのモニタを接続するアダプタとして、&lt;a href=&#34;http://www.aukey.com/products/usb-c-to-dp-adapter/&#34;&gt;AUKEY USB-C to DisplayPort Adapter CB-C42&lt;/a&gt;を購入しました。&lt;/p&gt;
+
+&lt;p&gt;P2715QにはminiDP - DisplayPortのケーブルが付属しているので、必要になればDisplay Port - DisplayPortのケーブルを買おうと思い、モニタが届くのを待ってました。&lt;/p&gt;
+
+&lt;p&gt;接続は、こんな感じで出来ました。&lt;/p&gt;
+
+&lt;p&gt;[MacBook Pro] &amp;lt;&amp;ndash; [CB-C42] &amp;lt;&amp;ndash; [DisplayPort - miniDP] &amp;ndash;&amp;gt; [P2715Q]&lt;/p&gt;
+
+&lt;p&gt;3840 x 2160で60Hzで動くのを確認しました。ただ、広すぎて文字も見づらいので、普段使う場合は2560 x 1440の解像度で使用することになりそうです。
+動作確認として4Kの映像を見ていましたが、やっぱり綺麗ですね。&lt;/p&gt;
+
+&lt;p&gt;P2715Qにはスピーカーが付いていないので、小さくてもそれなりに音がいいのを探して見たいと思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;USB-Cに変わって今まで使ってたアダプタが使えなくなるのは、割と痛手です。
+また、個人的に痛いのはmagsafe 2みたいにうっかりケーブルを引っ掛けたりしても大丈夫だったのが、USB-Cになって本体ごと巻き込んで壊れそうなのが本当に怖いです。
+なので、まだ発売されていませんが、&lt;a href=&#34;https://www.kickstarter.com/projects/436147229/snapnator-your-macbook-snap-feature-is-back&#34;&gt;Snapnator&lt;/a&gt;がMacBook Proでも使えそうなのが楽しみです。
+今後はUSB-Cのケーブルはワット数も見る必要が出てきたり、 Apple以外のACアダプタとの相性等、汎用的なポートを利用することによる心配は今後も続きそうです。&lt;/p&gt;
+
+&lt;p&gt;久しぶりに自宅の環境を更新して、開封の儀が楽しいことを思い出しました。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>JJUG CCC 2016 Fallに参加してきました #jjug_ccc</title>
@@ -963,63 +1017,6 @@ Node.jsのライブラリがそのままWebアプリケーションから呼び�
   &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;主催の皆様、Speakerの皆様、参加者の皆様、ありがとうございました。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>JUnit Lambda に寄付をしました #fundJUnit</title>
-      <link>http://grimrose.github.io/blog/2015/09/junit-lambda/</link>
-      <pubDate>Sat, 19 Sep 2015 00:04:27 +0900</pubDate>
-      
-      <guid>http://grimrose.github.io/blog/2015/09/junit-lambda/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/t_wada&#34;&gt;@t_wada&lt;/a&gt; さんのツイートから知りましたが、JUnitのプロジェクトが援助を求めているそうです。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;ja&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;JUnit がクラウドファンディングで援助を求めている。現在フルタイムのメンテナがおらず、 issue 解決や Java8 対応 (特にラムダ式) の余力が無い。現時点の JUnit の問題点や将来像も示されている &lt;a href=&#34;https://twitter.com/hashtag/fundJUn?src=hash&#34;&gt;#fundJUn&lt;/a&gt;… &lt;a href=&#34;http://t.co/o8ijOxTWr2&#34;&gt;http://t.co/o8ijOxTWr2&lt;/a&gt;&lt;/p&gt;&amp;mdash; Takuto Wada (@t_wada) &lt;a href=&#34;https://twitter.com/t_wada/status/644085548374605824&#34;&gt;2015, 9月 16&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://junit.org/junit-lambda.html&#34;&gt;Crowdfunding JUnit Lambda&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;日本語での詳細な内容については、&lt;a href=&#34;http://www.publickey1.jp/blog/15/junit.html&#34;&gt;JUnitの開発が資金不足で行き詰まり。クラウドファンディングで寄付金を募集中&lt;/a&gt; を見ていだくのがいいと思います。&lt;/p&gt;
-
-&lt;h2 id=&#34;junitと私&#34;&gt;JUnitと私&lt;/h2&gt;
-
-&lt;p&gt;個人的にJUnitを真面目に使い始めたのは、TDDBCで使い方を教わってからだと思います。&lt;/p&gt;
-
-&lt;p&gt;その時教えていただいた渡辺さんが書かれた&lt;a href=&#34;http://gihyo.jp/book/2012/978-4-7741-5377-3&#34;&gt;JUnit実践入門&lt;/a&gt;を読んで、Javaでユニットテストを書くにはどうしたら良いかを学ぶことが出来ました。&lt;/p&gt;
-
-&lt;p&gt;それからGroovyと出会い、&lt;a href=&#34;https://github.com/spockframework&#34;&gt;Spock Framework&lt;/a&gt;に惚れてTDDBCのGroovyのTAをやったり、アジャイルサムライのイベントで紹介をしたりしてました。&lt;/p&gt;
-
-&lt;p&gt;現在の仕事では、&lt;a href=&#34;https://phpunit.de/&#34;&gt;PHPUnit&lt;/a&gt;、&lt;a href=&#34;http://www.scalatest.org/&#34;&gt;ScalaTest&lt;/a&gt;を使っています。&lt;/p&gt;
-
-&lt;p&gt;xUnit系テスティングフレームワークは、テストを書く際に覚えることが少なくて、ユニットテストの書き方を学ぶ際に、余計なことを覚えなくても済むのがメリットだと思います。&lt;/p&gt;
-
-&lt;p&gt;あと、モダンな言語であればだいたい備わっているので、言語を覚える際にもassertionの書き方を覚えればなんとか始められます。
-それまでユニットテストを書く際の経験がそのまま言語を学ぶ際にも応用が出来るのが、xUnit系のテスティングフレームワークの良いところだと思います。&lt;/p&gt;
-
-&lt;p&gt;個人的にJUnitがもう少し頑張って欲しいのは、「パラメタライズドテストの書き方」、「失敗時のメッセージが分かりにくい」だと思います。&lt;/p&gt;
-
-&lt;p&gt;これはSpockを知ってしまってから、余計に感じるようになったと思います。&lt;/p&gt;
-
-&lt;p&gt;もちろんJavaの言語仕様として難しい部分もあると思いますが、出来れば&lt;code&gt;power-assert&lt;/code&gt;は入って欲しいと願ってます。&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;power-assert&lt;/code&gt;については、日本語では&lt;a href=&#34;http://codelunch.fm/16/&#34;&gt;The power-assert Leaves From Moratorium&lt;/a&gt;がまとまっていると思います。&lt;/p&gt;
-
-&lt;p&gt;今回のFundingでどこまで機能が盛り込まれたり、改善されるかは経過を見守る必要があると思います。&lt;/p&gt;
-
-&lt;p&gt;Java8対応で特にDateTime APIでMatcherが早急に欲しい人は、&lt;a href=&#34;http://joel-costigliola.github.io/assertj/index.html&#34;&gt;AssertJ&lt;/a&gt;を検討してみるのも良いかもしれません。&lt;/p&gt;
-
-&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
-
-&lt;p&gt;opensslと同様の経緯をまさかJUnitも歩んでいるとは思ってもいませんでした。&lt;/p&gt;
-
-&lt;p&gt;普段使っていたり、過去お世話になったOSSがメンテナンスされ続けるのは、誰かの犠牲や善意によって成り立っているのだと感じました。&lt;/p&gt;
-
-&lt;p&gt;また、「コードを書く」以外の事で貢献出来る何かを改めて考えさせられました。&lt;/p&gt;
-
-&lt;p&gt;もし、JUnitを使っていたり、今後も使い続ける事になるのであれば、既にゴール金額に到達していますが、寄付を考えてみてはいかがでしょうか？&lt;/p&gt;
 </description>
     </item>
     
