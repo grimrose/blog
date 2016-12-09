@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://grimrose.github.io/blog/2016/12/gadvent-2016/" />
+<meta property="og:image" content="http://grimrose.github.io/blog/assets/images/logo.jpg" />
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:site" content="@grimrose">
+<meta name="twitter:card" content="summary">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+<link rel="stylesheet" href="http://grimrose.github.io/blog/css/normalize.css">
+<link rel="stylesheet" href="http://grimrose.github.io/blog/css/skeleton.css">
+<link rel="stylesheet" href="http://grimrose.github.io/blog/css/custom.css">
+<link rel="alternate" href="http://grimrose.github.io/blog/index.xml" type="application/rss+xml" title="open build/reports/life/index.html">
+
+<title>GParsのActorでアクターモデルに入門する - open build/reports/life/index.html</title>
+<meta property="og:title"  content="GParsのActorでアクターモデルに入門する - open build/reports/life/index.html" />
+<meta name="twitter:description" content="">
+</head>
+<body>
+
+<div class="container">
+
+	<header role="banner">
+		<div class="header-logo">
+			<a href="http://grimrose.github.io/blog/"><img src="http://grimrose.github.io/blog/assets/images/logo.jpg" width="60" height="60"></a>
+		</div>
+		
+	</header>
+
+
+<main role="main">
+    <article itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 class="entry-title" itemprop="headline"><i class="fa fa-book"></i>&nbsp;GParsのActorでアクターモデルに入門する</h1>
+        <span class="entry-meta">
+            <time itemprop="datePublished" datetime=" 2016-12-10">December 10, 2016</time>
+        </span>
+        <span class="entry-meta">
+          
+              
+              
+              <i class="fa fa-pencil"></i>
+              <a class="label" href="http://grimrose.github.io/blog/categories/blog">Blog</a>&nbsp;
+              
+              <i class="fa fa-pencil"></i>
+              <a class="label" href="http://grimrose.github.io/blog/categories/java">Java</a>&nbsp;
+              
+              <i class="fa fa-pencil"></i>
+              <a class="label" href="http://grimrose.github.io/blog/categories/groovy">Groovy</a>&nbsp;
+              
+              <i class="fa fa-pencil"></i>
+              <a class="label" href="http://grimrose.github.io/blog/categories/scala">Scala</a>&nbsp;
+              
+          
+        </span>
+        <section itemprop="entry-text">
+            
+
+<h2 id="はじめに">はじめに</h2>
+
+<p>この記事は、<a href="http://qiita.com/advent-calendar/2016/gastah">G*Advent Calendar(Groovy,Grails,Gradle,Spock&hellip;) Advent Calendar 2016</a>の10日目のエントリです。</p>
+
+<p>9日目 &gt; <a href="http://qiita.com/nobeans">nobeans</a>さんの<a href="https://www.ntts.co.jp/column/nakano_blog/20161209/index.html">GrailsでUnix/Linux的実行可能WARファイルをつくる</a>です。</p>
+
+<p>11日目 &gt; <a href="http://qiita.com/tyama">tyama</a>さんです。</p>
+
+<h2 id="gparsとは">GParsとは</h2>
+
+<p><a href="http://www.gpars.org/">GPars</a>は、GroovyとJavaで利用できる並行・並列処理を利用しやすくなるライブラリです。</p>
+
+<p><a href="http://qiita.com/saba1024/items/29bc32f3390facbaa5c5">[Groovy]GParsで並列処理（基本＆コレクション編）</a>を見ていただくと、
+旧来のThreadや、java.util.concurrentをそのまま使うよりも並行処理が書きやすそうだと感じたのではないでしょうか。</p>
+
+<p>GroovyがApacheに寄贈され、codehausが停止してしまったため、ソースコードやドキュメントがgithubに移管されています。</p>
+
+<p><a href="https://github.com/GPars/GPars">GPars/GPars</a></p>
+
+<p>versionは、<code>1.2.1</code>のままです。</p>
+
+<p>ですので、Gradleで利用する際は、以下のように依存を追加すれば利用できるようになります。</p>
+
+<pre><code class="language-groovy">// https://mvnrepository.com/artifact/org.codehaus.gpars/gpars
+compile group: 'org.codehaus.gpars', name: 'gpars', version: '1.2.1'
+</code></pre>
+
+<h2 id="actorモデルについて">Actorモデルについて</h2>
+
+<p>アクターモデルについては、<a href="https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AF%E3%82%BF%E3%83%BC%E3%83%A2%E3%83%87%E3%83%AB">アクターモデル</a>を見てください。</p>
+
+<p>アクターモデルの実装されているもので代表的なものは、<a href="http://www.erlang.org/">Erlang</a>と<a href="http://akka.io/">Akka</a>が挙げられます。</p>
+
+<p>この2つについては、もうエコシステムとも呼べるようなものになってしまっているので、アクターモデルだけを知ろうとすると、どこから手をつけていいのか分かりにくくなります。</p>
+
+<p>そこで、GParsのActorを使ってアクターモデルの考え方を理解して行こうと思います。</p>
+
+<h2 id="gparsのactor">GParsのActor</h2>
+
+<p>GParsのActorの<a href="http://www.gpars.org/guide/guide/actors.html">ドキュメント</a>を見ると、Actorの作り方はとてもシンプルです。</p>
+
+<pre><code class="language-groovy">import groovyx.gpars.actor.Actor
+
+def actor = Actors.actor {
+    loop {
+        react { msg -&gt;
+            println &quot;Received: $msg&quot;
+        }
+    }
+}
+
+actor.send 'Hello, GPars!'
+
+actor.join() // 停止するまで立ち上がったままにする。
+
+// 止めるときはCtrl-C or プロセスを落とす
+</code></pre>
+
+<p>いわゆる<code>PingPong</code>をする場合はこんな感じです。</p>
+
+<pre><code class="language-groovy">@Immutable
+class PingMessage {
+    String message
+}
+
+@Immutable
+class PongMessage {
+    String message
+}
+
+@Log
+class PongActor extends DefaultActor {
+    @Override
+    protected void act() {
+        loop {
+            react { msg -&gt;
+                log.info &quot;Pong Received: $msg&quot;
+                switch (msg) {
+                    case PingMessage:
+                        reply new PongMessage(message: msg.message)
+                }
+            }
+        }
+    }
+}
+
+@Log
+class Main {
+    static void main(args) {
+        log.info(&quot;start&quot;)
+
+        def pingActor = Actors.actor {
+            loop {
+                react { msg -&gt;
+                    log.info &quot;Ping Received: $msg&quot;
+                    switch (msg) {
+                        case String:
+                            reply new PingMessage(message: msg)
+                            break
+                        case PongMessage:
+                            terminate() // actorを停止させる
+                            break
+                    }
+                }
+            }
+        }
+
+        def pongActor = new PongActor().start()
+
+        pingActor.send 'Hello, GPars!', pongActor
+
+        // 1秒だけ待つ
+        [pingActor, pongActor]*.join(1, TimeUnit.SECONDS)
+
+        log.info(&quot;end&quot;)
+    }
+}
+</code></pre>
+
+<p>ちょっとAkkaのActorに似せるように書いて見ましたが、いかがでしょうか。</p>
+
+<p>Groovyはswitch文の<code>case</code>にクラスを指定することも出来るので、Scalaのパターンマッチっぽく見えます。</p>
+
+<p>また、<a href="http://docs.groovy-lang.org/latest/html/gapi/groovy/transform/Immutable.html">@Immutable</a>を使うことで、
+GroovyのAST変換用いて<code>case class</code>っぽいクラスを作ることも出来ます。</p>
+
+<p>Akkaでは、<a href="http://doc.akka.io/docs/akka/current/general/actor-systems.html#actor-systems">ActorSystem</a>と呼ばれる<code>Supervisor</code>を使用して、
+アクターの階層構造を構築していきますが、GParsのActorにはありません。</p>
+
+<p>GParsの資料を色々探していたところ、 <a href="http://mariogarcia.github.io/gpars-workshop/#_supervising">6.2. Supervising</a>を見つけました。</p>
+
+<p>以下のコードを見る限り、頑張ればやれそうです。</p>
+
+<blockquote>
+<script src="https://gist.github.com/mariogarcia/a740f0b58f80f6a6d5f3.js"></script>
+</blockquote>
+
+<p>こうして見ると、AkkaのActorSystemは、かなり成熟しているので、理解することで巨人の肩に乗ることが出来ると思います。</p>
+
+<h2 id="終わりに">終わりに</h2>
+
+<p>駆け足でGParsのActorを紹介して見ましたが、いかがでしょうか。</p>
+
+<p>同じJVMで動くAkkaに比べて機能としては少ないかもしれませんが、ここで紹介した<code>DefaultActor</code>以外にも、
+より柔軟に条件が書ける<code>DynamicDispatchActor</code>や、<code>Actors</code>ヘルパークラスを使って簡単にactorを作れたり等、
+Actorモデルを理解するには十分な機能が揃っています。</p>
+
+<p>GPars自体は、Actorだけでなく、他にもSTMやCSPなど並行・並列処理に向いた機能を提供しています。</p>
+
+<p>Jetty等のコンテナを利用していると意識しなくても並行処理が利用できてしまいますが、
+並行・並列処理をより知りたくなった際には、GParsを使って理論の理解に役立ててください。</p>
+
+        </section>
+        <div class="hr"></div>
+        <div>
+            
+            
+            <div>
+              <i class="fa fa-arrow-right"></i>
+              <a class="next" href="http://grimrose.github.io/blog/2016/12/mbp-13-late-2016/"> MacBook Pro (13-inch, Late 2016, Two Thunderbolt 3 ports)とDELL P2715Q</a>
+            </div>
+            
+        </div>
+        <div class="hr"></div>
+<div class="post-share-buttons">
+    
+    <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon"
+       data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img
+            src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20"
+            height="20" style="border: none;"/></a>
+    <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8"
+            async="async"></script>
+    
+    <a class="tumblr-share-button" data-color="blue" data-notes="right" data-locale="ja_JP"
+       href="https://embed.tumblr.com/share"></a>
+    <script>!function (d, s, id) {
+        var js, ajs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://secure.assets.tumblr.com/share-button.js";
+            ajs.parentNode.insertBefore(js, ajs);
+        }
+    }(document, "script", "tumblr-js");</script>
+    
+    <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a>
+    <script>!function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = p + '://platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, 'script', 'twitter-wjs');</script>
+</div>
+
+    </article>
+</main>
+
+
+	<footer role="contentinfo">
+		<div class="hr"></div>
+		<div class="footer-link">
+			
+			<i class="fa fa-twitter-square">
+				<a href="https://twitter.com/grimrose" target="_blank">Twitter</a>
+			</i>
+			
+			
+			<i class="fa fa-github-alt">
+				<a href="https://github.com/grimrose/" target="_blank">GitHub</a>
+			</i>
+			
+		</div>
+		<div class="copyright">Copyright &copy; <a href="http://grimrose.github.io/">grimrose</a> All rights reserved.</div>
+	</footer>
+
+</div>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
+

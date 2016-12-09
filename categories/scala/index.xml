@@ -9,6 +9,168 @@
     <atom:link href="http://grimrose.github.io/blog/categories/scala/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>GParsのActorでアクターモデルに入門する</title>
+      <link>http://grimrose.github.io/blog/2016/12/gadvent-2016/</link>
+      <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2016/12/gadvent-2016/</guid>
+      <description>
+
+&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+
+&lt;p&gt;この記事は、&lt;a href=&#34;http://qiita.com/advent-calendar/2016/gastah&#34;&gt;G*Advent Calendar(Groovy,Grails,Gradle,Spock&amp;hellip;) Advent Calendar 2016&lt;/a&gt;の10日目のエントリです。&lt;/p&gt;
+
+&lt;p&gt;9日目 &amp;gt; &lt;a href=&#34;http://qiita.com/nobeans&#34;&gt;nobeans&lt;/a&gt;さんの&lt;a href=&#34;https://www.ntts.co.jp/column/nakano_blog/20161209/index.html&#34;&gt;GrailsでUnix/Linux的実行可能WARファイルをつくる&lt;/a&gt;です。&lt;/p&gt;
+
+&lt;p&gt;11日目 &amp;gt; &lt;a href=&#34;http://qiita.com/tyama&#34;&gt;tyama&lt;/a&gt;さんです。&lt;/p&gt;
+
+&lt;h2 id=&#34;gparsとは&#34;&gt;GParsとは&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.gpars.org/&#34;&gt;GPars&lt;/a&gt;は、GroovyとJavaで利用できる並行・並列処理を利用しやすくなるライブラリです。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/saba1024/items/29bc32f3390facbaa5c5&#34;&gt;[Groovy]GParsで並列処理（基本＆コレクション編）&lt;/a&gt;を見ていただくと、
+旧来のThreadや、java.util.concurrentをそのまま使うよりも並行処理が書きやすそうだと感じたのではないでしょうか。&lt;/p&gt;
+
+&lt;p&gt;GroovyがApacheに寄贈され、codehausが停止してしまったため、ソースコードやドキュメントがgithubに移管されています。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/GPars/GPars&#34;&gt;GPars/GPars&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;versionは、&lt;code&gt;1.2.1&lt;/code&gt;のままです。&lt;/p&gt;
+
+&lt;p&gt;ですので、Gradleで利用する際は、以下のように依存を追加すれば利用できるようになります。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-groovy&#34;&gt;// https://mvnrepository.com/artifact/org.codehaus.gpars/gpars
+compile group: &#39;org.codehaus.gpars&#39;, name: &#39;gpars&#39;, version: &#39;1.2.1&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;actorモデルについて&#34;&gt;Actorモデルについて&lt;/h2&gt;
+
+&lt;p&gt;アクターモデルについては、&lt;a href=&#34;https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AF%E3%82%BF%E3%83%BC%E3%83%A2%E3%83%87%E3%83%AB&#34;&gt;アクターモデル&lt;/a&gt;を見てください。&lt;/p&gt;
+
+&lt;p&gt;アクターモデルの実装されているもので代表的なものは、&lt;a href=&#34;http://www.erlang.org/&#34;&gt;Erlang&lt;/a&gt;と&lt;a href=&#34;http://akka.io/&#34;&gt;Akka&lt;/a&gt;が挙げられます。&lt;/p&gt;
+
+&lt;p&gt;この2つについては、もうエコシステムとも呼べるようなものになってしまっているので、アクターモデルだけを知ろうとすると、どこから手をつけていいのか分かりにくくなります。&lt;/p&gt;
+
+&lt;p&gt;そこで、GParsのActorを使ってアクターモデルの考え方を理解して行こうと思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;gparsのactor&#34;&gt;GParsのActor&lt;/h2&gt;
+
+&lt;p&gt;GParsのActorの&lt;a href=&#34;http://www.gpars.org/guide/guide/actors.html&#34;&gt;ドキュメント&lt;/a&gt;を見ると、Actorの作り方はとてもシンプルです。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-groovy&#34;&gt;import groovyx.gpars.actor.Actor
+
+def actor = Actors.actor {
+    loop {
+        react { msg -&amp;gt;
+            println &amp;quot;Received: $msg&amp;quot;
+        }
+    }
+}
+
+actor.send &#39;Hello, GPars!&#39;
+
+actor.join() // 停止するまで立ち上がったままにする。
+
+// 止めるときはCtrl-C or プロセスを落とす
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;いわゆる&lt;code&gt;PingPong&lt;/code&gt;をする場合はこんな感じです。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-groovy&#34;&gt;@Immutable
+class PingMessage {
+    String message
+}
+
+@Immutable
+class PongMessage {
+    String message
+}
+
+@Log
+class PongActor extends DefaultActor {
+    @Override
+    protected void act() {
+        loop {
+            react { msg -&amp;gt;
+                log.info &amp;quot;Pong Received: $msg&amp;quot;
+                switch (msg) {
+                    case PingMessage:
+                        reply new PongMessage(message: msg.message)
+                }
+            }
+        }
+    }
+}
+
+@Log
+class Main {
+    static void main(args) {
+        log.info(&amp;quot;start&amp;quot;)
+
+        def pingActor = Actors.actor {
+            loop {
+                react { msg -&amp;gt;
+                    log.info &amp;quot;Ping Received: $msg&amp;quot;
+                    switch (msg) {
+                        case String:
+                            reply new PingMessage(message: msg)
+                            break
+                        case PongMessage:
+                            terminate() // actorを停止させる
+                            break
+                    }
+                }
+            }
+        }
+
+        def pongActor = new PongActor().start()
+
+        pingActor.send &#39;Hello, GPars!&#39;, pongActor
+
+        // 1秒だけ待つ
+        [pingActor, pongActor]*.join(1, TimeUnit.SECONDS)
+
+        log.info(&amp;quot;end&amp;quot;)
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ちょっとAkkaのActorに似せるように書いて見ましたが、いかがでしょうか。&lt;/p&gt;
+
+&lt;p&gt;Groovyはswitch文の&lt;code&gt;case&lt;/code&gt;にクラスを指定することも出来るので、Scalaのパターンマッチっぽく見えます。&lt;/p&gt;
+
+&lt;p&gt;また、&lt;a href=&#34;http://docs.groovy-lang.org/latest/html/gapi/groovy/transform/Immutable.html&#34;&gt;@Immutable&lt;/a&gt;を使うことで、
+GroovyのAST変換用いて&lt;code&gt;case class&lt;/code&gt;っぽいクラスを作ることも出来ます。&lt;/p&gt;
+
+&lt;p&gt;Akkaでは、&lt;a href=&#34;http://doc.akka.io/docs/akka/current/general/actor-systems.html#actor-systems&#34;&gt;ActorSystem&lt;/a&gt;と呼ばれる&lt;code&gt;Supervisor&lt;/code&gt;を使用して、
+アクターの階層構造を構築していきますが、GParsのActorにはありません。&lt;/p&gt;
+
+&lt;p&gt;GParsの資料を色々探していたところ、 &lt;a href=&#34;http://mariogarcia.github.io/gpars-workshop/#_supervising&#34;&gt;6.2. Supervising&lt;/a&gt;を見つけました。&lt;/p&gt;
+
+&lt;p&gt;以下のコードを見る限り、頑張ればやれそうです。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;script src=&#34;https://gist.github.com/mariogarcia/a740f0b58f80f6a6d5f3.js&#34;&gt;&lt;/script&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;こうして見ると、AkkaのActorSystemは、かなり成熟しているので、理解することで巨人の肩に乗ることが出来ると思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;終わりに&#34;&gt;終わりに&lt;/h2&gt;
+
+&lt;p&gt;駆け足でGParsのActorを紹介して見ましたが、いかがでしょうか。&lt;/p&gt;
+
+&lt;p&gt;同じJVMで動くAkkaに比べて機能としては少ないかもしれませんが、ここで紹介した&lt;code&gt;DefaultActor&lt;/code&gt;以外にも、
+より柔軟に条件が書ける&lt;code&gt;DynamicDispatchActor&lt;/code&gt;や、&lt;code&gt;Actors&lt;/code&gt;ヘルパークラスを使って簡単にactorを作れたり等、
+Actorモデルを理解するには十分な機能が揃っています。&lt;/p&gt;
+
+&lt;p&gt;GPars自体は、Actorだけでなく、他にもSTMやCSPなど並行・並列処理に向いた機能を提供しています。&lt;/p&gt;
+
+&lt;p&gt;Jetty等のコンテナを利用していると意識しなくても並行処理が利用できてしまいますが、
+並行・並列処理をより知りたくなった際には、GParsを使って理論の理解に役立ててください。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Scala関西Summit 2016へ参加してきました #scala_ks</title>
       <link>http://grimrose.github.io/blog/2016/10/scalakansai2016/</link>
       <pubDate>Sun, 09 Oct 2016 00:00:00 +0000</pubDate>
