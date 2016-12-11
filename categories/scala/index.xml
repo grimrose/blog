@@ -9,6 +9,130 @@
     <atom:link href="http://grimrose.github.io/blog/categories/scala/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>ScalikeJDBCを使ってAmazon Athenaへアクセスしてみた</title>
+      <link>http://grimrose.github.io/blog/2016/12/scala-advent-calendar-2016/</link>
+      <pubDate>Sun, 11 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2016/12/scala-advent-calendar-2016/</guid>
+      <description>
+
+&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+
+&lt;p&gt;この記事は、&lt;a href=&#34;http://qiita.com/advent-calendar/2016/scala&#34;&gt;Scala Advent Calendar 2016&lt;/a&gt;の11日目のエントリです。&lt;/p&gt;
+
+&lt;p&gt;9日目 &amp;gt; &lt;a href=&#34;http://qiita.com/ponkotuy&#34;&gt;ponkotuy&lt;/a&gt;さんの&lt;a href=&#34;http://qiita.com/ponkotuy/items/7a293436c68ebfca0472&#34;&gt;SkinnyORMのjoin定義について&lt;/a&gt;です。&lt;/p&gt;
+
+&lt;p&gt;11日目 &amp;gt; &lt;a href=&#34;http://qiita.com/aoiroaoino&#34;&gt;aoiroaoino&lt;/a&gt;さんです。&lt;/p&gt;
+
+&lt;h2 id=&#34;scalikejdbcについて&#34;&gt;ScalikeJDBCについて&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://scalikejdbc.org/&#34;&gt;ScalikeJDBC&lt;/a&gt;は、SQLを使ってDBにアクセスしたい場合にとても使いやすいライブラリです。&lt;/p&gt;
+
+&lt;h2 id=&#34;amazon-athenaについて&#34;&gt;Amazon Athenaについて&lt;/h2&gt;
+
+&lt;p&gt;AWS re:Invent 2016で発表された新しいサービスです。&lt;/p&gt;
+
+&lt;p&gt;詳細については、
+&lt;a href=&#34;https://aws.amazon.com/jp/blogs/news/amazon-athena-interactive-sql-queries-for-data-in-amazon-s3/&#34;&gt;Amazon Athena – Amazon S3上のデータに対話的にSQLクエリを&lt;/a&gt;
+や、&lt;a href=&#34;http://dev.classmethod.jp/cloud/aws/amazon-athena-accessing-amazon-athena-with-jdbc/&#34;&gt;AthenaのJDBCドライバを使ってS3のデータにSQL Workbench経由でアクセスする #reinvent #athena&lt;/a&gt;
+を見ていただければと思います。&lt;/p&gt;
+
+&lt;p&gt;S3に保存したデータに対してスキーマを定義してSQLでアクセスできるようになるのは、今後の自分の仕事にもつながってくるサービスでもあるので注目しています。&lt;/p&gt;
+
+&lt;h2 id=&#34;アクセスしてみた&#34;&gt;アクセスしてみた&lt;/h2&gt;
+
+&lt;p&gt;検証したサンプルコードはこちらです。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/grimrose/Scala-Advent-Calendar-2016&#34;&gt;grimrose/Scala-Advent-Calendar-2016&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;まずはじめに遭遇したのは、&lt;code&gt;auto commit&lt;/code&gt;が常にONにするのが想定されているということでした。&lt;/p&gt;
+
+&lt;p&gt;遭遇した例外は、以下のような内容でした。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Exception encountered when invoking run on a nested suite - Failed to initialize pool: Disabling auto-commit mode not supported
+com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Disabling auto-commit mode not supported
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;仕方ないので、以下のようにして、&lt;code&gt;auto commit&lt;/code&gt;を&lt;code&gt;true&lt;/code&gt;へ変えました。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;val config = new HikariConfig()
+config.setAutoCommit(true)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;例えば、ScalikeJDBCでは、読み取り専用のクエリを書きたい場合は、以下のようなコードを書きます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;// サンプルのため敢えて文字列で
+val from = &amp;quot;2014-07-05&amp;quot;
+val to = &amp;quot;2014-07-05&amp;quot;
+
+val results = DB readOnly { implicit session: DBSession =&amp;gt;
+  sql&amp;quot;SELECT os, COUNT(*) count FROM cloudfront_logs WHERE date BETWEEN date ${from} AND date ${to} GROUP BY os&amp;quot;
+    .map { rs =&amp;gt; (rs.string(&amp;quot;os&amp;quot;), rs.int(&amp;quot;count&amp;quot;)) }
+    .list().apply()
+}
+results.foreach(println)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;しかしながら、これを実行すると以下のような例外が発生します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Method Connection.prepareStatement is not yet implemented
+com.amazonaws.athena.jdbc.NotImplementedException: Method Connection.prepareStatement is not yet implemented
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;そう、&lt;code&gt;PreparedStatement&lt;/code&gt;が実装されていないのです。&lt;/p&gt;
+
+&lt;p&gt;仕方ないので、JDBCのナマの&lt;code&gt;Statement&lt;/code&gt;を生成する必要があります。&lt;/p&gt;
+
+&lt;p&gt;最終的に以下のようなコードにすることで、ようやく通るようになりました。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;using(ConnectionPool.borrow()) { conn ⇒
+  using(conn.createStatement()) { stmt ⇒
+    // language=SQL
+    val sql =
+        &amp;quot;&amp;quot;&amp;quot;
+        SELECT 
+            os, 
+            COUNT(*) AS count 
+        FROM mydatabase.cloudfront_logs 
+        WHERE date BETWEEN date &#39;2014-07-05&#39; AND date &#39;2014-08-05&#39; 
+        GROUP BY os
+        &amp;quot;&amp;quot;&amp;quot;.stripMargin
+    // ResultSetは、Statementのclose時にcloseされる
+    val rs = stmt.executeQuery(sql)
+
+    def resultSetToSeq[A](rs: ResultSet)(fn: ResultSet ⇒ A): Seq[A] = {
+      Iterator.continually(rs).takeWhile(_.next()).map(fn).toSeq
+    }
+
+    val result = resultSetToSeq(rs) { rs ⇒
+      val os = rs.getString(&amp;quot;os&amp;quot;)
+      val count = rs.getInt(&amp;quot;count&amp;quot;)
+      (os, count)
+    }
+    result.foreach(println)
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;久しぶりにナマのJDBCを触りましたが、過去の記憶を呼び覚まされて頭がウッとなりました。&lt;/p&gt;
+
+&lt;p&gt;あと、closeし忘れが無いか確認してましたが、&lt;code&gt;ResultSet&lt;/code&gt;は&lt;code&gt;Statement&lt;/code&gt;がcloseされるときにcloseされるのも、
+指摘いただいて改めて認識しました。&lt;/p&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;JDBC Driverが提供されているとはいえ、まだいろいろ実装されていない箇所が見受けられたりなど、これからの部分が多いと思いました。&lt;/p&gt;
+
+&lt;p&gt;しかしながら、サービス提供開始時にここまでのものをリリースするのはさすがだと感じました。&lt;/p&gt;
+
+&lt;p&gt;とはいえ、Maven Centralにも無い状況では、ワークフローへ組み込むのは時期尚早だと思います。&lt;/p&gt;
+
+&lt;p&gt;結果はS3にcsvの形式で出力されますし、ナマとはいえJDBCを使えるので、&lt;code&gt;embulk&lt;/code&gt;も使えるのではないかと思いますので、
+今後も期待できるサービスになるのではないかと思います。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>GParsのActorでアクターモデルに入門する</title>
       <link>http://grimrose.github.io/blog/2016/12/gadvent-2016/</link>
       <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>

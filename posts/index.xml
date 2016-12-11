@@ -6,8 +6,132 @@
     <description>Recent content in Posts-rsses on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 10 Dec 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 11 Dec 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://grimrose.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ScalikeJDBCを使ってAmazon Athenaへアクセスしてみた</title>
+      <link>http://grimrose.github.io/blog/2016/12/scala-advent-calendar-2016/</link>
+      <pubDate>Sun, 11 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2016/12/scala-advent-calendar-2016/</guid>
+      <description>
+
+&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+
+&lt;p&gt;この記事は、&lt;a href=&#34;http://qiita.com/advent-calendar/2016/scala&#34;&gt;Scala Advent Calendar 2016&lt;/a&gt;の11日目のエントリです。&lt;/p&gt;
+
+&lt;p&gt;9日目 &amp;gt; &lt;a href=&#34;http://qiita.com/ponkotuy&#34;&gt;ponkotuy&lt;/a&gt;さんの&lt;a href=&#34;http://qiita.com/ponkotuy/items/7a293436c68ebfca0472&#34;&gt;SkinnyORMのjoin定義について&lt;/a&gt;です。&lt;/p&gt;
+
+&lt;p&gt;11日目 &amp;gt; &lt;a href=&#34;http://qiita.com/aoiroaoino&#34;&gt;aoiroaoino&lt;/a&gt;さんです。&lt;/p&gt;
+
+&lt;h2 id=&#34;scalikejdbcについて&#34;&gt;ScalikeJDBCについて&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://scalikejdbc.org/&#34;&gt;ScalikeJDBC&lt;/a&gt;は、SQLを使ってDBにアクセスしたい場合にとても使いやすいライブラリです。&lt;/p&gt;
+
+&lt;h2 id=&#34;amazon-athenaについて&#34;&gt;Amazon Athenaについて&lt;/h2&gt;
+
+&lt;p&gt;AWS re:Invent 2016で発表された新しいサービスです。&lt;/p&gt;
+
+&lt;p&gt;詳細については、
+&lt;a href=&#34;https://aws.amazon.com/jp/blogs/news/amazon-athena-interactive-sql-queries-for-data-in-amazon-s3/&#34;&gt;Amazon Athena – Amazon S3上のデータに対話的にSQLクエリを&lt;/a&gt;
+や、&lt;a href=&#34;http://dev.classmethod.jp/cloud/aws/amazon-athena-accessing-amazon-athena-with-jdbc/&#34;&gt;AthenaのJDBCドライバを使ってS3のデータにSQL Workbench経由でアクセスする #reinvent #athena&lt;/a&gt;
+を見ていただければと思います。&lt;/p&gt;
+
+&lt;p&gt;S3に保存したデータに対してスキーマを定義してSQLでアクセスできるようになるのは、今後の自分の仕事にもつながってくるサービスでもあるので注目しています。&lt;/p&gt;
+
+&lt;h2 id=&#34;アクセスしてみた&#34;&gt;アクセスしてみた&lt;/h2&gt;
+
+&lt;p&gt;検証したサンプルコードはこちらです。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/grimrose/Scala-Advent-Calendar-2016&#34;&gt;grimrose/Scala-Advent-Calendar-2016&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;まずはじめに遭遇したのは、&lt;code&gt;auto commit&lt;/code&gt;が常にONにするのが想定されているということでした。&lt;/p&gt;
+
+&lt;p&gt;遭遇した例外は、以下のような内容でした。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Exception encountered when invoking run on a nested suite - Failed to initialize pool: Disabling auto-commit mode not supported
+com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Disabling auto-commit mode not supported
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;仕方ないので、以下のようにして、&lt;code&gt;auto commit&lt;/code&gt;を&lt;code&gt;true&lt;/code&gt;へ変えました。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;val config = new HikariConfig()
+config.setAutoCommit(true)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;例えば、ScalikeJDBCでは、読み取り専用のクエリを書きたい場合は、以下のようなコードを書きます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;// サンプルのため敢えて文字列で
+val from = &amp;quot;2014-07-05&amp;quot;
+val to = &amp;quot;2014-07-05&amp;quot;
+
+val results = DB readOnly { implicit session: DBSession =&amp;gt;
+  sql&amp;quot;SELECT os, COUNT(*) count FROM cloudfront_logs WHERE date BETWEEN date ${from} AND date ${to} GROUP BY os&amp;quot;
+    .map { rs =&amp;gt; (rs.string(&amp;quot;os&amp;quot;), rs.int(&amp;quot;count&amp;quot;)) }
+    .list().apply()
+}
+results.foreach(println)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;しかしながら、これを実行すると以下のような例外が発生します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Method Connection.prepareStatement is not yet implemented
+com.amazonaws.athena.jdbc.NotImplementedException: Method Connection.prepareStatement is not yet implemented
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;そう、&lt;code&gt;PreparedStatement&lt;/code&gt;が実装されていないのです。&lt;/p&gt;
+
+&lt;p&gt;仕方ないので、JDBCのナマの&lt;code&gt;Statement&lt;/code&gt;を生成する必要があります。&lt;/p&gt;
+
+&lt;p&gt;最終的に以下のようなコードにすることで、ようやく通るようになりました。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;using(ConnectionPool.borrow()) { conn ⇒
+  using(conn.createStatement()) { stmt ⇒
+    // language=SQL
+    val sql =
+        &amp;quot;&amp;quot;&amp;quot;
+        SELECT 
+            os, 
+            COUNT(*) AS count 
+        FROM mydatabase.cloudfront_logs 
+        WHERE date BETWEEN date &#39;2014-07-05&#39; AND date &#39;2014-08-05&#39; 
+        GROUP BY os
+        &amp;quot;&amp;quot;&amp;quot;.stripMargin
+    // ResultSetは、Statementのclose時にcloseされる
+    val rs = stmt.executeQuery(sql)
+
+    def resultSetToSeq[A](rs: ResultSet)(fn: ResultSet ⇒ A): Seq[A] = {
+      Iterator.continually(rs).takeWhile(_.next()).map(fn).toSeq
+    }
+
+    val result = resultSetToSeq(rs) { rs ⇒
+      val os = rs.getString(&amp;quot;os&amp;quot;)
+      val count = rs.getInt(&amp;quot;count&amp;quot;)
+      (os, count)
+    }
+    result.foreach(println)
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;久しぶりにナマのJDBCを触りましたが、過去の記憶を呼び覚まされて頭がウッとなりました。&lt;/p&gt;
+
+&lt;p&gt;あと、closeし忘れが無いか確認してましたが、&lt;code&gt;ResultSet&lt;/code&gt;は&lt;code&gt;Statement&lt;/code&gt;がcloseされるときにcloseされるのも、
+指摘いただいて改めて認識しました。&lt;/p&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;JDBC Driverが提供されているとはいえ、まだいろいろ実装されていない箇所が見受けられたりなど、これからの部分が多いと思いました。&lt;/p&gt;
+
+&lt;p&gt;しかしながら、サービス提供開始時にここまでのものをリリースするのはさすがだと感じました。&lt;/p&gt;
+
+&lt;p&gt;とはいえ、Maven Centralにも無い状況では、ワークフローへ組み込むのは時期尚早だと思います。&lt;/p&gt;
+
+&lt;p&gt;結果はS3にcsvの形式で出力されますし、ナマとはいえJDBCを使えるので、&lt;code&gt;embulk&lt;/code&gt;も使えるのではないかと思いますので、
+今後も期待できるサービスになるのではないかと思います。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>GParsのActorでアクターモデルに入門する</title>
@@ -1045,65 +1169,6 @@ Node.jsのライブラリがそのままWebアプリケーションから呼び�
 &lt;p&gt;また、持続可能な開発体制が必要になってきているので、Scrumに関する勉強も本格的に始めてみようかと考えてます。&lt;/p&gt;
 
 &lt;p&gt;引き続き、新しいことに挑戦しつつ、日々の業務を止めないように気を引き締めて開発していきたいと思います。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>JJUG CCC 2015 Fallに参加してきました #jjug_ccc</title>
-      <link>http://grimrose.github.io/blog/2015/11/jjug-ccc-2015/</link>
-      <pubDate>Mon, 30 Nov 2015 00:00:00 +0900</pubDate>
-      
-      <guid>http://grimrose.github.io/blog/2015/11/jjug-ccc-2015/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2056&#34;&gt;http://www.java-users.jp/?page_id=2056&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;セッション&#34;&gt;セッション&lt;/h2&gt;
-
-&lt;p&gt;今回は、以下のセッションを選択しました。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2064#keynote-1&#34;&gt;keynote-1 基調講演1: 「Javaは守りに入らない、これが今のJavaだ」&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2064#keynote-2&#34;&gt;keynote-2 基調講演2: Java EE 8 – Work in Progress&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2064#AB1&#34;&gt;AB-1「jOOQ と Flyway で立ち向かう、自社サービスの保守運用」(仮)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2064#EF-2&#34;&gt;EF-2 How to speed up your application using JCache[通訳あり]&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2064#EF-3&#34;&gt;EF-3 Reactive Webアプリケーション – そしてSpring 5へ&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2064#EF-4&#34;&gt;EF-4 ソラコムでのJava/AWS活用 – SIM管理やAWS Lambda Javaなど –&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2064#AB-5&#34;&gt;AB-5 Javaエンジニアに知ってほしい PostgreSQLアンチパターン&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2064#GH-6&#34;&gt;GH-6 Java8 Stream APIとApache SparkとAsakusa Frameworkの類似点・相違点&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2064#GH-7&#34;&gt;GH-7 てらだよしおの赤裸々タイム&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;今回のタイムテーブルを見たら、どのセッションを見たら良いのか迷ってしまうくらい素晴らしい講演者の方々でした。
-選んだ幹事の人達も苦労されたと思います。&lt;/p&gt;
-
-&lt;p&gt;この1年、素のJavaを書くことは無くなってしまったので、選択も運用やDB等言語としてのJava以外を中心とした内容になりました。&lt;/p&gt;
-
-&lt;p&gt;どのセッションも面白かったですが、てらださんが楽しそうに活動をされている話を聞けたのが、一番印象的でした。&lt;/p&gt;
-
-&lt;p&gt;さらに懇親会や帰り道でいろいろな人とお話が出来て、その中でいろいろ解決手段などを教えていただくことが出来ました。
-ありがとうございました。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;ja&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;懇親会と帰宅までの間が一番実りがある話が聞けた。&amp;#10;これがあるから止められない。&lt;/p&gt;&amp;mdash; とーます (@grimrose) &lt;a href=&#34;https://twitter.com/grimrose/status/670607861941047297&#34;&gt;2015, 11月 28&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
-
-&lt;p&gt;今回もYokohama.groovyの宣伝も兼ねたLTをしてきました。&lt;/p&gt;
-
-&lt;p&gt;pythonの勉強に使っている&lt;a href=&#34;http://jupyter.org/&#34;&gt;jupyter&lt;/a&gt;を使って、スライドを作りました。&lt;/p&gt;
-
-&lt;p&gt;Markdownでwebブラウザで再生出来るスライドに出来るので、こういう時には結構使えますね。&lt;/p&gt;
-
-&lt;p&gt;予定としては、&lt;a href=&#34;http://shop.oreilly.com/product/0636920038597.do&#34;&gt;Spock: Up and Running Writing Expressive Tests in Java and Groovy&lt;/a&gt;が出版され次第、読書会をやろうと思っています。&lt;/p&gt;
-
-&lt;p&gt;Early Releaseの内容を見る限り、難しかったり特定のコンテキストが必要な英語では無かったので、多分大丈夫だと思います。&lt;/p&gt;
-
-&lt;p&gt;また、来年の春に開催されると思いますが、引き続き楽しみにしています。&lt;/p&gt;
-
-&lt;p&gt;JJUGの幹事、スポンサーの皆様、ありがとうございました。&lt;/p&gt;
 </description>
     </item>
     
