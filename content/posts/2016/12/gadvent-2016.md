@@ -14,7 +14,7 @@ title = "GParsのActorでアクターモデルに入門する"
 
 9日目 > [nobeans](http://qiita.com/nobeans)さんの[GrailsでUnix/Linux的実行可能WARファイルをつくる](https://www.ntts.co.jp/column/nakano_blog/20161209/index.html)です。
 
-11日目 > [tyama](http://qiita.com/tyama)さんです。
+11日目 > [tyama](http://qiita.com/tyama)さんの[GrailsでServer Sent Eventsを送信！(意訳版)](http://grails.jp/guide/server-sent-events/guide/index.html)です。
 
 
 ## GParsとは
