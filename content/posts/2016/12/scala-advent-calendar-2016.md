@@ -14,7 +14,7 @@ title = "ScalikeJDBCを使ってAmazon Athenaへアクセスしてみた"
 
 9日目 > [ponkotuy](http://qiita.com/ponkotuy)さんの[SkinnyORMのjoin定義について](http://qiita.com/ponkotuy/items/7a293436c68ebfca0472)です。
 
-11日目 > [aoiroaoino](http://qiita.com/aoiroaoino)さんです。
+11日目 > [aoiroaoino](http://qiita.com/aoiroaoino)さんの[Scala関西 Summit 2016 で Lens/Prism について発表してきた](http://aoino.hatenablog.com/entry/2016/12/13/034121)です。
 
 ## ScalikeJDBCについて
 
