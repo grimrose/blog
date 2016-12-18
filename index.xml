@@ -6,8 +6,68 @@
     <description>Recent content on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 11 Dec 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Dec 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://grimrose.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Mithril.jsをTypescript2.xで書いてみよう</title>
+      <link>http://grimrose.github.io/blog/2016/12/mithril/</link>
+      <pubDate>Sun, 18 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2016/12/mithril/</guid>
+      <description>
+
+&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+
+&lt;p&gt;この記事は、&lt;a href=&#34;http://qiita.com/advent-calendar/2016/mithriljs&#34;&gt;Mithril.js Advent Calendar 2016&lt;/a&gt;の18日目のエントリです。&lt;/p&gt;
+
+&lt;p&gt;17日目 &amp;gt; &lt;a href=&#34;http://qiita.com/shibukawa&#34;&gt;shibukawa&lt;/a&gt;さんの&lt;a href=&#34;http://qiita.com/shibukawa/items/10f19a4fa861e76ae9b9&#34;&gt;Mithrilで自動補完つきテキストを作る(2)&lt;/a&gt;です。&lt;/p&gt;
+
+&lt;p&gt;19日目 &amp;gt; &lt;a href=&#34;http://qiita.com/shibukawa&#34;&gt;shibukawa&lt;/a&gt;さんです。&lt;/p&gt;
+
+&lt;h2 id=&#34;type-mithriljs&#34;&gt;@type/mithriljs&lt;/h2&gt;
+
+&lt;p&gt;Mithril.jsでTypeScriptを使う場合、以前であれば、&lt;a href=&#34;https://github.com/typings/typings&#34;&gt;typings&lt;/a&gt;で型定義ファイルを取得する必要がありましたが、
+TypeScript2.0からは、npmの&lt;a href=&#34;https://www.npmjs.com/package/@types/mithril&#34;&gt;@types/mithril&lt;/a&gt;で取得できるようになりましたので、&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;npm install @types/mithril -D
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;で、他の依存と同じように管理できるようになったことでだいぶ楽になりました。&lt;/p&gt;
+
+&lt;h2 id=&#34;書いてみた&#34;&gt;書いてみた&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/grimrose/grimrose.github.io&#34;&gt;grimrose/grimrose.github.io&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;以前から書いていたのを、今回のエントリを書くにあたり、いろいろ機能追加やバージョンアップをしました。&lt;/p&gt;
+
+&lt;p&gt;Mithril.jsでTypeScriptを使うときの特徴としては、やはり型の制約が出てくるところです。&lt;/p&gt;
+
+&lt;p&gt;特に&lt;code&gt;m.request&lt;/code&gt;で返ってくるのが、&lt;code&gt;Mithril.Promise&amp;lt;any&amp;gt;&lt;/code&gt;になるので、そのままではTypeScriptの世界に&lt;code&gt;any&lt;/code&gt;をばらまいてしまうので、
+クラスを用意しマッピングする必要があります。
+さらに、JavaScriptでは使えていた&lt;code&gt;map&lt;/code&gt;などのメソッドが使えないので、&lt;code&gt;m.deferred&lt;/code&gt;を駆使して、Promiseの世界でやりとりする必要があります。&lt;/p&gt;
+
+&lt;p&gt;また、&lt;code&gt;Component&lt;/code&gt;が&lt;code&gt;Controller&lt;/code&gt;を要求するので、クラスを作るかinterfaceをキャストしてあげる必要があります。&lt;/p&gt;
+
+&lt;p&gt;その他にも、いろいろと型を合わせる必要が出てくるので、ひたすらTypeScript compilerの指摘を受けつつ試行錯誤することになると思います。&lt;/p&gt;
+
+&lt;p&gt;新しくTypeScript 2.0で使えるようになった機能は、今後勉強も兼ねて書き直していければと思ってます。&lt;/p&gt;
+
+&lt;p&gt;いろいろ依存関係をバージョンアップする関係で、&lt;a href=&#34;https://yarnpkg.com/&#34;&gt;yarnpkg&lt;/a&gt;で依存管理をするようにしました。
+デプロイには、CircleCIを利用していますので&lt;a href=&#34;http://blog.stormcat.io/entry/circleci-npm-yarn&#34;&gt;CircleCIでyarnを使う&lt;/a&gt;を参考にさせていただきました。&lt;/p&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;普段の業務では、AngularJS + TypeScriptをメインで書くことが多いのですが、
+やはり覚えることが多いのと、JavaScriptが前提になっている記事やコードをTypeScriptへ変換するにはどうしたら良いのかを考える必要が出てきてしまうので、
+学習に時間がかかりますね。&lt;/p&gt;
+
+&lt;p&gt;その点、Mithril.jsははじめに覚えるAPIの少なさと、そこから深く学ぶには何が必要なのかが全て公式に揃っているのが、とてもありがたいです。
+特に&lt;a href=&#34;http://mithril-ja.js.org/index.html&#34;&gt;日本語のサイト&lt;/a&gt;が、公式に追従してくださっているお陰で、敷居がだいぶ下がっていると思います。&lt;/p&gt;
+
+&lt;p&gt;次の1.xはより洗練されたものになると思いますので、とても楽しみです。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>ScalikeJDBCを使ってAmazon Athenaへアクセスしてみた</title>
@@ -1111,64 +1171,6 @@ Node.jsのライブラリがそのままWebアプリケーションから呼び�
 &lt;p&gt;LTの猛者でまだあの場所でLTをされてない方は、一度でもいいので体験してもらいたいと思いました。&lt;/p&gt;
 
 &lt;p&gt;次回は、&lt;a href=&#34;https://gbdaitokai.doorkeeper.jp/events/35265&#34;&gt;座駆動LT大会20160220&lt;/a&gt;らしいので、是非参加してみてはいかがでしょうか？&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>転職して１年が経ちました。</title>
-      <link>http://grimrose.github.io/blog/2015/12/career-change/</link>
-      <pubDate>Tue, 01 Dec 2015 00:00:00 +0900</pubDate>
-      
-      <guid>http://grimrose.github.io/blog/2015/12/career-change/</guid>
-      <description>
-
-&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
-
-&lt;p&gt;2014年12月に転職してから1年経ったので、振り返ってみます。&lt;/p&gt;
-
-&lt;p&gt;半年前は&lt;a href=&#34;http://grimrose.github.io/blog/2015/06/career-change&#34;&gt;こちら&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;引き続き、データ分析チームのエンジニアとして働いてます。&lt;/p&gt;
-
-&lt;p&gt;開発言語もPHP, Angular, TypeScriptに加え、Scalaも使うようになりました。&lt;/p&gt;
-
-&lt;p&gt;Scalaの導入については、別の機会に書ければと思ってます。&lt;/p&gt;
-
-&lt;h2 id=&#34;これまでやってきたこと&#34;&gt;これまでやってきたこと&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;社内BIの開発チームのリーダーを任されるようになった。&lt;/li&gt;
-&lt;li&gt;バッチ処理の一部をScalaに置き換えた。&lt;/li&gt;
-&lt;li&gt;electronを導入して、VBAでやっていたのを置き換えできないか検証してた。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;フロントエンドからクラウド上での環境構築まで、自分たちで出来ることはほぼ全てやっている状況です。&lt;/p&gt;
-
-&lt;p&gt;全部自分たちでやるのが正しいかと言われると、考えさせられる部分があります。&lt;/p&gt;
-
-&lt;p&gt;とはいえ、エンジニアとしては流行りのプロダクトや手法は触っておきたいですし、スキルも得たいとも思います。&lt;/p&gt;
-
-&lt;p&gt;そこは、導入までのプレゼンで説明が必要ですし、継続的にリリースをして信頼貯金を得る必要が出てきます。&lt;/p&gt;
-
-&lt;p&gt;この1年間地道に機能をリリースしたことで、部署の中で自分が何が出来てどういったスキルを持っているのかを認知してもらうことが出来ました。&lt;/p&gt;
-
-&lt;h2 id=&#34;これからやってみたいこと&#34;&gt;これからやってみたいこと&lt;/h2&gt;
-
-&lt;p&gt;次の1年でやりたいことは、以下の内容をやってみたいと思ってます。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Akka Streamsの導入&lt;/li&gt;
-&lt;li&gt;Kubernetesを用いたDocker Clusterの導入&lt;/li&gt;
-&lt;li&gt;electronを使った業務アプリの継続的開発&lt;/li&gt;
-&lt;li&gt;pythonを使ったシステムの構築及び運用&lt;/li&gt;
-&lt;li&gt;In-memory Data Gridを活用した機能の検証&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;全部が出来るとは思ってはいませんが挑戦できる環境ではあるので、準備を怠らずいつでも始められるようにしたいと思います。&lt;/p&gt;
-
-&lt;p&gt;また、持続可能な開発体制が必要になってきているので、Scrumに関する勉強も本格的に始めてみようかと考えてます。&lt;/p&gt;
-
-&lt;p&gt;引き続き、新しいことに挑戦しつつ、日々の業務を止めないように気を引き締めて開発していきたいと思います。&lt;/p&gt;
 </description>
     </item>
     
