@@ -12,9 +12,9 @@ title = "ScalikeJDBCを使ってAmazon Athenaへアクセスしてみた"
 
 この記事は、[Scala Advent Calendar 2016](http://qiita.com/advent-calendar/2016/scala)の11日目のエントリです。
 
-9日目 > [ponkotuy](http://qiita.com/ponkotuy)さんの[SkinnyORMのjoin定義について](http://qiita.com/ponkotuy/items/7a293436c68ebfca0472)です。
+10日目 > [ponkotuy](http://qiita.com/ponkotuy)さんの[SkinnyORMのjoin定義について](http://qiita.com/ponkotuy/items/7a293436c68ebfca0472)です。
 
-11日目 > [aoiroaoino](http://qiita.com/aoiroaoino)さんの[Scala関西 Summit 2016 で Lens/Prism について発表してきた](http://aoino.hatenablog.com/entry/2016/12/13/034121)です。
+12日目 > [aoiroaoino](http://qiita.com/aoiroaoino)さんの[Scala関西 Summit 2016 で Lens/Prism について発表してきた](http://aoino.hatenablog.com/entry/2016/12/13/034121)です。
 
 ## ScalikeJDBCについて
 
