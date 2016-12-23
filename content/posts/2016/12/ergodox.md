@@ -1,10 +1,10 @@
 +++
-categories = ["Blog", "Life", "Ergodox"]
+categories = ["Blog", "Life", "ErgoDox"]
 date = "2016-12-23T00:00:00Z"
 description = "Ergodox key cap"
 draft = false
 slug = "ergodox"
-title = "Ergodoxのキーキャップを注文してみました"
+title = "ErgoDoxのキーキャップを注文してみました"
 
 +++
 
