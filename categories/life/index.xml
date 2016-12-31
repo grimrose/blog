@@ -1,12 +1,75 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>open build/reports/life/index.html</title>
+    <title>Life on open build/reports/life/index.html</title>
     <link>http://grimrose.github.io/blog/categories/life/index.xml</link>
-    <description>Recent content on open build/reports/life/index.html</description>
+    <description>Recent content in Life on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <atom:link href="http://grimrose.github.io/blog/categories/life/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2016年の振り返り</title>
+      <link>http://grimrose.github.io/blog/2016/12/retrospect/</link>
+      <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2016/12/retrospect/</guid>
+      <description>
+
+&lt;h2 id=&#34;2016年の振り返り&#34;&gt;2016年の振り返り&lt;/h2&gt;
+
+&lt;p&gt;今年も大晦日になったので、振り返ってみたいと思います。&lt;/p&gt;
+
+&lt;p&gt;2015年の振り返りは、&lt;a href=&#34;../../../2015/12/retrospect-2015/&#34;&gt;こちら&lt;/a&gt;でした。&lt;/p&gt;
+
+&lt;h2 id=&#34;やってみたかったことの振り返り&#34;&gt;やってみたかったことの振り返り&lt;/h2&gt;
+
+&lt;p&gt;また、2016年にやってみたかったことは&lt;a href=&#34;../../../2015/12/career-change/&#34;&gt;転職して１年が経ちました。&lt;/a&gt;に以下のように書いてました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Akka Streamの導入&lt;/li&gt;
+&lt;li&gt;Kubernetesを用いたDocker Clusterの導入&lt;/li&gt;
+&lt;li&gt;electronを使った業務アプリの継続的開発&lt;/li&gt;
+&lt;li&gt;pythonを使ったシステムの構築及び運用&lt;/li&gt;
+&lt;li&gt;In-memory Data Gridを活用した機能の検証&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Akka Streamは、ScalaMatsuri 2016から、Akkaにまつわる読書会や勉強会に参加するようになってから、
+プロジェクトに導入するために必要な知識や考え方等を学んできて、12月からようやく導入に踏み切りました。&lt;/p&gt;
+
+&lt;p&gt;Kubernetesについては、本格導入に向けて試験的に検証運用をしていますが、マネージドではなく自分たちで運用するとなると、
+バージョンアップについていくのがとても大変でした。&lt;/p&gt;
+
+&lt;p&gt;electronを使った業務アプリについては、Excel VBAを代替するには大げさすぎる規模の案件が多かったため、なかなか出来ませんでした。&lt;/p&gt;
+
+&lt;p&gt;pythonを使ったシステムの構築及び運用については、全く出来なかったので、今年のPyconJP2016で知った&lt;a href=&#34;http://errbot.io/en/latest/&#34;&gt;errbot&lt;/a&gt;を使ったbot運用をやってみたいと思います。&lt;/p&gt;
+
+&lt;p&gt;In-memory Data Gridのプロダクトとして&lt;a href=&#34;https://hazelcast.org/&#34;&gt;hazelcast&lt;/a&gt;を使ってみましたが、
+今使っている規模だとなかなかClusterが必要な規模で検証することが出来ませんでした。&lt;/p&gt;
+
+&lt;p&gt;やってみたかったことのほとんどについて、なんらかの形で動かすことが出来たのでとても充実してました。&lt;/p&gt;
+
+&lt;h2 id=&#34;2017年やりたいこと&#34;&gt;2017年やりたいこと&lt;/h2&gt;
+
+&lt;p&gt;2017年でやってみたいこととしては、以下のことをやってみたいと思っています。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Akkaを使ったシステムへのマイグレーション&lt;/li&gt;
+&lt;li&gt;AWSを活用した運用環境&lt;/li&gt;
+&lt;li&gt;pythonを使ったシステムの構築及び運用(引き続き)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;既存のScalaで作ってたプロダクトを徐々にAkka、Akka Streamを使ったものに変えていこうと思っています。
+そのためにもチームのメンバーにAkkaを使った開発について教育や共有を出来るようにしていければと考えてます。&lt;/p&gt;
+
+&lt;p&gt;AWSについては、ようやく本格的に利用できるようになったので、これまで自前で運用していたものをマネージドなサービスに移行したり、
+利用したいと思っていたサービスを使うことが出来るようになりました。&lt;/p&gt;
+
+&lt;p&gt;チームとして動きやすくするための環境を整えることが多くなると思いますが、新しいことに挑戦したり、やりたいことが出来る環境は引き続き維持したいと思います。&lt;/p&gt;
+
+&lt;p&gt;2017年もよろしくお願いします。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>ErgoDoxのキーキャップを注文してみました</title>

@@ -6,8 +6,71 @@
     <description>Recent content on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 23 Dec 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Dec 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://grimrose.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2016年の振り返り</title>
+      <link>http://grimrose.github.io/blog/2016/12/retrospect/</link>
+      <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2016/12/retrospect/</guid>
+      <description>
+
+&lt;h2 id=&#34;2016年の振り返り&#34;&gt;2016年の振り返り&lt;/h2&gt;
+
+&lt;p&gt;今年も大晦日になったので、振り返ってみたいと思います。&lt;/p&gt;
+
+&lt;p&gt;2015年の振り返りは、&lt;a href=&#34;../../../2015/12/retrospect-2015/&#34;&gt;こちら&lt;/a&gt;でした。&lt;/p&gt;
+
+&lt;h2 id=&#34;やってみたかったことの振り返り&#34;&gt;やってみたかったことの振り返り&lt;/h2&gt;
+
+&lt;p&gt;また、2016年にやってみたかったことは&lt;a href=&#34;../../../2015/12/career-change/&#34;&gt;転職して１年が経ちました。&lt;/a&gt;に以下のように書いてました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Akka Streamの導入&lt;/li&gt;
+&lt;li&gt;Kubernetesを用いたDocker Clusterの導入&lt;/li&gt;
+&lt;li&gt;electronを使った業務アプリの継続的開発&lt;/li&gt;
+&lt;li&gt;pythonを使ったシステムの構築及び運用&lt;/li&gt;
+&lt;li&gt;In-memory Data Gridを活用した機能の検証&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Akka Streamは、ScalaMatsuri 2016から、Akkaにまつわる読書会や勉強会に参加するようになってから、
+プロジェクトに導入するために必要な知識や考え方等を学んできて、12月からようやく導入に踏み切りました。&lt;/p&gt;
+
+&lt;p&gt;Kubernetesについては、本格導入に向けて試験的に検証運用をしていますが、マネージドではなく自分たちで運用するとなると、
+バージョンアップについていくのがとても大変でした。&lt;/p&gt;
+
+&lt;p&gt;electronを使った業務アプリについては、Excel VBAを代替するには大げさすぎる規模の案件が多かったため、なかなか出来ませんでした。&lt;/p&gt;
+
+&lt;p&gt;pythonを使ったシステムの構築及び運用については、全く出来なかったので、今年のPyconJP2016で知った&lt;a href=&#34;http://errbot.io/en/latest/&#34;&gt;errbot&lt;/a&gt;を使ったbot運用をやってみたいと思います。&lt;/p&gt;
+
+&lt;p&gt;In-memory Data Gridのプロダクトとして&lt;a href=&#34;https://hazelcast.org/&#34;&gt;hazelcast&lt;/a&gt;を使ってみましたが、
+今使っている規模だとなかなかClusterが必要な規模で検証することが出来ませんでした。&lt;/p&gt;
+
+&lt;p&gt;やってみたかったことのほとんどについて、なんらかの形で動かすことが出来たのでとても充実してました。&lt;/p&gt;
+
+&lt;h2 id=&#34;2017年やりたいこと&#34;&gt;2017年やりたいこと&lt;/h2&gt;
+
+&lt;p&gt;2017年でやってみたいこととしては、以下のことをやってみたいと思っています。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Akkaを使ったシステムへのマイグレーション&lt;/li&gt;
+&lt;li&gt;AWSを活用した運用環境&lt;/li&gt;
+&lt;li&gt;pythonを使ったシステムの構築及び運用(引き続き)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;既存のScalaで作ってたプロダクトを徐々にAkka、Akka Streamを使ったものに変えていこうと思っています。
+そのためにもチームのメンバーにAkkaを使った開発について教育や共有を出来るようにしていければと考えてます。&lt;/p&gt;
+
+&lt;p&gt;AWSについては、ようやく本格的に利用できるようになったので、これまで自前で運用していたものをマネージドなサービスに移行したり、
+利用したいと思っていたサービスを使うことが出来るようになりました。&lt;/p&gt;
+
+&lt;p&gt;チームとして動きやすくするための環境を整えることが多くなると思いますが、新しいことに挑戦したり、やりたいことが出来る環境は引き続き維持したいと思います。&lt;/p&gt;
+
+&lt;p&gt;2017年もよろしくお願いします。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>ErgoDoxのキーキャップを注文してみました</title>
@@ -1086,76 +1149,6 @@ Groovyに関する書籍を販売しており、その一つにSpockに関する
 &lt;p&gt;最後に、Javaのアプリケーションでテストコードで楽をしたい人は、是非&lt;a href=&#34;https://github.com/spockframework/spock&#34;&gt;Spock Framework&lt;/a&gt;を使ってください。&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Let&amp;rsquo;s enjoy, Groovy!&lt;/strong&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Clojure ワークショップ(仮)に参加してきました #jc_ws</title>
-      <link>http://grimrose.github.io/blog/2015/12/jc-ws-2015/</link>
-      <pubDate>Mon, 14 Dec 2015 00:00:00 +0900</pubDate>
-      
-      <guid>http://grimrose.github.io/blog/2015/12/jc-ws-2015/</guid>
-      <description>
-
-&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://japanclojurians.doorkeeper.jp/events/34090&#34;&gt;【参加者募集】 Clojure ワークショップ(仮)&lt;/a&gt;に参加してきました。&lt;/p&gt;
-
-&lt;p&gt;きっかけは、以前に&lt;a href=&#34;http://connpass.com/event/10849/&#34;&gt;しょぼちむにデータモデル設計について教えてくださいの会 #syoboben&lt;/a&gt;で&lt;a href=&#34;https://twitter.com/kawasima&#34;&gt;@kawasima&lt;/a&gt;さんが
-以下のプレゼンをした時にでてきた&lt;a href=&#34;http://www.datomic.com&#34;&gt;Datomic&lt;/a&gt;が気になったからです。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/wUFig8EBkhNZVN?startSlide=15&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/kawasima/ss-44958468&#34; title=&#34;イミュータブルデータモデル(世代編)&#34; target=&#34;_blank&#34;&gt;イミュータブルデータモデル(世代編)&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;//www.slideshare.net/kawasima&#34; target=&#34;_blank&#34;&gt;Yoshitka Kawashima&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;その後、&lt;a href=&#34;https://twitter.com/kawasima&#34;&gt;@kawasima&lt;/a&gt;さんがリリースした&lt;a href=&#34;http://job-streamer.readthedocs.org/ja/latest/&#34;&gt;JobStreamer&lt;/a&gt;がDatomicが使われていたので、
-どうやって使ったらいいのかを知りたい、せめてClojureが読めるようになりたいと思ってました。&lt;/p&gt;
-
-&lt;p&gt;その後の渋谷Javaなどで&lt;a href=&#34;https://twitter.com/kawasima&#34;&gt;@kawasima&lt;/a&gt;さんがClojureの話をされていたので、無意識に刷り込まれていたのかもしれません。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://ayato.hateblo.jp&#34;&gt;あやぴー&lt;/a&gt;さんが開催されるとのことだったので、楽しみにしてました。&lt;/p&gt;
-
-&lt;h2 id=&#34;キメるclojure&#34;&gt;キメるClojure&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/1QwijworIvvfQK&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/kawasima/clojure-56071919&#34; title=&#34;キメるClojure&#34; target=&#34;_blank&#34;&gt;キメるClojure&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;//www.slideshare.net/kawasima&#34; target=&#34;_blank&#34;&gt;Yoshitka Kawashima&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;タイトルは「Rubyをキメると気持ちいい」から来てるとおもいますが、挙げられているClojureのコードを後から見なおしてみるとすっきりしていて分かりやすかったです。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;ja&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/jc_ws?src=hash&#34;&gt;#jc_ws&lt;/a&gt; だいたい色んなライブラリ読むけど、確かに小さいことが多いし、作りきられていることが多くて変更が少ないのも良い&lt;/p&gt;&amp;mdash; あやぴー (@_ayato_p) &lt;a href=&#34;https://twitter.com/_ayato_p/status/675496113114230786&#34;&gt;2015, 12月 12&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;こういう思想で作られていると使いやすいのではないかと思いました。&lt;/p&gt;
-
-&lt;h2 id=&#34;ワークショップ&#34;&gt;ワークショップ&lt;/h2&gt;
-
-&lt;p&gt;あやぴーさんが用意して下さった&lt;a href=&#34;https://github.com/japan-clojurians/curriculum&#34;&gt;japan-clojurians/curriculum&lt;/a&gt;のチートシートをまず読んでました。&lt;/p&gt;
-
-&lt;p&gt;はじめは、jupyterでもできないかなと思い、Clojureの&lt;a href=&#34;https://github.com/roryk/clojupyter&#34;&gt;roryk/clojupyter&lt;/a&gt;を入れてやろうとしてましたが、
-ZeroMQとの連携が上手く行っていないのかエラーがでて使えませんでした。
-Clojureでは&lt;a href=&#34;http://gorilla-repl.org/index.html&#34;&gt;Gorilla REPL&lt;/a&gt;を使うのが良いらしいので、今度使ってみようと思います。&lt;/p&gt;
-
-&lt;p&gt;仕方ないので、前日に用意していたIntelliJ IDEAとCursive pluginでやることにしました。&lt;/p&gt;
-
-&lt;p&gt;その後は、紹介されていた&lt;a href=&#34;http://clojurekoans.com/&#34;&gt;Clojure koans&lt;/a&gt;をずっとやってました。&lt;/p&gt;
-
-&lt;p&gt;穴埋めで、1問づつ答えていく形式なので、困ったときはREPLで確かめながらやってました。&lt;/p&gt;
-
-&lt;p&gt;普段は、スニペットの確認はREPLではなくテストコードでやっているので、ClojureのREPLがここまで便利だとは思ってませんでした。&lt;/p&gt;
-
-&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
-
-&lt;p&gt;togetterはこちら -&amp;gt; &lt;a href=&#34;http://togetter.com/li/911893&#34;&gt;Clojure ワークショップでした！&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;これでClojureを読める手段を手に入れることが出来たので、JobStreamerのコードを読んで行こうと思います。&lt;/p&gt;
-
-&lt;p&gt;いずれは、イミュータブルデータモデルとDatomicを使った何かを作ってみたいと思います。
-あとAltJSの一つとしてClojureScriptも興味が出てきたので、watchしていこうと思います。&lt;/p&gt;
-
-&lt;p&gt;あやぴーさん、TAの皆様、会場を提供して下さったサイボウズスタートアップス株式会社様、ありがとうございました。&lt;/p&gt;
 </description>
     </item>
     

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://grimrose.github.io/blog/2015/04/start-with-hugo/" />
+<meta property="og:url" content="http://grimrose.github.io/blog/2016/12/retrospect/" />
 <meta property="og:image" content="http://grimrose.github.io/blog/assets/images/logo.jpg" />
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:site" content="@grimrose">
@@ -17,9 +17,9 @@
 <link rel="stylesheet" href="http://grimrose.github.io/blog/css/custom.css">
 <link rel="alternate" href="http://grimrose.github.io/blog/index.xml" type="application/rss+xml" title="open build/reports/life/index.html">
 
-<title>Hugoを使ってみます。 - open build/reports/life/index.html</title>
-<meta property="og:title"  content="Hugoを使ってみます。 - open build/reports/life/index.html" />
-<meta name="twitter:description" content="Hugo">
+<title>2016年の振り返り - open build/reports/life/index.html</title>
+<meta property="og:title"  content="2016年の振り返り - open build/reports/life/index.html" />
+<meta name="twitter:description" content="retrospect">
 </head>
 <body>
 
@@ -35,9 +35,9 @@
 
 <main role="main">
     <article itemscope itemtype="http://schema.org/BlogPosting">
-        <h1 class="entry-title" itemprop="headline"><i class="fa fa-book"></i>&nbsp;Hugoを使ってみます。</h1>
+        <h1 class="entry-title" itemprop="headline"><i class="fa fa-book"></i>&nbsp;2016年の振り返り</h1>
         <span class="entry-meta">
-            <time itemprop="datePublished" datetime=" 2015-04-13">April 13, 2015</time>
+            <time itemprop="datePublished" datetime=" 2016-12-31">December 31, 2016</time>
         </span>
         <span class="entry-meta">
           
@@ -47,42 +47,74 @@
               <a class="label" href="http://grimrose.github.io/blog/categories/blog">Blog</a>&nbsp;
               
               <i class="fa fa-pencil"></i>
-              <a class="label" href="http://grimrose.github.io/blog/categories/hugo">Hugo</a>&nbsp;
+              <a class="label" href="http://grimrose.github.io/blog/categories/life">Life</a>&nbsp;
               
           
         </span>
         <section itemprop="entry-text">
-            <p>これまでは、<a href="http://grimrose.blogspot.jp/">Blogger</a>で書いていました。</p>
+            
 
-<p>ですが、下書きから公開まで全てがブラウザに依存しているため、書こうと思ってから書く気力がだんだん落ちて、
-下書きが溜まって、最終的に公開しないままいく一方でした。</p>
+<h2 id="2016年の振り返り">2016年の振り返り</h2>
 
-<p>テキスト書くときは、<a href="https://atom.io/">Atom</a>と<a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a>使っているのですが、
-どちらもコマンドエディタからコンソールまでほぼ完結しているので、blogも何とか出来ないかなと思ってました。</p>
+<p>今年も大晦日になったので、振り返ってみたいと思います。</p>
 
-<p>仕事で使うドキュメントの生成ツールの検証も兼ねて、Markdownで書ける静的サイトを作れるツールでいろいろと探していたところ、<a href="http://gohugo.io/">Hugo</a>がとても印象的でした。</p>
+<p>2015年の振り返りは、<a href="../../../2015/12/retrospect-2015/">こちら</a>でした。</p>
 
-<p>Goで書かれているためか動作が早く、ドキュメントもひと通り揃ってました。</p>
+<h2 id="やってみたかったことの振り返り">やってみたかったことの振り返り</h2>
 
-<p>今後は、この<a href="http://gohugo.io/">Hugo</a>を使って行きたいと思います。</p>
+<p>また、2016年にやってみたかったことは<a href="../../../2015/12/career-change/">転職して１年が経ちました。</a>に以下のように書いてました。</p>
 
-<p>テーマは、シンプルな<a href="https://github.com/rakuishi/hugo-zen">Hugo Zen</a>を使うことにしました。</p>
+<ul>
+<li>Akka Streamの導入</li>
+<li>Kubernetesを用いたDocker Clusterの導入</li>
+<li>electronを使った業務アプリの継続的開発</li>
+<li>pythonを使ったシステムの構築及び運用</li>
+<li>In-memory Data Gridを活用した機能の検証</li>
+</ul>
 
-<p>今後はこのテーマをベースにカスタマイズしていく予定です。</p>
+<p>Akka Streamは、ScalaMatsuri 2016から、Akkaにまつわる読書会や勉強会に参加するようになってから、
+プロジェクトに導入するために必要な知識や考え方等を学んできて、12月からようやく導入に踏み切りました。</p>
+
+<p>Kubernetesについては、本格導入に向けて試験的に検証運用をしていますが、マネージドではなく自分たちで運用するとなると、
+バージョンアップについていくのがとても大変でした。</p>
+
+<p>electronを使った業務アプリについては、Excel VBAを代替するには大げさすぎる規模の案件が多かったため、なかなか出来ませんでした。</p>
+
+<p>pythonを使ったシステムの構築及び運用については、全く出来なかったので、今年のPyconJP2016で知った<a href="http://errbot.io/en/latest/">errbot</a>を使ったbot運用をやってみたいと思います。</p>
+
+<p>In-memory Data Gridのプロダクトとして<a href="https://hazelcast.org/">hazelcast</a>を使ってみましたが、
+今使っている規模だとなかなかClusterが必要な規模で検証することが出来ませんでした。</p>
+
+<p>やってみたかったことのほとんどについて、なんらかの形で動かすことが出来たのでとても充実してました。</p>
+
+<h2 id="2017年やりたいこと">2017年やりたいこと</h2>
+
+<p>2017年でやってみたいこととしては、以下のことをやってみたいと思っています。</p>
+
+<ul>
+<li>Akkaを使ったシステムへのマイグレーション</li>
+<li>AWSを活用した運用環境</li>
+<li>pythonを使ったシステムの構築及び運用(引き続き)</li>
+</ul>
+
+<p>既存のScalaで作ってたプロダクトを徐々にAkka、Akka Streamを使ったものに変えていこうと思っています。
+そのためにもチームのメンバーにAkkaを使った開発について教育や共有を出来るようにしていければと考えてます。</p>
+
+<p>AWSについては、ようやく本格的に利用できるようになったので、これまで自前で運用していたものをマネージドなサービスに移行したり、
+利用したいと思っていたサービスを使うことが出来るようになりました。</p>
+
+<p>チームとして動きやすくするための環境を整えることが多くなると思いますが、新しいことに挑戦したり、やりたいことが出来る環境は引き続き維持したいと思います。</p>
+
+<p>2017年もよろしくお願いします。</p>
 
         </section>
         <div class="hr"></div>
         <div>
             
-            <div>
-              <a class="previous" href="http://grimrose.github.io/blog/2015/04/jjug-ccc/"> JJUG CCC 2015 Springに参加してきました。 #jjug_ccc</a>
-              <i class="fa fa-arrow-left"></i>
-            </div>
-            
             
             <div>
               <i class="fa fa-arrow-right"></i>
-              <a class="next" href="http://grimrose.github.io/blog/categories/blog/"> Blog</a>
+              <a class="next" href="http://grimrose.github.io/blog/2016/12/ergodox/"> ErgoDoxのキーキャップを注文してみました</a>
             </div>
             
         </div>
