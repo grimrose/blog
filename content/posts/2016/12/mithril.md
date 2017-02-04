@@ -14,7 +14,7 @@ title = "Mithril.jsをTypescript2.xで書いてみよう"
 
 17日目 > [shibukawa](http://qiita.com/shibukawa)さんの[Mithrilで自動補完つきテキストを作る(2)](http://qiita.com/shibukawa/items/10f19a4fa861e76ae9b9)です。
 
-19日目 > [shibukawa](http://qiita.com/shibukawa)さんです。
+19日目 > [tacnoma](http://qiita.com/tacnoma)さんの[MithrilからRailsサーバーへのファイルアップロードではまった部分](http://qiita.com/tacnoma/items/1dd75404e1969953153c)です。
 
 ## @type/mithriljs
 
