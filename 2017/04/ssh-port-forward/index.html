@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://grimrose.github.io/blog/2015/04/start-with-hugo/" />
+<meta property="og:url" content="http://grimrose.github.io/blog/2017/04/ssh-port-forward/" />
 <meta property="og:image" content="http://grimrose.github.io/blog/assets/images/logo.jpg" />
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:site" content="@grimrose">
@@ -17,9 +17,9 @@
 <link rel="stylesheet" href="http://grimrose.github.io/blog/css/custom.css">
 <link rel="alternate" href="http://grimrose.github.io/blog/index.xml" type="application/rss+xml" title="open build/reports/life/index.html">
 
-<title>Hugoを使ってみます。 - open build/reports/life/index.html</title>
-<meta property="og:title"  content="Hugoを使ってみます。 - open build/reports/life/index.html" />
-<meta name="twitter:description" content="Hugo">
+<title>JVMからSSHのポート転送でJDBC接続する - open build/reports/life/index.html</title>
+<meta property="og:title"  content="JVMからSSHのポート転送でJDBC接続する - open build/reports/life/index.html" />
+<meta name="twitter:description" content="SSH port forward on java ssh">
 </head>
 <body>
 
@@ -35,9 +35,9 @@
 
 <main role="main">
     <article itemscope itemtype="http://schema.org/BlogPosting">
-        <h1 class="entry-title" itemprop="headline"><i class="fa fa-book"></i>&nbsp;Hugoを使ってみます。</h1>
+        <h1 class="entry-title" itemprop="headline"><i class="fa fa-book"></i>&nbsp;JVMからSSHのポート転送でJDBC接続する</h1>
         <span class="entry-meta">
-            <time itemprop="datePublished" datetime=" 2015-04-13">April 13, 2015</time>
+            <time itemprop="datePublished" datetime=" 2017-04-23">April 23, 2017</time>
         </span>
         <span class="entry-meta">
           
@@ -47,38 +47,66 @@
               <a class="label" href="http://grimrose.github.io/blog/categories/blog">Blog</a>&nbsp;
               
               <i class="fa fa-pencil"></i>
-              <a class="label" href="http://grimrose.github.io/blog/categories/hugo">Hugo</a>&nbsp;
+              <a class="label" href="http://grimrose.github.io/blog/categories/scala">Scala</a>&nbsp;
+              
+              <i class="fa fa-pencil"></i>
+              <a class="label" href="http://grimrose.github.io/blog/categories/groovy">Groovy</a>&nbsp;
               
           
         </span>
         <section itemprop="entry-text">
-            <p>これまでは、<a href="http://grimrose.blogspot.jp/">Blogger</a>で書いていました。</p>
+            
 
-<p>ですが、下書きから公開まで全てがブラウザに依存しているため、書こうと思ってから書く気力がだんだん落ちて、
-下書きが溜まって、最終的に公開しないままいく一方でした。</p>
+<h2 id="はじめに">はじめに</h2>
 
-<p>テキスト書くときは、<a href="https://atom.io/">Atom</a>と<a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a>使っているのですが、
-どちらもコマンドエディタからコンソールまでほぼ完結しているので、blogも何とか出来ないかなと思ってました。</p>
+<p>仕事上、windowsの端末からリモートのlinuxのDBにデータを送る必要があったのですが、
+GUIでの手作業はしんどいので、簡単なツールを作ることにしました。</p>
 
-<p>仕事で使うドキュメントの生成ツールの検証も兼ねて、Markdownで書ける静的サイトを作れるツールでいろいろと探していたところ、<a href="http://gohugo.io/">Hugo</a>がとても印象的でした。</p>
+<p>幸いなことにJVMが入っているので、JavaのSSHクライアントとJDBCを使ってやってみました。</p>
 
-<p>Goで書かれているためか動作が早く、ドキュメントもひと通り揃ってました。</p>
+<h2 id="検証">検証</h2>
 
-<p>今後は、この<a href="http://gohugo.io/">Hugo</a>を使って行きたいと思います。</p>
+<p><a href="https://github.com/grimrose/ssh-port-forward-study">grimrose/ssh-port-forward-study</a></p>
 
-<p>テーマは、シンプルな<a href="https://github.com/rakuishi/hugo-zen">Hugo Zen</a>を使うことにしました。</p>
+<p>対象のサーバは、模擬的にDockerで作りました。</p>
 
-<p>今後はこのテーマをベースにカスタマイズしていく予定です。</p>
+<p>使用した言語は、慣れているgroovyと仕事で使ってるscala、ライブラリは、以下の通り。</p>
+
+<ul>
+<li>groovy
+
+<ul>
+<li><a href="https://gradle-ssh-plugin.github.io/">groovy-ssh</a></li>
+<li><a href="http://groovy-lang.org/databases.html">groovy-sql</a></li>
+</ul></li>
+<li>scala
+
+<ul>
+<li><a href="https://github.com/dacr/jassh">dacr/jassh</a></li>
+<li><a href="http://scalikejdbc.org/">ScalikeJDBC</a></li>
+</ul></li>
+</ul>
+
+<p>どちらのSSHクライアントも<a href="http://www.jcraft.com/jsch/">JSch</a>をベースにしているのですが、Javaで書くよりだいぶ楽になっています。</p>
+
+<p>SSHからリモートのコマンドやシェルスクリプトを動作させたり、実行結果の文字列やexit codeを受け取って更に次に繋げられるようになっていたり、
+その他にもsftpやいろいろコマンドが用意されているみたいなので、デプロイツールとしてやミドルウェアの検証にも使えそうです。</p>
+
+<h2 id="おわりに">おわりに</h2>
+
+<p>windowsという制約はちょっとしたツールを作るだけでもホントにしんどいので、JVMがあってよかったと思ってます。</p>
+
+<p>JVMやその他の言語でもランタイムをwindowsで動かせるようにしている人たちに感謝しつつ、日々の業務を楽にしていきたいと思います。</p>
 
         </section>
         <div class="hr"></div>
         <div>
             
-            <div>
-              <a class="previous" href="http://grimrose.github.io/blog/2015/04/jjug-ccc/"> JJUG CCC 2015 Springに参加してきました。 #jjug_ccc</a>
-              <i class="fa fa-arrow-left"></i>
-            </div>
             
+            <div>
+              <i class="fa fa-arrow-right"></i>
+              <a class="next" href="http://grimrose.github.io/blog/2016/12/retrospect/"> 2016年の振り返り</a>
+            </div>
             
         </div>
         <div class="hr"></div>

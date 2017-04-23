@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Typescript on open build/reports/life/index.html</title>
-    <link>http://grimrose.github.io/blog/categories/typescript/index.xml</link>
+    <link>http://grimrose.github.io/blog/categories/typescript/</link>
     <description>Recent content in Typescript on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <atom:link href="http://grimrose.github.io/blog/categories/typescript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Dec 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://grimrose.github.io/blog/categories/typescript/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Mithril.jsをTypescript2.xで書いてみよう</title>
@@ -14,58 +17,22 @@
       <pubDate>Sun, 18 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>http://grimrose.github.io/blog/2016/12/mithril/</guid>
-      <description>
-
-&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
-
-&lt;p&gt;この記事は、&lt;a href=&#34;http://qiita.com/advent-calendar/2016/mithriljs&#34;&gt;Mithril.js Advent Calendar 2016&lt;/a&gt;の18日目のエントリです。&lt;/p&gt;
-
-&lt;p&gt;17日目 &amp;gt; &lt;a href=&#34;http://qiita.com/shibukawa&#34;&gt;shibukawa&lt;/a&gt;さんの&lt;a href=&#34;http://qiita.com/shibukawa/items/10f19a4fa861e76ae9b9&#34;&gt;Mithrilで自動補完つきテキストを作る(2)&lt;/a&gt;です。&lt;/p&gt;
-
-&lt;p&gt;19日目 &amp;gt; &lt;a href=&#34;http://qiita.com/tacnoma&#34;&gt;tacnoma&lt;/a&gt;さんの&lt;a href=&#34;http://qiita.com/tacnoma/items/1dd75404e1969953153c&#34;&gt;MithrilからRailsサーバーへのファイルアップロードではまった部分&lt;/a&gt;です。&lt;/p&gt;
-
-&lt;h2 id=&#34;type-mithriljs&#34;&gt;@type/mithriljs&lt;/h2&gt;
-
-&lt;p&gt;Mithril.jsでTypeScriptを使う場合、以前であれば、&lt;a href=&#34;https://github.com/typings/typings&#34;&gt;typings&lt;/a&gt;で型定義ファイルを取得する必要がありましたが、
-TypeScript2.0からは、npmの&lt;a href=&#34;https://www.npmjs.com/package/@types/mithril&#34;&gt;@types/mithril&lt;/a&gt;で取得できるようになりましたので、&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;npm install @types/mithril -D
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;で、他の依存と同じように管理できるようになったことでだいぶ楽になりました。&lt;/p&gt;
-
-&lt;h2 id=&#34;書いてみた&#34;&gt;書いてみた&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/grimrose/grimrose.github.io&#34;&gt;grimrose/grimrose.github.io&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;以前から書いていたのを、今回のエントリを書くにあたり、いろいろ機能追加やバージョンアップをしました。&lt;/p&gt;
-
-&lt;p&gt;Mithril.jsでTypeScriptを使うときの特徴としては、やはり型の制約が出てくるところです。&lt;/p&gt;
-
-&lt;p&gt;特に&lt;code&gt;m.request&lt;/code&gt;で返ってくるのが、&lt;code&gt;Mithril.Promise&amp;lt;any&amp;gt;&lt;/code&gt;になるので、そのままではTypeScriptの世界に&lt;code&gt;any&lt;/code&gt;をばらまいてしまうので、
-クラスを用意しマッピングする必要があります。
-さらに、JavaScriptでは使えていた&lt;code&gt;map&lt;/code&gt;などのメソッドが使えないので、&lt;code&gt;m.deferred&lt;/code&gt;を駆使して、Promiseの世界でやりとりする必要があります。&lt;/p&gt;
-
-&lt;p&gt;また、&lt;code&gt;Component&lt;/code&gt;が&lt;code&gt;Controller&lt;/code&gt;を要求するので、クラスを作るかinterfaceをキャストしてあげる必要があります。&lt;/p&gt;
-
-&lt;p&gt;その他にも、いろいろと型を合わせる必要が出てくるので、ひたすらTypeScript compilerの指摘を受けつつ試行錯誤することになると思います。&lt;/p&gt;
-
-&lt;p&gt;新しくTypeScript 2.0で使えるようになった機能は、今後勉強も兼ねて書き直していければと思ってます。&lt;/p&gt;
-
-&lt;p&gt;いろいろ依存関係をバージョンアップする関係で、&lt;a href=&#34;https://yarnpkg.com/&#34;&gt;yarnpkg&lt;/a&gt;で依存管理をするようにしました。
-デプロイには、CircleCIを利用していますので&lt;a href=&#34;http://blog.stormcat.io/entry/circleci-npm-yarn&#34;&gt;CircleCIでyarnを使う&lt;/a&gt;を参考にさせていただきました。&lt;/p&gt;
-
-&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
-
-&lt;p&gt;普段の業務では、AngularJS + TypeScriptをメインで書くことが多いのですが、
-やはり覚えることが多いのと、JavaScriptが前提になっている記事やコードをTypeScriptへ変換するにはどうしたら良いのかを考える必要が出てきてしまうので、
-学習に時間がかかりますね。&lt;/p&gt;
-
-&lt;p&gt;その点、Mithril.jsははじめに覚えるAPIの少なさと、そこから深く学ぶには何が必要なのかが全て公式に揃っているのが、とてもありがたいです。
-特に&lt;a href=&#34;http://mithril-ja.js.org/index.html&#34;&gt;日本語のサイト&lt;/a&gt;が、公式に追従してくださっているお陰で、敷居がだいぶ下がっていると思います。&lt;/p&gt;
-
-&lt;p&gt;次の1.xはより洗練されたものになると思いますので、とても楽しみです。&lt;/p&gt;
-</description>
+      <description>はじめに この記事は、Mithril.js Advent Calendar 2016の18日目のエントリです。
+17日目 &amp;gt; shibukawaさんのMithrilで自動補完つきテキストを作る(2)です。
+19日目 &amp;gt; tacnomaさんのMithrilからRailsサーバーへのファイルアップロードではまった部分です。
+@type/mithriljs Mithril.jsでTypeScriptを使う場合、以前であれば、typingsで型定義ファイルを取得する必要がありましたが、 TypeScript2.0からは、npmの@types/mithrilで取得できるようになりましたので、
+npm install @types/mithril -D  で、他の依存と同じように管理できるようになったことでだいぶ楽になりました。
+書いてみた grimrose/grimrose.github.io
+以前から書いていたのを、今回のエントリを書くにあたり、いろいろ機能追加やバージョンアップをしました。
+Mithril.jsでTypeScriptを使うときの特徴としては、やはり型の制約が出てくるところです。
+特にm.requestで返ってくるのが、Mithril.Promise&amp;lt;any&amp;gt;になるので、そのままではTypeScriptの世界にanyをばらまいてしまうので、 クラスを用意しマッピングする必要があります。 さらに、JavaScriptでは使えていたmapなどのメソッドが使えないので、m.deferredを駆使して、Promiseの世界でやりとりする必要があります。
+また、ComponentがControllerを要求するので、クラスを作るかinterfaceをキャストしてあげる必要があります。
+その他にも、いろいろと型を合わせる必要が出てくるので、ひたすらTypeScript compilerの指摘を受けつつ試行錯誤することになると思います。
+新しくTypeScript 2.0で使えるようになった機能は、今後勉強も兼ねて書き直していければと思ってます。
+いろいろ依存関係をバージョンアップする関係で、yarnpkgで依存管理をするようにしました。 デプロイには、CircleCIを利用していますのでCircleCIでyarnを使うを参考にさせていただきました。
+おわりに 普段の業務では、AngularJS + TypeScriptをメインで書くことが多いのですが、 やはり覚えることが多いのと、JavaScriptが前提になっている記事やコードをTypeScriptへ変換するにはどうしたら良いのかを考える必要が出てきてしまうので、 学習に時間がかかりますね。
+その点、Mithril.jsははじめに覚えるAPIの少なさと、そこから深く学ぶには何が必要なのかが全て公式に揃っているのが、とてもありがたいです。 特に日本語のサイトが、公式に追従してくださっているお陰で、敷居がだいぶ下がっていると思います。
+次の1.xはより洗練されたものになると思いますので、とても楽しみです。</description>
     </item>
     
   </channel>

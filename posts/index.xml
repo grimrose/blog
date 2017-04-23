@@ -2,12 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on open build/reports/life/index.html</title>
-    <link>http://grimrose.github.io/blog/posts/index.xml</link>
+    <link>http://grimrose.github.io/blog/posts/</link>
     <description>Recent content in Posts on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 31 Dec 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://grimrose.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Apr 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://grimrose.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JVMからSSHのポート転送でJDBC接続する</title>
+      <link>http://grimrose.github.io/blog/2017/04/ssh-port-forward/</link>
+      <pubDate>Sun, 23 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2017/04/ssh-port-forward/</guid>
+      <description>はじめに 仕事上、windowsの端末からリモートのlinuxのDBにデータを送る必要があったのですが、 GUIでの手作業はしんどいので、簡単なツールを作ることにしました。
+幸いなことにJVMが入っているので、JavaのSSHクライアントとJDBCを使ってやってみました。
+検証 grimrose/ssh-port-forward-study
+対象のサーバは、模擬的にDockerで作りました。
+使用した言語は、慣れているgroovyと仕事で使ってるscala、ライブラリは、以下の通り。
+ groovy  groovy-ssh groovy-sql  scala  dacr/jassh ScalikeJDBC   どちらのSSHクライアントもJSchをベースにしているのですが、Javaで書くよりだいぶ楽になっています。
+SSHからリモートのコマンドやシェルスクリプトを動作させたり、実行結果の文字列やexit codeを受け取って更に次に繋げられるようになっていたり、 その他にもsftpやいろいろコマンドが用意されているみたいなので、デプロイツールとしてやミドルウェアの検証にも使えそうです。
+おわりに windowsという制約はちょっとしたツールを作るだけでもホントにしんどいので、JVMがあってよかったと思ってます。
+JVMやその他の言語でもランタイムをwindowsで動かせるようにしている人たちに感謝しつつ、日々の業務を楽にしていきたいと思います。</description>
+    </item>
     
     <item>
       <title>2016年の振り返り</title>
@@ -15,61 +34,20 @@
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>http://grimrose.github.io/blog/2016/12/retrospect/</guid>
-      <description>
-
-&lt;h2 id=&#34;2016年の振り返り&#34;&gt;2016年の振り返り&lt;/h2&gt;
-
-&lt;p&gt;今年も大晦日になったので、振り返ってみたいと思います。&lt;/p&gt;
-
-&lt;p&gt;2015年の振り返りは、&lt;a href=&#34;../../../2015/12/retrospect-2015/&#34;&gt;こちら&lt;/a&gt;でした。&lt;/p&gt;
-
-&lt;h2 id=&#34;やってみたかったことの振り返り&#34;&gt;やってみたかったことの振り返り&lt;/h2&gt;
-
-&lt;p&gt;また、2016年にやってみたかったことは&lt;a href=&#34;../../../2015/12/career-change/&#34;&gt;転職して１年が経ちました。&lt;/a&gt;に以下のように書いてました。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Akka Streamの導入&lt;/li&gt;
-&lt;li&gt;Kubernetesを用いたDocker Clusterの導入&lt;/li&gt;
-&lt;li&gt;electronを使った業務アプリの継続的開発&lt;/li&gt;
-&lt;li&gt;pythonを使ったシステムの構築及び運用&lt;/li&gt;
-&lt;li&gt;In-memory Data Gridを活用した機能の検証&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Akka Streamは、ScalaMatsuri 2016から、Akkaにまつわる読書会や勉強会に参加するようになってから、
-プロジェクトに導入するために必要な知識や考え方等を学んできて、12月からようやく導入に踏み切りました。&lt;/p&gt;
-
-&lt;p&gt;Kubernetesについては、本格導入に向けて試験的に検証運用をしていますが、マネージドではなく自分たちで運用するとなると、
-バージョンアップについていくのがとても大変でした。&lt;/p&gt;
-
-&lt;p&gt;electronを使った業務アプリについては、Excel VBAを代替するには大げさすぎる規模の案件が多かったため、なかなか出来ませんでした。&lt;/p&gt;
-
-&lt;p&gt;pythonを使ったシステムの構築及び運用については、全く出来なかったので、今年のPyconJP2016で知った&lt;a href=&#34;http://errbot.io/en/latest/&#34;&gt;errbot&lt;/a&gt;を使ったbot運用をやってみたいと思います。&lt;/p&gt;
-
-&lt;p&gt;In-memory Data Gridのプロダクトとして&lt;a href=&#34;https://hazelcast.org/&#34;&gt;hazelcast&lt;/a&gt;を使ってみましたが、
-今使っている規模だとなかなかClusterが必要な規模で検証することが出来ませんでした。&lt;/p&gt;
-
-&lt;p&gt;やってみたかったことのほとんどについて、なんらかの形で動かすことが出来たのでとても充実してました。&lt;/p&gt;
-
-&lt;h2 id=&#34;2017年やりたいこと&#34;&gt;2017年やりたいこと&lt;/h2&gt;
-
-&lt;p&gt;2017年でやってみたいこととしては、以下のことをやってみたいと思っています。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Akkaを使ったシステムへのマイグレーション&lt;/li&gt;
-&lt;li&gt;AWSを活用した運用環境&lt;/li&gt;
-&lt;li&gt;pythonを使ったシステムの構築及び運用(引き続き)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;既存のScalaで作ってたプロダクトを徐々にAkka、Akka Streamを使ったものに変えていこうと思っています。
-そのためにもチームのメンバーにAkkaを使った開発について教育や共有を出来るようにしていければと考えてます。&lt;/p&gt;
-
-&lt;p&gt;AWSについては、ようやく本格的に利用できるようになったので、これまで自前で運用していたものをマネージドなサービスに移行したり、
-利用したいと思っていたサービスを使うことが出来るようになりました。&lt;/p&gt;
-
-&lt;p&gt;チームとして動きやすくするための環境を整えることが多くなると思いますが、新しいことに挑戦したり、やりたいことが出来る環境は引き続き維持したいと思います。&lt;/p&gt;
-
-&lt;p&gt;2017年もよろしくお願いします。&lt;/p&gt;
-</description>
+      <description>2016年の振り返り 今年も大晦日になったので、振り返ってみたいと思います。
+2015年の振り返りは、こちらでした。
+やってみたかったことの振り返り また、2016年にやってみたかったことは転職して１年が経ちました。に以下のように書いてました。
+ Akka Streamの導入 Kubernetesを用いたDocker Clusterの導入 electronを使った業務アプリの継続的開発 pythonを使ったシステムの構築及び運用 In-memory Data Gridを活用した機能の検証  Akka Streamは、ScalaMatsuri 2016から、Akkaにまつわる読書会や勉強会に参加するようになってから、 プロジェクトに導入するために必要な知識や考え方等を学んできて、12月からようやく導入に踏み切りました。
+Kubernetesについては、本格導入に向けて試験的に検証運用をしていますが、マネージドではなく自分たちで運用するとなると、 バージョンアップについていくのがとても大変でした。
+electronを使った業務アプリについては、Excel VBAを代替するには大げさすぎる規模の案件が多かったため、なかなか出来ませんでした。
+pythonを使ったシステムの構築及び運用については、全く出来なかったので、今年のPyconJP2016で知ったerrbotを使ったbot運用をやってみたいと思います。
+In-memory Data Gridのプロダクトとしてhazelcastを使ってみましたが、 今使っている規模だとなかなかClusterが必要な規模で検証することが出来ませんでした。
+やってみたかったことのほとんどについて、なんらかの形で動かすことが出来たのでとても充実してました。
+2017年やりたいこと 2017年でやってみたいこととしては、以下のことをやってみたいと思っています。
+ Akkaを使ったシステムへのマイグレーション AWSを活用した運用環境 pythonを使ったシステムの構築及び運用(引き続き)  既存のScalaで作ってたプロダクトを徐々にAkka、Akka Streamを使ったものに変えていこうと思っています。 そのためにもチームのメンバーにAkkaを使った開発について教育や共有を出来るようにしていければと考えてます。
+AWSについては、ようやく本格的に利用できるようになったので、これまで自前で運用していたものをマネージドなサービスに移行したり、 利用したいと思っていたサービスを使うことが出来るようになりました。
+チームとして動きやすくするための環境を整えることが多くなると思いますが、新しいことに挑戦したり、やりたいことが出来る環境は引き続き維持したいと思います。
+2017年もよろしくお願いします。</description>
     </item>
     
     <item>
@@ -78,65 +56,25 @@
       <pubDate>Fri, 23 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>http://grimrose.github.io/blog/2016/12/ergodox/</guid>
-      <description>
-
-&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
-
-&lt;p&gt;この記事は、&lt;a href=&#34;http://qiita.com/advent-calendar/2016/ergodox&#34;&gt;ErgoDox Advent Calendar 2016&lt;/a&gt;の23日目のエントリです。&lt;/p&gt;
-
-&lt;h2 id=&#34;キーキャップについて&#34;&gt;キーキャップについて&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://qiita.com/okapies&#34;&gt;okapies&lt;/a&gt;さんの&lt;a href=&#34;http://okapies.hateblo.jp/entry/2016/05/15/164009&#34;&gt;ErgoDox EZ カスタマイズ情報のまとめ&lt;/a&gt;の
-&lt;strong&gt;キーキャップ&lt;/strong&gt;の箇所をみていただければ、だいたいどういったものがあって、どこで買えるのかが参考になると思います。&lt;/p&gt;
-
-&lt;p&gt;今回は、2つ紹介されているサイトのうち、&lt;a href=&#34;http://www.wasdkeyboards.com/&#34;&gt;WASD Keyboards&lt;/a&gt;で注文した過程を紹介したいと思います。&lt;/p&gt;
-
-&lt;h2 id=&#34;wasd-keyboardsでの注文の仕方&#34;&gt;WASD Keyboardsでの注文の仕方&lt;/h2&gt;
-
-&lt;p&gt;今回欲しかったのは、10キーのキーキャップです。
-商品ページは&lt;a href=&#34;http://www.wasdkeyboards.com/index.php/products/keycap-mod-packs/10-key-number-row-cherry-mx-keycap-set.html&#34;&gt;こちら&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;支払いは、&lt;a href=&#34;https://www.paypal.com/jp/home&#34;&gt;PayPal&lt;/a&gt;が使えるので、アカウント用意しておくと楽に決済できると思います。&lt;/p&gt;
-
-&lt;p&gt;送り先の住所もあらかじめ&lt;a href=&#34;https://www.paypal.com/jp/home&#34;&gt;PayPal&lt;/a&gt;に海外向けの住所を登録しておけば、注文時のフォームに引っ張ってきてくれます。&lt;/p&gt;
-
-&lt;p&gt;今回注文したのは、2016年12月9日でした。&lt;/p&gt;
-
-&lt;p&gt;配送業者は、&lt;strong&gt;UPS Worldwide Saver&lt;/strong&gt;を選択しました。
-理由としては、ネタとしてLOSTしたことを書くのも面白いとは思いますが、安いとは言えLOSTされるのは困るので多少高いですがちゃんと届くのを重視しました。&lt;/p&gt;
-
-&lt;p&gt;配送業者が配送開始になったのは、2016年12月13日でした。
-その週はアメリカでの雪の影響があったため、幾日か遅延の情報がUPSの配送状況から知ることが出来ました。
-とは言え、日本に到着したのは、2016年12月15日でした。&lt;/p&gt;
-
-&lt;p&gt;どうしても、早く欲しいのであれば、UPS Worldwide Saverを選択するのはありではないかと思います。&lt;/p&gt;
-
-&lt;h2 id=&#34;装着&#34;&gt;装着&lt;/h2&gt;
-
-&lt;p&gt;装着した結果、こんな感じになっています。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;ja&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;仕事風景(会社から持ってきた) &lt;a href=&#34;https://t.co/dNZRRcmvgx&#34;&gt;pic.twitter.com/dNZRRcmvgx&lt;/a&gt;&lt;/p&gt;&amp;mdash; とーます (@grimrose) &lt;a href=&#34;https://twitter.com/grimrose/status/812158502579748864&#34;&gt;2016年12月23日&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;写真は、あの&lt;a href=&#34;https://eventdots.jp/column/2&#34;&gt;ErgoDox users meet up&lt;/a&gt;が行われた&lt;a href=&#34;https://eventdots.jp/space&#34;&gt;イベント＆コミュニティスペース dots.&lt;/a&gt;で撮りました。&lt;/p&gt;
-
-&lt;p&gt;あのイベントの数日後には、&lt;a href=&#34;https://ergodox-ez.com/&#34;&gt;ErgoDox EZ&lt;/a&gt;のサイトで注文してました。&lt;/p&gt;
-
-&lt;p&gt;それ以降、仕事場に持ち込んでずっと使っています。&lt;/p&gt;
-
-&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
-
-&lt;p&gt;年明けあたりに、&lt;a href=&#34;http://qiita.com/okapies&#34;&gt;okapies&lt;/a&gt;さんが紹介されていたもう一つの&lt;a href=&#34;http://pimpmykeyboard.com/&#34;&gt;Pimp my keyboard&lt;/a&gt;で注文してみたいともいます。&lt;/p&gt;
-
-&lt;p&gt;ErgoDoxはカスタマイズが出来る箇所が多いのですが、日本で手に入れるのが難しいものがあります。
-とはいえ、以前に比べてだいぶ敷居が下がってきますし、ErgoDox購入出来る人であれば大丈夫だと思います。&lt;/p&gt;
-
-&lt;p&gt;今後もErgoDoxを楽しんでカスタマイズしていこうと思います。&lt;/p&gt;
-
-&lt;hr /&gt;
-</description>
+      <description>はじめに この記事は、ErgoDox Advent Calendar 2016の23日目のエントリです。
+キーキャップについて okapiesさんのErgoDox EZ カスタマイズ情報のまとめの キーキャップの箇所をみていただければ、だいたいどういったものがあって、どこで買えるのかが参考になると思います。
+今回は、2つ紹介されているサイトのうち、WASD Keyboardsで注文した過程を紹介したいと思います。
+WASD Keyboardsでの注文の仕方 今回欲しかったのは、10キーのキーキャップです。 商品ページはこちら。
+支払いは、PayPalが使えるので、アカウント用意しておくと楽に決済できると思います。
+送り先の住所もあらかじめPayPalに海外向けの住所を登録しておけば、注文時のフォームに引っ張ってきてくれます。
+今回注文したのは、2016年12月9日でした。
+配送業者は、UPS Worldwide Saverを選択しました。 理由としては、ネタとしてLOSTしたことを書くのも面白いとは思いますが、安いとは言えLOSTされるのは困るので多少高いですがちゃんと届くのを重視しました。
+配送業者が配送開始になったのは、2016年12月13日でした。 その週はアメリカでの雪の影響があったため、幾日か遅延の情報がUPSの配送状況から知ることが出来ました。 とは言え、日本に到着したのは、2016年12月15日でした。
+どうしても、早く欲しいのであれば、UPS Worldwide Saverを選択するのはありではないかと思います。
+装着 装着した結果、こんな感じになっています。
+ 仕事風景(会社から持ってきた) pic.twitter.com/dNZRRcmvgx
+&amp;mdash; とーます (@grimrose) 2016年12月23日 
+ 写真は、あのErgoDox users meet upが行われたイベント＆コミュニティスペース dots.で撮りました。
+あのイベントの数日後には、ErgoDox EZのサイトで注文してました。
+それ以降、仕事場に持ち込んでずっと使っています。
+おわりに 年明けあたりに、okapiesさんが紹介されていたもう一つのPimp my keyboardで注文してみたいともいます。
+ErgoDoxはカスタマイズが出来る箇所が多いのですが、日本で手に入れるのが難しいものがあります。 とはいえ、以前に比べてだいぶ敷居が下がってきますし、ErgoDox購入出来る人であれば大丈夫だと思います。
+今後もErgoDoxを楽しんでカスタマイズしていこうと思います。</description>
     </item>
     
     <item>
@@ -145,58 +83,22 @@
       <pubDate>Sun, 18 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>http://grimrose.github.io/blog/2016/12/mithril/</guid>
-      <description>
-
-&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
-
-&lt;p&gt;この記事は、&lt;a href=&#34;http://qiita.com/advent-calendar/2016/mithriljs&#34;&gt;Mithril.js Advent Calendar 2016&lt;/a&gt;の18日目のエントリです。&lt;/p&gt;
-
-&lt;p&gt;17日目 &amp;gt; &lt;a href=&#34;http://qiita.com/shibukawa&#34;&gt;shibukawa&lt;/a&gt;さんの&lt;a href=&#34;http://qiita.com/shibukawa/items/10f19a4fa861e76ae9b9&#34;&gt;Mithrilで自動補完つきテキストを作る(2)&lt;/a&gt;です。&lt;/p&gt;
-
-&lt;p&gt;19日目 &amp;gt; &lt;a href=&#34;http://qiita.com/tacnoma&#34;&gt;tacnoma&lt;/a&gt;さんの&lt;a href=&#34;http://qiita.com/tacnoma/items/1dd75404e1969953153c&#34;&gt;MithrilからRailsサーバーへのファイルアップロードではまった部分&lt;/a&gt;です。&lt;/p&gt;
-
-&lt;h2 id=&#34;type-mithriljs&#34;&gt;@type/mithriljs&lt;/h2&gt;
-
-&lt;p&gt;Mithril.jsでTypeScriptを使う場合、以前であれば、&lt;a href=&#34;https://github.com/typings/typings&#34;&gt;typings&lt;/a&gt;で型定義ファイルを取得する必要がありましたが、
-TypeScript2.0からは、npmの&lt;a href=&#34;https://www.npmjs.com/package/@types/mithril&#34;&gt;@types/mithril&lt;/a&gt;で取得できるようになりましたので、&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;npm install @types/mithril -D
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;で、他の依存と同じように管理できるようになったことでだいぶ楽になりました。&lt;/p&gt;
-
-&lt;h2 id=&#34;書いてみた&#34;&gt;書いてみた&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/grimrose/grimrose.github.io&#34;&gt;grimrose/grimrose.github.io&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;以前から書いていたのを、今回のエントリを書くにあたり、いろいろ機能追加やバージョンアップをしました。&lt;/p&gt;
-
-&lt;p&gt;Mithril.jsでTypeScriptを使うときの特徴としては、やはり型の制約が出てくるところです。&lt;/p&gt;
-
-&lt;p&gt;特に&lt;code&gt;m.request&lt;/code&gt;で返ってくるのが、&lt;code&gt;Mithril.Promise&amp;lt;any&amp;gt;&lt;/code&gt;になるので、そのままではTypeScriptの世界に&lt;code&gt;any&lt;/code&gt;をばらまいてしまうので、
-クラスを用意しマッピングする必要があります。
-さらに、JavaScriptでは使えていた&lt;code&gt;map&lt;/code&gt;などのメソッドが使えないので、&lt;code&gt;m.deferred&lt;/code&gt;を駆使して、Promiseの世界でやりとりする必要があります。&lt;/p&gt;
-
-&lt;p&gt;また、&lt;code&gt;Component&lt;/code&gt;が&lt;code&gt;Controller&lt;/code&gt;を要求するので、クラスを作るかinterfaceをキャストしてあげる必要があります。&lt;/p&gt;
-
-&lt;p&gt;その他にも、いろいろと型を合わせる必要が出てくるので、ひたすらTypeScript compilerの指摘を受けつつ試行錯誤することになると思います。&lt;/p&gt;
-
-&lt;p&gt;新しくTypeScript 2.0で使えるようになった機能は、今後勉強も兼ねて書き直していければと思ってます。&lt;/p&gt;
-
-&lt;p&gt;いろいろ依存関係をバージョンアップする関係で、&lt;a href=&#34;https://yarnpkg.com/&#34;&gt;yarnpkg&lt;/a&gt;で依存管理をするようにしました。
-デプロイには、CircleCIを利用していますので&lt;a href=&#34;http://blog.stormcat.io/entry/circleci-npm-yarn&#34;&gt;CircleCIでyarnを使う&lt;/a&gt;を参考にさせていただきました。&lt;/p&gt;
-
-&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
-
-&lt;p&gt;普段の業務では、AngularJS + TypeScriptをメインで書くことが多いのですが、
-やはり覚えることが多いのと、JavaScriptが前提になっている記事やコードをTypeScriptへ変換するにはどうしたら良いのかを考える必要が出てきてしまうので、
-学習に時間がかかりますね。&lt;/p&gt;
-
-&lt;p&gt;その点、Mithril.jsははじめに覚えるAPIの少なさと、そこから深く学ぶには何が必要なのかが全て公式に揃っているのが、とてもありがたいです。
-特に&lt;a href=&#34;http://mithril-ja.js.org/index.html&#34;&gt;日本語のサイト&lt;/a&gt;が、公式に追従してくださっているお陰で、敷居がだいぶ下がっていると思います。&lt;/p&gt;
-
-&lt;p&gt;次の1.xはより洗練されたものになると思いますので、とても楽しみです。&lt;/p&gt;
-</description>
+      <description>はじめに この記事は、Mithril.js Advent Calendar 2016の18日目のエントリです。
+17日目 &amp;gt; shibukawaさんのMithrilで自動補完つきテキストを作る(2)です。
+19日目 &amp;gt; tacnomaさんのMithrilからRailsサーバーへのファイルアップロードではまった部分です。
+@type/mithriljs Mithril.jsでTypeScriptを使う場合、以前であれば、typingsで型定義ファイルを取得する必要がありましたが、 TypeScript2.0からは、npmの@types/mithrilで取得できるようになりましたので、
+npm install @types/mithril -D  で、他の依存と同じように管理できるようになったことでだいぶ楽になりました。
+書いてみた grimrose/grimrose.github.io
+以前から書いていたのを、今回のエントリを書くにあたり、いろいろ機能追加やバージョンアップをしました。
+Mithril.jsでTypeScriptを使うときの特徴としては、やはり型の制約が出てくるところです。
+特にm.requestで返ってくるのが、Mithril.Promise&amp;lt;any&amp;gt;になるので、そのままではTypeScriptの世界にanyをばらまいてしまうので、 クラスを用意しマッピングする必要があります。 さらに、JavaScriptでは使えていたmapなどのメソッドが使えないので、m.deferredを駆使して、Promiseの世界でやりとりする必要があります。
+また、ComponentがControllerを要求するので、クラスを作るかinterfaceをキャストしてあげる必要があります。
+その他にも、いろいろと型を合わせる必要が出てくるので、ひたすらTypeScript compilerの指摘を受けつつ試行錯誤することになると思います。
+新しくTypeScript 2.0で使えるようになった機能は、今後勉強も兼ねて書き直していければと思ってます。
+いろいろ依存関係をバージョンアップする関係で、yarnpkgで依存管理をするようにしました。 デプロイには、CircleCIを利用していますのでCircleCIでyarnを使うを参考にさせていただきました。
+おわりに 普段の業務では、AngularJS + TypeScriptをメインで書くことが多いのですが、 やはり覚えることが多いのと、JavaScriptが前提になっている記事やコードをTypeScriptへ変換するにはどうしたら良いのかを考える必要が出てきてしまうので、 学習に時間がかかりますね。
+その点、Mithril.jsははじめに覚えるAPIの少なさと、そこから深く学ぶには何が必要なのかが全て公式に揃っているのが、とてもありがたいです。 特に日本語のサイトが、公式に追従してくださっているお陰で、敷居がだいぶ下がっていると思います。
+次の1.xはより洗練されたものになると思いますので、とても楽しみです。</description>
     </item>
     
     <item>
@@ -205,122 +107,18 @@ TypeScript2.0からは、npmの&lt;a href=&#34;https://www.npmjs.com/package/@ty
       <pubDate>Sun, 11 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>http://grimrose.github.io/blog/2016/12/scala-advent-calendar-2016/</guid>
-      <description>
-
-&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
-
-&lt;p&gt;この記事は、&lt;a href=&#34;http://qiita.com/advent-calendar/2016/scala&#34;&gt;Scala Advent Calendar 2016&lt;/a&gt;の11日目のエントリです。&lt;/p&gt;
-
-&lt;p&gt;10日目 &amp;gt; &lt;a href=&#34;http://qiita.com/ponkotuy&#34;&gt;ponkotuy&lt;/a&gt;さんの&lt;a href=&#34;http://qiita.com/ponkotuy/items/7a293436c68ebfca0472&#34;&gt;SkinnyORMのjoin定義について&lt;/a&gt;です。&lt;/p&gt;
-
-&lt;p&gt;12日目 &amp;gt; &lt;a href=&#34;http://qiita.com/aoiroaoino&#34;&gt;aoiroaoino&lt;/a&gt;さんの&lt;a href=&#34;http://aoino.hatenablog.com/entry/2016/12/13/034121&#34;&gt;Scala関西 Summit 2016 で Lens/Prism について発表してきた&lt;/a&gt;です。&lt;/p&gt;
-
-&lt;h2 id=&#34;scalikejdbcについて&#34;&gt;ScalikeJDBCについて&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://scalikejdbc.org/&#34;&gt;ScalikeJDBC&lt;/a&gt;は、SQLを使ってDBにアクセスしたい場合にとても使いやすいライブラリです。&lt;/p&gt;
-
-&lt;h2 id=&#34;amazon-athenaについて&#34;&gt;Amazon Athenaについて&lt;/h2&gt;
-
-&lt;p&gt;AWS re:Invent 2016で発表された新しいサービスです。&lt;/p&gt;
-
-&lt;p&gt;詳細については、
-&lt;a href=&#34;https://aws.amazon.com/jp/blogs/news/amazon-athena-interactive-sql-queries-for-data-in-amazon-s3/&#34;&gt;Amazon Athena – Amazon S3上のデータに対話的にSQLクエリを&lt;/a&gt;
-や、&lt;a href=&#34;http://dev.classmethod.jp/cloud/aws/amazon-athena-accessing-amazon-athena-with-jdbc/&#34;&gt;AthenaのJDBCドライバを使ってS3のデータにSQL Workbench経由でアクセスする #reinvent #athena&lt;/a&gt;
-を見ていただければと思います。&lt;/p&gt;
-
-&lt;p&gt;S3に保存したデータに対してスキーマを定義してSQLでアクセスできるようになるのは、今後の自分の仕事にもつながってくるサービスでもあるので注目しています。&lt;/p&gt;
-
-&lt;h2 id=&#34;アクセスしてみた&#34;&gt;アクセスしてみた&lt;/h2&gt;
-
-&lt;p&gt;検証したサンプルコードはこちらです。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/grimrose/Scala-Advent-Calendar-2016&#34;&gt;grimrose/Scala-Advent-Calendar-2016&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;まずはじめに遭遇したのは、&lt;code&gt;auto commit&lt;/code&gt;が常にONにするのが想定されているということでした。&lt;/p&gt;
-
-&lt;p&gt;遭遇した例外は、以下のような内容でした。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Exception encountered when invoking run on a nested suite - Failed to initialize pool: Disabling auto-commit mode not supported
-com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Disabling auto-commit mode not supported
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;仕方ないので、以下のようにして、&lt;code&gt;auto commit&lt;/code&gt;を&lt;code&gt;true&lt;/code&gt;へ変えました。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;val config = new HikariConfig()
-config.setAutoCommit(true)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;例えば、ScalikeJDBCでは、読み取り専用のクエリを書きたい場合は、以下のようなコードを書きます。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;// サンプルのため敢えて文字列で
-val from = &amp;quot;2014-07-05&amp;quot;
-val to = &amp;quot;2014-07-05&amp;quot;
-
-val results = DB readOnly { implicit session: DBSession =&amp;gt;
-  sql&amp;quot;SELECT os, COUNT(*) count FROM cloudfront_logs WHERE date BETWEEN date ${from} AND date ${to} GROUP BY os&amp;quot;
-    .map { rs =&amp;gt; (rs.string(&amp;quot;os&amp;quot;), rs.int(&amp;quot;count&amp;quot;)) }
-    .list().apply()
-}
-results.foreach(println)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;しかしながら、これを実行すると以下のような例外が発生します。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Method Connection.prepareStatement is not yet implemented
-com.amazonaws.athena.jdbc.NotImplementedException: Method Connection.prepareStatement is not yet implemented
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;そう、&lt;code&gt;PreparedStatement&lt;/code&gt;が実装されていないのです。&lt;/p&gt;
-
-&lt;p&gt;仕方ないので、JDBCのナマの&lt;code&gt;Statement&lt;/code&gt;を生成する必要があります。&lt;/p&gt;
-
-&lt;p&gt;最終的に以下のようなコードにすることで、ようやく通るようになりました。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;using(ConnectionPool.borrow()) { conn ⇒
-  using(conn.createStatement()) { stmt ⇒
-    // language=SQL
-    val sql =
-        &amp;quot;&amp;quot;&amp;quot;
-        SELECT 
-            os, 
-            COUNT(*) AS count 
-        FROM mydatabase.cloudfront_logs 
-        WHERE date BETWEEN date &#39;2014-07-05&#39; AND date &#39;2014-08-05&#39; 
-        GROUP BY os
-        &amp;quot;&amp;quot;&amp;quot;.stripMargin
-    // ResultSetは、Statementのclose時にcloseされる
-    val rs = stmt.executeQuery(sql)
-
-    def resultSetToSeq[A](rs: ResultSet)(fn: ResultSet ⇒ A): Seq[A] = {
-      Iterator.continually(rs).takeWhile(_.next()).map(fn).toSeq
-    }
-
-    val result = resultSetToSeq(rs) { rs ⇒
-      val os = rs.getString(&amp;quot;os&amp;quot;)
-      val count = rs.getInt(&amp;quot;count&amp;quot;)
-      (os, count)
-    }
-    result.foreach(println)
-  }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;久しぶりにナマのJDBCを触りましたが、過去の記憶を呼び覚まされて頭がウッとなりました。&lt;/p&gt;
-
-&lt;p&gt;あと、closeし忘れが無いか確認してましたが、&lt;code&gt;ResultSet&lt;/code&gt;は&lt;code&gt;Statement&lt;/code&gt;がcloseされるときにcloseされるのも、
-指摘いただいて改めて認識しました。&lt;/p&gt;
-
-&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
-
-&lt;p&gt;JDBC Driverが提供されているとはいえ、まだいろいろ実装されていない箇所が見受けられたりなど、これからの部分が多いと思いました。&lt;/p&gt;
-
-&lt;p&gt;しかしながら、サービス提供開始時にここまでのものをリリースするのはさすがだと感じました。&lt;/p&gt;
-
-&lt;p&gt;とはいえ、Maven Centralにも無い状況では、ワークフローへ組み込むのは時期尚早だと思います。&lt;/p&gt;
-
-&lt;p&gt;結果はS3にcsvの形式で出力されますし、ナマとはいえJDBCを使えるので、&lt;code&gt;embulk&lt;/code&gt;も使えるのではないかと思いますので、
-今後も期待できるサービスになるのではないかと思います。&lt;/p&gt;
-</description>
+      <description>はじめに この記事は、Scala Advent Calendar 2016の11日目のエントリです。
+10日目 &amp;gt; ponkotuyさんのSkinnyORMのjoin定義についてです。
+12日目 &amp;gt; aoiroaoinoさんのScala関西 Summit 2016 で Lens/Prism について発表してきたです。
+ScalikeJDBCについて ScalikeJDBCは、SQLを使ってDBにアクセスしたい場合にとても使いやすいライブラリです。
+Amazon Athenaについて AWS re:Invent 2016で発表された新しいサービスです。
+詳細については、 Amazon Athena – Amazon S3上のデータに対話的にSQLクエリを や、AthenaのJDBCドライバを使ってS3のデータにSQL Workbench経由でアクセスする #reinvent #athena を見ていただければと思います。
+S3に保存したデータに対してスキーマを定義してSQLでアクセスできるようになるのは、今後の自分の仕事にもつながってくるサービスでもあるので注目しています。
+アクセスしてみた 検証したサンプルコードはこちらです。
+grimrose/Scala-Advent-Calendar-2016
+まずはじめに遭遇したのは、auto commitが常にONにするのが想定されているということでした。
+遭遇した例外は、以下のような内容でした。
+Exception encountered when invoking run on a nested suite - Failed to initialize pool: Disabling auto-commit mode not supported com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Disabling auto-commit mode not supported  仕方ないので、以下のようにして、auto commitをtrueへ変えました。</description>
     </item>
     
     <item>
@@ -329,160 +127,21 @@ com.amazonaws.athena.jdbc.NotImplementedException: Method Connection.prepareStat
       <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>http://grimrose.github.io/blog/2016/12/gadvent-2016/</guid>
-      <description>
-
-&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
-
-&lt;p&gt;この記事は、&lt;a href=&#34;http://qiita.com/advent-calendar/2016/gastah&#34;&gt;G*Advent Calendar(Groovy,Grails,Gradle,Spock&amp;hellip;) Advent Calendar 2016&lt;/a&gt;の10日目のエントリです。&lt;/p&gt;
-
-&lt;p&gt;9日目 &amp;gt; &lt;a href=&#34;http://qiita.com/nobeans&#34;&gt;nobeans&lt;/a&gt;さんの&lt;a href=&#34;https://www.ntts.co.jp/column/nakano_blog/20161209/index.html&#34;&gt;GrailsでUnix/Linux的実行可能WARファイルをつくる&lt;/a&gt;です。&lt;/p&gt;
-
-&lt;p&gt;11日目 &amp;gt; &lt;a href=&#34;http://qiita.com/tyama&#34;&gt;tyama&lt;/a&gt;さんの&lt;a href=&#34;http://grails.jp/guide/server-sent-events/guide/index.html&#34;&gt;GrailsでServer Sent Eventsを送信！(意訳版)&lt;/a&gt;です。&lt;/p&gt;
-
-&lt;h2 id=&#34;gparsとは&#34;&gt;GParsとは&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.gpars.org/&#34;&gt;GPars&lt;/a&gt;は、GroovyとJavaで利用できる並行・並列処理を利用しやすくなるライブラリです。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://qiita.com/saba1024/items/29bc32f3390facbaa5c5&#34;&gt;[Groovy]GParsで並列処理（基本＆コレクション編）&lt;/a&gt;を見ていただくと、
-旧来のThreadや、java.util.concurrentをそのまま使うよりも並行処理が書きやすそうだと感じたのではないでしょうか。&lt;/p&gt;
-
-&lt;p&gt;GroovyがApacheに寄贈され、codehausが停止してしまったため、ソースコードやドキュメントがgithubに移管されています。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/GPars/GPars&#34;&gt;GPars/GPars&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;versionは、&lt;code&gt;1.2.1&lt;/code&gt;のままです。&lt;/p&gt;
-
-&lt;p&gt;ですので、Gradleで利用する際は、以下のように依存を追加すれば利用できるようになります。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-groovy&#34;&gt;// https://mvnrepository.com/artifact/org.codehaus.gpars/gpars
-compile group: &#39;org.codehaus.gpars&#39;, name: &#39;gpars&#39;, version: &#39;1.2.1&#39;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;actorモデルについて&#34;&gt;Actorモデルについて&lt;/h2&gt;
-
-&lt;p&gt;アクターモデルについては、&lt;a href=&#34;https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AF%E3%82%BF%E3%83%BC%E3%83%A2%E3%83%87%E3%83%AB&#34;&gt;アクターモデル&lt;/a&gt;を見てください。&lt;/p&gt;
-
-&lt;p&gt;アクターモデルの実装されているもので代表的なものは、&lt;a href=&#34;http://www.erlang.org/&#34;&gt;Erlang&lt;/a&gt;と&lt;a href=&#34;http://akka.io/&#34;&gt;Akka&lt;/a&gt;が挙げられます。&lt;/p&gt;
-
-&lt;p&gt;この2つについては、もうエコシステムとも呼べるようなものになってしまっているので、アクターモデルだけを知ろうとすると、どこから手をつけていいのか分かりにくくなります。&lt;/p&gt;
-
-&lt;p&gt;そこで、GParsのActorを使ってアクターモデルの考え方を理解して行こうと思います。&lt;/p&gt;
-
-&lt;h2 id=&#34;gparsのactor&#34;&gt;GParsのActor&lt;/h2&gt;
-
-&lt;p&gt;GParsのActorの&lt;a href=&#34;http://www.gpars.org/guide/guide/actors.html&#34;&gt;ドキュメント&lt;/a&gt;を見ると、Actorの作り方はとてもシンプルです。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-groovy&#34;&gt;import groovyx.gpars.actor.Actor
-
-def actor = Actors.actor {
-    loop {
-        react { msg -&amp;gt;
-            println &amp;quot;Received: $msg&amp;quot;
-        }
-    }
-}
-
-actor.send &#39;Hello, GPars!&#39;
-
-actor.join() // 停止するまで立ち上がったままにする。
-
-// 止めるときはCtrl-C or プロセスを落とす
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;いわゆる&lt;code&gt;PingPong&lt;/code&gt;をする場合はこんな感じです。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-groovy&#34;&gt;@Immutable
-class PingMessage {
-    String message
-}
-
-@Immutable
-class PongMessage {
-    String message
-}
-
-@Log
-class PongActor extends DefaultActor {
-    @Override
-    protected void act() {
-        loop {
-            react { msg -&amp;gt;
-                log.info &amp;quot;Pong Received: $msg&amp;quot;
-                switch (msg) {
-                    case PingMessage:
-                        reply new PongMessage(message: msg.message)
-                }
-            }
-        }
-    }
-}
-
-@Log
-class Main {
-    static void main(args) {
-        log.info(&amp;quot;start&amp;quot;)
-
-        def pingActor = Actors.actor {
-            loop {
-                react { msg -&amp;gt;
-                    log.info &amp;quot;Ping Received: $msg&amp;quot;
-                    switch (msg) {
-                        case String:
-                            reply new PingMessage(message: msg)
-                            break
-                        case PongMessage:
-                            terminate() // actorを停止させる
-                            break
-                    }
-                }
-            }
-        }
-
-        def pongActor = new PongActor().start()
-
-        pingActor.send &#39;Hello, GPars!&#39;, pongActor
-
-        // 1秒だけ待つ
-        [pingActor, pongActor]*.join(1, TimeUnit.SECONDS)
-
-        log.info(&amp;quot;end&amp;quot;)
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;ちょっとAkkaのActorに似せるように書いて見ましたが、いかがでしょうか。&lt;/p&gt;
-
-&lt;p&gt;Groovyはswitch文の&lt;code&gt;case&lt;/code&gt;にクラスを指定することも出来るので、Scalaのパターンマッチっぽく見えます。&lt;/p&gt;
-
-&lt;p&gt;また、&lt;a href=&#34;http://docs.groovy-lang.org/latest/html/gapi/groovy/transform/Immutable.html&#34;&gt;@Immutable&lt;/a&gt;を使うことで、
-GroovyのAST変換用いて&lt;code&gt;case class&lt;/code&gt;っぽいクラスを作ることも出来ます。&lt;/p&gt;
-
-&lt;p&gt;Akkaでは、&lt;a href=&#34;http://doc.akka.io/docs/akka/current/general/actor-systems.html#actor-systems&#34;&gt;ActorSystem&lt;/a&gt;と呼ばれる&lt;code&gt;Supervisor&lt;/code&gt;を使用して、
-アクターの階層構造を構築していきますが、GParsのActorにはありません。&lt;/p&gt;
-
-&lt;p&gt;GParsの資料を色々探していたところ、 &lt;a href=&#34;http://mariogarcia.github.io/gpars-workshop/#_supervising&#34;&gt;6.2. Supervising&lt;/a&gt;を見つけました。&lt;/p&gt;
-
-&lt;p&gt;以下のコードを見る限り、頑張ればやれそうです。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;script src=&#34;https://gist.github.com/mariogarcia/a740f0b58f80f6a6d5f3.js&#34;&gt;&lt;/script&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;こうして見ると、AkkaのActorSystemは、かなり成熟しているので、理解することで巨人の肩に乗ることが出来ると思います。&lt;/p&gt;
-
-&lt;h2 id=&#34;終わりに&#34;&gt;終わりに&lt;/h2&gt;
-
-&lt;p&gt;駆け足でGParsのActorを紹介して見ましたが、いかがでしょうか。&lt;/p&gt;
-
-&lt;p&gt;同じJVMで動くAkkaに比べて機能としては少ないかもしれませんが、ここで紹介した&lt;code&gt;DefaultActor&lt;/code&gt;以外にも、
-より柔軟に条件が書ける&lt;code&gt;DynamicDispatchActor&lt;/code&gt;や、&lt;code&gt;Actors&lt;/code&gt;ヘルパークラスを使って簡単にactorを作れたり等、
-Actorモデルを理解するには十分な機能が揃っています。&lt;/p&gt;
-
-&lt;p&gt;GPars自体は、Actorだけでなく、他にもSTMやCSPなど並行・並列処理に向いた機能を提供しています。&lt;/p&gt;
-
-&lt;p&gt;Jetty等のコンテナを利用していると意識しなくても並行処理が利用できてしまいますが、
-並行・並列処理をより知りたくなった際には、GParsを使って理論の理解に役立ててください。&lt;/p&gt;
-</description>
+      <description>はじめに この記事は、G*Advent Calendar(Groovy,Grails,Gradle,Spock&amp;hellip;) Advent Calendar 2016の10日目のエントリです。
+9日目 &amp;gt; nobeansさんのGrailsでUnix/Linux的実行可能WARファイルをつくるです。
+11日目 &amp;gt; tyamaさんのGrailsでServer Sent Eventsを送信！(意訳版)です。
+GParsとは GParsは、GroovyとJavaで利用できる並行・並列処理を利用しやすくなるライブラリです。
+[Groovy]GParsで並列処理（基本＆コレクション編）を見ていただくと、 旧来のThreadや、java.util.concurrentをそのまま使うよりも並行処理が書きやすそうだと感じたのではないでしょうか。
+GroovyがApacheに寄贈され、codehausが停止してしまったため、ソースコードやドキュメントがgithubに移管されています。
+GPars/GPars
+versionは、1.2.1のままです。
+ですので、Gradleで利用する際は、以下のように依存を追加すれば利用できるようになります。
+// https://mvnrepository.com/artifact/org.codehaus.gpars/gpars compile group: &#39;org.codehaus.gpars&#39;, name: &#39;gpars&#39;, version: &#39;1.2.1&#39;  Actorモデルについて アクターモデルについては、アクターモデルを見てください。
+アクターモデルの実装されているもので代表的なものは、ErlangとAkkaが挙げられます。
+この2つについては、もうエコシステムとも呼べるようなものになってしまっているので、アクターモデルだけを知ろうとすると、どこから手をつけていいのか分かりにくくなります。
+そこで、GParsのActorを使ってアクターモデルの考え方を理解して行こうと思います。
+GParsのActor GParsのActorのドキュメントを見ると、Actorの作り方はとてもシンプルです。
+import groovyx.gpars.actor.Actor def actor = Actors.actor { loop { react { msg -&amp;gt; println &amp;quot;Received: $msg&amp;quot; } } } actor.send &#39;Hello, GPars!&#39; actor.join() // 停止するまで立ち上がったままにする。 // 止めるときはCtrl-C or プロセスを落とす  いわゆるPingPongをする場合はこんな感じです。</description>
     </item>
     
     <item>
@@ -491,52 +150,14 @@ Actorモデルを理解するには十分な機能が揃っています。&lt;/p
       <pubDate>Mon, 05 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>http://grimrose.github.io/blog/2016/12/mbp-13-late-2016/</guid>
-      <description>
-
-&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
-
-&lt;p&gt;MacBook Pro (13-inch, Late 2016, Two Thunderbolt 3 ports)モデルを購入したので、
-4Kモニタの&lt;a href=&#34;http://accessories.apj.dell.com/sna/productdetail.aspx?c=jp&amp;amp;cs=jpbsd1&amp;amp;l=ja&amp;amp;s=bsd&amp;amp;sku=210-AFRI&amp;amp;redirect=1&#34;&gt;P2715Q&lt;/a&gt;との動作検証を残しておこうと思います。&lt;/p&gt;
-
-&lt;h2 id=&#34;macbook-pro-13-late-2016-non-touch-bar&#34;&gt;MacBook Pro 13 Late 2016 non-Touch Bar&lt;/h2&gt;
-
-&lt;p&gt;カスタマイズは、以下の通り。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;2.4 GHz Intel Core i7&lt;/li&gt;
-&lt;li&gt;16 GB 1867 MHz LPDDR3&lt;/li&gt;
-&lt;li&gt;512GB SSD&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;dell-p2715q&#34;&gt;DELL P2715Q&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://support.apple.com/ja-jp/HT206587&#34;&gt;ここ&lt;/a&gt;を見ると4K 60Hzで表示するには、HDMI 2.0かDisplay Portのモニタが必要です。&lt;/p&gt;
-
-&lt;p&gt;しかし、HDMI 2.0の選択肢が無さすぎたので、Display Portで4K 60Hzを表示できるモニタから、DELL P2715Qを購入しました。
-理由は、価格と店頭での印象でした。&lt;/p&gt;
-
-&lt;p&gt;MacBook ProとDisplay Portのモニタを接続するアダプタとして、&lt;a href=&#34;http://www.aukey.com/products/usb-c-to-dp-adapter/&#34;&gt;AUKEY USB-C to DisplayPort Adapter CB-C42&lt;/a&gt;を購入しました。&lt;/p&gt;
-
-&lt;p&gt;P2715QにはminiDP - DisplayPortのケーブルが付属しているので、必要になればDisplay Port - DisplayPortのケーブルを買おうと思い、モニタが届くのを待ってました。&lt;/p&gt;
-
-&lt;p&gt;接続は、こんな感じで出来ました。&lt;/p&gt;
-
-&lt;p&gt;[MacBook Pro] &amp;lt;&amp;ndash; [CB-C42] &amp;lt;&amp;ndash; [DisplayPort - miniDP] &amp;ndash;&amp;gt; [P2715Q]&lt;/p&gt;
-
-&lt;p&gt;3840 x 2160で60Hzで動くのを確認しました。ただ、広すぎて文字も見づらいので、普段使う場合は2560 x 1440の解像度で使用することになりそうです。
-動作確認として4Kの映像を見ていましたが、やっぱり綺麗ですね。&lt;/p&gt;
-
-&lt;p&gt;P2715Qにはスピーカーが付いていないので、小さくてもそれなりに音がいいのを探して見たいと思います。&lt;/p&gt;
-
-&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
-
-&lt;p&gt;USB-Cに変わって今まで使ってたアダプタが使えなくなるのは、割と痛手です。
-また、個人的に痛いのはmagsafe 2みたいにうっかりケーブルを引っ掛けたりしても大丈夫だったのが、USB-Cになって本体ごと巻き込んで壊れそうなのが本当に怖いです。
-なので、まだ発売されていませんが、&lt;a href=&#34;https://www.kickstarter.com/projects/436147229/snapnator-your-macbook-snap-feature-is-back&#34;&gt;Snapnator&lt;/a&gt;がMacBook Proでも使えそうなのが楽しみです。
-今後はUSB-Cのケーブルはワット数も見る必要が出てきたり、 Apple以外のACアダプタとの相性等、汎用的なポートを利用することによる心配は今後も続きそうです。&lt;/p&gt;
-
-&lt;p&gt;久しぶりに自宅の環境を更新して、開封の儀が楽しいことを思い出しました。&lt;/p&gt;
-</description>
+      <description>はじめに MacBook Pro (13-inch, Late 2016, Two Thunderbolt 3 ports)モデルを購入したので、 4KモニタのP2715Qとの動作検証を残しておこうと思います。
+MacBook Pro 13 Late 2016 non-Touch Bar カスタマイズは、以下の通り。
+ 2.4 GHz Intel Core i7 16 GB 1867 MHz LPDDR3 512GB SSD  DELL P2715Q ここを見ると4K 60Hzで表示するには、HDMI 2.0かDisplay Portのモニタが必要です。
+しかし、HDMI 2.0の選択肢が無さすぎたので、Display Portで4K 60Hzを表示できるモニタから、DELL P2715Qを購入しました。 理由は、価格と店頭での印象でした。
+MacBook ProとDisplay Portのモニタを接続するアダプタとして、AUKEY USB-C to DisplayPort Adapter CB-C42を購入しました。
+P2715QにはminiDP - DisplayPortのケーブルが付属しているので、必要になればDisplay Port - DisplayPortのケーブルを買おうと思い、モニタが届くのを待ってました。
+接続は、こんな感じで出来ました。
+[MacBook Pro] &amp;lt;&amp;ndash; [CB-C42] &amp;lt;&amp;ndash; [DisplayPort - miniDP] &amp;ndash;&amp;gt; [P2715Q]</description>
     </item>
     
     <item>
@@ -545,52 +166,20 @@ Actorモデルを理解するには十分な機能が揃っています。&lt;/p
       <pubDate>Sun, 04 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>http://grimrose.github.io/blog/2016/12/jjug-ccc-2016/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;http://www.java-users.jp/ccc2016fall/&#34;&gt;http://www.java-users.jp/ccc2016fall/&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;参加したセッション&#34;&gt;参加したセッション&lt;/h2&gt;
-
-&lt;p&gt;今回参加したセッションは、以下のとおりです。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;SIerもはじめる、わたしたちのDevOps&lt;/li&gt;
-&lt;li&gt;先取り Elasticsearch 5.0 ハンズオン！&lt;/li&gt;
-&lt;li&gt;JVMのトラブル解決のためにやったこと~メモリー/スレッド&lt;/li&gt;
-&lt;li&gt;Spring Cloudアプリケーションの開発にDockerを活用し、Kubernetes上にデプロイするまで&lt;/li&gt;
-&lt;li&gt;Featherweight JavaやGroovyの漸進的型付けについて&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;今回は、仕事でElasticsearchを検証している際に入門的なものを知らないと先に進めなさそうと感じたので、ハンズオンを優先的に選択しました。&lt;/p&gt;
-
-&lt;p&gt;その他のセッションについては、Javaのセッションよりも仕事で使うJVMやkubernetesに関するものや、数少ないGroovyのセッションを選んでみました。&lt;/p&gt;
-
-&lt;p&gt;寝坊してしまったため、午前の基調講演とそのあとのセッションの一部を聞けず、流れてくるTwitterを見ながら早く聞いて見たいと思ってました。&lt;/p&gt;
-
-&lt;p&gt;途中からでしたが、顧客が社内の人達ということで、自分の今の環境と照らし合わせて聞いていました。&lt;/p&gt;
-
-&lt;p&gt;裏でいろいろ教育や環境を整えているかわしまさんのスゴさを改めて知ることが出来たのと、その教えを忠実に守って継続していくしょぼちむさんのチームが素晴らしかったです。&lt;/p&gt;
-
-&lt;p&gt;R&amp;amp;D部門の阿佐さんのDockerのオーケストレーションの話がとても興味深かったです。まさか資料がkubernetesで動いてるとは思いませんでした。&lt;/p&gt;
-
-&lt;p&gt;Elasticsearchのハンズオンは、特にkibanaあたりの内容が足りていなかった自分にとって勉強になりました。&lt;/p&gt;
-
-&lt;p&gt;JVMのトラブルシューティングについては、初心者向けだったのか、JVMの基本的な概要とトラブルシューティングのツールの説明が主でした。
-なのでちょっと物足りなく感じましたが、JJUG CCCの参加者の多くが初めての人が多いことを考えれば、仕方ないと思います。&lt;/p&gt;
-
-&lt;p&gt;Spring Cloudの他のセッションをあらかじめ聞いておけば良かったと思えるほど、Spring CloudとKubernetesを連携させて動かすことができる環境を用意できる&lt;a href=&#34;https://fabric8.io/&#34;&gt;fabric8&lt;/a&gt;が凄かった印象でした。
-Kubernetesの設定ファイルとかその他の設定もよしなにしてくれるpluginがMavenしか最新版が無いのが本当に&lt;/p&gt;
-
-&lt;p&gt;Featherweight Javaは&lt;a href=&#34;http://togetter.com/li/362176&#34;&gt;Java基礎勉強会&lt;/a&gt;の時に説明されていたので、ある程度覚えていましたが論文自体を全部読んでいなかったので丁寧に説明してくださって助かりました。
-@TypeCheckedや@CompileStaticをそういう使い方もできるのかとGroovyの奥深さを新たに知ることが出来ました。&lt;/p&gt;
-
-&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
-
-&lt;p&gt;懇親会は、初めの方だけ参加させていただきましたが、いろいろな方とお話しできて良かったです。
-次回のJJUG CCCで時間の都合でご挨拶できなかった方にお会いしたいと思ってますので、よろしくお願いします。&lt;/p&gt;
-
-&lt;p&gt;JJUGのスタッフの皆様、スポンサーの皆様、講演者の皆様、参加者の皆様、ありがとうございました。&lt;/p&gt;
-</description>
+      <description>http://www.java-users.jp/ccc2016fall/
+参加したセッション 今回参加したセッションは、以下のとおりです。
+ SIerもはじめる、わたしたちのDevOps 先取り Elasticsearch 5.0 ハンズオン！ JVMのトラブル解決のためにやったこと~メモリー/スレッド Spring Cloudアプリケーションの開発にDockerを活用し、Kubernetes上にデプロイするまで Featherweight JavaやGroovyの漸進的型付けについて  今回は、仕事でElasticsearchを検証している際に入門的なものを知らないと先に進めなさそうと感じたので、ハンズオンを優先的に選択しました。
+その他のセッションについては、Javaのセッションよりも仕事で使うJVMやkubernetesに関するものや、数少ないGroovyのセッションを選んでみました。
+寝坊してしまったため、午前の基調講演とそのあとのセッションの一部を聞けず、流れてくるTwitterを見ながら早く聞いて見たいと思ってました。
+途中からでしたが、顧客が社内の人達ということで、自分の今の環境と照らし合わせて聞いていました。
+裏でいろいろ教育や環境を整えているかわしまさんのスゴさを改めて知ることが出来たのと、その教えを忠実に守って継続していくしょぼちむさんのチームが素晴らしかったです。
+R&amp;amp;D部門の阿佐さんのDockerのオーケストレーションの話がとても興味深かったです。まさか資料がkubernetesで動いてるとは思いませんでした。
+Elasticsearchのハンズオンは、特にkibanaあたりの内容が足りていなかった自分にとって勉強になりました。
+JVMのトラブルシューティングについては、初心者向けだったのか、JVMの基本的な概要とトラブルシューティングのツールの説明が主でした。 なのでちょっと物足りなく感じましたが、JJUG CCCの参加者の多くが初めての人が多いことを考えれば、仕方ないと思います。
+Spring Cloudの他のセッションをあらかじめ聞いておけば良かったと思えるほど、Spring CloudとKubernetesを連携させて動かすことができる環境を用意できるfabric8が凄かった印象でした。 Kubernetesの設定ファイルとかその他の設定もよしなにしてくれるpluginがMavenしか最新版が無いのが本当に
+Featherweight JavaはJava基礎勉強会の時に説明されていたので、ある程度覚えていましたが論文自体を全部読んでいなかったので丁寧に説明してくださって助かりました。 @TypeCheckedや@CompileStaticをそういう使い方もできるのかとGroovyの奥深さを新たに知ることが出来ました。
+おわりに 懇親会は、初めの方だけ参加させていただきましたが、いろいろな方とお話しできて良かったです。 次回のJJUG CCCで時間の都合でご挨拶できなかった方にお会いしたいと思ってますので、よろしくお願いします。
+JJUGのスタッフの皆様、スポンサーの皆様、講演者の皆様、参加者の皆様、ありがとうございました。</description>
     </item>
     
     <item>
@@ -599,42 +188,19 @@ Kubernetesの設定ファイルとかその他の設定もよしなにしてく�
       <pubDate>Thu, 01 Dec 2016 00:00:00 +0900</pubDate>
       
       <guid>http://grimrose.github.io/blog/2016/12/curriculum-vitae/</guid>
-      <description>
-
-&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
-
-&lt;p&gt;2014年12月に転職してから2年経ったので、振り返ってみました。&lt;/p&gt;
-
-&lt;p&gt;1年前は&lt;a href=&#34;http://grimrose.github.io/blog/2015/12/career-change&#34;&gt;こちら&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;引き続き、データ分析チームのエンジニアとして働いてます。&lt;/p&gt;
-
-&lt;h2 id=&#34;職務経歴書のoss化&#34;&gt;職務経歴書のOSS化&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;ja&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;転職して2年経ったし、やってみるか&lt;br&gt;職務経歴書OSS化 - Qiita &lt;a href=&#34;https://t.co/Yz5XAzR1uj&#34;&gt;https://t.co/Yz5XAzR1uj&lt;/a&gt;&lt;/p&gt;&amp;mdash; とーます (@grimrose) &lt;a href=&#34;https://twitter.com/grimrose/status/803596996724391937&#34;&gt;2016年11月29日&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://qiita.com/okoysm/items/abcad0b4aefa585bc50b&#34;&gt;職務経歴書OSS化&lt;/a&gt;を見て、ちょうどいい機会だと思ったので、作ってみました。&lt;/p&gt;
-
-&lt;p&gt;職務経歴書はこちらです -&amp;gt; &lt;a href=&#34;https://github.com/grimrose/Curriculum-Vitae&#34;&gt;grimrose/Curriculum-Vitae&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;前職の案件については、転職時に作成した資料を元にぼかして書きました。&lt;/p&gt;
-
-&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
-
-&lt;p&gt;今のところ、転職する意思はありませんが、転職のきっかけとなった方が新天地へ飛び立って行かれたので、
-自分が今の会社で何を成したいのかを考えるいいきっかけだと感じました。&lt;/p&gt;
-
-&lt;p&gt;久しぶりにスキル周りの見直しや転職時に作った資料の振り返りをしてみて、
-転職時にやりたいと思っていたことが実はそこまで重要視してなかったということが分かったり、
-今やっていることを挙げてみると、なかなか言葉にしにくかったりしました。&lt;/p&gt;
-
-&lt;p&gt;前職では、案件ごとに職務経歴書みたいなものを更新していたので、ある程度スキルセットの棚卸しをしていたのかもしれません。&lt;/p&gt;
-
-&lt;p&gt;2016年の振り返りを年末にする予定なので、それまでに職務経歴書の「やったことはないが興味があるもの」や、まだ書けていない箇所を埋めていこうと思います。&lt;/p&gt;
-</description>
+      <description>はじめに 2014年12月に転職してから2年経ったので、振り返ってみました。
+1年前はこちら。
+引き続き、データ分析チームのエンジニアとして働いてます。
+職務経歴書のOSS化  転職して2年経ったし、やってみるか
+職務経歴書OSS化 - Qiita https://t.co/Yz5XAzR1uj
+&amp;mdash; とーます (@grimrose) 2016年11月29日 
+ 職務経歴書OSS化を見て、ちょうどいい機会だと思ったので、作ってみました。
+職務経歴書はこちらです -&amp;gt; grimrose/Curriculum-Vitae
+前職の案件については、転職時に作成した資料を元にぼかして書きました。
+おわりに 今のところ、転職する意思はありませんが、転職のきっかけとなった方が新天地へ飛び立って行かれたので、 自分が今の会社で何を成したいのかを考えるいいきっかけだと感じました。
+久しぶりにスキル周りの見直しや転職時に作った資料の振り返りをしてみて、 転職時にやりたいと思っていたことが実はそこまで重要視してなかったということが分かったり、 今やっていることを挙げてみると、なかなか言葉にしにくかったりしました。
+前職では、案件ごとに職務経歴書みたいなものを更新していたので、ある程度スキルセットの棚卸しをしていたのかもしれません。
+2016年の振り返りを年末にする予定なので、それまでに職務経歴書の「やったことはないが興味があるもの」や、まだ書けていない箇所を埋めていこうと思います。</description>
     </item>
     
     <item>
@@ -643,68 +209,21 @@ Kubernetesの設定ファイルとかその他の設定もよしなにしてく�
       <pubDate>Sun, 09 Oct 2016 00:00:00 +0000</pubDate>
       
       <guid>http://grimrose.github.io/blog/2016/10/scalakansai2016/</guid>
-      <description>
-
-&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://summit.scala-kansai.org/&#34;&gt;http://summit.scala-kansai.org/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://skug.connpass.com/event/38349/&#34;&gt;http://skug.connpass.com/event/38349/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;去年の&lt;a href=&#34;http://summit.scala-kansai.org/2015/index.html&#34;&gt;Scala関西 Summit 2015&lt;/a&gt;に参加してまた参加したいと思っていたのと、
-&lt;a href=&#34;http://2017.scalamatsuri.org&#34;&gt;ScalaMatsuri&lt;/a&gt;の運営の参考になればと思い、参加しました。&lt;/p&gt;
-
-&lt;h2 id=&#34;セッション&#34;&gt;セッション&lt;/h2&gt;
-
-&lt;p&gt;今回は、どのセッションも面白そうだったのと、社内に持ち帰って共有したい内容が多かったので、悩みました。&lt;/p&gt;
-
-&lt;p&gt;その中で以下のセッションを選びました。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;はてなにおけるマイクロサービスとScala&lt;/li&gt;
-&lt;li&gt;akka-stream を始めるときに覚えておきたいこと&lt;/li&gt;
-&lt;li&gt;Implicit 再入門&lt;/li&gt;
-&lt;li&gt;Play2+SlickだけじゃないScalaのWeb/DBフレームワーク事情&lt;/li&gt;
-&lt;li&gt;Akka Clusterのネットワーク分断耐性設計&lt;/li&gt;
-&lt;li&gt;今からはじめる Lens/Prism&lt;/li&gt;
-&lt;li&gt;scala.collection 再入門&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Scalaを使いつつDDDを導入しているのでDDDと相性が良いことは実感していましたが、
-一部とは言え、はてなのような大きなサービスのドメインを写し取りつつDDDを実践するという話は、とても参考になりました。
-Scalaの定石を探る会は、とても興味深かったので今後のカンファレンス等で話される機会があるのを願ってます。&lt;/p&gt;
-
-&lt;p&gt;akka-streamは、Reactive Streamsについてずっと勉強していたので、実際にプロダクトに導入するにはどうすればいいのかを学びたかったので、
-特に気になっていました。
-小さな部品を組み合わせて大きな部品を作っていくところや、どのように既存のAkkaのActorと連携していくのかを知ることが出来てとても勉強になりました。&lt;/p&gt;
-
-&lt;p&gt;Implicit 再入門については、様々な入門書や日本語のドキュメントで知ってはいたものの、若干の不安がありましたが、がくぞー先生の説明で改めてScalaのImplicitの機能を知ることが出来ました。&lt;/p&gt;
-
-&lt;p&gt;Scalaのフレームワーク事情で紹介されていた&lt;a href=&#34;http://scalikejdbc.org&#34;&gt;ScalikeJDBC&lt;/a&gt;は、現在のプロジェクトでも利用しており、
-フレームワークの標準機能としてDAOやActiveRecordのような使い方が出来て、
-さらにSQLの行数が多めの集計用クエリなどでもフレームワークを変えること無く利用出来るので、かなりおすすめです。
-特に、ログ周りの設定は、クエリチューニングの際にとても助かっています。&lt;/p&gt;
-
-&lt;p&gt;Akka Clusterを導入するかは今後の状況次第ではありますが、分散処理という文脈の中でClusterでどういう故障が起きるのか、
-故障が起きた際にどう対応すればいいのかを学ぶことが出来て、分散処理基盤を動かしていくことの難しさを知れました。&lt;/p&gt;
-
-&lt;p&gt;Monocle、Lens、Prismは名前だけ知っていて、コワイものだという印象でいましたが、
-広く一般的なgetter/setterは関数の世界ではどういったものかを知れました。
-case classのインスタンスのcopy hellは、ドメインオブジェクトの変換時にどうしても出てきてしまう問題の一つだと思うので、
-適切な局面で扱えるようになりたいと思いました。&lt;/p&gt;
-
-&lt;p&gt;社内のScala勉強会でScalaのcollectionをどう使って行けばいいのか説明する時に参考に出来ると思いました。
-特に計算量については、件数が多いデータを扱うことが多いプロジェクトなので、頭に入れながらやらないとパフォーマンスが出ないと思うので、ありがたい内容でした。&lt;/p&gt;
-
-&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
-
-&lt;p&gt;丸一日ずっとScala漬けだったので途中疲れてしまいましたが、懇親会でTLで気になっていた人と実際にお会いする機会があったり、
-お世話になっている人にお礼を伝えることが出来たりと、とても充実した一日でした。&lt;/p&gt;
-
-&lt;p&gt;また来年開催されることになったら、是非参加したいと思います。&lt;/p&gt;
-
-&lt;p&gt;参加者、スタッフ、スポンサーの皆様、ありがとうございました。&lt;/p&gt;
-</description>
+      <description>はじめに http://summit.scala-kansai.org/
+http://skug.connpass.com/event/38349/
+去年のScala関西 Summit 2015に参加してまた参加したいと思っていたのと、 ScalaMatsuriの運営の参考になればと思い、参加しました。
+セッション 今回は、どのセッションも面白そうだったのと、社内に持ち帰って共有したい内容が多かったので、悩みました。
+その中で以下のセッションを選びました。
+ はてなにおけるマイクロサービスとScala akka-stream を始めるときに覚えておきたいこと Implicit 再入門 Play2+SlickだけじゃないScalaのWeb/DBフレームワーク事情 Akka Clusterのネットワーク分断耐性設計 今からはじめる Lens/Prism scala.collection 再入門  Scalaを使いつつDDDを導入しているのでDDDと相性が良いことは実感していましたが、 一部とは言え、はてなのような大きなサービスのドメインを写し取りつつDDDを実践するという話は、とても参考になりました。 Scalaの定石を探る会は、とても興味深かったので今後のカンファレンス等で話される機会があるのを願ってます。
+akka-streamは、Reactive Streamsについてずっと勉強していたので、実際にプロダクトに導入するにはどうすればいいのかを学びたかったので、 特に気になっていました。 小さな部品を組み合わせて大きな部品を作っていくところや、どのように既存のAkkaのActorと連携していくのかを知ることが出来てとても勉強になりました。
+Implicit 再入門については、様々な入門書や日本語のドキュメントで知ってはいたものの、若干の不安がありましたが、がくぞー先生の説明で改めてScalaのImplicitの機能を知ることが出来ました。
+Scalaのフレームワーク事情で紹介されていたScalikeJDBCは、現在のプロジェクトでも利用しており、 フレームワークの標準機能としてDAOやActiveRecordのような使い方が出来て、 さらにSQLの行数が多めの集計用クエリなどでもフレームワークを変えること無く利用出来るので、かなりおすすめです。 特に、ログ周りの設定は、クエリチューニングの際にとても助かっています。
+Akka Clusterを導入するかは今後の状況次第ではありますが、分散処理という文脈の中でClusterでどういう故障が起きるのか、 故障が起きた際にどう対応すればいいのかを学ぶことが出来て、分散処理基盤を動かしていくことの難しさを知れました。
+Monocle、Lens、Prismは名前だけ知っていて、コワイものだという印象でいましたが、 広く一般的なgetter/setterは関数の世界ではどういったものかを知れました。 case classのインスタンスのcopy hellは、ドメインオブジェクトの変換時にどうしても出てきてしまう問題の一つだと思うので、 適切な局面で扱えるようになりたいと思いました。
+社内のScala勉強会でScalaのcollectionをどう使って行けばいいのか説明する時に参考に出来ると思いました。 特に計算量については、件数が多いデータを扱うことが多いプロジェクトなので、頭に入れながらやらないとパフォーマンスが出ないと思うので、ありがたい内容でした。
+おわりに 丸一日ずっとScala漬けだったので途中疲れてしまいましたが、懇親会でTLで気になっていた人と実際にお会いする機会があったり、 お世話になっている人にお礼を伝えることが出来たりと、とても充実した一日でした。
+また来年開催されることになったら、是非参加したいと思います。
+参加者、スタッフ、スポンサーの皆様、ありがとうございました。</description>
     </item>
     
     <item>
@@ -713,60 +232,14 @@ case classのインスタンスのcopy hellは、ドメインオブジェクト�
       <pubDate>Sun, 25 Sep 2016 00:00:00 +0000</pubDate>
       
       <guid>http://grimrose.github.io/blog/2016/09/pyconjp-2016/</guid>
-      <description>
-
-&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/&#34;&gt;PyCon JP 2016&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;今後仕事でPythonを使う機会が増えるだろうということと、&lt;a href=&#34;scalamatsuri.org&#34;&gt;ScalaMatsuri&lt;/a&gt;の運営はPyCon JPの運営を参考にさせて頂いてるので、
-実際スタッフの人はどのように動いているのかを見てみたいと思い参加してみました。&lt;/p&gt;
-
-&lt;h2 id=&#34;セッション&#34;&gt;セッション&lt;/h2&gt;
-
-&lt;p&gt;選択したセッションは、以下のとおりです。
-両日の基調講演は、朝起きられず途中からでした。
-基準として仕事で使う際に必要そうなのを重点的に選んでみました。&lt;/p&gt;
-
-&lt;h3 id=&#34;1日目&#34;&gt;1日目&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/keynote/&#34;&gt;基調講演&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/schedule/presentation/72/&#34;&gt;週末サイエンティストのススメ&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/schedule/presentation/54/&#34;&gt;データ分析スクリプトのツール化入門(GUI付与・EXE化)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/schedule/presentation/8/&#34;&gt;Getting started with chatops in python with errbot&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/schedule/presentation/53/&#34;&gt;Robot Frameworkでブラウザテストやってみた話&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;2日目&#34;&gt;2日目&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/keynote/&#34;&gt;基調講演&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/schedule/presentation/24/&#34;&gt;Pythonではじめるfinance hack入門&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/schedule/presentation/20/&#34;&gt;Deep Learning with Python &amp;amp; TensorFlow&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/schedule/presentation/5/&#34;&gt;Building Distributed System with Celery on Docker Swarm&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/schedule/presentation/23/&#34;&gt;pandasによる時系列データ処理&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/schedule/presentation/39/&#34;&gt;Building a data preparation pipeline with Pandas and AWS Lambda&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;特に、ChatOpsのPythonで書かれた&lt;a href=&#34;http://errbot.io/en/latest/&#34;&gt;errbot&lt;/a&gt;のセッションは、興味深かったです。
-hubotはcoffeescriptなのが微妙、botkitはほぼSlack専用、rubotyはRubyなのでチームでメンテナンスしていくのが難しそうだったので、
-Pythonのがあるならどんな感じなのかなと思ってました。&lt;/p&gt;
-
-&lt;p&gt;その他では、データ分析でよく使われているpandasに基本的な知識から実際にどう使っているかを知れて、勉強になりました。&lt;/p&gt;
-
-&lt;h2 id=&#34;カンファレンス運営&#34;&gt;カンファレンス運営&lt;/h2&gt;
-
-&lt;p&gt;当日の運営という視点から見たときは、相当準備されていたのか着実に実施していて素晴らしいと思いました。
-トラブルの対応も行動規範に沿って説明がされており、運営が一体となって解決に取り組んでいる姿勢を見せていたのが特に印象的でした。&lt;/p&gt;
-
-&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
-
-&lt;p&gt;仕事で必要になるということで初めて参加してみましたが、とても充実した2日間でした。
-今後は、Pythonのコミュニティイベントにも参加していこうと思います。&lt;/p&gt;
-
-&lt;p&gt;参加者、スタッフ、スポンサーの皆様、ありがとうございました。&lt;/p&gt;
-</description>
+      <description>はじめに PyCon JP 2016
+今後仕事でPythonを使う機会が増えるだろうということと、ScalaMatsuriの運営はPyCon JPの運営を参考にさせて頂いてるので、 実際スタッフの人はどのように動いているのかを見てみたいと思い参加してみました。
+セッション 選択したセッションは、以下のとおりです。 両日の基調講演は、朝起きられず途中からでした。 基準として仕事で使う際に必要そうなのを重点的に選んでみました。
+1日目  基調講演 週末サイエンティストのススメ データ分析スクリプトのツール化入門(GUI付与・EXE化) Getting started with chatops in python with errbot Robot Frameworkでブラウザテストやってみた話  2日目  基調講演 Pythonではじめるfinance hack入門 Deep Learning with Python &amp;amp; TensorFlow Building Distributed System with Celery on Docker Swarm pandasによる時系列データ処理 Building a data preparation pipeline with Pandas and AWS Lambda  特に、ChatOpsのPythonで書かれたerrbotのセッションは、興味深かったです。 hubotはcoffeescriptなのが微妙、botkitはほぼSlack専用、rubotyはRubyなのでチームでメンテナンスしていくのが難しそうだったので、 Pythonのがあるならどんな感じなのかなと思ってました。
+その他では、データ分析でよく使われているpandasに基本的な知識から実際にどう使っているかを知れて、勉強になりました。
+カンファレンス運営 当日の運営という視点から見たときは、相当準備されていたのか着実に実施していて素晴らしいと思いました。 トラブルの対応も行動規範に沿って説明がされており、運営が一体となって解決に取り組んでいる姿勢を見せていたのが特に印象的でした。
+おわりに 仕事で必要になるということで初めて参加してみましたが、とても充実した2日間でした。 今後は、Pythonのコミュニティイベントにも参加していこうと思います。
+参加者、スタッフ、スポンサーの皆様、ありがとうございました。</description>
     </item>
     
     <item>
@@ -775,46 +248,19 @@ Pythonのがあるならどんな感じなのかなと思ってました。&lt;/
       <pubDate>Mon, 05 Sep 2016 21:11:45 +0900</pubDate>
       
       <guid>http://grimrose.github.io/blog/2016/09/self-education-python/</guid>
-      <description>
-
-&lt;h2 id=&#34;きっかけ&#34;&gt;きっかけ&lt;/h2&gt;
-
-&lt;p&gt;これまで、jupyter-notebookやfabricを使ってきたのですが、pythonそのものを使って何かを作るといったことはしてこなかったので、
-仕事で本格的にPythonを使うことになる前に、一から学べる本があればいいなと思い、電子版で出版されている中で入門にカテゴリされている本を探していました。&lt;/p&gt;
-
-&lt;p&gt;はてブなどでいろいろ探してたところ&lt;a href=&#34;http://shinyorke.hatenablog.com/entry/2016/08/05/224825&#34;&gt;「独習Python入門」は一生付き合える入門本だと334回言いたい&lt;/a&gt;の記事がみつかり、
-求めてる内容にマッチしてそうだし、&lt;a href=&#34;https://twitter.com/gothedistance&#34;&gt;ござ先輩&lt;/a&gt;は以前に、&lt;a href=&#34;http://grimrose.blogspot.jp/2012/03/vcafe.html&#34;&gt;これからの「エンジニアリング」の話をしよう に参加しました #vcafe
-&lt;/a&gt;のイベントの講師として来られていた方だったので、間違い無さそうと思い購入しました。&lt;/p&gt;
-
-&lt;h2 id=&#34;読みきってみて&#34;&gt;読みきってみて&lt;/h2&gt;
-
-&lt;p&gt;率直な感想は、「物足りない」でした。が、それは私がこの本が想定されているスキルと合ってなかったからだろうなと思います。&lt;/p&gt;
-
-&lt;p&gt;私がもしこの本を勧めるとしたら、例えば普段Excel VBAのような旧石器時代の言語でデータ分析していて、
-より現代的なプログラミング言語で楽ができる良いツールは無いかと模索している人ような隣の島にいるメンバーです。&lt;/p&gt;
-
-&lt;p&gt;そういう人は、gitやpyenvやvirtualenvといった開発環境をいれる際に躓くのが最も挫折しやすい難所なので、
-インストールは簡単にスムーズに行く方法を教える必要がありますが、解説付きで載っているので安心です。&lt;/p&gt;
-
-&lt;p&gt;ある程度、VBAとはいえプログラミング言語を知っていれば、丁寧な解説とかわいいイラストでどんどん先に進めるでしょう。&lt;/p&gt;
-
-&lt;p&gt;もちろん、プログラミング初めての人でも、躓いた箇所を読み返しつつ進めていくことが出来れば、あっという間に後半まで進めると思います。&lt;/p&gt;
-
-&lt;p&gt;9章、10章は、プログラミング言語を使うとこんなことも出来るんだよというちょっとハードルの高い章だと思いますが、ここまで読み進めた人であれば大丈夫だと思います。&lt;/p&gt;
-
-&lt;p&gt;最後の11章のしっかりと今後何をやっていったらいいのかを伝えながら背中を押す感じが、読み終えてとてもいい心地でした。&lt;/p&gt;
-
-&lt;p&gt;全部の章に練習問題と答えがあり、間違えそうな箇所はしっかり説明がされていてサポートが手厚い印象でした。&lt;/p&gt;
-
-&lt;p&gt;既にRubyやJava、JavaScriptといったプログラミング言語を使ってコードを書いている人には物足りないかもしれません。&lt;/p&gt;
-
-&lt;p&gt;そういう人向けにいい本や記事があれば、教えて頂ければ幸いです。&lt;/p&gt;
-
-&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
-
-&lt;p&gt;次は、ほぼ同じ時期に購入した&lt;a href=&#34;http://www.oreilly.co.jp/books/9784873117386/&#34;&gt;入門 Python 3&lt;/a&gt;を見て、
-独習Python入門でカバーされていなかった内容を補完しつつ、仕事で使うNumpy, Scipy, pandas方面に進みたいと思います。&lt;/p&gt;
-</description>
+      <description>きっかけ これまで、jupyter-notebookやfabricを使ってきたのですが、pythonそのものを使って何かを作るといったことはしてこなかったので、 仕事で本格的にPythonを使うことになる前に、一から学べる本があればいいなと思い、電子版で出版されている中で入門にカテゴリされている本を探していました。
+はてブなどでいろいろ探してたところ「独習Python入門」は一生付き合える入門本だと334回言いたいの記事がみつかり、 求めてる内容にマッチしてそうだし、ござ先輩は以前に、これからの「エンジニアリング」の話をしよう に参加しました #vcafe のイベントの講師として来られていた方だったので、間違い無さそうと思い購入しました。
+読みきってみて 率直な感想は、「物足りない」でした。が、それは私がこの本が想定されているスキルと合ってなかったからだろうなと思います。
+私がもしこの本を勧めるとしたら、例えば普段Excel VBAのような旧石器時代の言語でデータ分析していて、 より現代的なプログラミング言語で楽ができる良いツールは無いかと模索している人ような隣の島にいるメンバーです。
+そういう人は、gitやpyenvやvirtualenvといった開発環境をいれる際に躓くのが最も挫折しやすい難所なので、 インストールは簡単にスムーズに行く方法を教える必要がありますが、解説付きで載っているので安心です。
+ある程度、VBAとはいえプログラミング言語を知っていれば、丁寧な解説とかわいいイラストでどんどん先に進めるでしょう。
+もちろん、プログラミング初めての人でも、躓いた箇所を読み返しつつ進めていくことが出来れば、あっという間に後半まで進めると思います。
+9章、10章は、プログラミング言語を使うとこんなことも出来るんだよというちょっとハードルの高い章だと思いますが、ここまで読み進めた人であれば大丈夫だと思います。
+最後の11章のしっかりと今後何をやっていったらいいのかを伝えながら背中を押す感じが、読み終えてとてもいい心地でした。
+全部の章に練習問題と答えがあり、間違えそうな箇所はしっかり説明がされていてサポートが手厚い印象でした。
+既にRubyやJava、JavaScriptといったプログラミング言語を使ってコードを書いている人には物足りないかもしれません。
+そういう人向けにいい本や記事があれば、教えて頂ければ幸いです。
+おわりに 次は、ほぼ同じ時期に購入した入門 Python 3を見て、 独習Python入門でカバーされていなかった内容を補完しつつ、仕事で使うNumpy, Scipy, pandas方面に進みたいと思います。</description>
     </item>
     
     <item>
@@ -823,115 +269,22 @@ Pythonのがあるならどんな感じなのかなと思ってました。&lt;/
       <pubDate>Thu, 26 May 2016 00:00:00 +0900</pubDate>
       
       <guid>http://grimrose.github.io/blog/2016/05/jjug-ccc-2016/</guid>
-      <description>
-
-&lt;h2 id=&#34;発表のキッカケ&#34;&gt;発表のキッカケ&lt;/h2&gt;
-
-&lt;p&gt;ちょうど日々の業務でGradleのタスク機能を利用して、共有ディレクトリにあるExcelのデータとDBの値とチェックしたり、
-前回の作業との差分を抽出して入力ミスがないかチェックしたり、といった小さい業務タスクを自動化していたので、
-50分は無理でも新しく出来た20分枠ならイケるんではないかと思い、
-Groovy枠として選ばれたら本気でやるかといった感じで応募しました。&lt;/p&gt;
-
-&lt;p&gt;なので、&lt;a href=&#34;https://github.com/jjug-ccc/call-for-paper-2016spring/issues/35&#34;&gt;十徳ナイフとしてのGradle / @grimrose #35&lt;/a&gt;に投票して頂いた皆様には、大変感謝しております。&lt;/p&gt;
-
-&lt;h2 id=&#34;jupyter使ってる理由&#34;&gt;jupyter使ってる理由&lt;/h2&gt;
-
-&lt;p&gt;ここ最近、発表資料には&lt;a href=&#34;http://jupyter.org/&#34;&gt;jupyter&lt;/a&gt;を活用しています。理由としては以下のとおりです。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日常的に使っている。&lt;/li&gt;
-&lt;li&gt;Markdownで書ける。
-
-&lt;ul&gt;
-&lt;li&gt;スライドの確認がし易い。&lt;/li&gt;
-&lt;li&gt;リンクや画像を埋めるのが楽。&lt;/li&gt;
-&lt;li&gt;コードのシンタックスハイライトもされる。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Docker imageにしてしまえば、&lt;code&gt;docker run&lt;/code&gt;か&lt;code&gt;docker-compose up&lt;/code&gt;ですぐに使える。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/takluyver/bash_kernel&#34;&gt;takluyver/bash_kernel&lt;/a&gt;を入れれば、jupyer-notebookからbashが使える。&lt;/li&gt;
-&lt;li&gt;GitHubへpublishすれば、&lt;a href=&#34;https://nbviewer.jupyter.org/&#34;&gt;nbviewer&lt;/a&gt;で閲覧できる。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;標準のPythonや&lt;a href=&#34;https://github.com/jupyter/docker-stacks&#34;&gt;Spark&lt;/a&gt;向けのイメージを使えば、REPL代わりに使えるし、実行結果も保存出来たり等重宝してます。&lt;/p&gt;
-
-&lt;h2 id=&#34;発表の主旨&#34;&gt;発表の主旨&lt;/h2&gt;
-
-&lt;p&gt;今回の発表で一番伝えたかったのは、「ツールは達成したい目的によって変えましょう」ということです。
-「日常業務を楽にしたい。」であれば、自分の本来やらなければならないメインの仕事に割り当てる時間を増やすというのが目的なので、
-今回は自分が使えて、すぐに解決出来る「Gradle」を採用したまでです。&lt;/p&gt;
-
-&lt;p&gt;もちろん、Excelを使うヒトとの協調が必要であれば、Excel VBAも利用します。&lt;/p&gt;
-
-&lt;p&gt;Gradleで解決したタスクもゆくゆくはシステム化を目指すのであれば、それに依存するのではなく捨てられるようにしておくのが望ましいと思います。&lt;/p&gt;
-
-&lt;p&gt;そのままシステム化しようとすると、手段が目的となってしまい、本来解決しなければならなかった課題にたどり着くことが出来ず、
-自分だけしかメンテナンス出来ない負債が残るだけです。&lt;/p&gt;
-
-&lt;h2 id=&#34;サンプルの解説&#34;&gt;サンプルの解説&lt;/h2&gt;
-
-&lt;p&gt;Gradleのタスク機能を使ったサンプルプロジェクトは、こちらです。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/grimrose/JJUG-CCC-2016-Spring&#34;&gt;grimrose/JJUG-CCC-2016-Spring&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;あるプロジェクトを一つのworkspace配下において行くような場合を想定してます。&lt;/p&gt;
-
-&lt;p&gt;そのプロジェクトを構成しているそれぞれの個別プロジェクトを、Gradleのマルチプロジェクト機能を利用して、Gradleの依存を含めること無く操作できるようにするのが目的です。&lt;/p&gt;
-
-&lt;p&gt;特にフロントエンドは、完全に趣味とトライアルに走ってみました。
-個人的に気になっている&lt;a href=&#34;http://mithril.js.org/&#34;&gt;Mithril&lt;/a&gt;と&lt;a href=&#34;https://www.typescriptlang.org/&#34;&gt;Typescript&lt;/a&gt;,
-&lt;a href=&#34;https://github.com/power-assert-js/power-assert&#34;&gt;power-assert-js&lt;/a&gt;, &lt;a href=&#34;https://webpack.github.io/&#34;&gt;webpack&lt;/a&gt;の組み合わせに挑戦してみました。&lt;/p&gt;
-
-&lt;p&gt;その他のプロジェクトも、jarを動かしたり、JRubyを使ってRubyのプロダクトを動かしたり等、Gradle WrapperとJDKが入っているだけのマシンでここまでやれたり、
-プロダクトを統括するタスクランナーとしてのGradleというのを示すことが出来たのではないかと思います。&lt;/p&gt;
-
-&lt;h2 id=&#34;参加したセッション&#34;&gt;参加したセッション&lt;/h2&gt;
-
-&lt;p&gt;今回参加したセッションは、以下のとおりです。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2396#E-2&#34;&gt;E-2 ブラウザテストをサクサク進めるためのGeb実践入門&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2396#GH-3&#34;&gt;GH-3 Jenkins2.0&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2396#AB-4&#34;&gt;AB-4 Introduction to JShell: The Java REPL Tool&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2396#AB-5&#34;&gt;AB-5 Apache Apexとインメモリー最適化による超高速処理の世界&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2396#AB-6&#34;&gt;AB-6 ビッグデータじゃなくても使えるSpark☆Streaming&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2396#GH-7&#34;&gt;GH-7 Java Pazzler&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2396#M-7_2&#34;&gt;M-7_2 JVM上でのストリーム処理エンジンの変遷&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;セッション数が増えたのと20分枠のおかげで、体がいくつあっても足りないという感じでしたが、
-休憩のタイミングと間隔にゆとりがあったおかげでそこまで大変では無かったと思いました。&lt;/p&gt;
-
-&lt;h2 id=&#34;反省点&#34;&gt;反省点&lt;/h2&gt;
-
-&lt;p&gt;今回、自分が予想していたよりも多くの人に来ていただいた為、終盤の立ち見で体調が優れなかったり、部屋に入れなかった方がいたのは申し訳なかったと思ってます。
-出来る限り、サンプルプロジェクトやtwitter等でサポート出来ればと思っています。&lt;/p&gt;
-
-&lt;p&gt;また、始まる前にセッションの軽い説明などをする際に他のセッションに誘導したりして、
-自分の後のセッションを担当されていた&lt;a href=&#34;http://www.java-users.jp/?page_id=2396#M-6_2&#34;&gt;松村翔子 / しょこ&lt;/a&gt;の事を考えていなかったのは、誠に申し訳ありませんでした。&lt;/p&gt;
-
-&lt;p&gt;さらに、時間配分を間違えて発表の後半も駆け足になってしまった上にオーバーしてしまって、スタッフの人にもご迷惑をお掛けしてしまいました。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;ja&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;grimroseさん、これ絶対、50分でやるやつやったｗｗ &lt;a href=&#34;https://twitter.com/hashtag/ccc_m61?src=hash&#34;&gt;#ccc_m61&lt;/a&gt;&lt;/p&gt;&amp;mdash; CERO-METAL (@cero_t) &lt;a href=&#34;https://twitter.com/cero_t/status/733934673789739008&#34;&gt;2016年5月21日&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;上記のような反省が残るJJUG CCCでした。&lt;/p&gt;
-
-&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
-
-&lt;p&gt;ライブレポートで有名ななかやまさんが来ていただいたみたいで、twitterにレポートを上げてくださいました。ありがとうございました。
-次回お会いする機会が有ったら直接お礼をお伝え出来ればと思っています。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;ja&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;十徳ナイフとしてのGradleを聞いたメモ。&lt;a href=&#34;https://twitter.com/hashtag/ccc_m61?src=hash&#34;&gt;#ccc_m61&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/jjug_ccc?src=hash&#34;&gt;#jjug_ccc&lt;/a&gt; &lt;a href=&#34;https://t.co/TQ4b4occ8Y&#34;&gt;pic.twitter.com/TQ4b4occ8Y&lt;/a&gt;&lt;/p&gt;&amp;mdash; なかやまさん (@nakayama_san) &lt;a href=&#34;https://twitter.com/nakayama_san/status/733936982162710528&#34;&gt;2016年5月21日&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;懇親会では、twitterなどでお世話になっていた方々にご挨拶出来てとても楽しかったです。&lt;/p&gt;
-
-&lt;p&gt;次回の秋は、2017年にリリースされるであろうJava9を見据えていろいろ動いているであろうプロダクトの話や、様々なJVM言語の話が聞けることを期待してます。&lt;/p&gt;
-
-&lt;p&gt;JJUGのスタッフの皆様、スポンサーの皆様、講演者の皆様、参加者の皆様、ありがとうございました。&lt;/p&gt;
-</description>
+      <description>発表のキッカケ ちょうど日々の業務でGradleのタスク機能を利用して、共有ディレクトリにあるExcelのデータとDBの値とチェックしたり、 前回の作業との差分を抽出して入力ミスがないかチェックしたり、といった小さい業務タスクを自動化していたので、 50分は無理でも新しく出来た20分枠ならイケるんではないかと思い、 Groovy枠として選ばれたら本気でやるかといった感じで応募しました。
+なので、十徳ナイフとしてのGradle / @grimrose #35に投票して頂いた皆様には、大変感謝しております。
+jupyter使ってる理由 ここ最近、発表資料にはjupyterを活用しています。理由としては以下のとおりです。
+ 日常的に使っている。 Markdownで書ける。  スライドの確認がし易い。 リンクや画像を埋めるのが楽。 コードのシンタックスハイライトもされる。  Docker imageにしてしまえば、docker runかdocker-compose upですぐに使える。 takluyver/bash_kernelを入れれば、jupyer-notebookからbashが使える。 GitHubへpublishすれば、nbviewerで閲覧できる。  標準のPythonやSpark向けのイメージを使えば、REPL代わりに使えるし、実行結果も保存出来たり等重宝してます。
+発表の主旨 今回の発表で一番伝えたかったのは、「ツールは達成したい目的によって変えましょう」ということです。 「日常業務を楽にしたい。」であれば、自分の本来やらなければならないメインの仕事に割り当てる時間を増やすというのが目的なので、 今回は自分が使えて、すぐに解決出来る「Gradle」を採用したまでです。
+もちろん、Excelを使うヒトとの協調が必要であれば、Excel VBAも利用します。
+Gradleで解決したタスクもゆくゆくはシステム化を目指すのであれば、それに依存するのではなく捨てられるようにしておくのが望ましいと思います。
+そのままシステム化しようとすると、手段が目的となってしまい、本来解決しなければならなかった課題にたどり着くことが出来ず、 自分だけしかメンテナンス出来ない負債が残るだけです。
+サンプルの解説 Gradleのタスク機能を使ったサンプルプロジェクトは、こちらです。
+grimrose/JJUG-CCC-2016-Spring
+あるプロジェクトを一つのworkspace配下において行くような場合を想定してます。
+そのプロジェクトを構成しているそれぞれの個別プロジェクトを、Gradleのマルチプロジェクト機能を利用して、Gradleの依存を含めること無く操作できるようにするのが目的です。
+特にフロントエンドは、完全に趣味とトライアルに走ってみました。 個人的に気になっているMithrilとTypescript, power-assert-js, webpackの組み合わせに挑戦してみました。
+その他のプロジェクトも、jarを動かしたり、JRubyを使ってRubyのプロダクトを動かしたり等、Gradle WrapperとJDKが入っているだけのマシンでここまでやれたり、 プロダクトを統括するタスクランナーとしてのGradleというのを示すことが出来たのではないかと思います。
+参加したセッション 今回参加したセッションは、以下のとおりです。
+ E-2 ブラウザテストをサクサク進めるためのGeb実践入門 GH-3 Jenkins2.0 AB-4 Introduction to JShell: The Java REPL Tool AB-5 Apache Apexとインメモリー最適化による超高速処理の世界 AB-6 ビッグデータじゃなくても使えるSpark☆Streaming GH-7 Java Pazzler M-7_2 JVM上でのストリーム処理エンジンの変遷  セッション数が増えたのと20分枠のおかげで、体がいくつあっても足りないという感じでしたが、 休憩のタイミングと間隔にゆとりがあったおかげでそこまで大変では無かったと思いました。</description>
     </item>
     
     <item>
@@ -940,36 +293,17 @@ Groovy枠として選ばれたら本気でやるかといった感じで応募�
       <pubDate>Mon, 08 Feb 2016 20:31:14 +0900</pubDate>
       
       <guid>http://grimrose.github.io/blog/2016/02/scalamatsuri2016/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;http://scalamatsuri.org/&#34;&gt;ScalaMatsuri&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;はじまり&#34;&gt;はじまり&lt;/h2&gt;
-
-&lt;p&gt;前回のScalaMatsuriが楽しかったので、スタッフとして参加してみようと思い飛び込んでみました。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://japan-scala-association.doorkeeper.jp/events/23255&#34;&gt;https://japan-scala-association.doorkeeper.jp/events/23255&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;スタッフとして&#34;&gt;スタッフとして&lt;/h2&gt;
-
-&lt;p&gt;約半年関わってみて、ここまで大きなカンファレンスの裏側をScalaのコミュニティの人たちと一緒に体験できたのは、正直楽しかったです。&lt;/p&gt;
-
-&lt;p&gt;終わってみて反省すべき点がたくさんありますが、これから開催されるであろう振り返りでいろいろ見直したいです。&lt;/p&gt;
-
-&lt;p&gt;開催当日の個人的な反省としては、日常会話の英語が出てこないというのはホントに辛かったです。&lt;/p&gt;
-
-&lt;p&gt;普段Webinarとかで聞いてたり、英語の文献とか読んでいたとしても話せるようにはならないことは分かっていたました。&lt;/p&gt;
-
-&lt;p&gt;ですが、短い時間でとっさにフレーズが出てこなくて慌てていて、相手にもその雰囲気が伝わるので申し訳ない気になって、さらにパニクるといった感じでした。&lt;/p&gt;
-
-&lt;p&gt;ジェスチャーや一緒に対応してくれていた人に助けてもらったり、最終的に英語が話せるスタッフの人にお願いしてなんとかしました。&lt;/p&gt;
-
-&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
-
-&lt;p&gt;まだ、残務がいろいろあって終わっていませんが、次回があるのならまたスタッフとして参加してみたいと思います。&lt;/p&gt;
-
-&lt;p&gt;ご参加いただいた皆さん、ご協賛いただいたスポンサーの皆さん、そして一緒に尽力してくださったスタッフの皆さん、本当にありがとうございました。&lt;/p&gt;
-</description>
+      <description>ScalaMatsuri
+はじまり 前回のScalaMatsuriが楽しかったので、スタッフとして参加してみようと思い飛び込んでみました。
+https://japan-scala-association.doorkeeper.jp/events/23255
+スタッフとして 約半年関わってみて、ここまで大きなカンファレンスの裏側をScalaのコミュニティの人たちと一緒に体験できたのは、正直楽しかったです。
+終わってみて反省すべき点がたくさんありますが、これから開催されるであろう振り返りでいろいろ見直したいです。
+開催当日の個人的な反省としては、日常会話の英語が出てこないというのはホントに辛かったです。
+普段Webinarとかで聞いてたり、英語の文献とか読んでいたとしても話せるようにはならないことは分かっていたました。
+ですが、短い時間でとっさにフレーズが出てこなくて慌てていて、相手にもその雰囲気が伝わるので申し訳ない気になって、さらにパニクるといった感じでした。
+ジェスチャーや一緒に対応してくれていた人に助けてもらったり、最終的に英語が話せるスタッフの人にお願いしてなんとかしました。
+おわりに まだ、残務がいろいろあって終わっていませんが、次回があるのならまたスタッフとして参加してみたいと思います。
+ご参加いただいた皆さん、ご協賛いただいたスポンサーの皆さん、そして一緒に尽力してくださったスタッフの皆さん、本当にありがとうございました。</description>
     </item>
     
     <item>
@@ -978,74 +312,27 @@ Groovy枠として選ばれたら本気でやるかといった感じで応募�
       <pubDate>Thu, 31 Dec 2015 23:59:59 +0900</pubDate>
       
       <guid>http://grimrose.github.io/blog/2015/12/retrospect-2015/</guid>
-      <description>
-
-&lt;h2 id=&#34;2015年の振り返り&#34;&gt;2015年の振り返り&lt;/h2&gt;
-
-&lt;p&gt;今年も大晦日になったので、振り返りをしてみたいと思います。&lt;/p&gt;
-
-&lt;p&gt;2014年の振り返りは、&lt;a href=&#34;http://grimrose.blogspot.jp/2014/12/2014.html&#34;&gt;こちら&lt;/a&gt;でした。&lt;/p&gt;
-
-&lt;h3 id=&#34;keep&#34;&gt;Keep&lt;/h3&gt;
-
-&lt;p&gt;今年は、以下のイベントで登壇する機会をいただけました。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://jjug.doorkeeper.jp/events/26547&#34;&gt;【東京】JJUG ナイトセミナー 「Reactive Streams特集」&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gbdaitokai.doorkeeper.jp/events/31149&#34;&gt;合同勉強会 in 大都会岡山 -2015 Winter-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://bonenkaigi.doorkeeper.jp/events/27273&#34;&gt;忘年会議2015&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;仕事で得た知見や個人で興味を持ったことについて話す機会は、今後も増やしていければと思います。&lt;/p&gt;
-
-&lt;p&gt;アウトプットする為にも、まずコードやBlogで書き出すということをもっと積極的にやっていこうかと思います。
-特にBlogは書かなかった月が多かったので、短くても残さないとどんどん忘れていきそうなので、
-GitHubに草を生やす活動も兼ねてやっていこうかと思います。&lt;/p&gt;
-
-&lt;p&gt;ミドルウェア、インフラ周りの基礎に関しては、引き続きDockerを中心に学んで行ければと思っています。&lt;/p&gt;
-
-&lt;p&gt;特に&lt;a href=&#34;http://shop.oreilly.com/product/0636920036791.do&#34;&gt;Docker Cookbook&lt;/a&gt;を購入して
-自分たちが使えるものが無いか探したり、どのようにDockerで構成していけば良いのかを学んだりしています。&lt;/p&gt;
-
-&lt;p&gt;また、&lt;a href=&#34;https://azure.microsoft.com/ja-jp/&#34;&gt;Microsoft Azure&lt;/a&gt;のアカウントを作って、&lt;a href=&#34;https://www.tutum.co&#34;&gt;Tutum&lt;/a&gt;でデプロイしてみたりしてました。&lt;/p&gt;
-
-&lt;p&gt;Dockerを使って試せるようなサービスが出てきたので、これまで非力なローカルマシンでは試せなかった構成や、既存のサービスと組み合わせる方法を検証できるようになったのは、大きな変化だったと思います。&lt;/p&gt;
-
-&lt;h3 id=&#34;problem&#34;&gt;Problem&lt;/h3&gt;
-
-&lt;p&gt;2014年のTryだったFuelPHPのプロジェクトは、2015年中にはやれませんでした。&lt;/p&gt;
-
-&lt;p&gt;しかしながら、年明けから仕事でサプブロジェクトながらFuelPHPで始めることになりそうなので、
-front, api, batchをDockerで動かすような雛形を作ってみて検証してみたいと思います。&lt;/p&gt;
-
-&lt;p&gt;Rubotyも結局触ってみました程度で終わってしまったので、Rubyのプロダクトにがっつり関わる機会が無い環境では、
-強制的にでも使う仕組みが無いと難しいものだと感じました。&lt;/p&gt;
-
-&lt;p&gt;仕事では、チームでプロジェクトを動かしていくことの難しさを実感しました。
-特にプロダクトオーナーに現時点でリリース出来ないことを伝えることが、どれだけ不甲斐なくて悔しいことかを体験しました。&lt;/p&gt;
-
-&lt;h3 id=&#34;try&#34;&gt;Try&lt;/h3&gt;
-
-&lt;p&gt;仕事での今後やりたいことは、&lt;a href=&#34;http://grimrose.github.io/blog/2015/12/career-change/&#34;&gt;転職して１年が経ちました。&lt;/a&gt;に書いてしまったので、
-privateでやってみたい事は、OSSを一つリリースする(ライブラリ、Webサービス問わず)です。&lt;/p&gt;
-
-&lt;p&gt;仕事で使うようなライブラリを作るのが一番自分にとって勉強にもなるし、フィードバックも得やすいのではないかと思います。&lt;/p&gt;
-
-&lt;p&gt;また、本格的にScrumに関する勉強を始めて、最終的には認定スクラムマスター(CSM)も取得してみようかと思います。&lt;/p&gt;
-
-&lt;p&gt;CSMについては、横浜道場でいろいろな人が受けてたり取られたりした方の話をこれまで聴いてどんな感じなんだろと思っていました。
-Scrumのプラクティスを取り入れつつ開発を進めていましたが、行き詰まりを感じたり、他の人達はどうしているのか気になってきたので、本格的に始めます。&lt;/p&gt;
-
-&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
-
-&lt;p&gt;2015年は、仕事でやりたかった事が出来たのとそこで出てきた課題に取り組めた一年だったと思います。&lt;/p&gt;
-
-&lt;p&gt;2016年は、引き続きコードを書くお仕事に加えて、チームを育てていく役割も担っていくことになると思います。&lt;/p&gt;
-
-&lt;p&gt;また、いわゆる「プログラマー35年定年説」の節目の年となるので、今後の5年を見据えて伸ばすスキルを伸ばしていければと思います。&lt;/p&gt;
-
-&lt;p&gt;2016年も引き続き、よろしくお願いします。&lt;/p&gt;
-</description>
+      <description>2015年の振り返り 今年も大晦日になったので、振り返りをしてみたいと思います。
+2014年の振り返りは、こちらでした。
+Keep 今年は、以下のイベントで登壇する機会をいただけました。
+ 【東京】JJUG ナイトセミナー 「Reactive Streams特集」 合同勉強会 in 大都会岡山 -2015 Winter- 忘年会議2015  仕事で得た知見や個人で興味を持ったことについて話す機会は、今後も増やしていければと思います。
+アウトプットする為にも、まずコードやBlogで書き出すということをもっと積極的にやっていこうかと思います。 特にBlogは書かなかった月が多かったので、短くても残さないとどんどん忘れていきそうなので、 GitHubに草を生やす活動も兼ねてやっていこうかと思います。
+ミドルウェア、インフラ周りの基礎に関しては、引き続きDockerを中心に学んで行ければと思っています。
+特にDocker Cookbookを購入して 自分たちが使えるものが無いか探したり、どのようにDockerで構成していけば良いのかを学んだりしています。
+また、Microsoft Azureのアカウントを作って、Tutumでデプロイしてみたりしてました。
+Dockerを使って試せるようなサービスが出てきたので、これまで非力なローカルマシンでは試せなかった構成や、既存のサービスと組み合わせる方法を検証できるようになったのは、大きな変化だったと思います。
+Problem 2014年のTryだったFuelPHPのプロジェクトは、2015年中にはやれませんでした。
+しかしながら、年明けから仕事でサプブロジェクトながらFuelPHPで始めることになりそうなので、 front, api, batchをDockerで動かすような雛形を作ってみて検証してみたいと思います。
+Rubotyも結局触ってみました程度で終わってしまったので、Rubyのプロダクトにがっつり関わる機会が無い環境では、 強制的にでも使う仕組みが無いと難しいものだと感じました。
+仕事では、チームでプロジェクトを動かしていくことの難しさを実感しました。 特にプロダクトオーナーに現時点でリリース出来ないことを伝えることが、どれだけ不甲斐なくて悔しいことかを体験しました。
+Try 仕事での今後やりたいことは、転職して１年が経ちました。に書いてしまったので、 privateでやってみたい事は、OSSを一つリリースする(ライブラリ、Webサービス問わず)です。
+仕事で使うようなライブラリを作るのが一番自分にとって勉強にもなるし、フィードバックも得やすいのではないかと思います。
+また、本格的にScrumに関する勉強を始めて、最終的には認定スクラムマスター(CSM)も取得してみようかと思います。
+CSMについては、横浜道場でいろいろな人が受けてたり取られたりした方の話をこれまで聴いてどんな感じなんだろと思っていました。 Scrumのプラクティスを取り入れつつ開発を進めていましたが、行き詰まりを感じたり、他の人達はどうしているのか気になってきたので、本格的に始めます。
+おわりに 2015年は、仕事でやりたかった事が出来たのとそこで出てきた課題に取り組めた一年だったと思います。
+2016年は、引き続きコードを書くお仕事に加えて、チームを育てていく役割も担っていくことになると思います。
+また、いわゆる「プログラマー35年定年説」の節目の年となるので、今後の5年を見据えて伸ばすスキルを伸ばしていければと思います。
+2016年も引き続き、よろしくお願いします。</description>
     </item>
     
     <item>
@@ -1054,102 +341,377 @@ Scrumのプラクティスを取り入れつつ開発を進めていましたが
       <pubDate>Sat, 19 Dec 2015 00:00:00 +0900</pubDate>
       
       <guid>http://grimrose.github.io/blog/2015/12/gadvent-2015/</guid>
-      <description>
-
-&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
-
-&lt;p&gt;この記事は、&lt;a href=&#34;http://qiita.com/advent-calendar/2015/gastah&#34;&gt;G* Advent Calendar 2015&lt;/a&gt;の19日目のエントリです。&lt;/p&gt;
-
-&lt;h2 id=&#34;spockについて&#34;&gt;Spockについて&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/spockframework/spock&#34;&gt;Spock Framework&lt;/a&gt;は、JavaやGroovyで作られたアプリケーション向けのテスティングフレームワークです。&lt;/p&gt;
-
-&lt;p&gt;個人的に&lt;a href=&#34;https://github.com/spockframework/spock&#34;&gt;Spock Framework&lt;/a&gt;が好きな理由の一つは、&lt;strong&gt;power-assert&lt;/strong&gt;機能です。&lt;/p&gt;
-
-&lt;p&gt;power-assertが他の言語のテスティングフレームワークでも取り入れられていったのは、覚えるAPIが少ない上にテストで失敗した時の情報が分かりやすいからだと思います。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://togetter.com/li/435920&#34;&gt;アサーション失敗時の情報量を大幅に増やすことができるPower Assertの系譜&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;仕事では&lt;a href=&#34;http://www.scalatest.org/&#34;&gt;ScalaTest&lt;/a&gt;を使っていますが、
-power-assertのように使える&lt;a href=&#34;http://doc.scalatest.org/2.2.1/index.html#org.scalatest.DiagrammedAssertions&#34;&gt;DiagrammedAssertions&lt;/a&gt;をメインに使ってます。&lt;/p&gt;
-
-&lt;p&gt;その他にもパラメタライズドテストが書きやすかったり、Given-When-Thenと振る舞いを分かりやすく書ける機能があったりと、開発者がテストを書くのを助けてくれるのがとても好きです。&lt;/p&gt;
-
-&lt;p&gt;2015年の&lt;a href=&#34;https://github.com/spockframework/spock&#34;&gt;Spock Framework&lt;/a&gt;と言えば、なんと言ってもついに1.0がリリースされたのことでしょう。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://googledevjp.blogspot.jp/2015/04/google-code.html&#34;&gt;Google Codeが終了する&lt;/a&gt;するにあたって、さまざまな事が一気に前進したように思えます。&lt;/p&gt;
-
-&lt;p&gt;公式のリファレンスもGitHubに移動し、&lt;a href=&#34;https://spockframework.github.io/spock/docs/&#34;&gt;Spock Framework Reference Documentation&lt;/a&gt;として公開されています。&lt;/p&gt;
-
-&lt;p&gt;JUnit5がリリースされるとなるとSpockもどのように対応するのか楽しみではあります。&lt;/p&gt;
-
-&lt;h2 id=&#34;spockを題材とした電子書籍&#34;&gt;Spockを題材とした電子書籍&lt;/h2&gt;
-
-&lt;p&gt;日本でも利用されている方が増えてきたおかげか日本語の記事や情報を見かける機会が増えましたが、本格的に導入していこうとすると英語の記事を見ることになります。&lt;/p&gt;
-
-&lt;p&gt;公式のリファレンスが充実しているので困ることは少ないですが、やはり自分たちのユースケースに近いサンプルがあるのが望ましいと思います。&lt;/p&gt;
-
-&lt;p&gt;そういう場合は書籍の出番となりますが、今回は入手しやすい電子書籍を探してみました。&lt;/p&gt;
-
-&lt;p&gt;普段利用している電子書籍を購入できるサイトで、Spockに関する書籍が見つかったのは、以下のとおりです。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://shop.oreilly.com/home.do&#34;&gt;O&amp;rsquo;Reilly&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.manning.com/&#34;&gt;Manning Publications&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://leanpub.com/&#34;&gt;Leanpub&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://shop.oreilly.com/home.do&#34;&gt;O&amp;rsquo;Reilly&lt;/a&gt;は有名なので割愛するとして、&lt;a href=&#34;https://www.manning.com/&#34;&gt;Manning Publications&lt;/a&gt;は&lt;a href=&#34;https://www.manning.com/books/groovy-in-action&#34;&gt;Groovy In Action&lt;/a&gt;や
-&lt;a href=&#34;https://www.manning.com/books/grails-in-action&#34;&gt;Grails in Action&lt;/a&gt;で以前からGroovyに関する書籍を取り扱っているのは知ってました。&lt;/p&gt;
-
-&lt;p&gt;注目したいのは、&lt;a href=&#34;https://leanpub.com/&#34;&gt;Leanpub&lt;/a&gt;で以前&lt;a href=&#34;https://leanpub.com/everydayrailsrspec-jp&#34;&gt;Everyday Rails - RSpecによるRailsテスト入門&lt;/a&gt;を購入した際に利用していました。&lt;/p&gt;
-
-&lt;p&gt;Groovyについて困っている時やどう書いたらいいのか分からない時に&lt;a href=&#34;http://mrhaki.blogspot.jp/&#34;&gt;Messages from mrhaki&lt;/a&gt;で探していますが、
-その著者が&lt;a href=&#34;https://leanpub.com/&#34;&gt;Leanpub&lt;/a&gt;で&lt;a href=&#34;https://leanpub.com/groovy-goodness-notebook&#34;&gt;Groovy Goodness Notebook&lt;/a&gt;や&lt;a href=&#34;https://leanpub.com/gradle-goodness-notebook&#34;&gt;Gradle Goodness Notebook&lt;/a&gt;といった
-Groovyに関する書籍を販売しており、その一つにSpockに関するものもありました。&lt;/p&gt;
-
-&lt;h3 id=&#34;購入したもの&#34;&gt;購入したもの&lt;/h3&gt;
-
-&lt;p&gt;これまで購入したのは、以下の3冊です。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://leanpub.com/spockframeworknotebook&#34;&gt;Spocklight Notebook&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.manning.com/books/groovy-in-action-second-edition&#34;&gt;Groovy in Action, Second Edition&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://shop.oreilly.com/product/0636920038597.do&#34;&gt;Spock: Up and Running&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;まず&lt;a href=&#34;https://leanpub.com/spockframeworknotebook&#34;&gt;Spocklight Notebook&lt;/a&gt;ですが、&lt;a href=&#34;https://leanpub.com/&#34;&gt;Leanpub&lt;/a&gt;で購入できます。実はWebで全部見れてしまう上に最低価格が$0なので実質Freeなのです。
-中身もユースケース毎に細かく分かれているため、自分たちの求めている内容がきっとあると思います。&lt;/p&gt;
-
-&lt;p&gt;次に、&lt;a href=&#34;https://www.manning.com/books/groovy-in-action-second-edition&#34;&gt;Groovy in Action, Second Edition&lt;/a&gt;ですが、こちらは以前にGroovy In Actionを購入していたので、そのまま購入しました。
-新しく&lt;a href=&#34;https://github.com/spockframework/spock&#34;&gt;Spock Framework&lt;/a&gt;に関する内容なども追記されており、Groovyについてより詳しく知りたい時に役に立ちます。&lt;/p&gt;
-
-&lt;p&gt;最後に&lt;a href=&#34;http://shop.oreilly.com/product/0636920038597.do&#34;&gt;Spock: Up and Running&lt;/a&gt;ですが、現在、Early Releaseとして第3章までリリースされています。2016年の3月くらいにはPublishされるみたいです。
-今後追加されていくであろうチャプターのタイトルがどれも興味深いものばかりなので、楽しみです。&lt;/p&gt;
-
-&lt;p&gt;購入してはないものの以下の電子書籍もSpockについてのチャプターがあったり、コードが提供されているものがあります。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.manning.com/books/java-testing-with-spock&#34;&gt;Java Testing with Spock&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.manning.com/books/making-java-groovy&#34;&gt;Making Java Groovy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.manning.com/books/bdd-in-action&#34;&gt;BDD in Action&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.manning.com/books/arquillian-in-action&#34;&gt;Arquillian in Action&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.manning.com/books/grails-in-action-second-edition&#34;&gt;Grails in Action, Second Edition&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://shop.oreilly.com/product/0636920038597.do&#34;&gt;Spock: Up and Running&lt;/a&gt;についてですが、&lt;a href=&#34;http://connpass.com/series/253/&#34;&gt;Yokohama.groovy&lt;/a&gt;にて読書会をやってみようと計画しており、
-正式にPublishされ次第、開催する予定です。&lt;/p&gt;
-
-&lt;p&gt;興味がある方は、&lt;a href=&#34;https://gitter.im/yokohamagroovy/support?utm_source=badge&amp;amp;utm_medium=badge&amp;amp;utm_campaign=pr-badge&#34;&gt;&lt;img src=&#34;https://badges.gitter.im/yokohamagroovy/support.svg&#34; alt=&#34;Gitter&#34; /&gt;&lt;/a&gt;で気軽に声をかけてください。&lt;/p&gt;
-
-&lt;p&gt;最後に、Javaのアプリケーションでテストコードで楽をしたい人は、是非&lt;a href=&#34;https://github.com/spockframework/spock&#34;&gt;Spock Framework&lt;/a&gt;を使ってください。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Let&amp;rsquo;s enjoy, Groovy!&lt;/strong&gt;&lt;/p&gt;
-</description>
+      <description>はじめに この記事は、G* Advent Calendar 2015の19日目のエントリです。
+Spockについて Spock Frameworkは、JavaやGroovyで作られたアプリケーション向けのテスティングフレームワークです。
+個人的にSpock Frameworkが好きな理由の一つは、power-assert機能です。
+power-assertが他の言語のテスティングフレームワークでも取り入れられていったのは、覚えるAPIが少ない上にテストで失敗した時の情報が分かりやすいからだと思います。
+ アサーション失敗時の情報量を大幅に増やすことができるPower Assertの系譜
+ 仕事ではScalaTestを使っていますが、 power-assertのように使えるDiagrammedAssertionsをメインに使ってます。
+その他にもパラメタライズドテストが書きやすかったり、Given-When-Thenと振る舞いを分かりやすく書ける機能があったりと、開発者がテストを書くのを助けてくれるのがとても好きです。
+2015年のSpock Frameworkと言えば、なんと言ってもついに1.0がリリースされたのことでしょう。
+Google Codeが終了するするにあたって、さまざまな事が一気に前進したように思えます。
+公式のリファレンスもGitHubに移動し、Spock Framework Reference Documentationとして公開されています。
+JUnit5がリリースされるとなるとSpockもどのように対応するのか楽しみではあります。
+Spockを題材とした電子書籍 日本でも利用されている方が増えてきたおかげか日本語の記事や情報を見かける機会が増えましたが、本格的に導入していこうとすると英語の記事を見ることになります。
+公式のリファレンスが充実しているので困ることは少ないですが、やはり自分たちのユースケースに近いサンプルがあるのが望ましいと思います。
+そういう場合は書籍の出番となりますが、今回は入手しやすい電子書籍を探してみました。
+普段利用している電子書籍を購入できるサイトで、Spockに関する書籍が見つかったのは、以下のとおりです。
+ O&amp;rsquo;Reilly Manning Publications Leanpub  O&amp;rsquo;Reillyは有名なので割愛するとして、Manning PublicationsはGroovy In Actionや Grails in Actionで以前からGroovyに関する書籍を取り扱っているのは知ってました。
+注目したいのは、Leanpubで以前Everyday Rails - RSpecによるRailsテスト入門を購入した際に利用していました。
+Groovyについて困っている時やどう書いたらいいのか分からない時にMessages from mrhakiで探していますが、 その著者がLeanpubでGroovy Goodness NotebookやGradle Goodness Notebookといった Groovyに関する書籍を販売しており、その一つにSpockに関するものもありました。
+購入したもの これまで購入したのは、以下の3冊です。
+ Spocklight Notebook Groovy in Action, Second Edition Spock: Up and Running  まずSpocklight Notebookですが、Leanpubで購入できます。実はWebで全部見れてしまう上に最低価格が$0なので実質Freeなのです。 中身もユースケース毎に細かく分かれているため、自分たちの求めている内容がきっとあると思います。</description>
+    </item>
+    
+    <item>
+      <title>Clojure ワークショップ(仮)に参加してきました #jc_ws</title>
+      <link>http://grimrose.github.io/blog/2015/12/jc-ws-2015/</link>
+      <pubDate>Mon, 14 Dec 2015 00:00:00 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/12/jc-ws-2015/</guid>
+      <description>はじめに 【参加者募集】 Clojure ワークショップ(仮)に参加してきました。
+きっかけは、以前にしょぼちむにデータモデル設計について教えてくださいの会 #syobobenで@kawasimaさんが 以下のプレゼンをした時にでてきたDatomicが気になったからです。
+   イミュータブルデータモデル(世代編)  from Yoshitka Kawashima 
+ その後、@kawasimaさんがリリースしたJobStreamerがDatomicが使われていたので、 どうやって使ったらいいのかを知りたい、せめてClojureが読めるようになりたいと思ってました。
+その後の渋谷Javaなどで@kawasimaさんがClojureの話をされていたので、無意識に刷り込まれていたのかもしれません。
+あやぴーさんが開催されるとのことだったので、楽しみにしてました。
+キメるClojure    キメるClojure  from Yoshitka Kawashima 
+ タイトルは「Rubyをキメると気持ちいい」から来てるとおもいますが、挙げられているClojureのコードを後から見なおしてみるとすっきりしていて分かりやすかったです。
+ #jc_ws だいたい色んなライブラリ読むけど、確かに小さいことが多いし、作りきられていることが多くて変更が少ないのも良い
+&amp;mdash; あやぴー (@_ayato_p) 2015, 12月 12 
+ こういう思想で作られていると使いやすいのではないかと思いました。
+ワークショップ あやぴーさんが用意して下さったjapan-clojurians/curriculumのチートシートをまず読んでました。
+はじめは、jupyterでもできないかなと思い、Clojureのroryk/clojupyterを入れてやろうとしてましたが、 ZeroMQとの連携が上手く行っていないのかエラーがでて使えませんでした。 ClojureではGorilla REPLを使うのが良いらしいので、今度使ってみようと思います。
+仕方ないので、前日に用意していたIntelliJ IDEAとCursive pluginでやることにしました。
+その後は、紹介されていたClojure koansをずっとやってました。
+穴埋めで、1問づつ答えていく形式なので、困ったときはREPLで確かめながらやってました。
+普段は、スニペットの確認はREPLではなくテストコードでやっているので、ClojureのREPLがここまで便利だとは思ってませんでした。
+おわりに togetterはこちら -&amp;gt; Clojure ワークショップでした！。
+これでClojureを読める手段を手に入れることが出来たので、JobStreamerのコードを読んで行こうと思います。
+いずれは、イミュータブルデータモデルとDatomicを使った何かを作ってみたいと思います。 あとAltJSの一つとしてClojureScriptも興味が出てきたので、watchしていこうと思います。
+あやぴーさん、TAの皆様、会場を提供して下さったサイボウズスタートアップス株式会社様、ありがとうございました。</description>
+    </item>
+    
+    <item>
+      <title>業務アプリケーションをElectronで作ってみた話をしてきました #gbdaitokai #忘年会議</title>
+      <link>http://grimrose.github.io/blog/2015/12/daitokai-2015/</link>
+      <pubDate>Sun, 13 Dec 2015 00:00:00 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/12/daitokai-2015/</guid>
+      <description>はじめに このエントリーは、Electron Advent Calendar 2015の13日目の記事です。
+公開資料 発表で利用した資料はこちらです。 -&amp;gt; スライド
+スライドは、jupyterにdamianavila/RISEの拡張を入れて作りました。
+公開当日は、nbviewerのサイトの調子が良くなかったのかメンテナンスだったのか見えませんでしたが、現在は見えるようになりました。
+おまえ、誰よ 普段は、PHPとScalaを使った社内BIのWebアプリケーションを開発しています。
+ここ1年位の仕事を振り返ってみたエントリは、こちらです。
+参加した経緯 以前から忘年会議の会場であるRyotei 座・スタジアムに一度行ってみて喋ってみたいと思ってました。
+今年、いいタイミングで飛行機のチケットとホテルが確保できた為、参加することにしました。
+スライドの補足 ここで言うスタンプラリーは、業務端末にソフトウェアのインストール際にいろいろな申請が必要であることを指します。 その工程を開発段階から実際にオペレーションする人に強いるのは出来るだけ避けたいと考えていました。
+もちろんがっつり開発するのであれば必要な申請はすべきですが、まだプロトタイプも出来てないし、 どんなプロダクトになるのか不明なうちは簡単に使えるようにしておくのがベターだと思い、こういう判断をしました。
+VBAを選択しなかった理由は、継続的にリリースするには今時のビルドパイプラインが構築しやすい言語がいいと思ったからです。 確かに探せば手法は見つかりますが、一から構築するには手間が掛かり過ぎると思ったので、既存のWebアプリケーションのラインに間借りする事が出来るメリットを優先しました。
+ボイラープレートからReact.jsに関する部分をMithril.jsに置き換えて、デプロイに関するgulpのタスクを追加したのをベースに開発をしました。
+普段は、Angular + Typescript + Gruntでやっているので、Babel(ES6) + Mithril.jsの習得には、そんなかからないだろうと甘く見てましたが、 Babel(ES6)が初だといろいろと調べながら進めることになったので、Typescriptとの違いなどでハマることが多かったように思います。
+Mithril.jsで一番参考になったのは、Dave&amp;rsquo;s guide to Mithril.js Part 1の記事でした。 特にイベント発火とViewModelのやり取りをどう扱って、画面にどう反映させるのかが参考になりました。
+IndexedDBやLocalStorageを使わなかったのは、両方とも使い方を知らなかったのと、Excelから取り出したJSONが大きかったので、 一旦ファイルに保存してから必要なデータだけをキャッシュ出来るようにしたかったためです。
+Loki.jsであれば、IndexedDBとファイルのどちらでも利用できるので、上手く使い分けて行きたいと思っています。 が、minimongoでIsomorphic Storageも気になるので試してみたいと思っています。
+今後このシステムが発展した場合、Electronとサーバーサイドでのデータの持ち方や扱い方については、明確にしておかないと無駄が発生する可能性があるので考慮しておきたいと思っています。
+やってみた感想 メインがサーバーサイドのエンジニアであるため、片手間でフロントエンドをやるのはやはり厳しいと感じました。
+今回作ったのはあくまでもプロトタイプなので、今後の方針次第によっていろいろと変化していくと思います。
+今回は一人だけで作ったのですが、正式にチームで作り始めるとなるともう少しフレームワークの選定やデプロイまでの検証も必要になってくると思います。 また、bowerに依存している箇所をnpmに集約したいので、gulp + bowerでやっているCSSフレームワークやfont-awesomeに関する箇所をどのように変えていけば良いのか、情報を探してみたいと思います。
+デスクトップアプリもWebと同じように作っていけるElectronは、業務アプリケーションとしての選択肢としてあり得ると思います。 Node.jsのライブラリがそのままWebアプリケーションから呼び出せる感覚は新鮮でした。
+さいごに 忘年会議のLTの内容が皆さんかなり尖っていて、技術方向に全振りした自分の内容は面白い要素ゼロだったので完全アウェーな気分でした。 ですが、あの場所でLTすることが今回の最大の目的だったので、最後までやりきれて感無量でした。
+LTの猛者でまだあの場所でLTをされてない方は、一度でもいいので体験してもらいたいと思いました。
+次回は、座駆動LT大会20160220らしいので、是非参加してみてはいかがでしょうか？</description>
+    </item>
+    
+    <item>
+      <title>転職して１年が経ちました。</title>
+      <link>http://grimrose.github.io/blog/2015/12/career-change/</link>
+      <pubDate>Tue, 01 Dec 2015 00:00:00 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/12/career-change/</guid>
+      <description>はじめに 2014年12月に転職してから1年経ったので、振り返ってみます。
+半年前はこちら。
+引き続き、データ分析チームのエンジニアとして働いてます。
+開発言語もPHP, Angular, TypeScriptに加え、Scalaも使うようになりました。
+Scalaの導入については、別の機会に書ければと思ってます。
+これまでやってきたこと  社内BIの開発チームのリーダーを任されるようになった。 バッチ処理の一部をScalaに置き換えた。 electronを導入して、VBAでやっていたのを置き換えできないか検証してた。  フロントエンドからクラウド上での環境構築まで、自分たちで出来ることはほぼ全てやっている状況です。
+全部自分たちでやるのが正しいかと言われると、考えさせられる部分があります。
+とはいえ、エンジニアとしては流行りのプロダクトや手法は触っておきたいですし、スキルも得たいとも思います。
+そこは、導入までのプレゼンで説明が必要ですし、継続的にリリースをして信頼貯金を得る必要が出てきます。
+この1年間地道に機能をリリースしたことで、部署の中で自分が何が出来てどういったスキルを持っているのかを認知してもらうことが出来ました。
+これからやってみたいこと 次の1年でやりたいことは、以下の内容をやってみたいと思ってます。
+ Akka Streamsの導入 Kubernetesを用いたDocker Clusterの導入 electronを使った業務アプリの継続的開発 pythonを使ったシステムの構築及び運用 In-memory Data Gridを活用した機能の検証  全部が出来るとは思ってはいませんが挑戦できる環境ではあるので、準備を怠らずいつでも始められるようにしたいと思います。
+また、持続可能な開発体制が必要になってきているので、Scrumに関する勉強も本格的に始めてみようかと考えてます。
+引き続き、新しいことに挑戦しつつ、日々の業務を止めないように気を引き締めて開発していきたいと思います。</description>
+    </item>
+    
+    <item>
+      <title>JJUG CCC 2015 Fallに参加してきました #jjug_ccc</title>
+      <link>http://grimrose.github.io/blog/2015/11/jjug-ccc-2015/</link>
+      <pubDate>Mon, 30 Nov 2015 00:00:00 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/11/jjug-ccc-2015/</guid>
+      <description>http://www.java-users.jp/?page_id=2056
+セッション 今回は、以下のセッションを選択しました。
+ keynote-1 基調講演1: 「Javaは守りに入らない、これが今のJavaだ」 keynote-2 基調講演2: Java EE 8 – Work in Progress AB-1「jOOQ と Flyway で立ち向かう、自社サービスの保守運用」(仮) EF-2 How to speed up your application using JCache[通訳あり] EF-3 Reactive Webアプリケーション – そしてSpring 5へ EF-4 ソラコムでのJava/AWS活用 – SIM管理やAWS Lambda Javaなど – AB-5 Javaエンジニアに知ってほしい PostgreSQLアンチパターン GH-6 Java8 Stream APIとApache SparkとAsakusa Frameworkの類似点・相違点 GH-7 てらだよしおの赤裸々タイム  今回のタイムテーブルを見たら、どのセッションを見たら良いのか迷ってしまうくらい素晴らしい講演者の方々でした。 選んだ幹事の人達も苦労されたと思います。
+この1年、素のJavaを書くことは無くなってしまったので、選択も運用やDB等言語としてのJava以外を中心とした内容になりました。
+どのセッションも面白かったですが、てらださんが楽しそうに活動をされている話を聞けたのが、一番印象的でした。
+さらに懇親会や帰り道でいろいろな人とお話が出来て、その中でいろいろ解決手段などを教えていただくことが出来ました。 ありがとうございました。
+ 懇親会と帰宅までの間が一番実りがある話が聞けた。&amp;#10;これがあるから止められない。
+&amp;mdash; とーます (@grimrose) 2015, 11月 28</description>
+    </item>
+    
+    <item>
+      <title>Seasar Conference 2015 Not 同窓会 に参加してきました #seasarcon</title>
+      <link>http://grimrose.github.io/blog/2015/09/seasarcon2015/</link>
+      <pubDate>Tue, 29 Sep 2015 01:25:47 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/09/seasarcon2015/</guid>
+      <description>https://event.seasarfoundation.org/sc2015/
+http://seasar.connpass.com/event/19317/
+Seasar2はプロダクトでも使ったことがあるし、Seasar Conferenceがあったおかげで今の自分があると思っているので、参加してきました。
+セッション  Seasar ユーザだったプログラマが目指す OSS の世界展開
+ 瀬良さんのセッションは、大学の教室ということもあり本当に歴史の授業っぽい雰囲気でした。 Skinny Frameworkは、今のプロジェクトで使っていて大変お世話になっています。 特にSkinny-ORM, ScalikeJDBCはSQLをゴリゴリ書くようなプロダクトに向いていると思います。 GitHubがデファクトとなっている現状では、日本語より英語のドキュメントを充実するほうがより使ってもらえる可能性が高いのは確かだと思います。  Play Framework + Scala は Next Seasar なのか
+ Next Seasarについては、既存のSeasar2を利用したプロダクトを別のフレームワークに置き換えてもそれなりに利益を生むようなものでない限り時代に取り残されて行く運命なのかも知れないと感じました。 挙げられそうなNext Seasarとしては、Spring bootやJavaのMicroframeworkやJava EE等があります。 ですが、メンテナンスする人達がJavaの進化に置いて行かれるような場合、選択すら出来ずどうすることも出来ない状態に陥るのではないかと思います。  「Single Command Deployのためのgradle-aws-plugin講座」〜自動ビルド厨はここまで大きくなりました〜
+ Gradleの話を聞いてみたかったのと、AWSへのデプロイツールとしてどう使うのか興味がありました。 ドキュメントに残さなければいけない箇所を出来る限り少なくして、自動化するというのはとても参考になりました。  Spring Boot for the Seasar Developers – みんなが欲しかったアレもソレもここにある
+ ライブコーディングでサクサクとSpring bootを使ったWebアプリを作っていくのは、楽しそうに見えました。 Spring bootのremote-shellは、CRaSHがベースなので、単体でも使うことが出来ます。 IntelliJ IDEAであれば、Using Language Injectionsを使うことで、StringのSQLに対してシンタックスハイライトを付けることが出来るようになります。  SIは本当に終わったのか?
+ 受託やSIの世界から遠ざかってしまったので、第三者的な視点で見てました。 元請けの視点がメインだったので、下請けからの視点が無かったのはちょっと残念だと思いました。 実際に利用するユーザのフィードバックと取り込めるような距離感が無いと、今後も厳しそうだと感じました。   おわりに Seasar2から卒業ということで、自分が変わるキッカケになったSeasar Conferenceに久しぶりに参加できてよかったと思います。</description>
+    </item>
+    
+    <item>
+      <title>JUnit Lambda に寄付をしました #fundJUnit</title>
+      <link>http://grimrose.github.io/blog/2015/09/junit-lambda/</link>
+      <pubDate>Sat, 19 Sep 2015 00:04:27 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/09/junit-lambda/</guid>
+      <description>@t_wada さんのツイートから知りましたが、JUnitのプロジェクトが援助を求めているそうです。
+ JUnit がクラウドファンディングで援助を求めている。現在フルタイムのメンテナがおらず、 issue 解決や Java8 対応 (特にラムダ式) の余力が無い。現時点の JUnit の問題点や将来像も示されている #fundJUn… http://t.co/o8ijOxTWr2
+&amp;mdash; Takuto Wada (@t_wada) 2015, 9月 16 
+ Crowdfunding JUnit Lambda
+日本語での詳細な内容については、JUnitの開発が資金不足で行き詰まり。クラウドファンディングで寄付金を募集中 を見ていだくのがいいと思います。
+JUnitと私 個人的にJUnitを真面目に使い始めたのは、TDDBCで使い方を教わってからだと思います。
+その時教えていただいた渡辺さんが書かれたJUnit実践入門を読んで、Javaでユニットテストを書くにはどうしたら良いかを学ぶことが出来ました。
+それからGroovyと出会い、Spock Frameworkに惚れてTDDBCのGroovyのTAをやったり、アジャイルサムライのイベントで紹介をしたりしてました。
+現在の仕事では、PHPUnit、ScalaTestを使っています。
+xUnit系テスティングフレームワークは、テストを書く際に覚えることが少なくて、ユニットテストの書き方を学ぶ際に、余計なことを覚えなくても済むのがメリットだと思います。
+あと、モダンな言語であればだいたい備わっているので、言語を覚える際にもassertionの書き方を覚えればなんとか始められます。 それまでユニットテストを書く際の経験がそのまま言語を学ぶ際にも応用が出来るのが、xUnit系のテスティングフレームワークの良いところだと思います。
+個人的にJUnitがもう少し頑張って欲しいのは、「パラメタライズドテストの書き方」、「失敗時のメッセージが分かりにくい」だと思います。
+これはSpockを知ってしまってから、余計に感じるようになったと思います。
+もちろんJavaの言語仕様として難しい部分もあると思いますが、出来ればpower-assertは入って欲しいと願ってます。
+power-assertについては、日本語ではThe power-assert Leaves From Moratoriumがまとまっていると思います。
+今回のFundingでどこまで機能が盛り込まれたり、改善されるかは経過を見守る必要があると思います。
+Java8対応で特にDateTime APIでMatcherが早急に欲しい人は、AssertJを検討してみるのも良いかもしれません。
+おわりに opensslと同様の経緯をまさかJUnitも歩んでいるとは思ってもいませんでした。
+普段使っていたり、過去お世話になったOSSがメンテナンスされ続けるのは、誰かの犠牲や善意によって成り立っているのだと感じました。
+また、「コードを書く」以外の事で貢献出来る何かを改めて考えさせられました。
+もし、JUnitを使っていたり、今後も使い続ける事になるのであれば、既にゴール金額に到達していますが、寄付を考えてみてはいかがでしょうか？</description>
+    </item>
+    
+    <item>
+      <title>YAPC::Asia Tokyo 2015 に参加してきました。 #yapcasia</title>
+      <link>http://grimrose.github.io/blog/2015/08/yapc-asia-tokyo-2015/</link>
+      <pubDate>Sun, 23 Aug 2015 22:34:34 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/08/yapc-asia-tokyo-2015/</guid>
+      <description>http://yapcasia.org/2015/
+きっかけ Guest Speakerにそうそうたるメンバーがいらっしゃったのと、PHPをやり始めてから気になった次のスライドがYAPC::Asia Tokyo 2014だったのが気になったので、参加してみようと思いました。
+   YAPC::Asia 2014 - 半端なPHPDisでPHPerに陰で笑われないためのPerl Monger向け最新PHP事情  from Junichi Ishida 
+ 個人スポンサー YAPC::Asia Tokyoのチケットは、非常に取りにくいということで、個人スポンサーで申し込みました。
+Tシャツやパーカー等のノベルティも楽しみでしたが、ひとまずチケットを取れたことに安堵してました。
+当日ノベルティとして受け取ったタンブラーは、とても使いやすくて重宝してます。
+セッション 参加したセッションは、以下のとおりです。
+前夜祭  我々にできるOSSとそのコミュニティの育てかた  1日目  メリークリスマス！ Effective ES6 TBD Conway&amp;rsquo;s Law of Distributed Work Electron: Building desktop apps with web technologies Perl6 on JVM: It works??  2日目  ISUCONの勝ち方 我々はどのように冗長化を失敗したのか MySQLで2億件のシリアルデータと格闘したチューニングの話 データ分析基盤を支える技術 Parallelism, Concurrency, and Asynchrony in Perl 6 HTTP2 時代の Web  概ね見たいと思ったセッションを見ることが出来たと思います。</description>
+    </item>
+    
+    <item>
+      <title>【東京】JJUG ナイトセミナー 「Reactive Streams特集」 に参加してきました。 #jjug</title>
+      <link>http://grimrose.github.io/blog/2015/06/jjug-2015-reactive-streams/</link>
+      <pubDate>Sat, 27 Jun 2015 18:19:34 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/06/jjug-2015-reactive-streams/</guid>
+      <description>はじめに https://jjug.doorkeeper.jp/events/26547
+@makingさんから、@okapiesさんと一緒に「Reactive Streams」について話してくれと頼まれましたので、参加してきました。
+元々は、@cero_tさんが発端らしいです。
+ちなみに今日のReactive Streams勉強会の発端は、ゴールデンウィーク明けに @cero_t さんがReactiveについてほげほげ言ってたことで、ナイトセミナーやろうぜって感じだったんだけど、当の本人は来ていないっていう
+&amp;mdash; Toshiaki Maki (@making) 2015, 6月 24 
+初めは、マイナーなネタならそんなに人集まらないだろうと思ってたのですが、キャンセル待ちが100人超えするくらいまで期待されてて正直びっくりしました。
+当日のアンケートシステム、とても良かったので次回以降改善されるのを期待してます。
+資料 @okapiesさんの資料は、こちらです。
+ 私の資料は、こちらです。
+http://grimrose.github.io/jjug-2015-reactive-streams/
+利用したサンプルコードは、こちらです。
+https://github.com/grimrose/jjug-2015-reactive-streams
+元々は、Vert.x3でやろうと思ってましたが、ReactorかRxJavaでと言われたので、使ったことがあるRxJavaを選びました。
+確かに、当日のアンケートを見るとVert.x3、Ratpackの認知度が低すぎて、RxJavaを選択しておいてよかったと思いました。
+ドキュメントの多さは、やはりRxJavaに分があるのですが、Reactorもかなり充実しています。
+個人的には、MongoDB Reactive Streams Java Driverがチュートリアルとして、充実してると感じました。
+初めてJavaでAkkaを使ってみたのですが、いろいろツライ印象しか受けませんでした。
+あれなら、素直にScalaで使ったほうが分かりやすいと思います。
+おわりに Reactive Streamsについては、それぞれのRuntimeの世界を繋ぐ為の仕様という認識が一番分かりやすいと思います。
+実際の泥臭い部分は、Runtimeが頑張ってくれますが、何をやっているのか、どうやって実現しているのかを知っておくのは大切です。
+どのRuntimeもReactive Streams向けに変換するライブラリがありますので、そのソースコードを読むのも勉強になると思います。
+JDK9にどこまで採用されるか分かりませんが、データフロー制御についての共通インターフェースが採用されると、java.util.concurrentと併せて、非同期処理をもっと使いやすくなると思います。
+JVMでデータフロー制御でお困りの方は、使ってみてはいかがでしょうか。
+JJUGのスタッフ、参加者の皆様、@okapiesさん、ありがとうございました。</description>
+    </item>
+    
+    <item>
+      <title>転職して半年が経ちました。</title>
+      <link>http://grimrose.github.io/blog/2015/06/career-change/</link>
+      <pubDate>Mon, 01 Jun 2015 00:08:51 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/06/career-change/</guid>
+      <description>はじめに 2014年12月に転職してから半年経ったので、振り返ってみます。
+退職エントリはこちら
+所属 今は、データ分析チームのエンジニアとして働いています。
+転職時に希望したことが出来るチームなので、とてもやりがいがあります。
+また、転職時にお世話になったマネージャーが、会社のエンジニアが働きやすい環境を作り上げたという話を聞いたので、足を向けて寝られません。
+チームには分析官の方がいらっしゃるので、統計に関する知識やR言語についても学べる環境なのはありがたいです。
+その他にも、Sparkや機械学習等新しい技術についても取り組むことが出来る環境でもあるので、積極的に学んで行こうと思います。
+今のチームのマネージャーも理解のある人で、「分析」をどのように事業に活かすのかを真剣に考えていて、そのための武器をエンジニアと一緒に作っていこうとおっしゃってました。
+自分が出来る事をチームに還元していければ、自ずと結果はついてくると思っているので、精一杯やっていこうと思います。
+開発 開発環境は自由に選べますが、私を含めほとんどの人はMBPの15インチを選んでます。
+転職して最初の頃は、小さい社内Webサービスの引き継ぎをやってました。
+言語は初めてのPHP、しかもPhalcon。
+ひとまず、SQLを読むのと既存の機能の改善に注力してました。
+今まで手作業やExcelでやっていた事を、Webサービスで置き換えていく途中だったので、実際に使われている人にとても喜ばれていました。
+そこで社内でどのようにプロジェクトを進めていくのかなどを学べました。
+しばらくして、別のプロジェクトの機能追加の案件も始まりました。
+こちらは、FuelPHPでした。
+このプロジェクトにメインで携わるとは、その時は思っていませんでした。
+どちらもIntelliJ IDEAが無いと仕事が出来ないくらい四苦八苦してました。
+幸い、このプロジェクトは、ユニットテストをしっかり書いて、JenkinsでCIまわして、ワンクリックでデプロイ出来るように運営されていました。
+そのおかげもあって、なんとか求められていた機能もリリース出来て、現在も動いてます。
+このプロジェクトの他の特徴としては、フロント周りにはAngularJS + TypeScriptを採用したりしています。
+また、今後バッチ処理をScalaに置き換える為に、いろいろ検証や準備をしているところです。
+おわりに 自分のスキル足りなくてチームや顧客に迷惑をかける事があり、歯がゆい思いをすることもありました。
+まだまだやりたいことも勉強しなければいけないことも沢山ありますが、エンジニアとしてやりたいことが出来る環境で仕事が出来るということが、どれほど楽しいことかを実感した半年でした。</description>
+    </item>
+    
+    <item>
+      <title>Machine Learning Casual Talks #3 に参加してきました。 #MCLT</title>
+      <link>http://grimrose.github.io/blog/2015/05/mclt03/</link>
+      <pubDate>Mon, 04 May 2015 11:49:15 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/05/mclt03/</guid>
+      <description>http://mlct.connpass.com/event/13995/
+チームの分析官の人が喋ってる内容を実際に運用している話が聞けそうなので、申し込んでみたところ運良く抽選に当たったので、参加してきました。
+ある程度予習をして参加しましたが、やはり勉強不足であることは否めませんでした。
+ただ、分析官がやりたいことがどういったことなのか、実現するとどうなるのかを知ることが出来ました。
+まずは、機械学習の基本となる部分を勉強しておく必要があると感じました。
+その為にも分析官が利用しているR言語を習得し、実現したいことがどういったものか理解してみたいと思いました。
+参加者、発表者の皆様、主催の@chezouさん、会場を提供して下さったクックパッド株式会社様ありがとうございました。</description>
+    </item>
+    
+    <item>
+      <title>Yokohama.groovy #31 に参加してきました。#yokohamagroovy</title>
+      <link>http://grimrose.github.io/blog/2015/04/yokohama-groovy-31/</link>
+      <pubDate>Wed, 29 Apr 2015 22:28:34 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/04/yokohama-groovy-31/</guid>
+      <description>http://connpass.com/event/13786/
+プログラミングGROOVY読書会 主催している「プログラミングGROOVY」の読書会の最終回でした。
+2012年に開催されていた読書会の時間数から、おおよそ3回くらいだろうと見積もっていましたが、余裕を持って終えることが出来ました。
+少し早めに終わったので、2.3から導入されたGroovyのtraitについて、スライドとサンプルを見ながら学んでました。
+  Introduce Groovy 2.3 trait   from * * 
+サンプルは、Groovy Goodness: Chaining Traitsです。
+残り時間は、次回以降やりたいことを決めていました。
+https://github.com/yokohamagroovy/support/issues/11
+「プログラミングGROOVY」の読書会は、また要望があり次第適宜開催していければいいな、と思っています。
+参加して下さった皆様、ありがとうございました。
+次回 「Gradle徹底入門」の読書会を開きます。
+イベントも既に用意してます。
+http://connpass.com/event/14584/
+予定としては、基礎編を2回位で学んで、3回以降は発展編で試していく予定です。
+が、需要がどれくらいあるか全く読めないので、ひとまず会場と人数は今まで通りです。
+もし私を含め5人以上になった場合、別の会場を探すことになると思います。
+もし興味がありましたら、よろしくお願いします。</description>
+    </item>
+    
+    <item>
+      <title>渋谷JVMに参加してきました。 #渋谷JVM</title>
+      <link>http://grimrose.github.io/blog/2015/04/shibuya-jvm/</link>
+      <pubDate>Tue, 21 Apr 2015 00:05:36 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/04/shibuya-jvm/</guid>
+      <description>http://d-cube.connpass.com/event/13257/
+JVM言語の集い 初めは、JVMについてのイベントだと思ってました。
+そうではなく、JVM上で動く言語の中でも代表的な言語(Java, Scala, Clojure, Groovy)のエキスパートと呼ばれる人たちが一堂に会する機会が設けられたということで、参加してきました。
+特に印象的だったのは、この時でした。
+竹添さんが「Javaに熱気がない時期だった。新しいものが出てこないし」と言った瞬間、Javaのダイアログが開いて「アップデートがあるよ」とか出てきたｗ #渋谷JVM
+&amp;mdash; きしだﬗ (@kis) 2015, 4月 18 
+個人的には、Java8になったことによって、ライブラリのコアとなる部分が置き換わって、新陳代謝が起こって欲しいなと思いました。
+パネルディスカッション 川島さんがJJUG CCCで話されていたJobStreamerに興味を持ってから、Clojureに興味が出てきました。
+Clojureについて知らなかったところが多く、とても勉強になりました。特に思想や哲学に関する部分は、惹かれました。
+それぞれのエキスパートの方々の話も大変面白く、ファシリテーターの@jfluteさんの質問もとても興味深いものばかりでした。
+@jfluteさん、お疲れ様でした。
+おわりに 懇親会のLTもバラエティ豊かで、読書会の告知しか用意してなかった自分がちょっと恥ずかしかったです。
+全体的にJJUG CCCとは違った雰囲気があって、楽しかったです。 登壇者、参加者の皆様、会場を提供して下さった株式会社ビズリーチ様、ありがとうございました。</description>
+    </item>
+    
+    <item>
+      <title>nodeschool tokyo (東京Node学園 入学式) に参加してきました。 #nodeschool_tokyo</title>
+      <link>http://grimrose.github.io/blog/2015/04/node-school/</link>
+      <pubDate>Sat, 18 Apr 2015 01:00:10 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/04/node-school/</guid>
+      <description>http://nodejs.connpass.com/event/13182/
+node.jsを体系だって学ぶ機会がこれまで無かったので、参加してきました。
+nodeschool http://nodeschool.io/index.html
+http://nodeschool.io/tokyo/
+世界中で開催されているワークショップらしいです。
+ワークショッパーを利用してステップアップしながら学んでいくスタイルでした。
+参加者も様々なスキルレベルの人がいらっしゃったみたいです。
+learnyounode https://github.com/rvagg/learnyounode
+ワークショッパーのお陰で、詰まりながらも進める事が出来ました。
+とは言え、Javascriptのスキルが低く、Make it modular までしか出来ませんでした。
+GitHubのレポジトリには、日本語のドキュメントもあるので続きをやってみたいと思います。
+LT 興味深かったのは、https://hexi.pics/ についてのLTでした。
+今回頂いたステッカーを作ったサービスらしく、どのように進めていったのか、苦労したのかというのがとても興味深かったです。
+International Day http://nodeschool.io/international-day/
+2015年5月23日にまた開催される予定らしいです。
+期待して待ってみましょう。
+メンター、参加者の皆様、会場を提供して下さったサイバーエージェント様、ありがとうございました。</description>
+    </item>
+    
+    <item>
+      <title>JJUG CCC 2015 Springに参加してきました。 #jjug_ccc</title>
+      <link>http://grimrose.github.io/blog/2015/04/jjug-ccc/</link>
+      <pubDate>Wed, 15 Apr 2015 23:02:31 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/04/jjug-ccc/</guid>
+      <description>http://www.java-users.jp/?page_id=1647
+セッション 実は、転職して現場でJavaを書く機会がかなり減っています。
+が、ツールやライブラリ等JVM上で動くプロダクトを使っているので、運用にまつわる事で勉強したいと思い参加しました。
+午前は、途中から参加して、Raspberry Piのセッションから見始めました。
+通訳まで用意するの大変だったと思います。内容もかなりリサーチされていてとても楽しい内容でした。
+午後は、以下のセッションを選択しました。
+ CD-1 Javaにおけるnull。これまでとこれから AB-2 Web開発における最新テスト手法 AB-3 大規模な負荷でもドキドキしない為のJava EE CD-4 『Embulk』に見るモダンJavaの実践的テクニック ～並列分散処理システムの実装手法～ F-6 いろんなデータをKibana4で見てみよう F-7 JobStreamerではじめるJavaBatchクラウド分散実行  特に、Embulkについては、実際に利用できるか検証してることもあり、興味深く聴いていました。
+負荷テストについても、大規模とはいかないまでもそこそこのデータ量を扱っているので、どう対応したら良いか参考になりました。
+Kibana4も監視周りで使ってみたいと考えているので、ひとまずGitのログの監視からしてみたいと思いました。
+その他のセッションも、登壇者のバックグラウンドが様々で、面白い内容でした。
+おわりに Twitterでお世話になっている人が参加されていたので、探して挨拶したり、同じように休憩してる人達と雑談してました。
+個人的には「Ask the Speaker」みたいなコーナーが有ってもいいのではないかなと思いました。
+初めてJJUG CCCに参加された方も多く、JJUGにも若い幹事の方が就任したりして、広がりを感じました。 Java以外の分野から入ってきた文化や価値観もそれなりに知っておかないと、Javaだけの進化で手一杯になりそうな印象があります。
+JJUG CCCやナイトセミナーでは、そういった題材を扱っている良い機会だと思いますので、 まだ周りの人で参加してなくて興味がある人がいらっしゃったら、是非誘って参加してみてはいかがでしょうか。
+JJUG、スポンサーの皆様、ありがとうございました。</description>
+    </item>
+    
+    <item>
+      <title>Hugoを使ってみます。</title>
+      <link>http://grimrose.github.io/blog/2015/04/start-with-hugo/</link>
+      <pubDate>Mon, 13 Apr 2015 00:25:58 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/04/start-with-hugo/</guid>
+      <description>これまでは、Bloggerで書いていました。
+ですが、下書きから公開まで全てがブラウザに依存しているため、書こうと思ってから書く気力がだんだん落ちて、 下書きが溜まって、最終的に公開しないままいく一方でした。
+テキスト書くときは、AtomとIntelliJ IDEA使っているのですが、 どちらもコマンドエディタからコンソールまでほぼ完結しているので、blogも何とか出来ないかなと思ってました。
+仕事で使うドキュメントの生成ツールの検証も兼ねて、Markdownで書ける静的サイトを作れるツールでいろいろと探していたところ、Hugoがとても印象的でした。
+Goで書かれているためか動作が早く、ドキュメントもひと通り揃ってました。
+今後は、このHugoを使って行きたいと思います。
+テーマは、シンプルなHugo Zenを使うことにしました。
+今後はこのテーマをベースにカスタマイズしていく予定です。</description>
     </item>
     
   </channel>

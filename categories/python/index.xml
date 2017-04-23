@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on open build/reports/life/index.html</title>
-    <link>http://grimrose.github.io/blog/categories/python/index.xml</link>
+    <link>http://grimrose.github.io/blog/categories/python/</link>
     <description>Recent content in Python on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <atom:link href="http://grimrose.github.io/blog/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Sep 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://grimrose.github.io/blog/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>PyCon JP 2016 に参加してきました #pyconjp</title>
@@ -14,60 +17,14 @@
       <pubDate>Sun, 25 Sep 2016 00:00:00 +0000</pubDate>
       
       <guid>http://grimrose.github.io/blog/2016/09/pyconjp-2016/</guid>
-      <description>
-
-&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/&#34;&gt;PyCon JP 2016&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;今後仕事でPythonを使う機会が増えるだろうということと、&lt;a href=&#34;scalamatsuri.org&#34;&gt;ScalaMatsuri&lt;/a&gt;の運営はPyCon JPの運営を参考にさせて頂いてるので、
-実際スタッフの人はどのように動いているのかを見てみたいと思い参加してみました。&lt;/p&gt;
-
-&lt;h2 id=&#34;セッション&#34;&gt;セッション&lt;/h2&gt;
-
-&lt;p&gt;選択したセッションは、以下のとおりです。
-両日の基調講演は、朝起きられず途中からでした。
-基準として仕事で使う際に必要そうなのを重点的に選んでみました。&lt;/p&gt;
-
-&lt;h3 id=&#34;1日目&#34;&gt;1日目&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/keynote/&#34;&gt;基調講演&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/schedule/presentation/72/&#34;&gt;週末サイエンティストのススメ&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/schedule/presentation/54/&#34;&gt;データ分析スクリプトのツール化入門(GUI付与・EXE化)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/schedule/presentation/8/&#34;&gt;Getting started with chatops in python with errbot&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/schedule/presentation/53/&#34;&gt;Robot Frameworkでブラウザテストやってみた話&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;2日目&#34;&gt;2日目&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/keynote/&#34;&gt;基調講演&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/schedule/presentation/24/&#34;&gt;Pythonではじめるfinance hack入門&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/schedule/presentation/20/&#34;&gt;Deep Learning with Python &amp;amp; TensorFlow&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/schedule/presentation/5/&#34;&gt;Building Distributed System with Celery on Docker Swarm&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/schedule/presentation/23/&#34;&gt;pandasによる時系列データ処理&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://pycon.jp/2016/ja/schedule/presentation/39/&#34;&gt;Building a data preparation pipeline with Pandas and AWS Lambda&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;特に、ChatOpsのPythonで書かれた&lt;a href=&#34;http://errbot.io/en/latest/&#34;&gt;errbot&lt;/a&gt;のセッションは、興味深かったです。
-hubotはcoffeescriptなのが微妙、botkitはほぼSlack専用、rubotyはRubyなのでチームでメンテナンスしていくのが難しそうだったので、
-Pythonのがあるならどんな感じなのかなと思ってました。&lt;/p&gt;
-
-&lt;p&gt;その他では、データ分析でよく使われているpandasに基本的な知識から実際にどう使っているかを知れて、勉強になりました。&lt;/p&gt;
-
-&lt;h2 id=&#34;カンファレンス運営&#34;&gt;カンファレンス運営&lt;/h2&gt;
-
-&lt;p&gt;当日の運営という視点から見たときは、相当準備されていたのか着実に実施していて素晴らしいと思いました。
-トラブルの対応も行動規範に沿って説明がされており、運営が一体となって解決に取り組んでいる姿勢を見せていたのが特に印象的でした。&lt;/p&gt;
-
-&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
-
-&lt;p&gt;仕事で必要になるということで初めて参加してみましたが、とても充実した2日間でした。
-今後は、Pythonのコミュニティイベントにも参加していこうと思います。&lt;/p&gt;
-
-&lt;p&gt;参加者、スタッフ、スポンサーの皆様、ありがとうございました。&lt;/p&gt;
-</description>
+      <description>はじめに PyCon JP 2016
+今後仕事でPythonを使う機会が増えるだろうということと、ScalaMatsuriの運営はPyCon JPの運営を参考にさせて頂いてるので、 実際スタッフの人はどのように動いているのかを見てみたいと思い参加してみました。
+セッション 選択したセッションは、以下のとおりです。 両日の基調講演は、朝起きられず途中からでした。 基準として仕事で使う際に必要そうなのを重点的に選んでみました。
+1日目  基調講演 週末サイエンティストのススメ データ分析スクリプトのツール化入門(GUI付与・EXE化) Getting started with chatops in python with errbot Robot Frameworkでブラウザテストやってみた話  2日目  基調講演 Pythonではじめるfinance hack入門 Deep Learning with Python &amp;amp; TensorFlow Building Distributed System with Celery on Docker Swarm pandasによる時系列データ処理 Building a data preparation pipeline with Pandas and AWS Lambda  特に、ChatOpsのPythonで書かれたerrbotのセッションは、興味深かったです。 hubotはcoffeescriptなのが微妙、botkitはほぼSlack専用、rubotyはRubyなのでチームでメンテナンスしていくのが難しそうだったので、 Pythonのがあるならどんな感じなのかなと思ってました。
+その他では、データ分析でよく使われているpandasに基本的な知識から実際にどう使っているかを知れて、勉強になりました。
+カンファレンス運営 当日の運営という視点から見たときは、相当準備されていたのか着実に実施していて素晴らしいと思いました。 トラブルの対応も行動規範に沿って説明がされており、運営が一体となって解決に取り組んでいる姿勢を見せていたのが特に印象的でした。
+おわりに 仕事で必要になるということで初めて参加してみましたが、とても充実した2日間でした。 今後は、Pythonのコミュニティイベントにも参加していこうと思います。
+参加者、スタッフ、スポンサーの皆様、ありがとうございました。</description>
     </item>
     
     <item>
@@ -76,46 +33,19 @@ Pythonのがあるならどんな感じなのかなと思ってました。&lt;/
       <pubDate>Mon, 05 Sep 2016 21:11:45 +0900</pubDate>
       
       <guid>http://grimrose.github.io/blog/2016/09/self-education-python/</guid>
-      <description>
-
-&lt;h2 id=&#34;きっかけ&#34;&gt;きっかけ&lt;/h2&gt;
-
-&lt;p&gt;これまで、jupyter-notebookやfabricを使ってきたのですが、pythonそのものを使って何かを作るといったことはしてこなかったので、
-仕事で本格的にPythonを使うことになる前に、一から学べる本があればいいなと思い、電子版で出版されている中で入門にカテゴリされている本を探していました。&lt;/p&gt;
-
-&lt;p&gt;はてブなどでいろいろ探してたところ&lt;a href=&#34;http://shinyorke.hatenablog.com/entry/2016/08/05/224825&#34;&gt;「独習Python入門」は一生付き合える入門本だと334回言いたい&lt;/a&gt;の記事がみつかり、
-求めてる内容にマッチしてそうだし、&lt;a href=&#34;https://twitter.com/gothedistance&#34;&gt;ござ先輩&lt;/a&gt;は以前に、&lt;a href=&#34;http://grimrose.blogspot.jp/2012/03/vcafe.html&#34;&gt;これからの「エンジニアリング」の話をしよう に参加しました #vcafe
-&lt;/a&gt;のイベントの講師として来られていた方だったので、間違い無さそうと思い購入しました。&lt;/p&gt;
-
-&lt;h2 id=&#34;読みきってみて&#34;&gt;読みきってみて&lt;/h2&gt;
-
-&lt;p&gt;率直な感想は、「物足りない」でした。が、それは私がこの本が想定されているスキルと合ってなかったからだろうなと思います。&lt;/p&gt;
-
-&lt;p&gt;私がもしこの本を勧めるとしたら、例えば普段Excel VBAのような旧石器時代の言語でデータ分析していて、
-より現代的なプログラミング言語で楽ができる良いツールは無いかと模索している人ような隣の島にいるメンバーです。&lt;/p&gt;
-
-&lt;p&gt;そういう人は、gitやpyenvやvirtualenvといった開発環境をいれる際に躓くのが最も挫折しやすい難所なので、
-インストールは簡単にスムーズに行く方法を教える必要がありますが、解説付きで載っているので安心です。&lt;/p&gt;
-
-&lt;p&gt;ある程度、VBAとはいえプログラミング言語を知っていれば、丁寧な解説とかわいいイラストでどんどん先に進めるでしょう。&lt;/p&gt;
-
-&lt;p&gt;もちろん、プログラミング初めての人でも、躓いた箇所を読み返しつつ進めていくことが出来れば、あっという間に後半まで進めると思います。&lt;/p&gt;
-
-&lt;p&gt;9章、10章は、プログラミング言語を使うとこんなことも出来るんだよというちょっとハードルの高い章だと思いますが、ここまで読み進めた人であれば大丈夫だと思います。&lt;/p&gt;
-
-&lt;p&gt;最後の11章のしっかりと今後何をやっていったらいいのかを伝えながら背中を押す感じが、読み終えてとてもいい心地でした。&lt;/p&gt;
-
-&lt;p&gt;全部の章に練習問題と答えがあり、間違えそうな箇所はしっかり説明がされていてサポートが手厚い印象でした。&lt;/p&gt;
-
-&lt;p&gt;既にRubyやJava、JavaScriptといったプログラミング言語を使ってコードを書いている人には物足りないかもしれません。&lt;/p&gt;
-
-&lt;p&gt;そういう人向けにいい本や記事があれば、教えて頂ければ幸いです。&lt;/p&gt;
-
-&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
-
-&lt;p&gt;次は、ほぼ同じ時期に購入した&lt;a href=&#34;http://www.oreilly.co.jp/books/9784873117386/&#34;&gt;入門 Python 3&lt;/a&gt;を見て、
-独習Python入門でカバーされていなかった内容を補完しつつ、仕事で使うNumpy, Scipy, pandas方面に進みたいと思います。&lt;/p&gt;
-</description>
+      <description>きっかけ これまで、jupyter-notebookやfabricを使ってきたのですが、pythonそのものを使って何かを作るといったことはしてこなかったので、 仕事で本格的にPythonを使うことになる前に、一から学べる本があればいいなと思い、電子版で出版されている中で入門にカテゴリされている本を探していました。
+はてブなどでいろいろ探してたところ「独習Python入門」は一生付き合える入門本だと334回言いたいの記事がみつかり、 求めてる内容にマッチしてそうだし、ござ先輩は以前に、これからの「エンジニアリング」の話をしよう に参加しました #vcafe のイベントの講師として来られていた方だったので、間違い無さそうと思い購入しました。
+読みきってみて 率直な感想は、「物足りない」でした。が、それは私がこの本が想定されているスキルと合ってなかったからだろうなと思います。
+私がもしこの本を勧めるとしたら、例えば普段Excel VBAのような旧石器時代の言語でデータ分析していて、 より現代的なプログラミング言語で楽ができる良いツールは無いかと模索している人ような隣の島にいるメンバーです。
+そういう人は、gitやpyenvやvirtualenvといった開発環境をいれる際に躓くのが最も挫折しやすい難所なので、 インストールは簡単にスムーズに行く方法を教える必要がありますが、解説付きで載っているので安心です。
+ある程度、VBAとはいえプログラミング言語を知っていれば、丁寧な解説とかわいいイラストでどんどん先に進めるでしょう。
+もちろん、プログラミング初めての人でも、躓いた箇所を読み返しつつ進めていくことが出来れば、あっという間に後半まで進めると思います。
+9章、10章は、プログラミング言語を使うとこんなことも出来るんだよというちょっとハードルの高い章だと思いますが、ここまで読み進めた人であれば大丈夫だと思います。
+最後の11章のしっかりと今後何をやっていったらいいのかを伝えながら背中を押す感じが、読み終えてとてもいい心地でした。
+全部の章に練習問題と答えがあり、間違えそうな箇所はしっかり説明がされていてサポートが手厚い印象でした。
+既にRubyやJava、JavaScriptといったプログラミング言語を使ってコードを書いている人には物足りないかもしれません。
+そういう人向けにいい本や記事があれば、教えて頂ければ幸いです。
+おわりに 次は、ほぼ同じ時期に購入した入門 Python 3を見て、 独習Python入門でカバーされていなかった内容を補完しつつ、仕事で使うNumpy, Scipy, pandas方面に進みたいと思います。</description>
     </item>
     
   </channel>

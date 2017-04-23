@@ -2,11 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Scala on open build/reports/life/index.html</title>
-    <link>http://grimrose.github.io/blog/categories/scala/index.xml</link>
+    <link>http://grimrose.github.io/blog/categories/scala/</link>
     <description>Recent content in Scala on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <atom:link href="http://grimrose.github.io/blog/categories/scala/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Apr 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://grimrose.github.io/blog/categories/scala/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JVMからSSHのポート転送でJDBC接続する</title>
+      <link>http://grimrose.github.io/blog/2017/04/ssh-port-forward/</link>
+      <pubDate>Sun, 23 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2017/04/ssh-port-forward/</guid>
+      <description>はじめに 仕事上、windowsの端末からリモートのlinuxのDBにデータを送る必要があったのですが、 GUIでの手作業はしんどいので、簡単なツールを作ることにしました。
+幸いなことにJVMが入っているので、JavaのSSHクライアントとJDBCを使ってやってみました。
+検証 grimrose/ssh-port-forward-study
+対象のサーバは、模擬的にDockerで作りました。
+使用した言語は、慣れているgroovyと仕事で使ってるscala、ライブラリは、以下の通り。
+ groovy  groovy-ssh groovy-sql  scala  dacr/jassh ScalikeJDBC   どちらのSSHクライアントもJSchをベースにしているのですが、Javaで書くよりだいぶ楽になっています。
+SSHからリモートのコマンドやシェルスクリプトを動作させたり、実行結果の文字列やexit codeを受け取って更に次に繋げられるようになっていたり、 その他にもsftpやいろいろコマンドが用意されているみたいなので、デプロイツールとしてやミドルウェアの検証にも使えそうです。
+おわりに windowsという制約はちょっとしたツールを作るだけでもホントにしんどいので、JVMがあってよかったと思ってます。
+JVMやその他の言語でもランタイムをwindowsで動かせるようにしている人たちに感謝しつつ、日々の業務を楽にしていきたいと思います。</description>
+    </item>
     
     <item>
       <title>ScalikeJDBCを使ってAmazon Athenaへアクセスしてみた</title>
@@ -14,122 +34,18 @@
       <pubDate>Sun, 11 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>http://grimrose.github.io/blog/2016/12/scala-advent-calendar-2016/</guid>
-      <description>
-
-&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
-
-&lt;p&gt;この記事は、&lt;a href=&#34;http://qiita.com/advent-calendar/2016/scala&#34;&gt;Scala Advent Calendar 2016&lt;/a&gt;の11日目のエントリです。&lt;/p&gt;
-
-&lt;p&gt;10日目 &amp;gt; &lt;a href=&#34;http://qiita.com/ponkotuy&#34;&gt;ponkotuy&lt;/a&gt;さんの&lt;a href=&#34;http://qiita.com/ponkotuy/items/7a293436c68ebfca0472&#34;&gt;SkinnyORMのjoin定義について&lt;/a&gt;です。&lt;/p&gt;
-
-&lt;p&gt;12日目 &amp;gt; &lt;a href=&#34;http://qiita.com/aoiroaoino&#34;&gt;aoiroaoino&lt;/a&gt;さんの&lt;a href=&#34;http://aoino.hatenablog.com/entry/2016/12/13/034121&#34;&gt;Scala関西 Summit 2016 で Lens/Prism について発表してきた&lt;/a&gt;です。&lt;/p&gt;
-
-&lt;h2 id=&#34;scalikejdbcについて&#34;&gt;ScalikeJDBCについて&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://scalikejdbc.org/&#34;&gt;ScalikeJDBC&lt;/a&gt;は、SQLを使ってDBにアクセスしたい場合にとても使いやすいライブラリです。&lt;/p&gt;
-
-&lt;h2 id=&#34;amazon-athenaについて&#34;&gt;Amazon Athenaについて&lt;/h2&gt;
-
-&lt;p&gt;AWS re:Invent 2016で発表された新しいサービスです。&lt;/p&gt;
-
-&lt;p&gt;詳細については、
-&lt;a href=&#34;https://aws.amazon.com/jp/blogs/news/amazon-athena-interactive-sql-queries-for-data-in-amazon-s3/&#34;&gt;Amazon Athena – Amazon S3上のデータに対話的にSQLクエリを&lt;/a&gt;
-や、&lt;a href=&#34;http://dev.classmethod.jp/cloud/aws/amazon-athena-accessing-amazon-athena-with-jdbc/&#34;&gt;AthenaのJDBCドライバを使ってS3のデータにSQL Workbench経由でアクセスする #reinvent #athena&lt;/a&gt;
-を見ていただければと思います。&lt;/p&gt;
-
-&lt;p&gt;S3に保存したデータに対してスキーマを定義してSQLでアクセスできるようになるのは、今後の自分の仕事にもつながってくるサービスでもあるので注目しています。&lt;/p&gt;
-
-&lt;h2 id=&#34;アクセスしてみた&#34;&gt;アクセスしてみた&lt;/h2&gt;
-
-&lt;p&gt;検証したサンプルコードはこちらです。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/grimrose/Scala-Advent-Calendar-2016&#34;&gt;grimrose/Scala-Advent-Calendar-2016&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;まずはじめに遭遇したのは、&lt;code&gt;auto commit&lt;/code&gt;が常にONにするのが想定されているということでした。&lt;/p&gt;
-
-&lt;p&gt;遭遇した例外は、以下のような内容でした。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Exception encountered when invoking run on a nested suite - Failed to initialize pool: Disabling auto-commit mode not supported
-com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Disabling auto-commit mode not supported
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;仕方ないので、以下のようにして、&lt;code&gt;auto commit&lt;/code&gt;を&lt;code&gt;true&lt;/code&gt;へ変えました。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;val config = new HikariConfig()
-config.setAutoCommit(true)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;例えば、ScalikeJDBCでは、読み取り専用のクエリを書きたい場合は、以下のようなコードを書きます。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;// サンプルのため敢えて文字列で
-val from = &amp;quot;2014-07-05&amp;quot;
-val to = &amp;quot;2014-07-05&amp;quot;
-
-val results = DB readOnly { implicit session: DBSession =&amp;gt;
-  sql&amp;quot;SELECT os, COUNT(*) count FROM cloudfront_logs WHERE date BETWEEN date ${from} AND date ${to} GROUP BY os&amp;quot;
-    .map { rs =&amp;gt; (rs.string(&amp;quot;os&amp;quot;), rs.int(&amp;quot;count&amp;quot;)) }
-    .list().apply()
-}
-results.foreach(println)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;しかしながら、これを実行すると以下のような例外が発生します。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Method Connection.prepareStatement is not yet implemented
-com.amazonaws.athena.jdbc.NotImplementedException: Method Connection.prepareStatement is not yet implemented
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;そう、&lt;code&gt;PreparedStatement&lt;/code&gt;が実装されていないのです。&lt;/p&gt;
-
-&lt;p&gt;仕方ないので、JDBCのナマの&lt;code&gt;Statement&lt;/code&gt;を生成する必要があります。&lt;/p&gt;
-
-&lt;p&gt;最終的に以下のようなコードにすることで、ようやく通るようになりました。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;using(ConnectionPool.borrow()) { conn ⇒
-  using(conn.createStatement()) { stmt ⇒
-    // language=SQL
-    val sql =
-        &amp;quot;&amp;quot;&amp;quot;
-        SELECT 
-            os, 
-            COUNT(*) AS count 
-        FROM mydatabase.cloudfront_logs 
-        WHERE date BETWEEN date &#39;2014-07-05&#39; AND date &#39;2014-08-05&#39; 
-        GROUP BY os
-        &amp;quot;&amp;quot;&amp;quot;.stripMargin
-    // ResultSetは、Statementのclose時にcloseされる
-    val rs = stmt.executeQuery(sql)
-
-    def resultSetToSeq[A](rs: ResultSet)(fn: ResultSet ⇒ A): Seq[A] = {
-      Iterator.continually(rs).takeWhile(_.next()).map(fn).toSeq
-    }
-
-    val result = resultSetToSeq(rs) { rs ⇒
-      val os = rs.getString(&amp;quot;os&amp;quot;)
-      val count = rs.getInt(&amp;quot;count&amp;quot;)
-      (os, count)
-    }
-    result.foreach(println)
-  }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;久しぶりにナマのJDBCを触りましたが、過去の記憶を呼び覚まされて頭がウッとなりました。&lt;/p&gt;
-
-&lt;p&gt;あと、closeし忘れが無いか確認してましたが、&lt;code&gt;ResultSet&lt;/code&gt;は&lt;code&gt;Statement&lt;/code&gt;がcloseされるときにcloseされるのも、
-指摘いただいて改めて認識しました。&lt;/p&gt;
-
-&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
-
-&lt;p&gt;JDBC Driverが提供されているとはいえ、まだいろいろ実装されていない箇所が見受けられたりなど、これからの部分が多いと思いました。&lt;/p&gt;
-
-&lt;p&gt;しかしながら、サービス提供開始時にここまでのものをリリースするのはさすがだと感じました。&lt;/p&gt;
-
-&lt;p&gt;とはいえ、Maven Centralにも無い状況では、ワークフローへ組み込むのは時期尚早だと思います。&lt;/p&gt;
-
-&lt;p&gt;結果はS3にcsvの形式で出力されますし、ナマとはいえJDBCを使えるので、&lt;code&gt;embulk&lt;/code&gt;も使えるのではないかと思いますので、
-今後も期待できるサービスになるのではないかと思います。&lt;/p&gt;
-</description>
+      <description>はじめに この記事は、Scala Advent Calendar 2016の11日目のエントリです。
+10日目 &amp;gt; ponkotuyさんのSkinnyORMのjoin定義についてです。
+12日目 &amp;gt; aoiroaoinoさんのScala関西 Summit 2016 で Lens/Prism について発表してきたです。
+ScalikeJDBCについて ScalikeJDBCは、SQLを使ってDBにアクセスしたい場合にとても使いやすいライブラリです。
+Amazon Athenaについて AWS re:Invent 2016で発表された新しいサービスです。
+詳細については、 Amazon Athena – Amazon S3上のデータに対話的にSQLクエリを や、AthenaのJDBCドライバを使ってS3のデータにSQL Workbench経由でアクセスする #reinvent #athena を見ていただければと思います。
+S3に保存したデータに対してスキーマを定義してSQLでアクセスできるようになるのは、今後の自分の仕事にもつながってくるサービスでもあるので注目しています。
+アクセスしてみた 検証したサンプルコードはこちらです。
+grimrose/Scala-Advent-Calendar-2016
+まずはじめに遭遇したのは、auto commitが常にONにするのが想定されているということでした。
+遭遇した例外は、以下のような内容でした。
+Exception encountered when invoking run on a nested suite - Failed to initialize pool: Disabling auto-commit mode not supported com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Disabling auto-commit mode not supported  仕方ないので、以下のようにして、auto commitをtrueへ変えました。</description>
     </item>
     
     <item>
@@ -138,160 +54,21 @@ com.amazonaws.athena.jdbc.NotImplementedException: Method Connection.prepareStat
       <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>http://grimrose.github.io/blog/2016/12/gadvent-2016/</guid>
-      <description>
-
-&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
-
-&lt;p&gt;この記事は、&lt;a href=&#34;http://qiita.com/advent-calendar/2016/gastah&#34;&gt;G*Advent Calendar(Groovy,Grails,Gradle,Spock&amp;hellip;) Advent Calendar 2016&lt;/a&gt;の10日目のエントリです。&lt;/p&gt;
-
-&lt;p&gt;9日目 &amp;gt; &lt;a href=&#34;http://qiita.com/nobeans&#34;&gt;nobeans&lt;/a&gt;さんの&lt;a href=&#34;https://www.ntts.co.jp/column/nakano_blog/20161209/index.html&#34;&gt;GrailsでUnix/Linux的実行可能WARファイルをつくる&lt;/a&gt;です。&lt;/p&gt;
-
-&lt;p&gt;11日目 &amp;gt; &lt;a href=&#34;http://qiita.com/tyama&#34;&gt;tyama&lt;/a&gt;さんの&lt;a href=&#34;http://grails.jp/guide/server-sent-events/guide/index.html&#34;&gt;GrailsでServer Sent Eventsを送信！(意訳版)&lt;/a&gt;です。&lt;/p&gt;
-
-&lt;h2 id=&#34;gparsとは&#34;&gt;GParsとは&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.gpars.org/&#34;&gt;GPars&lt;/a&gt;は、GroovyとJavaで利用できる並行・並列処理を利用しやすくなるライブラリです。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://qiita.com/saba1024/items/29bc32f3390facbaa5c5&#34;&gt;[Groovy]GParsで並列処理（基本＆コレクション編）&lt;/a&gt;を見ていただくと、
-旧来のThreadや、java.util.concurrentをそのまま使うよりも並行処理が書きやすそうだと感じたのではないでしょうか。&lt;/p&gt;
-
-&lt;p&gt;GroovyがApacheに寄贈され、codehausが停止してしまったため、ソースコードやドキュメントがgithubに移管されています。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/GPars/GPars&#34;&gt;GPars/GPars&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;versionは、&lt;code&gt;1.2.1&lt;/code&gt;のままです。&lt;/p&gt;
-
-&lt;p&gt;ですので、Gradleで利用する際は、以下のように依存を追加すれば利用できるようになります。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-groovy&#34;&gt;// https://mvnrepository.com/artifact/org.codehaus.gpars/gpars
-compile group: &#39;org.codehaus.gpars&#39;, name: &#39;gpars&#39;, version: &#39;1.2.1&#39;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;actorモデルについて&#34;&gt;Actorモデルについて&lt;/h2&gt;
-
-&lt;p&gt;アクターモデルについては、&lt;a href=&#34;https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AF%E3%82%BF%E3%83%BC%E3%83%A2%E3%83%87%E3%83%AB&#34;&gt;アクターモデル&lt;/a&gt;を見てください。&lt;/p&gt;
-
-&lt;p&gt;アクターモデルの実装されているもので代表的なものは、&lt;a href=&#34;http://www.erlang.org/&#34;&gt;Erlang&lt;/a&gt;と&lt;a href=&#34;http://akka.io/&#34;&gt;Akka&lt;/a&gt;が挙げられます。&lt;/p&gt;
-
-&lt;p&gt;この2つについては、もうエコシステムとも呼べるようなものになってしまっているので、アクターモデルだけを知ろうとすると、どこから手をつけていいのか分かりにくくなります。&lt;/p&gt;
-
-&lt;p&gt;そこで、GParsのActorを使ってアクターモデルの考え方を理解して行こうと思います。&lt;/p&gt;
-
-&lt;h2 id=&#34;gparsのactor&#34;&gt;GParsのActor&lt;/h2&gt;
-
-&lt;p&gt;GParsのActorの&lt;a href=&#34;http://www.gpars.org/guide/guide/actors.html&#34;&gt;ドキュメント&lt;/a&gt;を見ると、Actorの作り方はとてもシンプルです。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-groovy&#34;&gt;import groovyx.gpars.actor.Actor
-
-def actor = Actors.actor {
-    loop {
-        react { msg -&amp;gt;
-            println &amp;quot;Received: $msg&amp;quot;
-        }
-    }
-}
-
-actor.send &#39;Hello, GPars!&#39;
-
-actor.join() // 停止するまで立ち上がったままにする。
-
-// 止めるときはCtrl-C or プロセスを落とす
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;いわゆる&lt;code&gt;PingPong&lt;/code&gt;をする場合はこんな感じです。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-groovy&#34;&gt;@Immutable
-class PingMessage {
-    String message
-}
-
-@Immutable
-class PongMessage {
-    String message
-}
-
-@Log
-class PongActor extends DefaultActor {
-    @Override
-    protected void act() {
-        loop {
-            react { msg -&amp;gt;
-                log.info &amp;quot;Pong Received: $msg&amp;quot;
-                switch (msg) {
-                    case PingMessage:
-                        reply new PongMessage(message: msg.message)
-                }
-            }
-        }
-    }
-}
-
-@Log
-class Main {
-    static void main(args) {
-        log.info(&amp;quot;start&amp;quot;)
-
-        def pingActor = Actors.actor {
-            loop {
-                react { msg -&amp;gt;
-                    log.info &amp;quot;Ping Received: $msg&amp;quot;
-                    switch (msg) {
-                        case String:
-                            reply new PingMessage(message: msg)
-                            break
-                        case PongMessage:
-                            terminate() // actorを停止させる
-                            break
-                    }
-                }
-            }
-        }
-
-        def pongActor = new PongActor().start()
-
-        pingActor.send &#39;Hello, GPars!&#39;, pongActor
-
-        // 1秒だけ待つ
-        [pingActor, pongActor]*.join(1, TimeUnit.SECONDS)
-
-        log.info(&amp;quot;end&amp;quot;)
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;ちょっとAkkaのActorに似せるように書いて見ましたが、いかがでしょうか。&lt;/p&gt;
-
-&lt;p&gt;Groovyはswitch文の&lt;code&gt;case&lt;/code&gt;にクラスを指定することも出来るので、Scalaのパターンマッチっぽく見えます。&lt;/p&gt;
-
-&lt;p&gt;また、&lt;a href=&#34;http://docs.groovy-lang.org/latest/html/gapi/groovy/transform/Immutable.html&#34;&gt;@Immutable&lt;/a&gt;を使うことで、
-GroovyのAST変換用いて&lt;code&gt;case class&lt;/code&gt;っぽいクラスを作ることも出来ます。&lt;/p&gt;
-
-&lt;p&gt;Akkaでは、&lt;a href=&#34;http://doc.akka.io/docs/akka/current/general/actor-systems.html#actor-systems&#34;&gt;ActorSystem&lt;/a&gt;と呼ばれる&lt;code&gt;Supervisor&lt;/code&gt;を使用して、
-アクターの階層構造を構築していきますが、GParsのActorにはありません。&lt;/p&gt;
-
-&lt;p&gt;GParsの資料を色々探していたところ、 &lt;a href=&#34;http://mariogarcia.github.io/gpars-workshop/#_supervising&#34;&gt;6.2. Supervising&lt;/a&gt;を見つけました。&lt;/p&gt;
-
-&lt;p&gt;以下のコードを見る限り、頑張ればやれそうです。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;script src=&#34;https://gist.github.com/mariogarcia/a740f0b58f80f6a6d5f3.js&#34;&gt;&lt;/script&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;こうして見ると、AkkaのActorSystemは、かなり成熟しているので、理解することで巨人の肩に乗ることが出来ると思います。&lt;/p&gt;
-
-&lt;h2 id=&#34;終わりに&#34;&gt;終わりに&lt;/h2&gt;
-
-&lt;p&gt;駆け足でGParsのActorを紹介して見ましたが、いかがでしょうか。&lt;/p&gt;
-
-&lt;p&gt;同じJVMで動くAkkaに比べて機能としては少ないかもしれませんが、ここで紹介した&lt;code&gt;DefaultActor&lt;/code&gt;以外にも、
-より柔軟に条件が書ける&lt;code&gt;DynamicDispatchActor&lt;/code&gt;や、&lt;code&gt;Actors&lt;/code&gt;ヘルパークラスを使って簡単にactorを作れたり等、
-Actorモデルを理解するには十分な機能が揃っています。&lt;/p&gt;
-
-&lt;p&gt;GPars自体は、Actorだけでなく、他にもSTMやCSPなど並行・並列処理に向いた機能を提供しています。&lt;/p&gt;
-
-&lt;p&gt;Jetty等のコンテナを利用していると意識しなくても並行処理が利用できてしまいますが、
-並行・並列処理をより知りたくなった際には、GParsを使って理論の理解に役立ててください。&lt;/p&gt;
-</description>
+      <description>はじめに この記事は、G*Advent Calendar(Groovy,Grails,Gradle,Spock&amp;hellip;) Advent Calendar 2016の10日目のエントリです。
+9日目 &amp;gt; nobeansさんのGrailsでUnix/Linux的実行可能WARファイルをつくるです。
+11日目 &amp;gt; tyamaさんのGrailsでServer Sent Eventsを送信！(意訳版)です。
+GParsとは GParsは、GroovyとJavaで利用できる並行・並列処理を利用しやすくなるライブラリです。
+[Groovy]GParsで並列処理（基本＆コレクション編）を見ていただくと、 旧来のThreadや、java.util.concurrentをそのまま使うよりも並行処理が書きやすそうだと感じたのではないでしょうか。
+GroovyがApacheに寄贈され、codehausが停止してしまったため、ソースコードやドキュメントがgithubに移管されています。
+GPars/GPars
+versionは、1.2.1のままです。
+ですので、Gradleで利用する際は、以下のように依存を追加すれば利用できるようになります。
+// https://mvnrepository.com/artifact/org.codehaus.gpars/gpars compile group: &#39;org.codehaus.gpars&#39;, name: &#39;gpars&#39;, version: &#39;1.2.1&#39;  Actorモデルについて アクターモデルについては、アクターモデルを見てください。
+アクターモデルの実装されているもので代表的なものは、ErlangとAkkaが挙げられます。
+この2つについては、もうエコシステムとも呼べるようなものになってしまっているので、アクターモデルだけを知ろうとすると、どこから手をつけていいのか分かりにくくなります。
+そこで、GParsのActorを使ってアクターモデルの考え方を理解して行こうと思います。
+GParsのActor GParsのActorのドキュメントを見ると、Actorの作り方はとてもシンプルです。
+import groovyx.gpars.actor.Actor def actor = Actors.actor { loop { react { msg -&amp;gt; println &amp;quot;Received: $msg&amp;quot; } } } actor.send &#39;Hello, GPars!&#39; actor.join() // 停止するまで立ち上がったままにする。 // 止めるときはCtrl-C or プロセスを落とす  いわゆるPingPongをする場合はこんな感じです。</description>
     </item>
     
     <item>
@@ -300,68 +77,21 @@ Actorモデルを理解するには十分な機能が揃っています。&lt;/p
       <pubDate>Sun, 09 Oct 2016 00:00:00 +0000</pubDate>
       
       <guid>http://grimrose.github.io/blog/2016/10/scalakansai2016/</guid>
-      <description>
-
-&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://summit.scala-kansai.org/&#34;&gt;http://summit.scala-kansai.org/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://skug.connpass.com/event/38349/&#34;&gt;http://skug.connpass.com/event/38349/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;去年の&lt;a href=&#34;http://summit.scala-kansai.org/2015/index.html&#34;&gt;Scala関西 Summit 2015&lt;/a&gt;に参加してまた参加したいと思っていたのと、
-&lt;a href=&#34;http://2017.scalamatsuri.org&#34;&gt;ScalaMatsuri&lt;/a&gt;の運営の参考になればと思い、参加しました。&lt;/p&gt;
-
-&lt;h2 id=&#34;セッション&#34;&gt;セッション&lt;/h2&gt;
-
-&lt;p&gt;今回は、どのセッションも面白そうだったのと、社内に持ち帰って共有したい内容が多かったので、悩みました。&lt;/p&gt;
-
-&lt;p&gt;その中で以下のセッションを選びました。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;はてなにおけるマイクロサービスとScala&lt;/li&gt;
-&lt;li&gt;akka-stream を始めるときに覚えておきたいこと&lt;/li&gt;
-&lt;li&gt;Implicit 再入門&lt;/li&gt;
-&lt;li&gt;Play2+SlickだけじゃないScalaのWeb/DBフレームワーク事情&lt;/li&gt;
-&lt;li&gt;Akka Clusterのネットワーク分断耐性設計&lt;/li&gt;
-&lt;li&gt;今からはじめる Lens/Prism&lt;/li&gt;
-&lt;li&gt;scala.collection 再入門&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Scalaを使いつつDDDを導入しているのでDDDと相性が良いことは実感していましたが、
-一部とは言え、はてなのような大きなサービスのドメインを写し取りつつDDDを実践するという話は、とても参考になりました。
-Scalaの定石を探る会は、とても興味深かったので今後のカンファレンス等で話される機会があるのを願ってます。&lt;/p&gt;
-
-&lt;p&gt;akka-streamは、Reactive Streamsについてずっと勉強していたので、実際にプロダクトに導入するにはどうすればいいのかを学びたかったので、
-特に気になっていました。
-小さな部品を組み合わせて大きな部品を作っていくところや、どのように既存のAkkaのActorと連携していくのかを知ることが出来てとても勉強になりました。&lt;/p&gt;
-
-&lt;p&gt;Implicit 再入門については、様々な入門書や日本語のドキュメントで知ってはいたものの、若干の不安がありましたが、がくぞー先生の説明で改めてScalaのImplicitの機能を知ることが出来ました。&lt;/p&gt;
-
-&lt;p&gt;Scalaのフレームワーク事情で紹介されていた&lt;a href=&#34;http://scalikejdbc.org&#34;&gt;ScalikeJDBC&lt;/a&gt;は、現在のプロジェクトでも利用しており、
-フレームワークの標準機能としてDAOやActiveRecordのような使い方が出来て、
-さらにSQLの行数が多めの集計用クエリなどでもフレームワークを変えること無く利用出来るので、かなりおすすめです。
-特に、ログ周りの設定は、クエリチューニングの際にとても助かっています。&lt;/p&gt;
-
-&lt;p&gt;Akka Clusterを導入するかは今後の状況次第ではありますが、分散処理という文脈の中でClusterでどういう故障が起きるのか、
-故障が起きた際にどう対応すればいいのかを学ぶことが出来て、分散処理基盤を動かしていくことの難しさを知れました。&lt;/p&gt;
-
-&lt;p&gt;Monocle、Lens、Prismは名前だけ知っていて、コワイものだという印象でいましたが、
-広く一般的なgetter/setterは関数の世界ではどういったものかを知れました。
-case classのインスタンスのcopy hellは、ドメインオブジェクトの変換時にどうしても出てきてしまう問題の一つだと思うので、
-適切な局面で扱えるようになりたいと思いました。&lt;/p&gt;
-
-&lt;p&gt;社内のScala勉強会でScalaのcollectionをどう使って行けばいいのか説明する時に参考に出来ると思いました。
-特に計算量については、件数が多いデータを扱うことが多いプロジェクトなので、頭に入れながらやらないとパフォーマンスが出ないと思うので、ありがたい内容でした。&lt;/p&gt;
-
-&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
-
-&lt;p&gt;丸一日ずっとScala漬けだったので途中疲れてしまいましたが、懇親会でTLで気になっていた人と実際にお会いする機会があったり、
-お世話になっている人にお礼を伝えることが出来たりと、とても充実した一日でした。&lt;/p&gt;
-
-&lt;p&gt;また来年開催されることになったら、是非参加したいと思います。&lt;/p&gt;
-
-&lt;p&gt;参加者、スタッフ、スポンサーの皆様、ありがとうございました。&lt;/p&gt;
-</description>
+      <description>はじめに http://summit.scala-kansai.org/
+http://skug.connpass.com/event/38349/
+去年のScala関西 Summit 2015に参加してまた参加したいと思っていたのと、 ScalaMatsuriの運営の参考になればと思い、参加しました。
+セッション 今回は、どのセッションも面白そうだったのと、社内に持ち帰って共有したい内容が多かったので、悩みました。
+その中で以下のセッションを選びました。
+ はてなにおけるマイクロサービスとScala akka-stream を始めるときに覚えておきたいこと Implicit 再入門 Play2+SlickだけじゃないScalaのWeb/DBフレームワーク事情 Akka Clusterのネットワーク分断耐性設計 今からはじめる Lens/Prism scala.collection 再入門  Scalaを使いつつDDDを導入しているのでDDDと相性が良いことは実感していましたが、 一部とは言え、はてなのような大きなサービスのドメインを写し取りつつDDDを実践するという話は、とても参考になりました。 Scalaの定石を探る会は、とても興味深かったので今後のカンファレンス等で話される機会があるのを願ってます。
+akka-streamは、Reactive Streamsについてずっと勉強していたので、実際にプロダクトに導入するにはどうすればいいのかを学びたかったので、 特に気になっていました。 小さな部品を組み合わせて大きな部品を作っていくところや、どのように既存のAkkaのActorと連携していくのかを知ることが出来てとても勉強になりました。
+Implicit 再入門については、様々な入門書や日本語のドキュメントで知ってはいたものの、若干の不安がありましたが、がくぞー先生の説明で改めてScalaのImplicitの機能を知ることが出来ました。
+Scalaのフレームワーク事情で紹介されていたScalikeJDBCは、現在のプロジェクトでも利用しており、 フレームワークの標準機能としてDAOやActiveRecordのような使い方が出来て、 さらにSQLの行数が多めの集計用クエリなどでもフレームワークを変えること無く利用出来るので、かなりおすすめです。 特に、ログ周りの設定は、クエリチューニングの際にとても助かっています。
+Akka Clusterを導入するかは今後の状況次第ではありますが、分散処理という文脈の中でClusterでどういう故障が起きるのか、 故障が起きた際にどう対応すればいいのかを学ぶことが出来て、分散処理基盤を動かしていくことの難しさを知れました。
+Monocle、Lens、Prismは名前だけ知っていて、コワイものだという印象でいましたが、 広く一般的なgetter/setterは関数の世界ではどういったものかを知れました。 case classのインスタンスのcopy hellは、ドメインオブジェクトの変換時にどうしても出てきてしまう問題の一つだと思うので、 適切な局面で扱えるようになりたいと思いました。
+社内のScala勉強会でScalaのcollectionをどう使って行けばいいのか説明する時に参考に出来ると思いました。 特に計算量については、件数が多いデータを扱うことが多いプロジェクトなので、頭に入れながらやらないとパフォーマンスが出ないと思うので、ありがたい内容でした。
+おわりに 丸一日ずっとScala漬けだったので途中疲れてしまいましたが、懇親会でTLで気になっていた人と実際にお会いする機会があったり、 お世話になっている人にお礼を伝えることが出来たりと、とても充実した一日でした。
+また来年開催されることになったら、是非参加したいと思います。
+参加者、スタッフ、スポンサーの皆様、ありがとうございました。</description>
     </item>
     
     <item>
@@ -370,36 +100,17 @@ case classのインスタンスのcopy hellは、ドメインオブジェクト�
       <pubDate>Mon, 08 Feb 2016 20:31:14 +0900</pubDate>
       
       <guid>http://grimrose.github.io/blog/2016/02/scalamatsuri2016/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;http://scalamatsuri.org/&#34;&gt;ScalaMatsuri&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;はじまり&#34;&gt;はじまり&lt;/h2&gt;
-
-&lt;p&gt;前回のScalaMatsuriが楽しかったので、スタッフとして参加してみようと思い飛び込んでみました。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://japan-scala-association.doorkeeper.jp/events/23255&#34;&gt;https://japan-scala-association.doorkeeper.jp/events/23255&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;スタッフとして&#34;&gt;スタッフとして&lt;/h2&gt;
-
-&lt;p&gt;約半年関わってみて、ここまで大きなカンファレンスの裏側をScalaのコミュニティの人たちと一緒に体験できたのは、正直楽しかったです。&lt;/p&gt;
-
-&lt;p&gt;終わってみて反省すべき点がたくさんありますが、これから開催されるであろう振り返りでいろいろ見直したいです。&lt;/p&gt;
-
-&lt;p&gt;開催当日の個人的な反省としては、日常会話の英語が出てこないというのはホントに辛かったです。&lt;/p&gt;
-
-&lt;p&gt;普段Webinarとかで聞いてたり、英語の文献とか読んでいたとしても話せるようにはならないことは分かっていたました。&lt;/p&gt;
-
-&lt;p&gt;ですが、短い時間でとっさにフレーズが出てこなくて慌てていて、相手にもその雰囲気が伝わるので申し訳ない気になって、さらにパニクるといった感じでした。&lt;/p&gt;
-
-&lt;p&gt;ジェスチャーや一緒に対応してくれていた人に助けてもらったり、最終的に英語が話せるスタッフの人にお願いしてなんとかしました。&lt;/p&gt;
-
-&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
-
-&lt;p&gt;まだ、残務がいろいろあって終わっていませんが、次回があるのならまたスタッフとして参加してみたいと思います。&lt;/p&gt;
-
-&lt;p&gt;ご参加いただいた皆さん、ご協賛いただいたスポンサーの皆さん、そして一緒に尽力してくださったスタッフの皆さん、本当にありがとうございました。&lt;/p&gt;
-</description>
+      <description>ScalaMatsuri
+はじまり 前回のScalaMatsuriが楽しかったので、スタッフとして参加してみようと思い飛び込んでみました。
+https://japan-scala-association.doorkeeper.jp/events/23255
+スタッフとして 約半年関わってみて、ここまで大きなカンファレンスの裏側をScalaのコミュニティの人たちと一緒に体験できたのは、正直楽しかったです。
+終わってみて反省すべき点がたくさんありますが、これから開催されるであろう振り返りでいろいろ見直したいです。
+開催当日の個人的な反省としては、日常会話の英語が出てこないというのはホントに辛かったです。
+普段Webinarとかで聞いてたり、英語の文献とか読んでいたとしても話せるようにはならないことは分かっていたました。
+ですが、短い時間でとっさにフレーズが出てこなくて慌てていて、相手にもその雰囲気が伝わるので申し訳ない気になって、さらにパニクるといった感じでした。
+ジェスチャーや一緒に対応してくれていた人に助けてもらったり、最終的に英語が話せるスタッフの人にお願いしてなんとかしました。
+おわりに まだ、残務がいろいろあって終わっていませんが、次回があるのならまたスタッフとして参加してみたいと思います。
+ご参加いただいた皆さん、ご協賛いただいたスポンサーの皆さん、そして一緒に尽力してくださったスタッフの皆さん、本当にありがとうございました。</description>
     </item>
     
   </channel>

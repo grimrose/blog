@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Life on open build/reports/life/index.html</title>
-    <link>http://grimrose.github.io/blog/categories/life/index.xml</link>
+    <link>http://grimrose.github.io/blog/categories/life/</link>
     <description>Recent content in Life on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <atom:link href="http://grimrose.github.io/blog/categories/life/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 31 Dec 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://grimrose.github.io/blog/categories/life/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>2016年の振り返り</title>
@@ -14,61 +17,20 @@
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>http://grimrose.github.io/blog/2016/12/retrospect/</guid>
-      <description>
-
-&lt;h2 id=&#34;2016年の振り返り&#34;&gt;2016年の振り返り&lt;/h2&gt;
-
-&lt;p&gt;今年も大晦日になったので、振り返ってみたいと思います。&lt;/p&gt;
-
-&lt;p&gt;2015年の振り返りは、&lt;a href=&#34;../../../2015/12/retrospect-2015/&#34;&gt;こちら&lt;/a&gt;でした。&lt;/p&gt;
-
-&lt;h2 id=&#34;やってみたかったことの振り返り&#34;&gt;やってみたかったことの振り返り&lt;/h2&gt;
-
-&lt;p&gt;また、2016年にやってみたかったことは&lt;a href=&#34;../../../2015/12/career-change/&#34;&gt;転職して１年が経ちました。&lt;/a&gt;に以下のように書いてました。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Akka Streamの導入&lt;/li&gt;
-&lt;li&gt;Kubernetesを用いたDocker Clusterの導入&lt;/li&gt;
-&lt;li&gt;electronを使った業務アプリの継続的開発&lt;/li&gt;
-&lt;li&gt;pythonを使ったシステムの構築及び運用&lt;/li&gt;
-&lt;li&gt;In-memory Data Gridを活用した機能の検証&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Akka Streamは、ScalaMatsuri 2016から、Akkaにまつわる読書会や勉強会に参加するようになってから、
-プロジェクトに導入するために必要な知識や考え方等を学んできて、12月からようやく導入に踏み切りました。&lt;/p&gt;
-
-&lt;p&gt;Kubernetesについては、本格導入に向けて試験的に検証運用をしていますが、マネージドではなく自分たちで運用するとなると、
-バージョンアップについていくのがとても大変でした。&lt;/p&gt;
-
-&lt;p&gt;electronを使った業務アプリについては、Excel VBAを代替するには大げさすぎる規模の案件が多かったため、なかなか出来ませんでした。&lt;/p&gt;
-
-&lt;p&gt;pythonを使ったシステムの構築及び運用については、全く出来なかったので、今年のPyconJP2016で知った&lt;a href=&#34;http://errbot.io/en/latest/&#34;&gt;errbot&lt;/a&gt;を使ったbot運用をやってみたいと思います。&lt;/p&gt;
-
-&lt;p&gt;In-memory Data Gridのプロダクトとして&lt;a href=&#34;https://hazelcast.org/&#34;&gt;hazelcast&lt;/a&gt;を使ってみましたが、
-今使っている規模だとなかなかClusterが必要な規模で検証することが出来ませんでした。&lt;/p&gt;
-
-&lt;p&gt;やってみたかったことのほとんどについて、なんらかの形で動かすことが出来たのでとても充実してました。&lt;/p&gt;
-
-&lt;h2 id=&#34;2017年やりたいこと&#34;&gt;2017年やりたいこと&lt;/h2&gt;
-
-&lt;p&gt;2017年でやってみたいこととしては、以下のことをやってみたいと思っています。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Akkaを使ったシステムへのマイグレーション&lt;/li&gt;
-&lt;li&gt;AWSを活用した運用環境&lt;/li&gt;
-&lt;li&gt;pythonを使ったシステムの構築及び運用(引き続き)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;既存のScalaで作ってたプロダクトを徐々にAkka、Akka Streamを使ったものに変えていこうと思っています。
-そのためにもチームのメンバーにAkkaを使った開発について教育や共有を出来るようにしていければと考えてます。&lt;/p&gt;
-
-&lt;p&gt;AWSについては、ようやく本格的に利用できるようになったので、これまで自前で運用していたものをマネージドなサービスに移行したり、
-利用したいと思っていたサービスを使うことが出来るようになりました。&lt;/p&gt;
-
-&lt;p&gt;チームとして動きやすくするための環境を整えることが多くなると思いますが、新しいことに挑戦したり、やりたいことが出来る環境は引き続き維持したいと思います。&lt;/p&gt;
-
-&lt;p&gt;2017年もよろしくお願いします。&lt;/p&gt;
-</description>
+      <description>2016年の振り返り 今年も大晦日になったので、振り返ってみたいと思います。
+2015年の振り返りは、こちらでした。
+やってみたかったことの振り返り また、2016年にやってみたかったことは転職して１年が経ちました。に以下のように書いてました。
+ Akka Streamの導入 Kubernetesを用いたDocker Clusterの導入 electronを使った業務アプリの継続的開発 pythonを使ったシステムの構築及び運用 In-memory Data Gridを活用した機能の検証  Akka Streamは、ScalaMatsuri 2016から、Akkaにまつわる読書会や勉強会に参加するようになってから、 プロジェクトに導入するために必要な知識や考え方等を学んできて、12月からようやく導入に踏み切りました。
+Kubernetesについては、本格導入に向けて試験的に検証運用をしていますが、マネージドではなく自分たちで運用するとなると、 バージョンアップについていくのがとても大変でした。
+electronを使った業務アプリについては、Excel VBAを代替するには大げさすぎる規模の案件が多かったため、なかなか出来ませんでした。
+pythonを使ったシステムの構築及び運用については、全く出来なかったので、今年のPyconJP2016で知ったerrbotを使ったbot運用をやってみたいと思います。
+In-memory Data Gridのプロダクトとしてhazelcastを使ってみましたが、 今使っている規模だとなかなかClusterが必要な規模で検証することが出来ませんでした。
+やってみたかったことのほとんどについて、なんらかの形で動かすことが出来たのでとても充実してました。
+2017年やりたいこと 2017年でやってみたいこととしては、以下のことをやってみたいと思っています。
+ Akkaを使ったシステムへのマイグレーション AWSを活用した運用環境 pythonを使ったシステムの構築及び運用(引き続き)  既存のScalaで作ってたプロダクトを徐々にAkka、Akka Streamを使ったものに変えていこうと思っています。 そのためにもチームのメンバーにAkkaを使った開発について教育や共有を出来るようにしていければと考えてます。
+AWSについては、ようやく本格的に利用できるようになったので、これまで自前で運用していたものをマネージドなサービスに移行したり、 利用したいと思っていたサービスを使うことが出来るようになりました。
+チームとして動きやすくするための環境を整えることが多くなると思いますが、新しいことに挑戦したり、やりたいことが出来る環境は引き続き維持したいと思います。
+2017年もよろしくお願いします。</description>
     </item>
     
     <item>
@@ -77,65 +39,25 @@
       <pubDate>Fri, 23 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>http://grimrose.github.io/blog/2016/12/ergodox/</guid>
-      <description>
-
-&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
-
-&lt;p&gt;この記事は、&lt;a href=&#34;http://qiita.com/advent-calendar/2016/ergodox&#34;&gt;ErgoDox Advent Calendar 2016&lt;/a&gt;の23日目のエントリです。&lt;/p&gt;
-
-&lt;h2 id=&#34;キーキャップについて&#34;&gt;キーキャップについて&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://qiita.com/okapies&#34;&gt;okapies&lt;/a&gt;さんの&lt;a href=&#34;http://okapies.hateblo.jp/entry/2016/05/15/164009&#34;&gt;ErgoDox EZ カスタマイズ情報のまとめ&lt;/a&gt;の
-&lt;strong&gt;キーキャップ&lt;/strong&gt;の箇所をみていただければ、だいたいどういったものがあって、どこで買えるのかが参考になると思います。&lt;/p&gt;
-
-&lt;p&gt;今回は、2つ紹介されているサイトのうち、&lt;a href=&#34;http://www.wasdkeyboards.com/&#34;&gt;WASD Keyboards&lt;/a&gt;で注文した過程を紹介したいと思います。&lt;/p&gt;
-
-&lt;h2 id=&#34;wasd-keyboardsでの注文の仕方&#34;&gt;WASD Keyboardsでの注文の仕方&lt;/h2&gt;
-
-&lt;p&gt;今回欲しかったのは、10キーのキーキャップです。
-商品ページは&lt;a href=&#34;http://www.wasdkeyboards.com/index.php/products/keycap-mod-packs/10-key-number-row-cherry-mx-keycap-set.html&#34;&gt;こちら&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;支払いは、&lt;a href=&#34;https://www.paypal.com/jp/home&#34;&gt;PayPal&lt;/a&gt;が使えるので、アカウント用意しておくと楽に決済できると思います。&lt;/p&gt;
-
-&lt;p&gt;送り先の住所もあらかじめ&lt;a href=&#34;https://www.paypal.com/jp/home&#34;&gt;PayPal&lt;/a&gt;に海外向けの住所を登録しておけば、注文時のフォームに引っ張ってきてくれます。&lt;/p&gt;
-
-&lt;p&gt;今回注文したのは、2016年12月9日でした。&lt;/p&gt;
-
-&lt;p&gt;配送業者は、&lt;strong&gt;UPS Worldwide Saver&lt;/strong&gt;を選択しました。
-理由としては、ネタとしてLOSTしたことを書くのも面白いとは思いますが、安いとは言えLOSTされるのは困るので多少高いですがちゃんと届くのを重視しました。&lt;/p&gt;
-
-&lt;p&gt;配送業者が配送開始になったのは、2016年12月13日でした。
-その週はアメリカでの雪の影響があったため、幾日か遅延の情報がUPSの配送状況から知ることが出来ました。
-とは言え、日本に到着したのは、2016年12月15日でした。&lt;/p&gt;
-
-&lt;p&gt;どうしても、早く欲しいのであれば、UPS Worldwide Saverを選択するのはありではないかと思います。&lt;/p&gt;
-
-&lt;h2 id=&#34;装着&#34;&gt;装着&lt;/h2&gt;
-
-&lt;p&gt;装着した結果、こんな感じになっています。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;ja&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;仕事風景(会社から持ってきた) &lt;a href=&#34;https://t.co/dNZRRcmvgx&#34;&gt;pic.twitter.com/dNZRRcmvgx&lt;/a&gt;&lt;/p&gt;&amp;mdash; とーます (@grimrose) &lt;a href=&#34;https://twitter.com/grimrose/status/812158502579748864&#34;&gt;2016年12月23日&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;写真は、あの&lt;a href=&#34;https://eventdots.jp/column/2&#34;&gt;ErgoDox users meet up&lt;/a&gt;が行われた&lt;a href=&#34;https://eventdots.jp/space&#34;&gt;イベント＆コミュニティスペース dots.&lt;/a&gt;で撮りました。&lt;/p&gt;
-
-&lt;p&gt;あのイベントの数日後には、&lt;a href=&#34;https://ergodox-ez.com/&#34;&gt;ErgoDox EZ&lt;/a&gt;のサイトで注文してました。&lt;/p&gt;
-
-&lt;p&gt;それ以降、仕事場に持ち込んでずっと使っています。&lt;/p&gt;
-
-&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
-
-&lt;p&gt;年明けあたりに、&lt;a href=&#34;http://qiita.com/okapies&#34;&gt;okapies&lt;/a&gt;さんが紹介されていたもう一つの&lt;a href=&#34;http://pimpmykeyboard.com/&#34;&gt;Pimp my keyboard&lt;/a&gt;で注文してみたいともいます。&lt;/p&gt;
-
-&lt;p&gt;ErgoDoxはカスタマイズが出来る箇所が多いのですが、日本で手に入れるのが難しいものがあります。
-とはいえ、以前に比べてだいぶ敷居が下がってきますし、ErgoDox購入出来る人であれば大丈夫だと思います。&lt;/p&gt;
-
-&lt;p&gt;今後もErgoDoxを楽しんでカスタマイズしていこうと思います。&lt;/p&gt;
-
-&lt;hr /&gt;
-</description>
+      <description>はじめに この記事は、ErgoDox Advent Calendar 2016の23日目のエントリです。
+キーキャップについて okapiesさんのErgoDox EZ カスタマイズ情報のまとめの キーキャップの箇所をみていただければ、だいたいどういったものがあって、どこで買えるのかが参考になると思います。
+今回は、2つ紹介されているサイトのうち、WASD Keyboardsで注文した過程を紹介したいと思います。
+WASD Keyboardsでの注文の仕方 今回欲しかったのは、10キーのキーキャップです。 商品ページはこちら。
+支払いは、PayPalが使えるので、アカウント用意しておくと楽に決済できると思います。
+送り先の住所もあらかじめPayPalに海外向けの住所を登録しておけば、注文時のフォームに引っ張ってきてくれます。
+今回注文したのは、2016年12月9日でした。
+配送業者は、UPS Worldwide Saverを選択しました。 理由としては、ネタとしてLOSTしたことを書くのも面白いとは思いますが、安いとは言えLOSTされるのは困るので多少高いですがちゃんと届くのを重視しました。
+配送業者が配送開始になったのは、2016年12月13日でした。 その週はアメリカでの雪の影響があったため、幾日か遅延の情報がUPSの配送状況から知ることが出来ました。 とは言え、日本に到着したのは、2016年12月15日でした。
+どうしても、早く欲しいのであれば、UPS Worldwide Saverを選択するのはありではないかと思います。
+装着 装着した結果、こんな感じになっています。
+ 仕事風景(会社から持ってきた) pic.twitter.com/dNZRRcmvgx
+&amp;mdash; とーます (@grimrose) 2016年12月23日 
+ 写真は、あのErgoDox users meet upが行われたイベント＆コミュニティスペース dots.で撮りました。
+あのイベントの数日後には、ErgoDox EZのサイトで注文してました。
+それ以降、仕事場に持ち込んでずっと使っています。
+おわりに 年明けあたりに、okapiesさんが紹介されていたもう一つのPimp my keyboardで注文してみたいともいます。
+ErgoDoxはカスタマイズが出来る箇所が多いのですが、日本で手に入れるのが難しいものがあります。 とはいえ、以前に比べてだいぶ敷居が下がってきますし、ErgoDox購入出来る人であれば大丈夫だと思います。
+今後もErgoDoxを楽しんでカスタマイズしていこうと思います。</description>
     </item>
     
     <item>
@@ -144,52 +66,14 @@
       <pubDate>Mon, 05 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>http://grimrose.github.io/blog/2016/12/mbp-13-late-2016/</guid>
-      <description>
-
-&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
-
-&lt;p&gt;MacBook Pro (13-inch, Late 2016, Two Thunderbolt 3 ports)モデルを購入したので、
-4Kモニタの&lt;a href=&#34;http://accessories.apj.dell.com/sna/productdetail.aspx?c=jp&amp;amp;cs=jpbsd1&amp;amp;l=ja&amp;amp;s=bsd&amp;amp;sku=210-AFRI&amp;amp;redirect=1&#34;&gt;P2715Q&lt;/a&gt;との動作検証を残しておこうと思います。&lt;/p&gt;
-
-&lt;h2 id=&#34;macbook-pro-13-late-2016-non-touch-bar&#34;&gt;MacBook Pro 13 Late 2016 non-Touch Bar&lt;/h2&gt;
-
-&lt;p&gt;カスタマイズは、以下の通り。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;2.4 GHz Intel Core i7&lt;/li&gt;
-&lt;li&gt;16 GB 1867 MHz LPDDR3&lt;/li&gt;
-&lt;li&gt;512GB SSD&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;dell-p2715q&#34;&gt;DELL P2715Q&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://support.apple.com/ja-jp/HT206587&#34;&gt;ここ&lt;/a&gt;を見ると4K 60Hzで表示するには、HDMI 2.0かDisplay Portのモニタが必要です。&lt;/p&gt;
-
-&lt;p&gt;しかし、HDMI 2.0の選択肢が無さすぎたので、Display Portで4K 60Hzを表示できるモニタから、DELL P2715Qを購入しました。
-理由は、価格と店頭での印象でした。&lt;/p&gt;
-
-&lt;p&gt;MacBook ProとDisplay Portのモニタを接続するアダプタとして、&lt;a href=&#34;http://www.aukey.com/products/usb-c-to-dp-adapter/&#34;&gt;AUKEY USB-C to DisplayPort Adapter CB-C42&lt;/a&gt;を購入しました。&lt;/p&gt;
-
-&lt;p&gt;P2715QにはminiDP - DisplayPortのケーブルが付属しているので、必要になればDisplay Port - DisplayPortのケーブルを買おうと思い、モニタが届くのを待ってました。&lt;/p&gt;
-
-&lt;p&gt;接続は、こんな感じで出来ました。&lt;/p&gt;
-
-&lt;p&gt;[MacBook Pro] &amp;lt;&amp;ndash; [CB-C42] &amp;lt;&amp;ndash; [DisplayPort - miniDP] &amp;ndash;&amp;gt; [P2715Q]&lt;/p&gt;
-
-&lt;p&gt;3840 x 2160で60Hzで動くのを確認しました。ただ、広すぎて文字も見づらいので、普段使う場合は2560 x 1440の解像度で使用することになりそうです。
-動作確認として4Kの映像を見ていましたが、やっぱり綺麗ですね。&lt;/p&gt;
-
-&lt;p&gt;P2715Qにはスピーカーが付いていないので、小さくてもそれなりに音がいいのを探して見たいと思います。&lt;/p&gt;
-
-&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
-
-&lt;p&gt;USB-Cに変わって今まで使ってたアダプタが使えなくなるのは、割と痛手です。
-また、個人的に痛いのはmagsafe 2みたいにうっかりケーブルを引っ掛けたりしても大丈夫だったのが、USB-Cになって本体ごと巻き込んで壊れそうなのが本当に怖いです。
-なので、まだ発売されていませんが、&lt;a href=&#34;https://www.kickstarter.com/projects/436147229/snapnator-your-macbook-snap-feature-is-back&#34;&gt;Snapnator&lt;/a&gt;がMacBook Proでも使えそうなのが楽しみです。
-今後はUSB-Cのケーブルはワット数も見る必要が出てきたり、 Apple以外のACアダプタとの相性等、汎用的なポートを利用することによる心配は今後も続きそうです。&lt;/p&gt;
-
-&lt;p&gt;久しぶりに自宅の環境を更新して、開封の儀が楽しいことを思い出しました。&lt;/p&gt;
-</description>
+      <description>はじめに MacBook Pro (13-inch, Late 2016, Two Thunderbolt 3 ports)モデルを購入したので、 4KモニタのP2715Qとの動作検証を残しておこうと思います。
+MacBook Pro 13 Late 2016 non-Touch Bar カスタマイズは、以下の通り。
+ 2.4 GHz Intel Core i7 16 GB 1867 MHz LPDDR3 512GB SSD  DELL P2715Q ここを見ると4K 60Hzで表示するには、HDMI 2.0かDisplay Portのモニタが必要です。
+しかし、HDMI 2.0の選択肢が無さすぎたので、Display Portで4K 60Hzを表示できるモニタから、DELL P2715Qを購入しました。 理由は、価格と店頭での印象でした。
+MacBook ProとDisplay Portのモニタを接続するアダプタとして、AUKEY USB-C to DisplayPort Adapter CB-C42を購入しました。
+P2715QにはminiDP - DisplayPortのケーブルが付属しているので、必要になればDisplay Port - DisplayPortのケーブルを買おうと思い、モニタが届くのを待ってました。
+接続は、こんな感じで出来ました。
+[MacBook Pro] &amp;lt;&amp;ndash; [CB-C42] &amp;lt;&amp;ndash; [DisplayPort - miniDP] &amp;ndash;&amp;gt; [P2715Q]</description>
     </item>
     
     <item>
@@ -198,42 +82,19 @@
       <pubDate>Thu, 01 Dec 2016 00:00:00 +0900</pubDate>
       
       <guid>http://grimrose.github.io/blog/2016/12/curriculum-vitae/</guid>
-      <description>
-
-&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
-
-&lt;p&gt;2014年12月に転職してから2年経ったので、振り返ってみました。&lt;/p&gt;
-
-&lt;p&gt;1年前は&lt;a href=&#34;http://grimrose.github.io/blog/2015/12/career-change&#34;&gt;こちら&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;引き続き、データ分析チームのエンジニアとして働いてます。&lt;/p&gt;
-
-&lt;h2 id=&#34;職務経歴書のoss化&#34;&gt;職務経歴書のOSS化&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;ja&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;転職して2年経ったし、やってみるか&lt;br&gt;職務経歴書OSS化 - Qiita &lt;a href=&#34;https://t.co/Yz5XAzR1uj&#34;&gt;https://t.co/Yz5XAzR1uj&lt;/a&gt;&lt;/p&gt;&amp;mdash; とーます (@grimrose) &lt;a href=&#34;https://twitter.com/grimrose/status/803596996724391937&#34;&gt;2016年11月29日&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://qiita.com/okoysm/items/abcad0b4aefa585bc50b&#34;&gt;職務経歴書OSS化&lt;/a&gt;を見て、ちょうどいい機会だと思ったので、作ってみました。&lt;/p&gt;
-
-&lt;p&gt;職務経歴書はこちらです -&amp;gt; &lt;a href=&#34;https://github.com/grimrose/Curriculum-Vitae&#34;&gt;grimrose/Curriculum-Vitae&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;前職の案件については、転職時に作成した資料を元にぼかして書きました。&lt;/p&gt;
-
-&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
-
-&lt;p&gt;今のところ、転職する意思はありませんが、転職のきっかけとなった方が新天地へ飛び立って行かれたので、
-自分が今の会社で何を成したいのかを考えるいいきっかけだと感じました。&lt;/p&gt;
-
-&lt;p&gt;久しぶりにスキル周りの見直しや転職時に作った資料の振り返りをしてみて、
-転職時にやりたいと思っていたことが実はそこまで重要視してなかったということが分かったり、
-今やっていることを挙げてみると、なかなか言葉にしにくかったりしました。&lt;/p&gt;
-
-&lt;p&gt;前職では、案件ごとに職務経歴書みたいなものを更新していたので、ある程度スキルセットの棚卸しをしていたのかもしれません。&lt;/p&gt;
-
-&lt;p&gt;2016年の振り返りを年末にする予定なので、それまでに職務経歴書の「やったことはないが興味があるもの」や、まだ書けていない箇所を埋めていこうと思います。&lt;/p&gt;
-</description>
+      <description>はじめに 2014年12月に転職してから2年経ったので、振り返ってみました。
+1年前はこちら。
+引き続き、データ分析チームのエンジニアとして働いてます。
+職務経歴書のOSS化  転職して2年経ったし、やってみるか
+職務経歴書OSS化 - Qiita https://t.co/Yz5XAzR1uj
+&amp;mdash; とーます (@grimrose) 2016年11月29日 
+ 職務経歴書OSS化を見て、ちょうどいい機会だと思ったので、作ってみました。
+職務経歴書はこちらです -&amp;gt; grimrose/Curriculum-Vitae
+前職の案件については、転職時に作成した資料を元にぼかして書きました。
+おわりに 今のところ、転職する意思はありませんが、転職のきっかけとなった方が新天地へ飛び立って行かれたので、 自分が今の会社で何を成したいのかを考えるいいきっかけだと感じました。
+久しぶりにスキル周りの見直しや転職時に作った資料の振り返りをしてみて、 転職時にやりたいと思っていたことが実はそこまで重要視してなかったということが分かったり、 今やっていることを挙げてみると、なかなか言葉にしにくかったりしました。
+前職では、案件ごとに職務経歴書みたいなものを更新していたので、ある程度スキルセットの棚卸しをしていたのかもしれません。
+2016年の振り返りを年末にする予定なので、それまでに職務経歴書の「やったことはないが興味があるもの」や、まだ書けていない箇所を埋めていこうと思います。</description>
     </item>
     
     <item>
@@ -242,74 +103,27 @@
       <pubDate>Thu, 31 Dec 2015 23:59:59 +0900</pubDate>
       
       <guid>http://grimrose.github.io/blog/2015/12/retrospect-2015/</guid>
-      <description>
-
-&lt;h2 id=&#34;2015年の振り返り&#34;&gt;2015年の振り返り&lt;/h2&gt;
-
-&lt;p&gt;今年も大晦日になったので、振り返りをしてみたいと思います。&lt;/p&gt;
-
-&lt;p&gt;2014年の振り返りは、&lt;a href=&#34;http://grimrose.blogspot.jp/2014/12/2014.html&#34;&gt;こちら&lt;/a&gt;でした。&lt;/p&gt;
-
-&lt;h3 id=&#34;keep&#34;&gt;Keep&lt;/h3&gt;
-
-&lt;p&gt;今年は、以下のイベントで登壇する機会をいただけました。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://jjug.doorkeeper.jp/events/26547&#34;&gt;【東京】JJUG ナイトセミナー 「Reactive Streams特集」&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gbdaitokai.doorkeeper.jp/events/31149&#34;&gt;合同勉強会 in 大都会岡山 -2015 Winter-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://bonenkaigi.doorkeeper.jp/events/27273&#34;&gt;忘年会議2015&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;仕事で得た知見や個人で興味を持ったことについて話す機会は、今後も増やしていければと思います。&lt;/p&gt;
-
-&lt;p&gt;アウトプットする為にも、まずコードやBlogで書き出すということをもっと積極的にやっていこうかと思います。
-特にBlogは書かなかった月が多かったので、短くても残さないとどんどん忘れていきそうなので、
-GitHubに草を生やす活動も兼ねてやっていこうかと思います。&lt;/p&gt;
-
-&lt;p&gt;ミドルウェア、インフラ周りの基礎に関しては、引き続きDockerを中心に学んで行ければと思っています。&lt;/p&gt;
-
-&lt;p&gt;特に&lt;a href=&#34;http://shop.oreilly.com/product/0636920036791.do&#34;&gt;Docker Cookbook&lt;/a&gt;を購入して
-自分たちが使えるものが無いか探したり、どのようにDockerで構成していけば良いのかを学んだりしています。&lt;/p&gt;
-
-&lt;p&gt;また、&lt;a href=&#34;https://azure.microsoft.com/ja-jp/&#34;&gt;Microsoft Azure&lt;/a&gt;のアカウントを作って、&lt;a href=&#34;https://www.tutum.co&#34;&gt;Tutum&lt;/a&gt;でデプロイしてみたりしてました。&lt;/p&gt;
-
-&lt;p&gt;Dockerを使って試せるようなサービスが出てきたので、これまで非力なローカルマシンでは試せなかった構成や、既存のサービスと組み合わせる方法を検証できるようになったのは、大きな変化だったと思います。&lt;/p&gt;
-
-&lt;h3 id=&#34;problem&#34;&gt;Problem&lt;/h3&gt;
-
-&lt;p&gt;2014年のTryだったFuelPHPのプロジェクトは、2015年中にはやれませんでした。&lt;/p&gt;
-
-&lt;p&gt;しかしながら、年明けから仕事でサプブロジェクトながらFuelPHPで始めることになりそうなので、
-front, api, batchをDockerで動かすような雛形を作ってみて検証してみたいと思います。&lt;/p&gt;
-
-&lt;p&gt;Rubotyも結局触ってみました程度で終わってしまったので、Rubyのプロダクトにがっつり関わる機会が無い環境では、
-強制的にでも使う仕組みが無いと難しいものだと感じました。&lt;/p&gt;
-
-&lt;p&gt;仕事では、チームでプロジェクトを動かしていくことの難しさを実感しました。
-特にプロダクトオーナーに現時点でリリース出来ないことを伝えることが、どれだけ不甲斐なくて悔しいことかを体験しました。&lt;/p&gt;
-
-&lt;h3 id=&#34;try&#34;&gt;Try&lt;/h3&gt;
-
-&lt;p&gt;仕事での今後やりたいことは、&lt;a href=&#34;http://grimrose.github.io/blog/2015/12/career-change/&#34;&gt;転職して１年が経ちました。&lt;/a&gt;に書いてしまったので、
-privateでやってみたい事は、OSSを一つリリースする(ライブラリ、Webサービス問わず)です。&lt;/p&gt;
-
-&lt;p&gt;仕事で使うようなライブラリを作るのが一番自分にとって勉強にもなるし、フィードバックも得やすいのではないかと思います。&lt;/p&gt;
-
-&lt;p&gt;また、本格的にScrumに関する勉強を始めて、最終的には認定スクラムマスター(CSM)も取得してみようかと思います。&lt;/p&gt;
-
-&lt;p&gt;CSMについては、横浜道場でいろいろな人が受けてたり取られたりした方の話をこれまで聴いてどんな感じなんだろと思っていました。
-Scrumのプラクティスを取り入れつつ開発を進めていましたが、行き詰まりを感じたり、他の人達はどうしているのか気になってきたので、本格的に始めます。&lt;/p&gt;
-
-&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
-
-&lt;p&gt;2015年は、仕事でやりたかった事が出来たのとそこで出てきた課題に取り組めた一年だったと思います。&lt;/p&gt;
-
-&lt;p&gt;2016年は、引き続きコードを書くお仕事に加えて、チームを育てていく役割も担っていくことになると思います。&lt;/p&gt;
-
-&lt;p&gt;また、いわゆる「プログラマー35年定年説」の節目の年となるので、今後の5年を見据えて伸ばすスキルを伸ばしていければと思います。&lt;/p&gt;
-
-&lt;p&gt;2016年も引き続き、よろしくお願いします。&lt;/p&gt;
-</description>
+      <description>2015年の振り返り 今年も大晦日になったので、振り返りをしてみたいと思います。
+2014年の振り返りは、こちらでした。
+Keep 今年は、以下のイベントで登壇する機会をいただけました。
+ 【東京】JJUG ナイトセミナー 「Reactive Streams特集」 合同勉強会 in 大都会岡山 -2015 Winter- 忘年会議2015  仕事で得た知見や個人で興味を持ったことについて話す機会は、今後も増やしていければと思います。
+アウトプットする為にも、まずコードやBlogで書き出すということをもっと積極的にやっていこうかと思います。 特にBlogは書かなかった月が多かったので、短くても残さないとどんどん忘れていきそうなので、 GitHubに草を生やす活動も兼ねてやっていこうかと思います。
+ミドルウェア、インフラ周りの基礎に関しては、引き続きDockerを中心に学んで行ければと思っています。
+特にDocker Cookbookを購入して 自分たちが使えるものが無いか探したり、どのようにDockerで構成していけば良いのかを学んだりしています。
+また、Microsoft Azureのアカウントを作って、Tutumでデプロイしてみたりしてました。
+Dockerを使って試せるようなサービスが出てきたので、これまで非力なローカルマシンでは試せなかった構成や、既存のサービスと組み合わせる方法を検証できるようになったのは、大きな変化だったと思います。
+Problem 2014年のTryだったFuelPHPのプロジェクトは、2015年中にはやれませんでした。
+しかしながら、年明けから仕事でサプブロジェクトながらFuelPHPで始めることになりそうなので、 front, api, batchをDockerで動かすような雛形を作ってみて検証してみたいと思います。
+Rubotyも結局触ってみました程度で終わってしまったので、Rubyのプロダクトにがっつり関わる機会が無い環境では、 強制的にでも使う仕組みが無いと難しいものだと感じました。
+仕事では、チームでプロジェクトを動かしていくことの難しさを実感しました。 特にプロダクトオーナーに現時点でリリース出来ないことを伝えることが、どれだけ不甲斐なくて悔しいことかを体験しました。
+Try 仕事での今後やりたいことは、転職して１年が経ちました。に書いてしまったので、 privateでやってみたい事は、OSSを一つリリースする(ライブラリ、Webサービス問わず)です。
+仕事で使うようなライブラリを作るのが一番自分にとって勉強にもなるし、フィードバックも得やすいのではないかと思います。
+また、本格的にScrumに関する勉強を始めて、最終的には認定スクラムマスター(CSM)も取得してみようかと思います。
+CSMについては、横浜道場でいろいろな人が受けてたり取られたりした方の話をこれまで聴いてどんな感じなんだろと思っていました。 Scrumのプラクティスを取り入れつつ開発を進めていましたが、行き詰まりを感じたり、他の人達はどうしているのか気になってきたので、本格的に始めます。
+おわりに 2015年は、仕事でやりたかった事が出来たのとそこで出てきた課題に取り組めた一年だったと思います。
+2016年は、引き続きコードを書くお仕事に加えて、チームを育てていく役割も担っていくことになると思います。
+また、いわゆる「プログラマー35年定年説」の節目の年となるので、今後の5年を見据えて伸ばすスキルを伸ばしていければと思います。
+2016年も引き続き、よろしくお願いします。</description>
     </item>
     
     <item>
@@ -318,56 +132,20 @@ Scrumのプラクティスを取り入れつつ開発を進めていましたが
       <pubDate>Tue, 01 Dec 2015 00:00:00 +0900</pubDate>
       
       <guid>http://grimrose.github.io/blog/2015/12/career-change/</guid>
-      <description>
-
-&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
-
-&lt;p&gt;2014年12月に転職してから1年経ったので、振り返ってみます。&lt;/p&gt;
-
-&lt;p&gt;半年前は&lt;a href=&#34;http://grimrose.github.io/blog/2015/06/career-change&#34;&gt;こちら&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;引き続き、データ分析チームのエンジニアとして働いてます。&lt;/p&gt;
-
-&lt;p&gt;開発言語もPHP, Angular, TypeScriptに加え、Scalaも使うようになりました。&lt;/p&gt;
-
-&lt;p&gt;Scalaの導入については、別の機会に書ければと思ってます。&lt;/p&gt;
-
-&lt;h2 id=&#34;これまでやってきたこと&#34;&gt;これまでやってきたこと&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;社内BIの開発チームのリーダーを任されるようになった。&lt;/li&gt;
-&lt;li&gt;バッチ処理の一部をScalaに置き換えた。&lt;/li&gt;
-&lt;li&gt;electronを導入して、VBAでやっていたのを置き換えできないか検証してた。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;フロントエンドからクラウド上での環境構築まで、自分たちで出来ることはほぼ全てやっている状況です。&lt;/p&gt;
-
-&lt;p&gt;全部自分たちでやるのが正しいかと言われると、考えさせられる部分があります。&lt;/p&gt;
-
-&lt;p&gt;とはいえ、エンジニアとしては流行りのプロダクトや手法は触っておきたいですし、スキルも得たいとも思います。&lt;/p&gt;
-
-&lt;p&gt;そこは、導入までのプレゼンで説明が必要ですし、継続的にリリースをして信頼貯金を得る必要が出てきます。&lt;/p&gt;
-
-&lt;p&gt;この1年間地道に機能をリリースしたことで、部署の中で自分が何が出来てどういったスキルを持っているのかを認知してもらうことが出来ました。&lt;/p&gt;
-
-&lt;h2 id=&#34;これからやってみたいこと&#34;&gt;これからやってみたいこと&lt;/h2&gt;
-
-&lt;p&gt;次の1年でやりたいことは、以下の内容をやってみたいと思ってます。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Akka Streamsの導入&lt;/li&gt;
-&lt;li&gt;Kubernetesを用いたDocker Clusterの導入&lt;/li&gt;
-&lt;li&gt;electronを使った業務アプリの継続的開発&lt;/li&gt;
-&lt;li&gt;pythonを使ったシステムの構築及び運用&lt;/li&gt;
-&lt;li&gt;In-memory Data Gridを活用した機能の検証&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;全部が出来るとは思ってはいませんが挑戦できる環境ではあるので、準備を怠らずいつでも始められるようにしたいと思います。&lt;/p&gt;
-
-&lt;p&gt;また、持続可能な開発体制が必要になってきているので、Scrumに関する勉強も本格的に始めてみようかと考えてます。&lt;/p&gt;
-
-&lt;p&gt;引き続き、新しいことに挑戦しつつ、日々の業務を止めないように気を引き締めて開発していきたいと思います。&lt;/p&gt;
-</description>
+      <description>はじめに 2014年12月に転職してから1年経ったので、振り返ってみます。
+半年前はこちら。
+引き続き、データ分析チームのエンジニアとして働いてます。
+開発言語もPHP, Angular, TypeScriptに加え、Scalaも使うようになりました。
+Scalaの導入については、別の機会に書ければと思ってます。
+これまでやってきたこと  社内BIの開発チームのリーダーを任されるようになった。 バッチ処理の一部をScalaに置き換えた。 electronを導入して、VBAでやっていたのを置き換えできないか検証してた。  フロントエンドからクラウド上での環境構築まで、自分たちで出来ることはほぼ全てやっている状況です。
+全部自分たちでやるのが正しいかと言われると、考えさせられる部分があります。
+とはいえ、エンジニアとしては流行りのプロダクトや手法は触っておきたいですし、スキルも得たいとも思います。
+そこは、導入までのプレゼンで説明が必要ですし、継続的にリリースをして信頼貯金を得る必要が出てきます。
+この1年間地道に機能をリリースしたことで、部署の中で自分が何が出来てどういったスキルを持っているのかを認知してもらうことが出来ました。
+これからやってみたいこと 次の1年でやりたいことは、以下の内容をやってみたいと思ってます。
+ Akka Streamsの導入 Kubernetesを用いたDocker Clusterの導入 electronを使った業務アプリの継続的開発 pythonを使ったシステムの構築及び運用 In-memory Data Gridを活用した機能の検証  全部が出来るとは思ってはいませんが挑戦できる環境ではあるので、準備を怠らずいつでも始められるようにしたいと思います。
+また、持続可能な開発体制が必要になってきているので、Scrumに関する勉強も本格的に始めてみようかと考えてます。
+引き続き、新しいことに挑戦しつつ、日々の業務を止めないように気を引き締めて開発していきたいと思います。</description>
     </item>
     
     <item>
@@ -376,66 +154,31 @@ Scrumのプラクティスを取り入れつつ開発を進めていましたが
       <pubDate>Mon, 01 Jun 2015 00:08:51 +0900</pubDate>
       
       <guid>http://grimrose.github.io/blog/2015/06/career-change/</guid>
-      <description>
-
-&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
-
-&lt;p&gt;2014年12月に転職してから半年経ったので、振り返ってみます。&lt;/p&gt;
-
-&lt;p&gt;退職エントリは&lt;a href=&#34;http://grimrose.blogspot.jp/2014/12/blog-post.html&#34;&gt;こちら&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;所属&#34;&gt;所属&lt;/h2&gt;
-
-&lt;p&gt;今は、データ分析チームのエンジニアとして働いています。&lt;/p&gt;
-
-&lt;p&gt;転職時に希望したことが出来るチームなので、とてもやりがいがあります。&lt;/p&gt;
-
-&lt;p&gt;また、転職時にお世話になったマネージャーが、会社のエンジニアが働きやすい環境を作り上げたという話を聞いたので、足を向けて寝られません。&lt;/p&gt;
-
-&lt;p&gt;チームには分析官の方がいらっしゃるので、統計に関する知識やR言語についても学べる環境なのはありがたいです。&lt;/p&gt;
-
-&lt;p&gt;その他にも、Sparkや機械学習等新しい技術についても取り組むことが出来る環境でもあるので、積極的に学んで行こうと思います。&lt;/p&gt;
-
-&lt;p&gt;今のチームのマネージャーも理解のある人で、「分析」をどのように事業に活かすのかを真剣に考えていて、そのための武器をエンジニアと一緒に作っていこうとおっしゃってました。&lt;/p&gt;
-
-&lt;p&gt;自分が出来る事をチームに還元していければ、自ずと結果はついてくると思っているので、精一杯やっていこうと思います。&lt;/p&gt;
-
-&lt;h2 id=&#34;開発&#34;&gt;開発&lt;/h2&gt;
-
-&lt;p&gt;開発環境は自由に選べますが、私を含めほとんどの人はMBPの15インチを選んでます。&lt;/p&gt;
-
-&lt;p&gt;転職して最初の頃は、小さい社内Webサービスの引き継ぎをやってました。&lt;/p&gt;
-
-&lt;p&gt;言語は初めてのPHP、しかもPhalcon。&lt;/p&gt;
-
-&lt;p&gt;ひとまず、SQLを読むのと既存の機能の改善に注力してました。&lt;/p&gt;
-
-&lt;p&gt;今まで手作業やExcelでやっていた事を、Webサービスで置き換えていく途中だったので、実際に使われている人にとても喜ばれていました。&lt;/p&gt;
-
-&lt;p&gt;そこで社内でどのようにプロジェクトを進めていくのかなどを学べました。&lt;/p&gt;
-
-&lt;p&gt;しばらくして、別のプロジェクトの機能追加の案件も始まりました。&lt;/p&gt;
-
-&lt;p&gt;こちらは、FuelPHPでした。&lt;/p&gt;
-
-&lt;p&gt;このプロジェクトにメインで携わるとは、その時は思っていませんでした。&lt;/p&gt;
-
-&lt;p&gt;どちらもIntelliJ IDEAが無いと仕事が出来ないくらい四苦八苦してました。&lt;/p&gt;
-
-&lt;p&gt;幸い、このプロジェクトは、ユニットテストをしっかり書いて、JenkinsでCIまわして、ワンクリックでデプロイ出来るように運営されていました。&lt;/p&gt;
-
-&lt;p&gt;そのおかげもあって、なんとか求められていた機能もリリース出来て、現在も動いてます。&lt;/p&gt;
-
-&lt;p&gt;このプロジェクトの他の特徴としては、フロント周りにはAngularJS + TypeScriptを採用したりしています。&lt;/p&gt;
-
-&lt;p&gt;また、今後バッチ処理をScalaに置き換える為に、いろいろ検証や準備をしているところです。&lt;/p&gt;
-
-&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
-
-&lt;p&gt;自分のスキル足りなくてチームや顧客に迷惑をかける事があり、歯がゆい思いをすることもありました。&lt;/p&gt;
-
-&lt;p&gt;まだまだやりたいことも勉強しなければいけないことも沢山ありますが、エンジニアとしてやりたいことが出来る環境で仕事が出来るということが、どれほど楽しいことかを実感した半年でした。&lt;/p&gt;
-</description>
+      <description>はじめに 2014年12月に転職してから半年経ったので、振り返ってみます。
+退職エントリはこちら
+所属 今は、データ分析チームのエンジニアとして働いています。
+転職時に希望したことが出来るチームなので、とてもやりがいがあります。
+また、転職時にお世話になったマネージャーが、会社のエンジニアが働きやすい環境を作り上げたという話を聞いたので、足を向けて寝られません。
+チームには分析官の方がいらっしゃるので、統計に関する知識やR言語についても学べる環境なのはありがたいです。
+その他にも、Sparkや機械学習等新しい技術についても取り組むことが出来る環境でもあるので、積極的に学んで行こうと思います。
+今のチームのマネージャーも理解のある人で、「分析」をどのように事業に活かすのかを真剣に考えていて、そのための武器をエンジニアと一緒に作っていこうとおっしゃってました。
+自分が出来る事をチームに還元していければ、自ずと結果はついてくると思っているので、精一杯やっていこうと思います。
+開発 開発環境は自由に選べますが、私を含めほとんどの人はMBPの15インチを選んでます。
+転職して最初の頃は、小さい社内Webサービスの引き継ぎをやってました。
+言語は初めてのPHP、しかもPhalcon。
+ひとまず、SQLを読むのと既存の機能の改善に注力してました。
+今まで手作業やExcelでやっていた事を、Webサービスで置き換えていく途中だったので、実際に使われている人にとても喜ばれていました。
+そこで社内でどのようにプロジェクトを進めていくのかなどを学べました。
+しばらくして、別のプロジェクトの機能追加の案件も始まりました。
+こちらは、FuelPHPでした。
+このプロジェクトにメインで携わるとは、その時は思っていませんでした。
+どちらもIntelliJ IDEAが無いと仕事が出来ないくらい四苦八苦してました。
+幸い、このプロジェクトは、ユニットテストをしっかり書いて、JenkinsでCIまわして、ワンクリックでデプロイ出来るように運営されていました。
+そのおかげもあって、なんとか求められていた機能もリリース出来て、現在も動いてます。
+このプロジェクトの他の特徴としては、フロント周りにはAngularJS + TypeScriptを採用したりしています。
+また、今後バッチ処理をScalaに置き換える為に、いろいろ検証や準備をしているところです。
+おわりに 自分のスキル足りなくてチームや顧客に迷惑をかける事があり、歯がゆい思いをすることもありました。
+まだまだやりたいことも勉強しなければいけないことも沢山ありますが、エンジニアとしてやりたいことが出来る環境で仕事が出来るということが、どれほど楽しいことかを実感した半年でした。</description>
     </item>
     
   </channel>
