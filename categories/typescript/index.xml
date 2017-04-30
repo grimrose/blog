@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Typescript on open build/reports/life/index.html</title>
-    <link>http://grimrose.github.io/blog/categories/typescript/</link>
+    <link>https://grimrose.github.io/blog/categories/typescript/</link>
     <description>Recent content in Typescript on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 18 Dec 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://grimrose.github.io/blog/categories/typescript/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://grimrose.github.io/blog/categories/typescript/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Mithril.jsをTypescript2.xで書いてみよう</title>
-      <link>http://grimrose.github.io/blog/2016/12/mithril/</link>
+      <link>https://grimrose.github.io/blog/2016/12/mithril/</link>
       <pubDate>Sun, 18 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://grimrose.github.io/blog/2016/12/mithril/</guid>
+      <guid>https://grimrose.github.io/blog/2016/12/mithril/</guid>
       <description>はじめに この記事は、Mithril.js Advent Calendar 2016の18日目のエントリです。
 17日目 &amp;gt; shibukawaさんのMithrilで自動補完つきテキストを作る(2)です。
 19日目 &amp;gt; tacnomaさんのMithrilからRailsサーバーへのファイルアップロードではまった部分です。

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>大都会岡山 on open build/reports/life/index.html</title>
-    <link>http://grimrose.github.io/blog/categories/%E5%A4%A7%E9%83%BD%E4%BC%9A%E5%B2%A1%E5%B1%B1/</link>
+    <link>https://grimrose.github.io/blog/categories/%E5%A4%A7%E9%83%BD%E4%BC%9A%E5%B2%A1%E5%B1%B1/</link>
     <description>Recent content in 大都会岡山 on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 13 Dec 2015 00:00:00 +0900</lastBuildDate>
     
-	<atom:link href="http://grimrose.github.io/blog/categories/%E5%A4%A7%E9%83%BD%E4%BC%9A%E5%B2%A1%E5%B1%B1/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://grimrose.github.io/blog/categories/%E5%A4%A7%E9%83%BD%E4%BC%9A%E5%B2%A1%E5%B1%B1/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>業務アプリケーションをElectronで作ってみた話をしてきました #gbdaitokai #忘年会議</title>
-      <link>http://grimrose.github.io/blog/2015/12/daitokai-2015/</link>
+      <link>https://grimrose.github.io/blog/2015/12/daitokai-2015/</link>
       <pubDate>Sun, 13 Dec 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://grimrose.github.io/blog/2015/12/daitokai-2015/</guid>
+      <guid>https://grimrose.github.io/blog/2015/12/daitokai-2015/</guid>
       <description>はじめに このエントリーは、Electron Advent Calendar 2015の13日目の記事です。
 公開資料 発表で利用した資料はこちらです。 -&amp;gt; スライド
 スライドは、jupyterにdamianavila/RISEの拡張を入れて作りました。

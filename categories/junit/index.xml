@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Junit on open build/reports/life/index.html</title>
-    <link>http://grimrose.github.io/blog/categories/junit/</link>
+    <link>https://grimrose.github.io/blog/categories/junit/</link>
     <description>Recent content in Junit on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sat, 19 Sep 2015 00:04:27 +0900</lastBuildDate>
     
-	<atom:link href="http://grimrose.github.io/blog/categories/junit/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://grimrose.github.io/blog/categories/junit/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>JUnit Lambda に寄付をしました #fundJUnit</title>
-      <link>http://grimrose.github.io/blog/2015/09/junit-lambda/</link>
+      <link>https://grimrose.github.io/blog/2015/09/junit-lambda/</link>
       <pubDate>Sat, 19 Sep 2015 00:04:27 +0900</pubDate>
       
-      <guid>http://grimrose.github.io/blog/2015/09/junit-lambda/</guid>
+      <guid>https://grimrose.github.io/blog/2015/09/junit-lambda/</guid>
       <description>@t_wada さんのツイートから知りましたが、JUnitのプロジェクトが援助を求めているそうです。
  JUnit がクラウドファンディングで援助を求めている。現在フルタイムのメンテナがおらず、 issue 解決や Java8 対応 (特にラムダ式) の余力が無い。現時点の JUnit の問題点や将来像も示されている #fundJUn… http://t.co/o8ijOxTWr2
 &amp;mdash; Takuto Wada (@t_wada) 2015, 9月 16 

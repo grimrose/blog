@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Scala on open build/reports/life/index.html</title>
-    <link>http://grimrose.github.io/blog/categories/scala/</link>
+    <link>https://grimrose.github.io/blog/categories/scala/</link>
     <description>Recent content in Scala on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 23 Apr 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://grimrose.github.io/blog/categories/scala/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://grimrose.github.io/blog/categories/scala/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>JVMからSSHのポート転送でJDBC接続する</title>
-      <link>http://grimrose.github.io/blog/2017/04/ssh-port-forward/</link>
+      <link>https://grimrose.github.io/blog/2017/04/ssh-port-forward/</link>
       <pubDate>Sun, 23 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://grimrose.github.io/blog/2017/04/ssh-port-forward/</guid>
+      <guid>https://grimrose.github.io/blog/2017/04/ssh-port-forward/</guid>
       <description>はじめに 仕事上、windowsの端末からリモートのlinuxのDBにデータを送る必要があったのですが、 GUIでの手作業はしんどいので、簡単なツールを作ることにしました。
 幸いなことにJVMが入っているので、JavaのSSHクライアントとJDBCを使ってやってみました。
 検証 grimrose/ssh-port-forward-study
@@ -30,10 +30,10 @@ JVMやその他の言語でもランタイムをwindowsで動かせるように�
     
     <item>
       <title>ScalikeJDBCを使ってAmazon Athenaへアクセスしてみた</title>
-      <link>http://grimrose.github.io/blog/2016/12/scala-advent-calendar-2016/</link>
+      <link>https://grimrose.github.io/blog/2016/12/scala-advent-calendar-2016/</link>
       <pubDate>Sun, 11 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://grimrose.github.io/blog/2016/12/scala-advent-calendar-2016/</guid>
+      <guid>https://grimrose.github.io/blog/2016/12/scala-advent-calendar-2016/</guid>
       <description>はじめに この記事は、Scala Advent Calendar 2016の11日目のエントリです。
 10日目 &amp;gt; ponkotuyさんのSkinnyORMのjoin定義についてです。
 12日目 &amp;gt; aoiroaoinoさんのScala関西 Summit 2016 で Lens/Prism について発表してきたです。
@@ -50,10 +50,10 @@ Exception encountered when invoking run on a nested suite - Failed to initialize
     
     <item>
       <title>GParsのActorでアクターモデルに入門する</title>
-      <link>http://grimrose.github.io/blog/2016/12/gadvent-2016/</link>
+      <link>https://grimrose.github.io/blog/2016/12/gadvent-2016/</link>
       <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://grimrose.github.io/blog/2016/12/gadvent-2016/</guid>
+      <guid>https://grimrose.github.io/blog/2016/12/gadvent-2016/</guid>
       <description>はじめに この記事は、G*Advent Calendar(Groovy,Grails,Gradle,Spock&amp;hellip;) Advent Calendar 2016の10日目のエントリです。
 9日目 &amp;gt; nobeansさんのGrailsでUnix/Linux的実行可能WARファイルをつくるです。
 11日目 &amp;gt; tyamaさんのGrailsでServer Sent Eventsを送信！(意訳版)です。
@@ -73,10 +73,10 @@ import groovyx.gpars.actor.Actor def actor = Actors.actor { loop { react { msg -
     
     <item>
       <title>Scala関西Summit 2016へ参加してきました #scala_ks</title>
-      <link>http://grimrose.github.io/blog/2016/10/scalakansai2016/</link>
+      <link>https://grimrose.github.io/blog/2016/10/scalakansai2016/</link>
       <pubDate>Sun, 09 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://grimrose.github.io/blog/2016/10/scalakansai2016/</guid>
+      <guid>https://grimrose.github.io/blog/2016/10/scalakansai2016/</guid>
       <description>はじめに http://summit.scala-kansai.org/
 http://skug.connpass.com/event/38349/
 去年のScala関西 Summit 2015に参加してまた参加したいと思っていたのと、 ScalaMatsuriの運営の参考になればと思い、参加しました。
@@ -96,10 +96,10 @@ Monocle、Lens、Prismは名前だけ知っていて、コワイものだとい�
     
     <item>
       <title>ScalaMatsuri2016に参加してきました。 #ScalaMatsuri</title>
-      <link>http://grimrose.github.io/blog/2016/02/scalamatsuri2016/</link>
+      <link>https://grimrose.github.io/blog/2016/02/scalamatsuri2016/</link>
       <pubDate>Mon, 08 Feb 2016 20:31:14 +0900</pubDate>
       
-      <guid>http://grimrose.github.io/blog/2016/02/scalamatsuri2016/</guid>
+      <guid>https://grimrose.github.io/blog/2016/02/scalamatsuri2016/</guid>
       <description>ScalaMatsuri
 はじまり 前回のScalaMatsuriが楽しかったので、スタッフとして参加してみようと思い飛び込んでみました。
 https://japan-scala-association.doorkeeper.jp/events/23255

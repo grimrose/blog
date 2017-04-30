@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gradle on open build/reports/life/index.html</title>
-    <link>http://grimrose.github.io/blog/categories/gradle/</link>
+    <link>https://grimrose.github.io/blog/categories/gradle/</link>
     <description>Recent content in Gradle on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Thu, 26 May 2016 00:00:00 +0900</lastBuildDate>
     
-	<atom:link href="http://grimrose.github.io/blog/categories/gradle/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://grimrose.github.io/blog/categories/gradle/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>JJUG CCC 2016 Springに参加してきました #jjug_ccc #ccc_m61</title>
-      <link>http://grimrose.github.io/blog/2016/05/jjug-ccc-2016/</link>
+      <link>https://grimrose.github.io/blog/2016/05/jjug-ccc-2016/</link>
       <pubDate>Thu, 26 May 2016 00:00:00 +0900</pubDate>
       
-      <guid>http://grimrose.github.io/blog/2016/05/jjug-ccc-2016/</guid>
+      <guid>https://grimrose.github.io/blog/2016/05/jjug-ccc-2016/</guid>
       <description>発表のキッカケ ちょうど日々の業務でGradleのタスク機能を利用して、共有ディレクトリにあるExcelのデータとDBの値とチェックしたり、 前回の作業との差分を抽出して入力ミスがないかチェックしたり、といった小さい業務タスクを自動化していたので、 50分は無理でも新しく出来た20分枠ならイケるんではないかと思い、 Groovy枠として選ばれたら本気でやるかといった感じで応募しました。
 なので、十徳ナイフとしてのGradle / @grimrose #35に投票して頂いた皆様には、大変感謝しております。
 jupyter使ってる理由 ここ最近、発表資料にはjupyterを活用しています。理由としては以下のとおりです。

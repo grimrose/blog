@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jjug on open build/reports/life/index.html</title>
-    <link>http://grimrose.github.io/blog/categories/jjug/</link>
+    <link>https://grimrose.github.io/blog/categories/jjug/</link>
     <description>Recent content in Jjug on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Mon, 30 Nov 2015 00:00:00 +0900</lastBuildDate>
     
-	<atom:link href="http://grimrose.github.io/blog/categories/jjug/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://grimrose.github.io/blog/categories/jjug/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>JJUG CCC 2015 Fallに参加してきました #jjug_ccc</title>
-      <link>http://grimrose.github.io/blog/2015/11/jjug-ccc-2015/</link>
+      <link>https://grimrose.github.io/blog/2015/11/jjug-ccc-2015/</link>
       <pubDate>Mon, 30 Nov 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://grimrose.github.io/blog/2015/11/jjug-ccc-2015/</guid>
+      <guid>https://grimrose.github.io/blog/2015/11/jjug-ccc-2015/</guid>
       <description>http://www.java-users.jp/?page_id=2056
 セッション 今回は、以下のセッションを選択しました。
  keynote-1 基調講演1: 「Javaは守りに入らない、これが今のJavaだ」 keynote-2 基調講演2: Java EE 8 – Work in Progress AB-1「jOOQ と Flyway で立ち向かう、自社サービスの保守運用」(仮) EF-2 How to speed up your application using JCache[通訳あり] EF-3 Reactive Webアプリケーション – そしてSpring 5へ EF-4 ソラコムでのJava/AWS活用 – SIM管理やAWS Lambda Javaなど – AB-5 Javaエンジニアに知ってほしい PostgreSQLアンチパターン GH-6 Java8 Stream APIとApache SparkとAsakusa Frameworkの類似点・相違点 GH-7 てらだよしおの赤裸々タイム  今回のタイムテーブルを見たら、どのセッションを見たら良いのか迷ってしまうくらい素晴らしい講演者の方々でした。 選んだ幹事の人達も苦労されたと思います。
@@ -29,10 +29,10 @@
     
     <item>
       <title>【東京】JJUG ナイトセミナー 「Reactive Streams特集」 に参加してきました。 #jjug</title>
-      <link>http://grimrose.github.io/blog/2015/06/jjug-2015-reactive-streams/</link>
+      <link>https://grimrose.github.io/blog/2015/06/jjug-2015-reactive-streams/</link>
       <pubDate>Sat, 27 Jun 2015 18:19:34 +0900</pubDate>
       
-      <guid>http://grimrose.github.io/blog/2015/06/jjug-2015-reactive-streams/</guid>
+      <guid>https://grimrose.github.io/blog/2015/06/jjug-2015-reactive-streams/</guid>
       <description>はじめに https://jjug.doorkeeper.jp/events/26547
 @makingさんから、@okapiesさんと一緒に「Reactive Streams」について話してくれと頼まれましたので、参加してきました。
 元々は、@cero_tさんが発端らしいです。
@@ -61,10 +61,10 @@ JJUGのスタッフ、参加者の皆様、@okapiesさん、ありがとうご�
     
     <item>
       <title>JJUG CCC 2015 Springに参加してきました。 #jjug_ccc</title>
-      <link>http://grimrose.github.io/blog/2015/04/jjug-ccc/</link>
+      <link>https://grimrose.github.io/blog/2015/04/jjug-ccc/</link>
       <pubDate>Wed, 15 Apr 2015 23:02:31 +0900</pubDate>
       
-      <guid>http://grimrose.github.io/blog/2015/04/jjug-ccc/</guid>
+      <guid>https://grimrose.github.io/blog/2015/04/jjug-ccc/</guid>
       <description>http://www.java-users.jp/?page_id=1647
 セッション 実は、転職して現場でJavaを書く機会がかなり減っています。
 が、ツールやライブラリ等JVM上で動くプロダクトを使っているので、運用にまつわる事で勉強したいと思い参加しました。
