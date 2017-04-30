@@ -41,7 +41,7 @@ Spring Cloudの他のセッションをあらかじめ聞いておけば良か�
 Kubernetesの設定ファイルとかその他の設定もよしなにしてくれるpluginがMavenしか最新版が無いのが本当に
 
 Featherweight Javaは[Java基礎勉強会](http://togetter.com/li/362176)の時に説明されていたので、ある程度覚えていましたが論文自体を全部読んでいなかったので丁寧に説明してくださって助かりました。
-@TypeCheckedや@CompileStaticをそういう使い方もできるのかとGroovyの奥深さを新たに知ることが出来ました。
+`@TypeChecked`や`@CompileStatic`をそういう使い方もできるのかとGroovyの奥深さを新たに知ることが出来ました。
 
 ## おわりに
 
