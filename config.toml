@@ -1,4 +1,4 @@
-baseurl = "https://grimrose.github.io/blog"
+baseurl = "https://www.grimrose.org/blog"
 languageCode = "ja"
 title = "open build/reports/life/index.html"
 
@@ -18,4 +18,4 @@ paginate = 10
   logo      = "assets/images/logo.jpg"
   twitter   = "https://twitter.com/grimrose"
   github    = "https://github.com/grimrose/"
-  homeUrl   = "https://grimrose.github.io/"
+  homeUrl   = "https://grimrose.org/"
