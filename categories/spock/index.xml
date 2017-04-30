@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Spock on open build/reports/life/index.html</title>
-    <link>https://grimrose.github.io/blog/categories/spock/</link>
+    <link>https://www.grimrose.org/blog/categories/spock/</link>
     <description>Recent content in Spock on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sat, 19 Dec 2015 00:00:00 +0900</lastBuildDate>
     
-	<atom:link href="https://grimrose.github.io/blog/categories/spock/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.grimrose.org/blog/categories/spock/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Spock Frameworkに関する電子書籍たち</title>
-      <link>https://grimrose.github.io/blog/2015/12/gadvent-2015/</link>
+      <link>https://www.grimrose.org/blog/2015/12/gadvent-2015/</link>
       <pubDate>Sat, 19 Dec 2015 00:00:00 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2015/12/gadvent-2015/</guid>
+      <guid>https://www.grimrose.org/blog/2015/12/gadvent-2015/</guid>
       <description>はじめに この記事は、G* Advent Calendar 2015の19日目のエントリです。
 Spockについて Spock Frameworkは、JavaやGroovyで作られたアプリケーション向けのテスティングフレームワークです。
 個人的にSpock Frameworkが好きな理由の一つは、power-assert機能です。

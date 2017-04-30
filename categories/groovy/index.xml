@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Groovy on open build/reports/life/index.html</title>
-    <link>https://grimrose.github.io/blog/categories/groovy/</link>
+    <link>https://www.grimrose.org/blog/categories/groovy/</link>
     <description>Recent content in Groovy on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 23 Apr 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://grimrose.github.io/blog/categories/groovy/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.grimrose.org/blog/categories/groovy/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>JVMからSSHのポート転送でJDBC接続する</title>
-      <link>https://grimrose.github.io/blog/2017/04/ssh-port-forward/</link>
+      <link>https://www.grimrose.org/blog/2017/04/ssh-port-forward/</link>
       <pubDate>Sun, 23 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2017/04/ssh-port-forward/</guid>
+      <guid>https://www.grimrose.org/blog/2017/04/ssh-port-forward/</guid>
       <description>はじめに 仕事上、windowsの端末からリモートのlinuxのDBにデータを送る必要があったのですが、 GUIでの手作業はしんどいので、簡単なツールを作ることにしました。
 幸いなことにJVMが入っているので、JavaのSSHクライアントとJDBCを使ってやってみました。
 検証 grimrose/ssh-port-forward-study
@@ -30,10 +30,10 @@ JVMやその他の言語でもランタイムをwindowsで動かせるように�
     
     <item>
       <title>GParsのActorでアクターモデルに入門する</title>
-      <link>https://grimrose.github.io/blog/2016/12/gadvent-2016/</link>
+      <link>https://www.grimrose.org/blog/2016/12/gadvent-2016/</link>
       <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2016/12/gadvent-2016/</guid>
+      <guid>https://www.grimrose.org/blog/2016/12/gadvent-2016/</guid>
       <description>はじめに この記事は、G*Advent Calendar(Groovy,Grails,Gradle,Spock&amp;hellip;) Advent Calendar 2016の10日目のエントリです。
 9日目 &amp;gt; nobeansさんのGrailsでUnix/Linux的実行可能WARファイルをつくるです。
 11日目 &amp;gt; tyamaさんのGrailsでServer Sent Eventsを送信！(意訳版)です。
@@ -53,10 +53,10 @@ import groovyx.gpars.actor.Actor def actor = Actors.actor { loop { react { msg -
     
     <item>
       <title>JJUG CCC 2016 Springに参加してきました #jjug_ccc #ccc_m61</title>
-      <link>https://grimrose.github.io/blog/2016/05/jjug-ccc-2016/</link>
+      <link>https://www.grimrose.org/blog/2016/05/jjug-ccc-2016/</link>
       <pubDate>Thu, 26 May 2016 00:00:00 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2016/05/jjug-ccc-2016/</guid>
+      <guid>https://www.grimrose.org/blog/2016/05/jjug-ccc-2016/</guid>
       <description>発表のキッカケ ちょうど日々の業務でGradleのタスク機能を利用して、共有ディレクトリにあるExcelのデータとDBの値とチェックしたり、 前回の作業との差分を抽出して入力ミスがないかチェックしたり、といった小さい業務タスクを自動化していたので、 50分は無理でも新しく出来た20分枠ならイケるんではないかと思い、 Groovy枠として選ばれたら本気でやるかといった感じで応募しました。
 なので、十徳ナイフとしてのGradle / @grimrose #35に投票して頂いた皆様には、大変感謝しております。
 jupyter使ってる理由 ここ最近、発表資料にはjupyterを活用しています。理由としては以下のとおりです。
@@ -77,10 +77,10 @@ grimrose/JJUG-CCC-2016-Spring
     
     <item>
       <title>Spock Frameworkに関する電子書籍たち</title>
-      <link>https://grimrose.github.io/blog/2015/12/gadvent-2015/</link>
+      <link>https://www.grimrose.org/blog/2015/12/gadvent-2015/</link>
       <pubDate>Sat, 19 Dec 2015 00:00:00 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2015/12/gadvent-2015/</guid>
+      <guid>https://www.grimrose.org/blog/2015/12/gadvent-2015/</guid>
       <description>はじめに この記事は、G* Advent Calendar 2015の19日目のエントリです。
 Spockについて Spock Frameworkは、JavaやGroovyで作られたアプリケーション向けのテスティングフレームワークです。
 個人的にSpock Frameworkが好きな理由の一つは、power-assert機能です。
@@ -105,10 +105,10 @@ Groovyについて困っている時やどう書いたらいいのか分から�
     
     <item>
       <title>Yokohama.groovy #31 に参加してきました。#yokohamagroovy</title>
-      <link>https://grimrose.github.io/blog/2015/04/yokohama-groovy-31/</link>
+      <link>https://www.grimrose.org/blog/2015/04/yokohama-groovy-31/</link>
       <pubDate>Wed, 29 Apr 2015 22:28:34 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2015/04/yokohama-groovy-31/</guid>
+      <guid>https://www.grimrose.org/blog/2015/04/yokohama-groovy-31/</guid>
       <description>http://connpass.com/event/13786/
 プログラミングGROOVY読書会 主催している「プログラミングGROOVY」の読書会の最終回でした。
 2012年に開催されていた読書会の時間数から、おおよそ3回くらいだろうと見積もっていましたが、余裕を持って終えることが出来ました。

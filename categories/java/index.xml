@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Java on open build/reports/life/index.html</title>
-    <link>https://grimrose.github.io/blog/categories/java/</link>
+    <link>https://www.grimrose.org/blog/categories/java/</link>
     <description>Recent content in Java on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sat, 10 Dec 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://grimrose.github.io/blog/categories/java/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.grimrose.org/blog/categories/java/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>GParsのActorでアクターモデルに入門する</title>
-      <link>https://grimrose.github.io/blog/2016/12/gadvent-2016/</link>
+      <link>https://www.grimrose.org/blog/2016/12/gadvent-2016/</link>
       <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2016/12/gadvent-2016/</guid>
+      <guid>https://www.grimrose.org/blog/2016/12/gadvent-2016/</guid>
       <description>はじめに この記事は、G*Advent Calendar(Groovy,Grails,Gradle,Spock&amp;hellip;) Advent Calendar 2016の10日目のエントリです。
 9日目 &amp;gt; nobeansさんのGrailsでUnix/Linux的実行可能WARファイルをつくるです。
 11日目 &amp;gt; tyamaさんのGrailsでServer Sent Eventsを送信！(意訳版)です。
@@ -36,10 +36,10 @@ import groovyx.gpars.actor.Actor def actor = Actors.actor { loop { react { msg -
     
     <item>
       <title>JJUG CCC 2016 Fallに参加してきました #jjug_ccc</title>
-      <link>https://grimrose.github.io/blog/2016/12/jjug-ccc-2016/</link>
+      <link>https://www.grimrose.org/blog/2016/12/jjug-ccc-2016/</link>
       <pubDate>Sun, 04 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2016/12/jjug-ccc-2016/</guid>
+      <guid>https://www.grimrose.org/blog/2016/12/jjug-ccc-2016/</guid>
       <description>http://www.java-users.jp/ccc2016fall/
 参加したセッション 今回参加したセッションは、以下のとおりです。
  SIerもはじめる、わたしたちのDevOps 先取り Elasticsearch 5.0 ハンズオン！ JVMのトラブル解決のためにやったこと~メモリー/スレッド Spring Cloudアプリケーションの開発にDockerを活用し、Kubernetes上にデプロイするまで Featherweight JavaやGroovyの漸進的型付けについて  今回は、仕事でElasticsearchを検証している際に入門的なものを知らないと先に進めなさそうと感じたので、ハンズオンを優先的に選択しました。
@@ -58,10 +58,10 @@ JJUGのスタッフの皆様、スポンサーの皆様、講演者の皆様、�
     
     <item>
       <title>JJUG CCC 2016 Springに参加してきました #jjug_ccc #ccc_m61</title>
-      <link>https://grimrose.github.io/blog/2016/05/jjug-ccc-2016/</link>
+      <link>https://www.grimrose.org/blog/2016/05/jjug-ccc-2016/</link>
       <pubDate>Thu, 26 May 2016 00:00:00 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2016/05/jjug-ccc-2016/</guid>
+      <guid>https://www.grimrose.org/blog/2016/05/jjug-ccc-2016/</guid>
       <description>発表のキッカケ ちょうど日々の業務でGradleのタスク機能を利用して、共有ディレクトリにあるExcelのデータとDBの値とチェックしたり、 前回の作業との差分を抽出して入力ミスがないかチェックしたり、といった小さい業務タスクを自動化していたので、 50分は無理でも新しく出来た20分枠ならイケるんではないかと思い、 Groovy枠として選ばれたら本気でやるかといった感じで応募しました。
 なので、十徳ナイフとしてのGradle / @grimrose #35に投票して頂いた皆様には、大変感謝しております。
 jupyter使ってる理由 ここ最近、発表資料にはjupyterを活用しています。理由としては以下のとおりです。
@@ -82,10 +82,10 @@ grimrose/JJUG-CCC-2016-Spring
     
     <item>
       <title>Spock Frameworkに関する電子書籍たち</title>
-      <link>https://grimrose.github.io/blog/2015/12/gadvent-2015/</link>
+      <link>https://www.grimrose.org/blog/2015/12/gadvent-2015/</link>
       <pubDate>Sat, 19 Dec 2015 00:00:00 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2015/12/gadvent-2015/</guid>
+      <guid>https://www.grimrose.org/blog/2015/12/gadvent-2015/</guid>
       <description>はじめに この記事は、G* Advent Calendar 2015の19日目のエントリです。
 Spockについて Spock Frameworkは、JavaやGroovyで作られたアプリケーション向けのテスティングフレームワークです。
 個人的にSpock Frameworkが好きな理由の一つは、power-assert機能です。
@@ -110,10 +110,10 @@ Groovyについて困っている時やどう書いたらいいのか分から�
     
     <item>
       <title>JJUG CCC 2015 Fallに参加してきました #jjug_ccc</title>
-      <link>https://grimrose.github.io/blog/2015/11/jjug-ccc-2015/</link>
+      <link>https://www.grimrose.org/blog/2015/11/jjug-ccc-2015/</link>
       <pubDate>Mon, 30 Nov 2015 00:00:00 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2015/11/jjug-ccc-2015/</guid>
+      <guid>https://www.grimrose.org/blog/2015/11/jjug-ccc-2015/</guid>
       <description>http://www.java-users.jp/?page_id=2056
 セッション 今回は、以下のセッションを選択しました。
  keynote-1 基調講演1: 「Javaは守りに入らない、これが今のJavaだ」 keynote-2 基調講演2: Java EE 8 – Work in Progress AB-1「jOOQ と Flyway で立ち向かう、自社サービスの保守運用」(仮) EF-2 How to speed up your application using JCache[通訳あり] EF-3 Reactive Webアプリケーション – そしてSpring 5へ EF-4 ソラコムでのJava/AWS活用 – SIM管理やAWS Lambda Javaなど – AB-5 Javaエンジニアに知ってほしい PostgreSQLアンチパターン GH-6 Java8 Stream APIとApache SparkとAsakusa Frameworkの類似点・相違点 GH-7 てらだよしおの赤裸々タイム  今回のタイムテーブルを見たら、どのセッションを見たら良いのか迷ってしまうくらい素晴らしい講演者の方々でした。 選んだ幹事の人達も苦労されたと思います。
@@ -126,10 +126,10 @@ Groovyについて困っている時やどう書いたらいいのか分から�
     
     <item>
       <title>Seasar Conference 2015 Not 同窓会 に参加してきました #seasarcon</title>
-      <link>https://grimrose.github.io/blog/2015/09/seasarcon2015/</link>
+      <link>https://www.grimrose.org/blog/2015/09/seasarcon2015/</link>
       <pubDate>Tue, 29 Sep 2015 01:25:47 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2015/09/seasarcon2015/</guid>
+      <guid>https://www.grimrose.org/blog/2015/09/seasarcon2015/</guid>
       <description>https://event.seasarfoundation.org/sc2015/
 http://seasar.connpass.com/event/19317/
 Seasar2はプロダクトでも使ったことがあるし、Seasar Conferenceがあったおかげで今の自分があると思っているので、参加してきました。
@@ -143,10 +143,10 @@ Seasar2はプロダクトでも使ったことがあるし、Seasar Conference�
     
     <item>
       <title>JUnit Lambda に寄付をしました #fundJUnit</title>
-      <link>https://grimrose.github.io/blog/2015/09/junit-lambda/</link>
+      <link>https://www.grimrose.org/blog/2015/09/junit-lambda/</link>
       <pubDate>Sat, 19 Sep 2015 00:04:27 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2015/09/junit-lambda/</guid>
+      <guid>https://www.grimrose.org/blog/2015/09/junit-lambda/</guid>
       <description>@t_wada さんのツイートから知りましたが、JUnitのプロジェクトが援助を求めているそうです。
  JUnit がクラウドファンディングで援助を求めている。現在フルタイムのメンテナがおらず、 issue 解決や Java8 対応 (特にラムダ式) の余力が無い。現時点の JUnit の問題点や将来像も示されている #fundJUn… http://t.co/o8ijOxTWr2
 &amp;mdash; Takuto Wada (@t_wada) 2015, 9月 16 
@@ -172,10 +172,10 @@ Java8対応で特にDateTime APIでMatcherが早急に欲しい人は、AssertJ�
     
     <item>
       <title>【東京】JJUG ナイトセミナー 「Reactive Streams特集」 に参加してきました。 #jjug</title>
-      <link>https://grimrose.github.io/blog/2015/06/jjug-2015-reactive-streams/</link>
+      <link>https://www.grimrose.org/blog/2015/06/jjug-2015-reactive-streams/</link>
       <pubDate>Sat, 27 Jun 2015 18:19:34 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2015/06/jjug-2015-reactive-streams/</guid>
+      <guid>https://www.grimrose.org/blog/2015/06/jjug-2015-reactive-streams/</guid>
       <description>はじめに https://jjug.doorkeeper.jp/events/26547
 @makingさんから、@okapiesさんと一緒に「Reactive Streams」について話してくれと頼まれましたので、参加してきました。
 元々は、@cero_tさんが発端らしいです。
@@ -204,10 +204,10 @@ JJUGのスタッフ、参加者の皆様、@okapiesさん、ありがとうご�
     
     <item>
       <title>JJUG CCC 2015 Springに参加してきました。 #jjug_ccc</title>
-      <link>https://grimrose.github.io/blog/2015/04/jjug-ccc/</link>
+      <link>https://www.grimrose.org/blog/2015/04/jjug-ccc/</link>
       <pubDate>Wed, 15 Apr 2015 23:02:31 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2015/04/jjug-ccc/</guid>
+      <guid>https://www.grimrose.org/blog/2015/04/jjug-ccc/</guid>
       <description>http://www.java-users.jp/?page_id=1647
 セッション 実は、転職して現場でJavaを書く機会がかなり減っています。
 が、ツールやライブラリ等JVM上で動くプロダクトを使っているので、運用にまつわる事で勉強したいと思い参加しました。

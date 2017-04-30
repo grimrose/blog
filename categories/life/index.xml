@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Life on open build/reports/life/index.html</title>
-    <link>https://grimrose.github.io/blog/categories/life/</link>
+    <link>https://www.grimrose.org/blog/categories/life/</link>
     <description>Recent content in Life on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sat, 31 Dec 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://grimrose.github.io/blog/categories/life/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.grimrose.org/blog/categories/life/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2016年の振り返り</title>
-      <link>https://grimrose.github.io/blog/2016/12/retrospect/</link>
+      <link>https://www.grimrose.org/blog/2016/12/retrospect/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2016/12/retrospect/</guid>
+      <guid>https://www.grimrose.org/blog/2016/12/retrospect/</guid>
       <description>2016年の振り返り 今年も大晦日になったので、振り返ってみたいと思います。
 2015年の振り返りは、こちらでした。
 やってみたかったことの振り返り また、2016年にやってみたかったことは転職して１年が経ちました。に以下のように書いてました。
@@ -35,10 +35,10 @@ AWSについては、ようやく本格的に利用できるようになった�
     
     <item>
       <title>ErgoDoxのキーキャップを注文してみました</title>
-      <link>https://grimrose.github.io/blog/2016/12/ergodox/</link>
+      <link>https://www.grimrose.org/blog/2016/12/ergodox/</link>
       <pubDate>Fri, 23 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2016/12/ergodox/</guid>
+      <guid>https://www.grimrose.org/blog/2016/12/ergodox/</guid>
       <description>はじめに この記事は、ErgoDox Advent Calendar 2016の23日目のエントリです。
 キーキャップについて okapiesさんのErgoDox EZ カスタマイズ情報のまとめの キーキャップの箇所をみていただければ、だいたいどういったものがあって、どこで買えるのかが参考になると思います。
 今回は、2つ紹介されているサイトのうち、WASD Keyboardsで注文した過程を紹介したいと思います。
@@ -62,10 +62,10 @@ ErgoDoxはカスタマイズが出来る箇所が多いのですが、日本で�
     
     <item>
       <title>MacBook Pro (13-inch, Late 2016, Two Thunderbolt 3 ports)とDELL P2715Q</title>
-      <link>https://grimrose.github.io/blog/2016/12/mbp-13-late-2016/</link>
+      <link>https://www.grimrose.org/blog/2016/12/mbp-13-late-2016/</link>
       <pubDate>Mon, 05 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2016/12/mbp-13-late-2016/</guid>
+      <guid>https://www.grimrose.org/blog/2016/12/mbp-13-late-2016/</guid>
       <description>はじめに MacBook Pro (13-inch, Late 2016, Two Thunderbolt 3 ports)モデルを購入したので、 4KモニタのP2715Qとの動作検証を残しておこうと思います。
 MacBook Pro 13 Late 2016 non-Touch Bar カスタマイズは、以下の通り。
  2.4 GHz Intel Core i7 16 GB 1867 MHz LPDDR3 512GB SSD  DELL P2715Q ここを見ると4K 60Hzで表示するには、HDMI 2.0かDisplay Portのモニタが必要です。
@@ -78,10 +78,10 @@ P2715QにはminiDP - DisplayPortのケーブルが付属しているので、必
     
     <item>
       <title>転職して2年が経ちました。</title>
-      <link>https://grimrose.github.io/blog/2016/12/curriculum-vitae/</link>
+      <link>https://www.grimrose.org/blog/2016/12/curriculum-vitae/</link>
       <pubDate>Thu, 01 Dec 2016 00:00:00 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2016/12/curriculum-vitae/</guid>
+      <guid>https://www.grimrose.org/blog/2016/12/curriculum-vitae/</guid>
       <description>はじめに 2014年12月に転職してから2年経ったので、振り返ってみました。
 1年前はこちら。
 引き続き、データ分析チームのエンジニアとして働いてます。
@@ -99,10 +99,10 @@ P2715QにはminiDP - DisplayPortのケーブルが付属しているので、必
     
     <item>
       <title>2015年の振り返り</title>
-      <link>https://grimrose.github.io/blog/2015/12/retrospect-2015/</link>
+      <link>https://www.grimrose.org/blog/2015/12/retrospect-2015/</link>
       <pubDate>Thu, 31 Dec 2015 23:59:59 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2015/12/retrospect-2015/</guid>
+      <guid>https://www.grimrose.org/blog/2015/12/retrospect-2015/</guid>
       <description>2015年の振り返り 今年も大晦日になったので、振り返りをしてみたいと思います。
 2014年の振り返りは、こちらでした。
 Keep 今年は、以下のイベントで登壇する機会をいただけました。
@@ -128,10 +128,10 @@ CSMについては、横浜道場でいろいろな人が受けてたり取ら�
     
     <item>
       <title>転職して１年が経ちました。</title>
-      <link>https://grimrose.github.io/blog/2015/12/career-change/</link>
+      <link>https://www.grimrose.org/blog/2015/12/career-change/</link>
       <pubDate>Tue, 01 Dec 2015 00:00:00 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2015/12/career-change/</guid>
+      <guid>https://www.grimrose.org/blog/2015/12/career-change/</guid>
       <description>はじめに 2014年12月に転職してから1年経ったので、振り返ってみます。
 半年前はこちら。
 引き続き、データ分析チームのエンジニアとして働いてます。
@@ -150,10 +150,10 @@ Scalaの導入については、別の機会に書ければと思ってます。
     
     <item>
       <title>転職して半年が経ちました。</title>
-      <link>https://grimrose.github.io/blog/2015/06/career-change/</link>
+      <link>https://www.grimrose.org/blog/2015/06/career-change/</link>
       <pubDate>Mon, 01 Jun 2015 00:08:51 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2015/06/career-change/</guid>
+      <guid>https://www.grimrose.org/blog/2015/06/career-change/</guid>
       <description>はじめに 2014年12月に転職してから半年経ったので、振り返ってみます。
 退職エントリはこちら
 所属 今は、データ分析チームのエンジニアとして働いています。

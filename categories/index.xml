@@ -2,237 +2,237 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on open build/reports/life/index.html</title>
-    <link>https://grimrose.github.io/blog/categories/</link>
+    <link>https://www.grimrose.org/blog/categories/</link>
     <description>Recent content in Categories on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 23 Apr 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://grimrose.github.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.grimrose.org/blog/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Blog</title>
-      <link>https://grimrose.github.io/blog/categories/blog/</link>
+      <link>https://www.grimrose.org/blog/categories/blog/</link>
       <pubDate>Sun, 23 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://grimrose.github.io/blog/categories/blog/</guid>
+      <guid>https://www.grimrose.org/blog/categories/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Clojure</title>
-      <link>https://grimrose.github.io/blog/categories/clojure/</link>
+      <link>https://www.grimrose.org/blog/categories/clojure/</link>
       <pubDate>Mon, 14 Dec 2015 00:00:00 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/categories/clojure/</guid>
+      <guid>https://www.grimrose.org/blog/categories/clojure/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ergodox</title>
-      <link>https://grimrose.github.io/blog/categories/ergodox/</link>
+      <link>https://www.grimrose.org/blog/categories/ergodox/</link>
       <pubDate>Fri, 23 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://grimrose.github.io/blog/categories/ergodox/</guid>
+      <guid>https://www.grimrose.org/blog/categories/ergodox/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gradle</title>
-      <link>https://grimrose.github.io/blog/categories/gradle/</link>
+      <link>https://www.grimrose.org/blog/categories/gradle/</link>
       <pubDate>Thu, 26 May 2016 00:00:00 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/categories/gradle/</guid>
+      <guid>https://www.grimrose.org/blog/categories/gradle/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Groovy</title>
-      <link>https://grimrose.github.io/blog/categories/groovy/</link>
+      <link>https://www.grimrose.org/blog/categories/groovy/</link>
       <pubDate>Sun, 23 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://grimrose.github.io/blog/categories/groovy/</guid>
+      <guid>https://www.grimrose.org/blog/categories/groovy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>https://grimrose.github.io/blog/categories/hugo/</link>
+      <link>https://www.grimrose.org/blog/categories/hugo/</link>
       <pubDate>Mon, 13 Apr 2015 00:25:58 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/categories/hugo/</guid>
+      <guid>https://www.grimrose.org/blog/categories/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Java</title>
-      <link>https://grimrose.github.io/blog/categories/java/</link>
+      <link>https://www.grimrose.org/blog/categories/java/</link>
       <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://grimrose.github.io/blog/categories/java/</guid>
+      <guid>https://www.grimrose.org/blog/categories/java/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jjug</title>
-      <link>https://grimrose.github.io/blog/categories/jjug/</link>
+      <link>https://www.grimrose.org/blog/categories/jjug/</link>
       <pubDate>Mon, 30 Nov 2015 00:00:00 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/categories/jjug/</guid>
+      <guid>https://www.grimrose.org/blog/categories/jjug/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Junit</title>
-      <link>https://grimrose.github.io/blog/categories/junit/</link>
+      <link>https://www.grimrose.org/blog/categories/junit/</link>
       <pubDate>Sat, 19 Sep 2015 00:04:27 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/categories/junit/</guid>
+      <guid>https://www.grimrose.org/blog/categories/junit/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jvm</title>
-      <link>https://grimrose.github.io/blog/categories/jvm/</link>
+      <link>https://www.grimrose.org/blog/categories/jvm/</link>
       <pubDate>Tue, 21 Apr 2015 00:05:36 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/categories/jvm/</guid>
+      <guid>https://www.grimrose.org/blog/categories/jvm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Life</title>
-      <link>https://grimrose.github.io/blog/categories/life/</link>
+      <link>https://www.grimrose.org/blog/categories/life/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://grimrose.github.io/blog/categories/life/</guid>
+      <guid>https://www.grimrose.org/blog/categories/life/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Machine Learning</title>
-      <link>https://grimrose.github.io/blog/categories/machine-learning/</link>
+      <link>https://www.grimrose.org/blog/categories/machine-learning/</link>
       <pubDate>Mon, 04 May 2015 11:49:15 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/categories/machine-learning/</guid>
+      <guid>https://www.grimrose.org/blog/categories/machine-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mithril</title>
-      <link>https://grimrose.github.io/blog/categories/mithril/</link>
+      <link>https://www.grimrose.org/blog/categories/mithril/</link>
       <pubDate>Sun, 18 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://grimrose.github.io/blog/categories/mithril/</guid>
+      <guid>https://www.grimrose.org/blog/categories/mithril/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Node</title>
-      <link>https://grimrose.github.io/blog/categories/node/</link>
+      <link>https://www.grimrose.org/blog/categories/node/</link>
       <pubDate>Sat, 18 Apr 2015 01:00:10 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/categories/node/</guid>
+      <guid>https://www.grimrose.org/blog/categories/node/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Nodeschool</title>
-      <link>https://grimrose.github.io/blog/categories/nodeschool/</link>
+      <link>https://www.grimrose.org/blog/categories/nodeschool/</link>
       <pubDate>Sat, 18 Apr 2015 01:00:10 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/categories/nodeschool/</guid>
+      <guid>https://www.grimrose.org/blog/categories/nodeschool/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Perl</title>
-      <link>https://grimrose.github.io/blog/categories/perl/</link>
+      <link>https://www.grimrose.org/blog/categories/perl/</link>
       <pubDate>Sun, 23 Aug 2015 22:34:34 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/categories/perl/</guid>
+      <guid>https://www.grimrose.org/blog/categories/perl/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>https://grimrose.github.io/blog/categories/python/</link>
+      <link>https://www.grimrose.org/blog/categories/python/</link>
       <pubDate>Sun, 25 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://grimrose.github.io/blog/categories/python/</guid>
+      <guid>https://www.grimrose.org/blog/categories/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Scala</title>
-      <link>https://grimrose.github.io/blog/categories/scala/</link>
+      <link>https://www.grimrose.org/blog/categories/scala/</link>
       <pubDate>Sun, 23 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://grimrose.github.io/blog/categories/scala/</guid>
+      <guid>https://www.grimrose.org/blog/categories/scala/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Scalamatsuri</title>
-      <link>https://grimrose.github.io/blog/categories/scalamatsuri/</link>
+      <link>https://www.grimrose.org/blog/categories/scalamatsuri/</link>
       <pubDate>Mon, 08 Feb 2016 20:31:14 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/categories/scalamatsuri/</guid>
+      <guid>https://www.grimrose.org/blog/categories/scalamatsuri/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Seasar</title>
-      <link>https://grimrose.github.io/blog/categories/seasar/</link>
+      <link>https://www.grimrose.org/blog/categories/seasar/</link>
       <pubDate>Tue, 29 Sep 2015 01:25:47 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/categories/seasar/</guid>
+      <guid>https://www.grimrose.org/blog/categories/seasar/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spock</title>
-      <link>https://grimrose.github.io/blog/categories/spock/</link>
+      <link>https://www.grimrose.org/blog/categories/spock/</link>
       <pubDate>Sat, 19 Dec 2015 00:00:00 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/categories/spock/</guid>
+      <guid>https://www.grimrose.org/blog/categories/spock/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Typescript</title>
-      <link>https://grimrose.github.io/blog/categories/typescript/</link>
+      <link>https://www.grimrose.org/blog/categories/typescript/</link>
       <pubDate>Sun, 18 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://grimrose.github.io/blog/categories/typescript/</guid>
+      <guid>https://www.grimrose.org/blog/categories/typescript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Yapc</title>
-      <link>https://grimrose.github.io/blog/categories/yapc/</link>
+      <link>https://www.grimrose.org/blog/categories/yapc/</link>
       <pubDate>Sun, 23 Aug 2015 22:34:34 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/categories/yapc/</guid>
+      <guid>https://www.grimrose.org/blog/categories/yapc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>大都会岡山</title>
-      <link>https://grimrose.github.io/blog/categories/%E5%A4%A7%E9%83%BD%E4%BC%9A%E5%B2%A1%E5%B1%B1/</link>
+      <link>https://www.grimrose.org/blog/categories/%E5%A4%A7%E9%83%BD%E4%BC%9A%E5%B2%A1%E5%B1%B1/</link>
       <pubDate>Sun, 13 Dec 2015 00:00:00 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/categories/%E5%A4%A7%E9%83%BD%E4%BC%9A%E5%B2%A1%E5%B1%B1/</guid>
+      <guid>https://www.grimrose.org/blog/categories/%E5%A4%A7%E9%83%BD%E4%BC%9A%E5%B2%A1%E5%B1%B1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>忘年会議</title>
-      <link>https://grimrose.github.io/blog/categories/%E5%BF%98%E5%B9%B4%E4%BC%9A%E8%AD%B0/</link>
+      <link>https://www.grimrose.org/blog/categories/%E5%BF%98%E5%B9%B4%E4%BC%9A%E8%AD%B0/</link>
       <pubDate>Sun, 13 Dec 2015 00:00:00 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/categories/%E5%BF%98%E5%B9%B4%E4%BC%9A%E8%AD%B0/</guid>
+      <guid>https://www.grimrose.org/blog/categories/%E5%BF%98%E5%B9%B4%E4%BC%9A%E8%AD%B0/</guid>
       <description></description>
     </item>
     

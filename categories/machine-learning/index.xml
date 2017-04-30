@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Machine Learning on open build/reports/life/index.html</title>
-    <link>https://grimrose.github.io/blog/categories/machine-learning/</link>
+    <link>https://www.grimrose.org/blog/categories/machine-learning/</link>
     <description>Recent content in Machine Learning on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Mon, 04 May 2015 11:49:15 +0900</lastBuildDate>
     
-	<atom:link href="https://grimrose.github.io/blog/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.grimrose.org/blog/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Machine Learning Casual Talks #3 に参加してきました。 #MCLT</title>
-      <link>https://grimrose.github.io/blog/2015/05/mclt03/</link>
+      <link>https://www.grimrose.org/blog/2015/05/mclt03/</link>
       <pubDate>Mon, 04 May 2015 11:49:15 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2015/05/mclt03/</guid>
+      <guid>https://www.grimrose.org/blog/2015/05/mclt03/</guid>
       <description>http://mlct.connpass.com/event/13995/
 チームの分析官の人が喋ってる内容を実際に運用している話が聞けそうなので、申し込んでみたところ運良く抽選に当たったので、参加してきました。
 ある程度予習をして参加しましたが、やはり勉強不足であることは否めませんでした。

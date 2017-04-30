@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on open build/reports/life/index.html</title>
-    <link>https://grimrose.github.io/blog/categories/python/</link>
+    <link>https://www.grimrose.org/blog/categories/python/</link>
     <description>Recent content in Python on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 25 Sep 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://grimrose.github.io/blog/categories/python/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.grimrose.org/blog/categories/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>PyCon JP 2016 に参加してきました #pyconjp</title>
-      <link>https://grimrose.github.io/blog/2016/09/pyconjp-2016/</link>
+      <link>https://www.grimrose.org/blog/2016/09/pyconjp-2016/</link>
       <pubDate>Sun, 25 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2016/09/pyconjp-2016/</guid>
+      <guid>https://www.grimrose.org/blog/2016/09/pyconjp-2016/</guid>
       <description>はじめに PyCon JP 2016
 今後仕事でPythonを使う機会が増えるだろうということと、ScalaMatsuriの運営はPyCon JPの運営を参考にさせて頂いてるので、 実際スタッフの人はどのように動いているのかを見てみたいと思い参加してみました。
 セッション 選択したセッションは、以下のとおりです。 両日の基調講演は、朝起きられず途中からでした。 基準として仕事で使う際に必要そうなのを重点的に選んでみました。
@@ -29,10 +29,10 @@
     
     <item>
       <title>「独習Python入門―1日でプログラミングに強くなる！」を読み切りました</title>
-      <link>https://grimrose.github.io/blog/2016/09/self-education-python/</link>
+      <link>https://www.grimrose.org/blog/2016/09/self-education-python/</link>
       <pubDate>Mon, 05 Sep 2016 21:11:45 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2016/09/self-education-python/</guid>
+      <guid>https://www.grimrose.org/blog/2016/09/self-education-python/</guid>
       <description>きっかけ これまで、jupyter-notebookやfabricを使ってきたのですが、pythonそのものを使って何かを作るといったことはしてこなかったので、 仕事で本格的にPythonを使うことになる前に、一から学べる本があればいいなと思い、電子版で出版されている中で入門にカテゴリされている本を探していました。
 はてブなどでいろいろ探してたところ「独習Python入門」は一生付き合える入門本だと334回言いたいの記事がみつかり、 求めてる内容にマッチしてそうだし、ござ先輩は以前に、これからの「エンジニアリング」の話をしよう に参加しました #vcafe のイベントの講師として来られていた方だったので、間違い無さそうと思い購入しました。
 読みきってみて 率直な感想は、「物足りない」でした。が、それは私がこの本が想定されているスキルと合ってなかったからだろうなと思います。

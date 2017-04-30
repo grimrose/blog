@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Clojure on open build/reports/life/index.html</title>
-    <link>https://grimrose.github.io/blog/categories/clojure/</link>
+    <link>https://www.grimrose.org/blog/categories/clojure/</link>
     <description>Recent content in Clojure on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Mon, 14 Dec 2015 00:00:00 +0900</lastBuildDate>
     
-	<atom:link href="https://grimrose.github.io/blog/categories/clojure/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.grimrose.org/blog/categories/clojure/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Clojure ワークショップ(仮)に参加してきました #jc_ws</title>
-      <link>https://grimrose.github.io/blog/2015/12/jc-ws-2015/</link>
+      <link>https://www.grimrose.org/blog/2015/12/jc-ws-2015/</link>
       <pubDate>Mon, 14 Dec 2015 00:00:00 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2015/12/jc-ws-2015/</guid>
+      <guid>https://www.grimrose.org/blog/2015/12/jc-ws-2015/</guid>
       <description>はじめに 【参加者募集】 Clojure ワークショップ(仮)に参加してきました。
 きっかけは、以前にしょぼちむにデータモデル設計について教えてくださいの会 #syobobenで@kawasimaさんが 以下のプレゼンをした時にでてきたDatomicが気になったからです。
    イミュータブルデータモデル(世代編)  from Yoshitka Kawashima 

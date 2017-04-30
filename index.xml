@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>open build/reports/life/index.html</title>
-    <link>https://grimrose.github.io/blog/</link>
+    <link>https://www.grimrose.org/blog/</link>
     <description>Recent content on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 23 Apr 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://grimrose.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.grimrose.org/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>JVMからSSHのポート転送でJDBC接続する</title>
-      <link>https://grimrose.github.io/blog/2017/04/ssh-port-forward/</link>
+      <link>https://www.grimrose.org/blog/2017/04/ssh-port-forward/</link>
       <pubDate>Sun, 23 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2017/04/ssh-port-forward/</guid>
+      <guid>https://www.grimrose.org/blog/2017/04/ssh-port-forward/</guid>
       <description>はじめに 仕事上、windowsの端末からリモートのlinuxのDBにデータを送る必要があったのですが、 GUIでの手作業はしんどいので、簡単なツールを作ることにしました。
 幸いなことにJVMが入っているので、JavaのSSHクライアントとJDBCを使ってやってみました。
 検証 grimrose/ssh-port-forward-study
@@ -30,10 +30,10 @@ JVMやその他の言語でもランタイムをwindowsで動かせるように�
     
     <item>
       <title>2016年の振り返り</title>
-      <link>https://grimrose.github.io/blog/2016/12/retrospect/</link>
+      <link>https://www.grimrose.org/blog/2016/12/retrospect/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2016/12/retrospect/</guid>
+      <guid>https://www.grimrose.org/blog/2016/12/retrospect/</guid>
       <description>2016年の振り返り 今年も大晦日になったので、振り返ってみたいと思います。
 2015年の振り返りは、こちらでした。
 やってみたかったことの振り返り また、2016年にやってみたかったことは転職して１年が経ちました。に以下のように書いてました。
@@ -52,10 +52,10 @@ AWSについては、ようやく本格的に利用できるようになった�
     
     <item>
       <title>ErgoDoxのキーキャップを注文してみました</title>
-      <link>https://grimrose.github.io/blog/2016/12/ergodox/</link>
+      <link>https://www.grimrose.org/blog/2016/12/ergodox/</link>
       <pubDate>Fri, 23 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2016/12/ergodox/</guid>
+      <guid>https://www.grimrose.org/blog/2016/12/ergodox/</guid>
       <description>はじめに この記事は、ErgoDox Advent Calendar 2016の23日目のエントリです。
 キーキャップについて okapiesさんのErgoDox EZ カスタマイズ情報のまとめの キーキャップの箇所をみていただければ、だいたいどういったものがあって、どこで買えるのかが参考になると思います。
 今回は、2つ紹介されているサイトのうち、WASD Keyboardsで注文した過程を紹介したいと思います。
@@ -79,10 +79,10 @@ ErgoDoxはカスタマイズが出来る箇所が多いのですが、日本で�
     
     <item>
       <title>Mithril.jsをTypescript2.xで書いてみよう</title>
-      <link>https://grimrose.github.io/blog/2016/12/mithril/</link>
+      <link>https://www.grimrose.org/blog/2016/12/mithril/</link>
       <pubDate>Sun, 18 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2016/12/mithril/</guid>
+      <guid>https://www.grimrose.org/blog/2016/12/mithril/</guid>
       <description>はじめに この記事は、Mithril.js Advent Calendar 2016の18日目のエントリです。
 17日目 &amp;gt; shibukawaさんのMithrilで自動補完つきテキストを作る(2)です。
 19日目 &amp;gt; tacnomaさんのMithrilからRailsサーバーへのファイルアップロードではまった部分です。
@@ -103,10 +103,10 @@ Mithril.jsでTypeScriptを使うときの特徴としては、やはり型の制
     
     <item>
       <title>ScalikeJDBCを使ってAmazon Athenaへアクセスしてみた</title>
-      <link>https://grimrose.github.io/blog/2016/12/scala-advent-calendar-2016/</link>
+      <link>https://www.grimrose.org/blog/2016/12/scala-advent-calendar-2016/</link>
       <pubDate>Sun, 11 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2016/12/scala-advent-calendar-2016/</guid>
+      <guid>https://www.grimrose.org/blog/2016/12/scala-advent-calendar-2016/</guid>
       <description>はじめに この記事は、Scala Advent Calendar 2016の11日目のエントリです。
 10日目 &amp;gt; ponkotuyさんのSkinnyORMのjoin定義についてです。
 12日目 &amp;gt; aoiroaoinoさんのScala関西 Summit 2016 で Lens/Prism について発表してきたです。
@@ -123,10 +123,10 @@ Exception encountered when invoking run on a nested suite - Failed to initialize
     
     <item>
       <title>GParsのActorでアクターモデルに入門する</title>
-      <link>https://grimrose.github.io/blog/2016/12/gadvent-2016/</link>
+      <link>https://www.grimrose.org/blog/2016/12/gadvent-2016/</link>
       <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2016/12/gadvent-2016/</guid>
+      <guid>https://www.grimrose.org/blog/2016/12/gadvent-2016/</guid>
       <description>はじめに この記事は、G*Advent Calendar(Groovy,Grails,Gradle,Spock&amp;hellip;) Advent Calendar 2016の10日目のエントリです。
 9日目 &amp;gt; nobeansさんのGrailsでUnix/Linux的実行可能WARファイルをつくるです。
 11日目 &amp;gt; tyamaさんのGrailsでServer Sent Eventsを送信！(意訳版)です。
@@ -146,10 +146,10 @@ import groovyx.gpars.actor.Actor def actor = Actors.actor { loop { react { msg -
     
     <item>
       <title>MacBook Pro (13-inch, Late 2016, Two Thunderbolt 3 ports)とDELL P2715Q</title>
-      <link>https://grimrose.github.io/blog/2016/12/mbp-13-late-2016/</link>
+      <link>https://www.grimrose.org/blog/2016/12/mbp-13-late-2016/</link>
       <pubDate>Mon, 05 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2016/12/mbp-13-late-2016/</guid>
+      <guid>https://www.grimrose.org/blog/2016/12/mbp-13-late-2016/</guid>
       <description>はじめに MacBook Pro (13-inch, Late 2016, Two Thunderbolt 3 ports)モデルを購入したので、 4KモニタのP2715Qとの動作検証を残しておこうと思います。
 MacBook Pro 13 Late 2016 non-Touch Bar カスタマイズは、以下の通り。
  2.4 GHz Intel Core i7 16 GB 1867 MHz LPDDR3 512GB SSD  DELL P2715Q ここを見ると4K 60Hzで表示するには、HDMI 2.0かDisplay Portのモニタが必要です。
@@ -162,10 +162,10 @@ P2715QにはminiDP - DisplayPortのケーブルが付属しているので、必
     
     <item>
       <title>JJUG CCC 2016 Fallに参加してきました #jjug_ccc</title>
-      <link>https://grimrose.github.io/blog/2016/12/jjug-ccc-2016/</link>
+      <link>https://www.grimrose.org/blog/2016/12/jjug-ccc-2016/</link>
       <pubDate>Sun, 04 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2016/12/jjug-ccc-2016/</guid>
+      <guid>https://www.grimrose.org/blog/2016/12/jjug-ccc-2016/</guid>
       <description>http://www.java-users.jp/ccc2016fall/
 参加したセッション 今回参加したセッションは、以下のとおりです。
  SIerもはじめる、わたしたちのDevOps 先取り Elasticsearch 5.0 ハンズオン！ JVMのトラブル解決のためにやったこと~メモリー/スレッド Spring Cloudアプリケーションの開発にDockerを活用し、Kubernetes上にデプロイするまで Featherweight JavaやGroovyの漸進的型付けについて  今回は、仕事でElasticsearchを検証している際に入門的なものを知らないと先に進めなさそうと感じたので、ハンズオンを優先的に選択しました。
@@ -184,10 +184,10 @@ JJUGのスタッフの皆様、スポンサーの皆様、講演者の皆様、�
     
     <item>
       <title>転職して2年が経ちました。</title>
-      <link>https://grimrose.github.io/blog/2016/12/curriculum-vitae/</link>
+      <link>https://www.grimrose.org/blog/2016/12/curriculum-vitae/</link>
       <pubDate>Thu, 01 Dec 2016 00:00:00 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2016/12/curriculum-vitae/</guid>
+      <guid>https://www.grimrose.org/blog/2016/12/curriculum-vitae/</guid>
       <description>はじめに 2014年12月に転職してから2年経ったので、振り返ってみました。
 1年前はこちら。
 引き続き、データ分析チームのエンジニアとして働いてます。
@@ -205,10 +205,10 @@ JJUGのスタッフの皆様、スポンサーの皆様、講演者の皆様、�
     
     <item>
       <title>Scala関西Summit 2016へ参加してきました #scala_ks</title>
-      <link>https://grimrose.github.io/blog/2016/10/scalakansai2016/</link>
+      <link>https://www.grimrose.org/blog/2016/10/scalakansai2016/</link>
       <pubDate>Sun, 09 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2016/10/scalakansai2016/</guid>
+      <guid>https://www.grimrose.org/blog/2016/10/scalakansai2016/</guid>
       <description>はじめに http://summit.scala-kansai.org/
 http://skug.connpass.com/event/38349/
 去年のScala関西 Summit 2015に参加してまた参加したいと思っていたのと、 ScalaMatsuriの運営の参考になればと思い、参加しました。
@@ -228,10 +228,10 @@ Monocle、Lens、Prismは名前だけ知っていて、コワイものだとい�
     
     <item>
       <title>PyCon JP 2016 に参加してきました #pyconjp</title>
-      <link>https://grimrose.github.io/blog/2016/09/pyconjp-2016/</link>
+      <link>https://www.grimrose.org/blog/2016/09/pyconjp-2016/</link>
       <pubDate>Sun, 25 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2016/09/pyconjp-2016/</guid>
+      <guid>https://www.grimrose.org/blog/2016/09/pyconjp-2016/</guid>
       <description>はじめに PyCon JP 2016
 今後仕事でPythonを使う機会が増えるだろうということと、ScalaMatsuriの運営はPyCon JPの運営を参考にさせて頂いてるので、 実際スタッフの人はどのように動いているのかを見てみたいと思い参加してみました。
 セッション 選択したセッションは、以下のとおりです。 両日の基調講演は、朝起きられず途中からでした。 基準として仕事で使う際に必要そうなのを重点的に選んでみました。
@@ -244,10 +244,10 @@ Monocle、Lens、Prismは名前だけ知っていて、コワイものだとい�
     
     <item>
       <title>「独習Python入門―1日でプログラミングに強くなる！」を読み切りました</title>
-      <link>https://grimrose.github.io/blog/2016/09/self-education-python/</link>
+      <link>https://www.grimrose.org/blog/2016/09/self-education-python/</link>
       <pubDate>Mon, 05 Sep 2016 21:11:45 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2016/09/self-education-python/</guid>
+      <guid>https://www.grimrose.org/blog/2016/09/self-education-python/</guid>
       <description>きっかけ これまで、jupyter-notebookやfabricを使ってきたのですが、pythonそのものを使って何かを作るといったことはしてこなかったので、 仕事で本格的にPythonを使うことになる前に、一から学べる本があればいいなと思い、電子版で出版されている中で入門にカテゴリされている本を探していました。
 はてブなどでいろいろ探してたところ「独習Python入門」は一生付き合える入門本だと334回言いたいの記事がみつかり、 求めてる内容にマッチしてそうだし、ござ先輩は以前に、これからの「エンジニアリング」の話をしよう に参加しました #vcafe のイベントの講師として来られていた方だったので、間違い無さそうと思い購入しました。
 読みきってみて 率直な感想は、「物足りない」でした。が、それは私がこの本が想定されているスキルと合ってなかったからだろうなと思います。
@@ -265,10 +265,10 @@ Monocle、Lens、Prismは名前だけ知っていて、コワイものだとい�
     
     <item>
       <title>JJUG CCC 2016 Springに参加してきました #jjug_ccc #ccc_m61</title>
-      <link>https://grimrose.github.io/blog/2016/05/jjug-ccc-2016/</link>
+      <link>https://www.grimrose.org/blog/2016/05/jjug-ccc-2016/</link>
       <pubDate>Thu, 26 May 2016 00:00:00 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2016/05/jjug-ccc-2016/</guid>
+      <guid>https://www.grimrose.org/blog/2016/05/jjug-ccc-2016/</guid>
       <description>発表のキッカケ ちょうど日々の業務でGradleのタスク機能を利用して、共有ディレクトリにあるExcelのデータとDBの値とチェックしたり、 前回の作業との差分を抽出して入力ミスがないかチェックしたり、といった小さい業務タスクを自動化していたので、 50分は無理でも新しく出来た20分枠ならイケるんではないかと思い、 Groovy枠として選ばれたら本気でやるかといった感じで応募しました。
 なので、十徳ナイフとしてのGradle / @grimrose #35に投票して頂いた皆様には、大変感謝しております。
 jupyter使ってる理由 ここ最近、発表資料にはjupyterを活用しています。理由としては以下のとおりです。
@@ -289,10 +289,10 @@ grimrose/JJUG-CCC-2016-Spring
     
     <item>
       <title>ScalaMatsuri2016に参加してきました。 #ScalaMatsuri</title>
-      <link>https://grimrose.github.io/blog/2016/02/scalamatsuri2016/</link>
+      <link>https://www.grimrose.org/blog/2016/02/scalamatsuri2016/</link>
       <pubDate>Mon, 08 Feb 2016 20:31:14 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2016/02/scalamatsuri2016/</guid>
+      <guid>https://www.grimrose.org/blog/2016/02/scalamatsuri2016/</guid>
       <description>ScalaMatsuri
 はじまり 前回のScalaMatsuriが楽しかったので、スタッフとして参加してみようと思い飛び込んでみました。
 https://japan-scala-association.doorkeeper.jp/events/23255
@@ -308,10 +308,10 @@ https://japan-scala-association.doorkeeper.jp/events/23255
     
     <item>
       <title>2015年の振り返り</title>
-      <link>https://grimrose.github.io/blog/2015/12/retrospect-2015/</link>
+      <link>https://www.grimrose.org/blog/2015/12/retrospect-2015/</link>
       <pubDate>Thu, 31 Dec 2015 23:59:59 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2015/12/retrospect-2015/</guid>
+      <guid>https://www.grimrose.org/blog/2015/12/retrospect-2015/</guid>
       <description>2015年の振り返り 今年も大晦日になったので、振り返りをしてみたいと思います。
 2014年の振り返りは、こちらでした。
 Keep 今年は、以下のイベントで登壇する機会をいただけました。
@@ -337,10 +337,10 @@ CSMについては、横浜道場でいろいろな人が受けてたり取ら�
     
     <item>
       <title>Spock Frameworkに関する電子書籍たち</title>
-      <link>https://grimrose.github.io/blog/2015/12/gadvent-2015/</link>
+      <link>https://www.grimrose.org/blog/2015/12/gadvent-2015/</link>
       <pubDate>Sat, 19 Dec 2015 00:00:00 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2015/12/gadvent-2015/</guid>
+      <guid>https://www.grimrose.org/blog/2015/12/gadvent-2015/</guid>
       <description>はじめに この記事は、G* Advent Calendar 2015の19日目のエントリです。
 Spockについて Spock Frameworkは、JavaやGroovyで作られたアプリケーション向けのテスティングフレームワークです。
 個人的にSpock Frameworkが好きな理由の一つは、power-assert機能です。
@@ -365,10 +365,10 @@ Groovyについて困っている時やどう書いたらいいのか分から�
     
     <item>
       <title>Clojure ワークショップ(仮)に参加してきました #jc_ws</title>
-      <link>https://grimrose.github.io/blog/2015/12/jc-ws-2015/</link>
+      <link>https://www.grimrose.org/blog/2015/12/jc-ws-2015/</link>
       <pubDate>Mon, 14 Dec 2015 00:00:00 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2015/12/jc-ws-2015/</guid>
+      <guid>https://www.grimrose.org/blog/2015/12/jc-ws-2015/</guid>
       <description>はじめに 【参加者募集】 Clojure ワークショップ(仮)に参加してきました。
 きっかけは、以前にしょぼちむにデータモデル設計について教えてくださいの会 #syobobenで@kawasimaさんが 以下のプレゼンをした時にでてきたDatomicが気になったからです。
    イミュータブルデータモデル(世代編)  from Yoshitka Kawashima 
@@ -394,10 +394,10 @@ Groovyについて困っている時やどう書いたらいいのか分から�
     
     <item>
       <title>業務アプリケーションをElectronで作ってみた話をしてきました #gbdaitokai #忘年会議</title>
-      <link>https://grimrose.github.io/blog/2015/12/daitokai-2015/</link>
+      <link>https://www.grimrose.org/blog/2015/12/daitokai-2015/</link>
       <pubDate>Sun, 13 Dec 2015 00:00:00 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2015/12/daitokai-2015/</guid>
+      <guid>https://www.grimrose.org/blog/2015/12/daitokai-2015/</guid>
       <description>はじめに このエントリーは、Electron Advent Calendar 2015の13日目の記事です。
 公開資料 発表で利用した資料はこちらです。 -&amp;gt; スライド
 スライドは、jupyterにdamianavila/RISEの拡張を入れて作りました。
@@ -426,10 +426,10 @@ LTの猛者でまだあの場所でLTをされてない方は、一度でもい�
     
     <item>
       <title>転職して１年が経ちました。</title>
-      <link>https://grimrose.github.io/blog/2015/12/career-change/</link>
+      <link>https://www.grimrose.org/blog/2015/12/career-change/</link>
       <pubDate>Tue, 01 Dec 2015 00:00:00 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2015/12/career-change/</guid>
+      <guid>https://www.grimrose.org/blog/2015/12/career-change/</guid>
       <description>はじめに 2014年12月に転職してから1年経ったので、振り返ってみます。
 半年前はこちら。
 引き続き、データ分析チームのエンジニアとして働いてます。
@@ -448,10 +448,10 @@ Scalaの導入については、別の機会に書ければと思ってます。
     
     <item>
       <title>JJUG CCC 2015 Fallに参加してきました #jjug_ccc</title>
-      <link>https://grimrose.github.io/blog/2015/11/jjug-ccc-2015/</link>
+      <link>https://www.grimrose.org/blog/2015/11/jjug-ccc-2015/</link>
       <pubDate>Mon, 30 Nov 2015 00:00:00 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2015/11/jjug-ccc-2015/</guid>
+      <guid>https://www.grimrose.org/blog/2015/11/jjug-ccc-2015/</guid>
       <description>http://www.java-users.jp/?page_id=2056
 セッション 今回は、以下のセッションを選択しました。
  keynote-1 基調講演1: 「Javaは守りに入らない、これが今のJavaだ」 keynote-2 基調講演2: Java EE 8 – Work in Progress AB-1「jOOQ と Flyway で立ち向かう、自社サービスの保守運用」(仮) EF-2 How to speed up your application using JCache[通訳あり] EF-3 Reactive Webアプリケーション – そしてSpring 5へ EF-4 ソラコムでのJava/AWS活用 – SIM管理やAWS Lambda Javaなど – AB-5 Javaエンジニアに知ってほしい PostgreSQLアンチパターン GH-6 Java8 Stream APIとApache SparkとAsakusa Frameworkの類似点・相違点 GH-7 てらだよしおの赤裸々タイム  今回のタイムテーブルを見たら、どのセッションを見たら良いのか迷ってしまうくらい素晴らしい講演者の方々でした。 選んだ幹事の人達も苦労されたと思います。
@@ -464,10 +464,10 @@ Scalaの導入については、別の機会に書ければと思ってます。
     
     <item>
       <title>Seasar Conference 2015 Not 同窓会 に参加してきました #seasarcon</title>
-      <link>https://grimrose.github.io/blog/2015/09/seasarcon2015/</link>
+      <link>https://www.grimrose.org/blog/2015/09/seasarcon2015/</link>
       <pubDate>Tue, 29 Sep 2015 01:25:47 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2015/09/seasarcon2015/</guid>
+      <guid>https://www.grimrose.org/blog/2015/09/seasarcon2015/</guid>
       <description>https://event.seasarfoundation.org/sc2015/
 http://seasar.connpass.com/event/19317/
 Seasar2はプロダクトでも使ったことがあるし、Seasar Conferenceがあったおかげで今の自分があると思っているので、参加してきました。
@@ -481,10 +481,10 @@ Seasar2はプロダクトでも使ったことがあるし、Seasar Conference�
     
     <item>
       <title>JUnit Lambda に寄付をしました #fundJUnit</title>
-      <link>https://grimrose.github.io/blog/2015/09/junit-lambda/</link>
+      <link>https://www.grimrose.org/blog/2015/09/junit-lambda/</link>
       <pubDate>Sat, 19 Sep 2015 00:04:27 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2015/09/junit-lambda/</guid>
+      <guid>https://www.grimrose.org/blog/2015/09/junit-lambda/</guid>
       <description>@t_wada さんのツイートから知りましたが、JUnitのプロジェクトが援助を求めているそうです。
  JUnit がクラウドファンディングで援助を求めている。現在フルタイムのメンテナがおらず、 issue 解決や Java8 対応 (特にラムダ式) の余力が無い。現時点の JUnit の問題点や将来像も示されている #fundJUn… http://t.co/o8ijOxTWr2
 &amp;mdash; Takuto Wada (@t_wada) 2015, 9月 16 
@@ -510,10 +510,10 @@ Java8対応で特にDateTime APIでMatcherが早急に欲しい人は、AssertJ�
     
     <item>
       <title>YAPC::Asia Tokyo 2015 に参加してきました。 #yapcasia</title>
-      <link>https://grimrose.github.io/blog/2015/08/yapc-asia-tokyo-2015/</link>
+      <link>https://www.grimrose.org/blog/2015/08/yapc-asia-tokyo-2015/</link>
       <pubDate>Sun, 23 Aug 2015 22:34:34 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2015/08/yapc-asia-tokyo-2015/</guid>
+      <guid>https://www.grimrose.org/blog/2015/08/yapc-asia-tokyo-2015/</guid>
       <description>http://yapcasia.org/2015/
 きっかけ Guest Speakerにそうそうたるメンバーがいらっしゃったのと、PHPをやり始めてから気になった次のスライドがYAPC::Asia Tokyo 2014だったのが気になったので、参加してみようと思いました。
    YAPC::Asia 2014 - 半端なPHPDisでPHPerに陰で笑われないためのPerl Monger向け最新PHP事情  from Junichi Ishida 
@@ -526,10 +526,10 @@ Tシャツやパーカー等のノベルティも楽しみでしたが、ひと�
     
     <item>
       <title>【東京】JJUG ナイトセミナー 「Reactive Streams特集」 に参加してきました。 #jjug</title>
-      <link>https://grimrose.github.io/blog/2015/06/jjug-2015-reactive-streams/</link>
+      <link>https://www.grimrose.org/blog/2015/06/jjug-2015-reactive-streams/</link>
       <pubDate>Sat, 27 Jun 2015 18:19:34 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2015/06/jjug-2015-reactive-streams/</guid>
+      <guid>https://www.grimrose.org/blog/2015/06/jjug-2015-reactive-streams/</guid>
       <description>はじめに https://jjug.doorkeeper.jp/events/26547
 @makingさんから、@okapiesさんと一緒に「Reactive Streams」について話してくれと頼まれましたので、参加してきました。
 元々は、@cero_tさんが発端らしいです。
@@ -558,10 +558,10 @@ JJUGのスタッフ、参加者の皆様、@okapiesさん、ありがとうご�
     
     <item>
       <title>転職して半年が経ちました。</title>
-      <link>https://grimrose.github.io/blog/2015/06/career-change/</link>
+      <link>https://www.grimrose.org/blog/2015/06/career-change/</link>
       <pubDate>Mon, 01 Jun 2015 00:08:51 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2015/06/career-change/</guid>
+      <guid>https://www.grimrose.org/blog/2015/06/career-change/</guid>
       <description>はじめに 2014年12月に転職してから半年経ったので、振り返ってみます。
 退職エントリはこちら
 所属 今は、データ分析チームのエンジニアとして働いています。
@@ -591,10 +591,10 @@ JJUGのスタッフ、参加者の皆様、@okapiesさん、ありがとうご�
     
     <item>
       <title>Machine Learning Casual Talks #3 に参加してきました。 #MCLT</title>
-      <link>https://grimrose.github.io/blog/2015/05/mclt03/</link>
+      <link>https://www.grimrose.org/blog/2015/05/mclt03/</link>
       <pubDate>Mon, 04 May 2015 11:49:15 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2015/05/mclt03/</guid>
+      <guid>https://www.grimrose.org/blog/2015/05/mclt03/</guid>
       <description>http://mlct.connpass.com/event/13995/
 チームの分析官の人が喋ってる内容を実際に運用している話が聞けそうなので、申し込んでみたところ運良く抽選に当たったので、参加してきました。
 ある程度予習をして参加しましたが、やはり勉強不足であることは否めませんでした。
@@ -606,10 +606,10 @@ JJUGのスタッフ、参加者の皆様、@okapiesさん、ありがとうご�
     
     <item>
       <title>Yokohama.groovy #31 に参加してきました。#yokohamagroovy</title>
-      <link>https://grimrose.github.io/blog/2015/04/yokohama-groovy-31/</link>
+      <link>https://www.grimrose.org/blog/2015/04/yokohama-groovy-31/</link>
       <pubDate>Wed, 29 Apr 2015 22:28:34 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2015/04/yokohama-groovy-31/</guid>
+      <guid>https://www.grimrose.org/blog/2015/04/yokohama-groovy-31/</guid>
       <description>http://connpass.com/event/13786/
 プログラミングGROOVY読書会 主催している「プログラミングGROOVY」の読書会の最終回でした。
 2012年に開催されていた読書会の時間数から、おおよそ3回くらいだろうと見積もっていましたが、余裕を持って終えることが出来ました。
@@ -631,10 +631,10 @@ http://connpass.com/event/14584/
     
     <item>
       <title>渋谷JVMに参加してきました。 #渋谷JVM</title>
-      <link>https://grimrose.github.io/blog/2015/04/shibuya-jvm/</link>
+      <link>https://www.grimrose.org/blog/2015/04/shibuya-jvm/</link>
       <pubDate>Tue, 21 Apr 2015 00:05:36 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2015/04/shibuya-jvm/</guid>
+      <guid>https://www.grimrose.org/blog/2015/04/shibuya-jvm/</guid>
       <description>http://d-cube.connpass.com/event/13257/
 JVM言語の集い 初めは、JVMについてのイベントだと思ってました。
 そうではなく、JVM上で動く言語の中でも代表的な言語(Java, Scala, Clojure, Groovy)のエキスパートと呼ばれる人たちが一堂に会する機会が設けられたということで、参加してきました。
@@ -652,10 +652,10 @@ Clojureについて知らなかったところが多く、とても勉強にな�
     
     <item>
       <title>nodeschool tokyo (東京Node学園 入学式) に参加してきました。 #nodeschool_tokyo</title>
-      <link>https://grimrose.github.io/blog/2015/04/node-school/</link>
+      <link>https://www.grimrose.org/blog/2015/04/node-school/</link>
       <pubDate>Sat, 18 Apr 2015 01:00:10 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2015/04/node-school/</guid>
+      <guid>https://www.grimrose.org/blog/2015/04/node-school/</guid>
       <description>http://nodejs.connpass.com/event/13182/
 node.jsを体系だって学ぶ機会がこれまで無かったので、参加してきました。
 nodeschool http://nodeschool.io/index.html
@@ -677,10 +677,10 @@ International Day http://nodeschool.io/international-day/
     
     <item>
       <title>JJUG CCC 2015 Springに参加してきました。 #jjug_ccc</title>
-      <link>https://grimrose.github.io/blog/2015/04/jjug-ccc/</link>
+      <link>https://www.grimrose.org/blog/2015/04/jjug-ccc/</link>
       <pubDate>Wed, 15 Apr 2015 23:02:31 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2015/04/jjug-ccc/</guid>
+      <guid>https://www.grimrose.org/blog/2015/04/jjug-ccc/</guid>
       <description>http://www.java-users.jp/?page_id=1647
 セッション 実は、転職して現場でJavaを書く機会がかなり減っています。
 が、ツールやライブラリ等JVM上で動くプロダクトを使っているので、運用にまつわる事で勉強したいと思い参加しました。
@@ -700,10 +700,10 @@ JJUG、スポンサーの皆様、ありがとうございました。</descript
     
     <item>
       <title>Hugoを使ってみます。</title>
-      <link>https://grimrose.github.io/blog/2015/04/start-with-hugo/</link>
+      <link>https://www.grimrose.org/blog/2015/04/start-with-hugo/</link>
       <pubDate>Mon, 13 Apr 2015 00:25:58 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2015/04/start-with-hugo/</guid>
+      <guid>https://www.grimrose.org/blog/2015/04/start-with-hugo/</guid>
       <description>これまでは、Bloggerで書いていました。
 ですが、下書きから公開まで全てがブラウザに依存しているため、書こうと思ってから書く気力がだんだん落ちて、 下書きが溜まって、最終的に公開しないままいく一方でした。
 テキスト書くときは、AtomとIntelliJ IDEA使っているのですが、 どちらもコマンドエディタからコンソールまでほぼ完結しているので、blogも何とか出来ないかなと思ってました。

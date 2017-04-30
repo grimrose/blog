@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Scalamatsuri on open build/reports/life/index.html</title>
-    <link>https://grimrose.github.io/blog/categories/scalamatsuri/</link>
+    <link>https://www.grimrose.org/blog/categories/scalamatsuri/</link>
     <description>Recent content in Scalamatsuri on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Mon, 08 Feb 2016 20:31:14 +0900</lastBuildDate>
     
-	<atom:link href="https://grimrose.github.io/blog/categories/scalamatsuri/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.grimrose.org/blog/categories/scalamatsuri/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ScalaMatsuri2016に参加してきました。 #ScalaMatsuri</title>
-      <link>https://grimrose.github.io/blog/2016/02/scalamatsuri2016/</link>
+      <link>https://www.grimrose.org/blog/2016/02/scalamatsuri2016/</link>
       <pubDate>Mon, 08 Feb 2016 20:31:14 +0900</pubDate>
       
-      <guid>https://grimrose.github.io/blog/2016/02/scalamatsuri2016/</guid>
+      <guid>https://www.grimrose.org/blog/2016/02/scalamatsuri2016/</guid>
       <description>ScalaMatsuri
 はじまり 前回のScalaMatsuriが楽しかったので、スタッフとして参加してみようと思い飛び込んでみました。
 https://japan-scala-association.doorkeeper.jp/events/23255
