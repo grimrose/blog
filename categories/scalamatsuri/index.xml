@@ -6,10 +6,33 @@
     <description>Recent content in Scalamatsuri on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 08 Feb 2016 20:31:14 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 28 May 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.grimrose.org/blog/categories/scalamatsuri/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Scala Matsuri 2017に参加してきました #ScalaMatsuri</title>
+      <link>https://www.grimrose.org/blog/2017/05/scala-matsuri/</link>
+      <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.grimrose.org/blog/2017/05/scala-matsuri/</guid>
+      <description>はじめに ScalaMatsuri
+今年もスタッフとして、参加してきました。
+ブログを書こうとしてましたが、なかなか踏み出せていなかったのでScala将軍達の後の祭り2017のLTに応募して、 LT駆動でなんとか思い出しながら書いてみました。
+担当 担当したのは以下の内容でした。
+ Web周り 海外スピーカー向けのホテル予約 配信周りの調整  web周り Web周りは、上記のURLに表示するためのコンテンツをGithubで管理していて、スポンサーのロゴや原稿、タイムテーブル等、必要に応じて変更がPull Requestとして上がってくるので、パス等の確認をしてmergeボタンを押してました。
+デプロイはtravis ciが、デプロイ先はGithub pagesなので、デプロイされたらslackに通知が来るので、違和感や位置ずれが無いか確認してました。
+時々、typoなどを気づいてPull Requestをくださる方がいらっしゃってとても助かりました。
+海外スピーカー向けのホテル予約 ホテルの団体予約とか普段の生活では全くやる機会がなかったのですが、前年の担当の方が資料を残してくださったお陰で手順や反省点を踏まえて始めました。
+海外スピーカーに向けてのアナウンスや連絡については、翻訳チームと協力して行い、無事完了することが出来ました。
+配信周りの調整 AbemaTV Developer Conference 2016に参加した祭に、Tech Conferenceでのカンファレンスの動画の配信について問い合わせを受け付けているとお話を伺っていたので、ScalaMatsuriの運営スタッフで話し合った結果、お願いすることになりました。
+当日は、ネットワークの不調等も重なってしまい、お見苦しい点もあり申し訳ありませんでした。次回以降の反省点として共有しておきます。
+当日 当日は、進行やタイムキーパーをやっていました。 スタッフをやっていると聞きたいセッションを聞けるというのはなかなか実現されないことが多いと思われがちですが、調整することが出来ます。 今回は進行とタイムキーパーのセッションが聞いてみたかったのに割り振られていて調整する手間が省けてよかったです。
+おわりに ScalaMatsuriの初社員採用プロジェクト これまでの運営の失敗と成功の歴史 ~ScalaMatsuri 2017を振り返って~で紹介されている社員の方がいて下さったおかげで、 前回に比べて情報共有や交通整理がされるようになりました。
+また、ScalaMatsuri2017（スタッフ）打ち上げの前に、振り返りの機会を設けて今回の反省点を共有して、次回に繋げることが出来ました。
+遅くなってしまいましたが、ご参加いただいた皆さん、ご協賛いただいたスポンサーの皆さん、そして一緒に尽力してくださったスタッフの皆さん、本当にありがとうございました。</description>
+    </item>
     
     <item>
       <title>ScalaMatsuri2016に参加してきました。 #ScalaMatsuri</title>
