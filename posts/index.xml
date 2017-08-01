@@ -6,10 +6,36 @@
     <description>Recent content in Posts on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 28 May 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Aug 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.grimrose.org/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Scala福岡2017に参加してきました #scalafukuoka</title>
+      <link>https://www.grimrose.org/blog/2017/08/scala-fukuoka-2017/</link>
+      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.grimrose.org/blog/2017/08/scala-fukuoka-2017/</guid>
+      <description>はじめに https://scala.connpass.com/event/57941/
+前回のScala福岡が楽しそうだったのと、 福岡に自分の足で行ったことがなかったので、参加してきました。
+セッション Play2 Scalaのハンズオンは、一度もやったことがなかったので、今回はいい機会だと思いそちらを選択しました。
+ハンズオンの準備が完了していなくて、IntelliJへのインポートと依存関係のダウンロードに時間が取られてしまいましたが、 最後まで進めることが出来ました。
+ハンズオンの資料が最後まで進められるように出来ていて助かりました。
+その後は、ずっと同じ部屋で以下のセッションを聴いてました。
+ Akkaちゃんと遊ぼう！ Akka Streams で作るリアルタイムサーバ Backlog が一体いつから Scala を遣っていないと錯覚していた？ ~Java から Scala への移行~  Akka Streamsの話は、仕事でも使っているので身近に感じたのと、ビデオチャットが作れるのを見て、もっと勉強しなきゃと感じました。
+Scalaへの移行についても、仕事でPHPからScalaへ移行している途中なので、移行戦略についてとても勉強になりました。
+LTとparadox LTでlightbend/paradoxの導入について話してみました。
+資料は、https://grimrose.github.io/scala-fukuoka-2017です。
+併せて、レポジトリはgrimrose/scala-fukuoka-2017です。
+資料は、paradoxで作ってみました。
+きっかけとしては、Akkaのドキュメントを読みながら仕事をしていて、Akka HTTPのレイアウトが他のドキュメントと違っていて興味があったからです。
+あとは、ドキュメントを残す際にREADMEだけではうまく説明出来なくなってきたりしたので、Gitlab Pagesでも使えるようなmarkdownをhtmlに出来るツールを探していました。
+今回のLTに向けて検証してみて、十分使えそうだと思えたので、実際に導入してみたいと思いました。
+おわりに 懇親会では、福岡の方々や自分と同様に県外から参加された人たちとScalaの話だけでなくいろいろな話が出来て楽しかったです。
+また、来年行きたいと思います。
+会場を提供してくださった株式会社ヌーラボさん、スポンサーの皆様、参加者の皆様、ありがとうございました。</description>
+    </item>
     
     <item>
       <title>JJUG CCC 2017 Springに参加してきました #jjug_ccc</title>
