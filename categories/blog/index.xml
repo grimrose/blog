@@ -6,10 +6,35 @@
     <description>Recent content in Blog on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 01 Aug 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 17 Sep 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.grimrose.org/blog/categories/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Scala関西 Summit 2017へ参加してきました #scala_ks</title>
+      <link>https://www.grimrose.org/blog/2017/09/scala-kansai-summit/</link>
+      <pubDate>Sun, 17 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.grimrose.org/blog/2017/09/scala-kansai-summit/</guid>
+      <description>はじめに http://summit.scala-kansai.org/
+https://skug.connpass.com/event/62304/
+去年のScala関西 Summit 2016に参加してまた参加したいと思っていました。
+そんな折CfPを受け付けていたので応募したところ受かったので、これまでやってきたことをまとめるいい機会でしたので、発表してきました。
+Scala関西summit #scala_ks のCfP通ったー。初めて関西でしゃべるぞー。
+&amp;mdash; とーます (@grimrose) 2017年7月9日 
+Akka Streamsへ移行しとるんやけどちょっと聞いてや スライド
+発表してきたのは、これまでのプロジェクトでやってきたことと、Akka Streamsをプロジェクトの途中から導入したことで何を考えたのかです。
+幾つか質問を受けていて、その中で出てきたAlpakkaですが、まだakka-stream-alpakka-csvだけ導入していて、akka-stream-alpakka-s3を含めその他のモジュールについてはまだ検証中です。 モジュールによっても開発中だったりするので、ハマりどころもあります。
+初期に導入したScalikeJDBC + SkinnyORMのデータ取り込み処理については、現在のところ他のバッチ処理の優先順位が高く、Akka Streamsの移行対象になってません。
+今回紹介した制約ですが、既存の処理をどうやってAkka Streamsへ繋げるか、移行していくかという課題を元に考えたものなので、これを推奨しているわけではありません。
+自分の発表の前にAkka Streamsのセッションが並んでいて、スタッフのタイムテーブルの組み方に助けていただいたと思っています。 おかげさまで説明や資料については、このセッションに来るくらいだから前のも来てるだろうという前提で作ることが出来ました。
+Akka Streams 関連のセッション、打順が完璧すぎる……
+&amp;mdash; にしかわささき (@nishikawasasaki) 2017年9月9日 
+失敗したなと思ったのは、本番になると緊張して早口になってしまったのと、 それを緩和するために予めスライドにあと何分かを知れるのを仕込んでいたのにもかかわらず、上手く活用出来ず、予想よりも早く終わってしまったことでした。
+セッション 今回参加したの以下のセッションです。
+ ユーザーデータ基盤を１からScalaでつくった話し Scala and Akka apps on Kubernetes in ChatWork Scala の Functional Programming を支える技術 Scala on Docker(AWS ECS) グラフを知って理解するAkka Stream 「Scale with Scala」の道程 Scala on JVM をプロファイリングするツールの紹介 Property Based Testingでドメインロジックをテストする  今回一番印象的だったセッションは、ユーザデータ基盤についての話でした。 今関わっているプロジェクトの未来にも繋がる話だったり、周りを巻き込んでの検証をすすめていく方法など大変参考になりました。</description>
+    </item>
     
     <item>
       <title>Scala福岡2017に参加してきました #scalafukuoka</title>
