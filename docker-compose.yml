@@ -1,4 +1,4 @@
-version: "2"
+version: "3"
 
 services:
   hugo:
@@ -10,3 +10,8 @@ services:
     volumes: 
       - "./:/src"
     command: "server -w --bind 0.0.0.0"
+    networks: 
+      - blog_net
+
+networks: 
+  blog_net:
