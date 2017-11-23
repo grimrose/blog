@@ -6,10 +6,42 @@
     <description>Recent content in Java on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 28 May 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Nov 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.grimrose.org/blog/categories/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JJUG CCC 2017 Fallに参加してきました #jjug_ccc</title>
+      <link>https://www.grimrose.org/blog/2017/11/jjug-ccc-2017/</link>
+      <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.grimrose.org/blog/2017/11/jjug-ccc-2017/</guid>
+      <description>http://www.java-users.jp/ccc2017fall/
+参加したセッション 今回は、午後から参加したので、以下のセッションに参加してきました。
+ モブプロで実施する Cognitive Service &amp;amp; Bot ハッカソン #2 ゴールドマン・サックスにおけるCamundaを用いたビジネスプロセスの可視化とワークフローの自動化 Spring BootとKafkaでCQRSなアプリを動かしてみる Java でつくる本格形態素解析器  今回は、Java以外で面白そうなのと仕事で使えそうなのを選んでみました。
+特に一番印象深かったのCQRSの話でした。
+しーばさんのCQRSの話を聞いて、今の課題をどう伝えたらCQRSの考え方で解決してもらえるかいろいろ思い浮かべてる
+&amp;mdash; とーます (@grimrose) November 18, 2017 
+実際にCQRSが使ったほうがいい課題があるのですが、CQRSを全く知らない人にどうやって伝えたらいいのか考えてました。
+ その後に、公開された資料を元に自分たちの課題を題材に、いろいろ議論しながらモブプロ出来たらいいなぁとふわふわ考えてました。
+アンカンファレンスで話したこと 今回、JJUGでアンカンファレンスが実施されるとのことなので、ScalaMatsuri 2018の宣伝をしてきました。
+「コミュニティの宣伝でもいい？」と相談してみたところ、良い返事がいただけたので、「ScalaMatsuriへのお誘い」ということで出したところ採択されました。
+アンカンファレンスのテーマが決まりました！
+13:30よりL部屋で実施します。ぜひお越しください！
+13:30- プログラミング教育、スキルの伸ばし方について
+14:30- Javaプロセス監視について
+15:45- お仕事のやりがい、コミュニティについて
+16:45- マイクロサービスについて
+17:45- JVM言語について
+&amp;mdash; JJUG (@JJUG) 2017年11月18日 
+15:45からの回に決まったので、話す内容はScalaMatsuriの宣伝で、今年の新しい試みであるScalaMatsuri Tranining Dayの紹介をしようと考えてました。
+実際は、「仕事のやりがい、コミュニティについて」という括りの中でいろいろディスカッションする感じでした。 なので、内容もちょっと変えて、私が知っている範囲ではありますが、Scalaのコミュニティへ参加している人たちの変遷や、 ScalaMatsuriが公開している資料を元にコミュニティやカンファレンスに参加している人たちの変遷や、 コミュニティそのものの成熟度合いとの関係を話しました。
+上手く伝えられたかは実感が無かったのでどこまで宣伝できたか分かりませんが、JJUG CCCに参加している人たちの働いている環境について知る機会が出来たのは、とても良かったです。
+おわりに 今回は、懇親会ではtwitterで知り合った人といろいろ話せたのでよかったです。
+ユーザの導線も上手く誘導できているように感じたので、前回に比べて移動とかが楽になっていたように感じました。
+JJUGのスタッフの皆様、スポンサーの皆様、講演者の皆様、参加者の皆様、ありがとうございました。</description>
+    </item>
     
     <item>
       <title>JJUG CCC 2017 Springに参加してきました #jjug_ccc</title>
