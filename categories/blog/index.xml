@@ -6,10 +6,34 @@
     <description>Recent content in Blog on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 23 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 Dec 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.grimrose.org/blog/categories/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>#現場で役立つシステム設計の原則 の読書会をしました</title>
+      <link>https://www.grimrose.org/blog/2017/12/principal-of-the-system-architecture/</link>
+      <pubDate>Sat, 02 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.grimrose.org/blog/2017/12/principal-of-the-system-architecture/</guid>
+      <description>はじめに 現場で役立つシステム設計の原則 〜変更を楽で安全にするオブジェクト指向の実践技法 を使って、中途入社の研修として読書会をしました。
+若者と現場で役立つシステム設計の原則の読書会を始めた。
+11月中に終わる予定…
+&amp;mdash; とーます (@grimrose) November 7, 2017 
+11月中に終わったので、まとめておこうと思います。
+やってたこと 参加者は私と中途入社の2人だけに限定して、毎日空いている1時間を見つけて開催してました。 進め方は、電子版のpdfをモニタに映しつつ、1時間で進められるとこまで進めていくようにしました。
+第1章　小さくまとめてわかりやすくする 第2章　場合分けのロジックを整理する 第3章　業務ロジックをわかりやすく整理する コードのサンプルがJavaだったので、Scalaだとこう書けるよとか、PHPだとこれが出来ないからツライとか、プロダクションコードがこうなっているのはこの考えだからだよとか、実際のコードを見ながら説明をしていたりしてました。
+第4章　ドメインモデルの考え方で設計する 第5章　アプリケーション機能を組み立てる ドメインオブジェクトを成長させていくには、業務理解と併せてやっていかないといけないから、分析、設計、開発が別れてるようなプロジェクトだと無理だけど、今のプロジェクトはそうじゃないんだよということも伝えていました。
+また、プロダクションコードでイケてない部分も見せながら、この考えを参考にしながら改善していきたいというのも併せて伝えました。
+第6章　データベースの設計とドメインオブジェクト 若者との現場で役立つシステム設計の原則の読書会も6章のデータベースの話が出てきたので、SQLアンチパターン、 immutable data model、 データベース実践入門、CQRS + ESの話を盛り込んだら時間オーバーした
+&amp;mdash; とーます (@grimrose) November 16, 2017 
+データ分析の部署なので、データベースに関する箇所を厚くしたら、盛り込みすぎてしまいました。
+紹介したのは、以下の資料です。
+  データ履歴管理のためのテンポラルデータモデルとReladomoの紹介 #jjug_ccc #ccc_g3   from Hiroshi Ito 
+  イミュータブルデータモデル(入門編)  from Yoshitaka Kawashima 
+  イミュータブルデータモデル(世代編)  from Yoshitaka Kawashima</description>
+    </item>
     
     <item>
       <title>JJUG CCC 2017 Fallに参加してきました #jjug_ccc</title>
