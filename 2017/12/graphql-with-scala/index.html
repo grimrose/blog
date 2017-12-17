@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.grimrose.org/blog/2017/12/graphql-with-scala/" />
+<meta property="og:image" content="https://www.grimrose.org/blog/assets/images/logo.jpg" />
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:site" content="@grimrose">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Sans:400,700" type="text/css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+<link rel="stylesheet" href="https://www.grimrose.org/blog/css/normalize.css">
+<link rel="stylesheet" href="https://www.grimrose.org/blog/css/skeleton.css">
+<link rel="stylesheet" href="https://www.grimrose.org/blog/css/custom.css">
+<link rel="alternate" href="https://www.grimrose.org/blog/index.xml" type="application/rss+xml" title="open build/reports/life/index.html">
+
+<title>GraphQLとScala - open build/reports/life/index.html</title>
+<meta property="og:title"  content="GraphQLとScala - open build/reports/life/index.html" />
+<meta name="twitter:description" content="GraphQL with Scala about Sangria and Graphcool">
+</head>
+<body>
+
+<div class="container">
+
+	<header role="banner">
+		<div class="header-logo">
+			<a href="https://www.grimrose.org/blog/"><img src="https://www.grimrose.org/blog/assets/images/logo.jpg" width="60" height="60"></a>
+		</div>
+		
+	</header>
+
+
+<main role="main">
+    <article itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 class="entry-title" itemprop="headline"><i class="fa fa-book"></i>&nbsp;GraphQLとScala</h1>
+        <span class="entry-meta">
+            <time itemprop="datePublished" datetime=" 2017-12-18">December 18, 2017</time>
+        </span>
+        <span class="entry-meta">
+          
+              
+              
+              <i class="fa fa-pencil"></i>
+              <a class="label" href="https://www.grimrose.org/blog/categories/blog">Blog</a>&nbsp;
+              
+              <i class="fa fa-pencil"></i>
+              <a class="label" href="https://www.grimrose.org/blog/categories/scala">Scala</a>&nbsp;
+              
+              <i class="fa fa-pencil"></i>
+              <a class="label" href="https://www.grimrose.org/blog/categories/graphql">GraphQL</a>&nbsp;
+              
+          
+        </span>
+        <section itemprop="entry-text">
+            
+
+<h2 id="はじめに">はじめに</h2>
+
+<p>この記事は、<a href="https://qiita.com/advent-calendar/2017/scala">Scala Advent Calendar 2017</a>の18日目の記事です。</p>
+
+<p>前日は、<a href="https://qiita.com/esplo">esplo</a>さんによる<a href="https://esplo.net/2017/12/slick-codegen/">slick-codegenの利用例と中身の説明</a>でした。</p>
+
+<p>自分たちのプロジェクトでも<a href="http://graphql.org/">GraphQL</a>をCQRS(Command Query Responsibility Segregation)のQuery側として利用できないかを確認してみたかったので、
+Advent Calendar駆動で調べてみました。</p>
+
+<p>その中で2つ、ScalaとGraphQLに関することを知ることが出来たので紹介します。</p>
+
+<h2 id="sangria-について"><a href="http://sangria-graphql.org/">Sangria</a>について</h2>
+
+<p><a href="https://qiita.com/advent-calendar/2017/graphql">GraphQL Advent Calendar 2017</a>の<a href="https://grimrose.github.io/blog/2017/12/sangria-graphql/">Introduction to Sangria</a>にて紹介しています。</p>
+
+<p>自分たちのプロジェクトでは<a href="https://doc.akka.io/docs/akka-http/current/scala/http/index.html">Akka HTTP</a>を利用しているため、そっちのエンドポイントでやっている記事を探していました。</p>
+
+<h2 id="sangria-と-akka-http"><a href="http://sangria-graphql.org/">Sangria</a>と<a href="https://doc.akka.io/docs/akka-http/current/scala/http/index.html">Akka HTTP</a></h2>
+
+<p><a href="https://blog.scalac.io/akka-http-and-sangria-as-graphql-backend.html">Using Akka HTTP with Sangria as GraphQL backend</a>に詳細な記事がありますので、
+そちらを参照してください。
+ソースコードは、<a href="https://github.com/marioosh/graphql-akka-http">marioosh/graphql-akka-http</a>にあります。
+Sangria, Akka HTTP, Slick, H2という最小構成で出来ていますので、記事を読みながら試すことが出来ます。</p>
+
+<p>もう少し、複雑なStreamベースなサンプルですと、<a href="https://github.com/sangria-graphql/sangria-subscriptions-example">sangria-graphql/sangria-subscriptions-example</a>があります。
+しかし、deprecatedになっている <code>akka.stream.actor.ActorPublisher</code>、<code>akka.stream.actor.ActorSubscriber</code>を使って書かれているため、
+今後のActorを使わないAkka Streamsベースのパターンについては、自分たちで考える必要があります。</p>
+
+<p>上記の<a href="https://doc.akka.io/docs/akka-http/current/scala/http/index.html">Akka HTTP</a>の考えと組み合わせることで上手く行きそうですが、検証の時間が足りませんでしたので、今後の課題として引き続きやっていければと思います。</p>
+
+<h2 id="graphcool-について"><a href="https://www.graph.cool/">Graphcool</a>について</h2>
+
+<p><a href="https://www.graph.cool/">Graphcool</a>は、GraphQLのバックエンドを構築できるサービスです。</p>
+
+<p><a href="https://blog.graph.cool/introducing-the-graphcool-framework-d9edab2a7816">Introducing the Graphcool Framework</a>の記事でもあるように、
+GitHubにOSSとして公開されました。</p>
+
+<p>2017年12月18日時点での最新バージョンは、<code>v0.10.1</code>です。</p>
+
+<p><a href="https://github.com/graphcool/framework/blob/abe58f3437a6d35f7ea68a40c1d85b47ae08f43b/server/README.md">Graphcool Server</a>
+にあるように、<code>docker-compose</code>を使ってローカルでも試せるようになっています。</p>
+
+<p><a href="https://github.com/graphcool/framework/blob/abe58f3437a6d35f7ea68a40c1d85b47ae08f43b/server/project/dependencies.scala">dependencies.scala</a>を
+みると、様々なミドルウェアを駆使していることが分かります。</p>
+
+<p>自前でミドルウェアへのアクセスライブラリを作成していたり、ScalaでのGraphQL Clientを作成していたりと、いろいろ勉強になります。</p>
+
+<p>その他のGraphQLのバックエンドのサービスというと、先日発表された<a href="https://aws.amazon.com/jp/appsync/?nc2=h_mo">AWS AppSync</a>の他にも、
+<a href="https://scaphold.io/">Scaphold.io</a>があったりします。</p>
+
+<p>バックエンドサービスが何をやっているのか知ることで、自分たちで運用するには何が必要なのか、ツラミ等を知ることが出来るので、
+OSSで公開してくれた<a href="https://www.graph.cool/">Graphcool</a>には感謝しています。</p>
+
+<h2 id="おわりに">おわりに</h2>
+
+<p>出来れば何かしら検証したコードを踏まえつつ説明が出来れば良かったのですが、
+知れば知るほど、グラフ構造を持ったオブジェクトとRDBMSの関係、NoSQLの選択、Query側のスケーリング等考えなければいけないことが増えていき、
+検証が進まなくなってしまったので、参照記事の紹介ばかりになってしまいました。</p>
+
+<p>割りとフロントエンドの界隈からGraphQLの話題が上がったりしますが、バックエンドからあまり上がらない理由の一つを知れたような気がします。</p>
+
+<p>とは言え、ScalaとAkkaを使った実際にサービスが運用されているプロダクションのコードを見るのは、とても楽しかったです。</p>
+
+<hr />
+
+        </section>
+        <div class="hr"></div>
+        <div>
+            
+            
+            <div>
+              <i class="fa fa-arrow-right"></i>
+              <a class="next" href="https://www.grimrose.org/blog/2017/12/sangria-graphql/"> Introduction to Sangria</a>
+            </div>
+            
+        </div>
+        <div class="hr"></div>
+<div class="post-share-buttons">
+    
+    <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon"
+       data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img
+            src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20"
+            height="20" style="border: none;"/></a>
+    <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8"
+            async="async"></script>
+    
+    <a class="tumblr-share-button" data-color="blue" data-notes="right" data-locale="ja_JP"
+       href="https://embed.tumblr.com/share"></a>
+    <script>!function (d, s, id) {
+        var js, ajs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://secure.assets.tumblr.com/share-button.js";
+            ajs.parentNode.insertBefore(js, ajs);
+        }
+    }(document, "script", "tumblr-js");</script>
+    
+    <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a>
+    <script>!function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = p + '://platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, 'script', 'twitter-wjs');</script>
+</div>
+
+    </article>
+</main>
+
+
+	<footer role="contentinfo">
+		<div class="hr"></div>
+		<div class="footer-link">
+			
+			<i class="fa fa-twitter-square">
+				<a href="https://twitter.com/grimrose" target="_blank">Twitter</a>
+			</i>
+			
+			
+			<i class="fa fa-github-alt">
+				<a href="https://github.com/grimrose/" target="_blank">GitHub</a>
+			</i>
+			
+		</div>
+		<div class="copyright">Copyright &copy; <a href="https://grimrose.org/">grimrose</a> All rights reserved.</div>
+	</footer>
+
+</div>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
+
