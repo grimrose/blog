@@ -1,5 +1,5 @@
 +++
-date = "2017-12-18T00:00:00Z"
+date = "2017-12-18T00:00:00+09:00"
 draft = false
 title = "GraphQLとScala"
 description = "GraphQL with Scala about Sangria and Graphcool"
