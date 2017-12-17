@@ -2,7 +2,7 @@
 date = "2017-12-18T00:00:00Z"
 draft = false
 title = "GraphQLとScala"
-description = "Sangria"
+description = "GraphQL with Scala -Sangria, Graphcool-"
 categories = ["Blog", "Scala", "GraphQL"]
 slug = "graphql-with-scala"
 +++
