@@ -21,7 +21,7 @@ slug = "retrospect"
 
 今年1年で、Scalaでスクラッチで作っていたシステムから、徐々にAkka Streamsに移行しつつ、
 新しくAkka HTTPを利用したAPIサーバの開発を行っていました。
-その内容については、[Scala関西 Summit 2017へ参加してきました #scala_ks](http://localhost:1313/blog/2017/09/scala-kansai-summit/)にもあるように、
+その内容については、[Scala関西 Summit 2017へ参加してきました #scala_ks](../../../2017/09/scala-kansai-summit/)にもあるように、
 Scala関西で話すことが出来ました。
 今後は、コアな業務ロジックをScalaへ集約して、Akka Streamsへ乗せて、より柔軟性と拡張性を持ったシステムへと改善していければと思っています。
 
