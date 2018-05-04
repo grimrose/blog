@@ -6,10 +6,39 @@
     <description>Recent content in Blog on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 05 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 May 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.grimrose.org/blog/categories/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Scala Matsuri 2018に参加してきました #ScalaMatsuri</title>
+      <link>https://www.grimrose.org/blog/2018/05/scala-matsuri/</link>
+      <pubDate>Fri, 04 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.grimrose.org/blog/2018/05/scala-matsuri/</guid>
+      <description>はじめに ScalaMatsuri
+今年もスタッフとして、参加してきました。
+担当 今回担当したのは、ほぼWeb周り全般でした。
+Web周り 今回も、前年のをベースにしつつ、以下のような改善をしてました。
+ 新たに簡体字と繁体字のトップページに追加 更新コストの削減のためテンプレート化 エラー検知が出来るようにした  特に更新コストの削減のためのテンプレート化は、振り返ってみてやっておいて正解だったと思いました。
+トップページは、開催までの告知や、アンカンファレンス当日でのタイムテーブルの表示等で一番変更が加わるので、 変更に関係ない箇所はどんどん切り出してincludeするようにしておきました。
+アンカンファレンスのタイムテーブルが去年より早く公開出来たのは、個人的に満足でした。 が、コピペミスで一部のセッションの時間帯を間違えていたので、ミスを減らせるような仕組みにしておく必要がありそうです。
+テンプレート化に併せてタイプミスや入力漏れを予め検知出来るようにしたのですが、 jekyllがというよりテンプレートエンジンであるliquidがエラーのメッセージが人に優しくないので、 来年以降は、別の仕組みでなんとか出来るといいかもしれません。
+その他にも、当日指摘を受けて会場までの地図をGoogle Mapのに変えたりしてました。
+ 載ってる地図は新宿だし、会場への道案内はこちら、をみつけたけど懇親会だし、サイトに関してはとにかくひどい。みんなどうやってたどりついてるんや。。。 #ScalaMatsuri
+&amp;mdash; きしだൠ (@kis) March 17, 2018  中の人になると指摘を受けるまで気づけなかったりするので、こういった指摘は本当にありがたいです。
+typoなどを気づいてPull Requestをくださる方がいらっしゃって、とても助かりました。
+ありがとうございました。
+来年への改善点ややりたいこと等をまとめておこうとおもいます。
+当日 当日は、進行やタイムキーパー等をやっていました。
+聞きたいセッションはほぼ聴けたのと、アンカンファレンスでは自分で書いたテーマさ採択されてセッションを受け持つことが出来たので、よかったです。
+ 自分の知りたい事がニッチなので、なにげに unconferenceの方が本番な気がする #scalamatsuri
+&amp;mdash; とーます@悪いオタクらしい (@grimrose) March 17, 2018  アンカンファレンスのセッションでは、以下のような内容のをハンガーフライト形式でやってみました。
+ 16:00からのセッションの概要です。よろしくお願いします。
+ScalaMatsuri 2018 業務システム in Scalaの概要 https://t.co/x6utGcQvYY #scalamatsuri https://t.co/RHu2mnehp5
+&amp;mdash; とーます@悪いオタクらしい (@grimrose) March 18, 2018  きっかけとしては、なかなかWebサービスのように外に見えやすいシステムに比べ、外に見えにくい場所にあるシステムなので、 他の人がどうやっているのか興味があったので、出してみました。</description>
+    </item>
     
     <item>
       <title>BuriKaigi2018 に参加してきました #burikaigi</title>
