@@ -6,10 +6,35 @@
     <description>Recent content in Posts on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 09 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.grimrose.org/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Scala関西 Summit 2018へ参加してきました #scala_ks</title>
+      <link>https://www.grimrose.org/blog/2018/11/scala-kansai-summit/</link>
+      <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.grimrose.org/blog/2018/11/scala-kansai-summit/</guid>
+      <description>はじめに https://2018.scala-kansai.org/
+https://skug.connpass.com/event/100075/
+https://skug.connpass.com/event/99741/
+去年のScala関西 Summit 2017に引き続いて、参加してきました。
+今回は、2日間の開催ということで、1日目のセッションのCfPが通らなかったら、2日目のアンカンファレンスでなにか出来ればと思っていました。
+ Scala関西summit #scala_ks のCfP通ったー。また関西でしゃべるぞ!
+&amp;mdash; とーます@悪いオタクらしい (@grimrose) 2018年9月5日  今回は、Akkaを分散トレーシングで見てみよう というタイトルで、仕事で直面したネタをもとにデモをする内容を考えていました。
+ Scala関西Summit2018 当日のセッションをご紹介します！スピーカー: grimroseさん タイトル: Akkaを分散トレーシングで見てみよう https://t.co/q1JO0weX9f #scala_ks
+&amp;mdash; Scala関西Summit@2018/11/10-11 (@ScalaKansai) 2018年10月22日 今回は自分なりに練に練った文言にしたので、CfP通ってよかった。
+&amp;mdash; とーます@悪いオタクらしい (@grimrose) 2018年9月5日  Akkaを分散トレーシングで見てみよう https://2018.scala-kansai.org/session/#grimrose
+ 「Akkaを分散トレーシングで見てみよう」のスライドを公開しました。#scala_ks Jupyter Notebook Viewer https://t.co/HhnsaZTpVt
+&amp;mdash; とーます@悪いオタクらしい (@grimrose) 2018年11月10日  デモで使用したコードは、grimrose/scala-kansai-summit-2018にあります。
+CfPが通ったあと、Jaegerについてや、OpenCensusについていろいろと調べ回っていました。
+Google Cloud Next &amp;lsquo;18 in Tokyoでは、StackdriverとOpenCensusの開発に携わっている方に、直接質問が出来る機会があってとても助かりました。 その際に教えていただいたのが、以下の動画でした。
+   その他にも調べていく上で多くのことを知ることが出来ました。
+幾つか質問を受けた中で、Akka Streamでも利用出来るのかという話がありました。
+もちろんissueは立っているのですが、現在はAkka HTTPのサポートにとどまっています。 なので、自分で頑張るしか無い状況ですが、親となるio.opencensus.trace.Span をどうやってAkka StreamのGraphに乗せるのかが考えどころだと思います。</description>
+    </item>
     
     <item>
       <title>JJUG CCC 2018 Springに参加してきました #jjug_ccc</title>
