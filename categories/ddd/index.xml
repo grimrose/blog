@@ -19,7 +19,7 @@
       <guid>https://www.grimrose.org/blog/2018/12/ddd/</guid>
       <description>はじめに この記事は、ドメイン駆動設計 Advent Calendar の2日目の記事です。
 1日目は、@tanaka9230 さんの 「DDD」にまつわる諸課題の整理でした。
-3日目は、@bigwheel さんです。
+3日目は、@bigwheel さんの 集約の境界と整合性の維持の仕方に悩んで2ヶ月ぐらい結論を出せていない話です。
 ぐるぐるDDDとは ぐるぐるDDD で検索すると、@haradakiro さんの資料がみつかると思います。
 DDDとScrumを回していくことで、モデリングと実装をしていくやり方です。
    ぐるぐるDDD/Scrum - モデリングと実装のうずまきをまわそう  from Kiro Harada 
