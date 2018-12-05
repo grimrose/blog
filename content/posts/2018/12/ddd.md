@@ -13,7 +13,7 @@ slug = "ddd"
 
 1日目は、[@tanaka9230](https://qiita.com/tanaka9230) さんの [「DDD」にまつわる諸課題の整理](https://qiita.com/tanaka9230/items/05850cda0d867f1b50e9)でした。
 
-3日目は、[@bigwheel](https://qiita.com/bigwheel) さんです。
+3日目は、[@bigwheel](https://qiita.com/bigwheel) さんの [集約の境界と整合性の維持の仕方に悩んで2ヶ月ぐらい結論を出せていない話](https://kbigwheel.hateblo.jp/entry/2018/12/03/aggregate-and-consistency)です。
 
 ## ぐるぐるDDDとは
 
