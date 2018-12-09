@@ -1,8 +1,6 @@
 FROM alpine:latest
 
-MAINTAINER grimrose <grwin7@gmail.com>
-
-ENV HUGO_VERSION=0.40.2
+ENV HUGO_VERSION=0.50
 
 RUN apk add --update wget ca-certificates && \
   cd /tmp/ && \
