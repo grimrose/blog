@@ -6,7 +6,7 @@
     <description>Recent content in Categories on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 01 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.grimrose.org/blog/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Blog</title>
       <link>https://www.grimrose.org/blog/categories/blog/</link>
-      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.grimrose.org/blog/categories/blog/</guid>
       <description></description>
@@ -165,6 +165,15 @@
     </item>
     
     <item>
+      <title>Opencensus</title>
+      <link>https://www.grimrose.org/blog/categories/opencensus/</link>
+      <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.grimrose.org/blog/categories/opencensus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Perl</title>
       <link>https://www.grimrose.org/blog/categories/perl/</link>
       <pubDate>Sun, 23 Aug 2015 22:34:34 +0900</pubDate>
@@ -185,7 +194,7 @@
     <item>
       <title>Scala</title>
       <link>https://www.grimrose.org/blog/categories/scala/</link>
-      <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.grimrose.org/blog/categories/scala/</guid>
       <description></description>

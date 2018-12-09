@@ -6,10 +6,34 @@
     <description>Recent content on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 01 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.grimrose.org/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Japan Container Days v18.12に参加してきました #containerdaysjp</title>
+      <link>https://www.grimrose.org/blog/2018/12/opencensus-scala/</link>
+      <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.grimrose.org/blog/2018/12/opencensus-scala/</guid>
+      <description>はじめに この記事は、Scala Advent Calendar 2018 の9日目のエントリーです。
+8日目は、@yoshiyoshifujiiさんのAkka gRPCを試してみたでした。
+10日目は、@j5ik2oさんです。
+準備の期間を含めて約4ヶ月位 census-ecosystem/opencensus-scala に触れていたので振り返りつつ、 Japan Container Daysの参加した感想を書こうかと思います。
+Japan Container Days v18.12 https://containerdays.jp/
+ .@grimrose による「OpenCensusとJaegerで分散トレーシングを見てみよう」を受け付けました。このプロポーザルを聞いてみたい人はいいねやリツイートでぜひ応援してください！ #containerdaysjp の公募セッション一覧はこちら https://t.co/EEbrgf1bBv
+&amp;mdash; JapanContainerDays (@containerdaysjp) 2018年9月5日  OpenCensusとJaegerで分散トレーシングを見てみよう スライドは、こちらで公開してあります。
+ OpenCensusとJaegerで分散トレーシングを見てみよう のスライドを公開しました。#containerdaysjp #TerraceRoomhttps://t.co/Y9oTfsZ7Yg
+&amp;mdash; とーます@悪いオタクらしい (@grimrose) 2018年12月5日  内容としては、Scala関西 Summit 2018へ参加してきました #scala_ks で話した内容からScalaの要素を削って、OpenCensusの内容を増やしました。
+段取りを間違えてしまって、デモの時間を減らしてしまうという痛恨のミスを犯してしまったのが心残りです。
+ 心残りがあるとすれば、elasticsearchをバックエンドにした理由であるkibanaでfluentdで送ったログとjaegerのtracingが一緒に見られるところまでデモをしたかった…
+&amp;mdash; とーます@悪いオタクらしい (@grimrose) 2018年12月5日  OpenCensus Scalaについて census-ecosystem/opencensus-scala
+Akka-HTTPで使う前にREADME.mdを見てもらうと、 どうやってRouterからSpanを受け取って、Tracingを組み立てて行くことが出来るかが分かります。
+あとは、自分が使いたいExporterの設定をapplication.confで有効にすることで、転送されるようになります。
+0.6.1で利用できるExporterは以下のとおりです。
+ Stackdriver Logging Zipkin Instana  今回紹介したJaegerはZipkinと互換性があるので、転送先をJaegerのCollectorにすることで利用可能になります。</description>
+    </item>
     
     <item>
       <title>ぐるぐるDDDで気をつけてること</title>
