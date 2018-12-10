@@ -20,16 +20,16 @@
         </section>
         <div class="hr"></div>
         <div>
-            {{ if .Prev }}
+            {{ if .NextPage }}
             <div>
-              <a class="previous" href="{{ .Prev.Permalink }}"> {{ .Prev.Title }}</a>
+              <a class="previous" href="{{ .NextPage.Permalink }}"> {{ .NextPage.Title }}</a>
               <i class="fa fa-arrow-left"></i>
             </div>
             {{ end }}
-            {{ if .Next }}
+            {{ if .PrevPage }}
             <div>
               <i class="fa fa-arrow-right"></i>
-              <a class="next" href="{{ .Next.Permalink }}"> {{ .Next.Title }}</a>
+              <a class="next" href="{{ .PrevPage.Permalink }}"> {{ .PrevPage.Title }}</a>
             </div>
             {{ end }}
         </div>
