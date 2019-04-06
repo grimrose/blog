@@ -6,10 +6,30 @@
     <description>Recent content on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 31 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.grimrose.org/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>OpenCensus meetup vol.1 に参加してきました #opencensusjp</title>
+      <link>https://www.grimrose.org/blog/2019/04/opencensus-meetup/</link>
+      <pubDate>Sat, 06 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.grimrose.org/blog/2019/04/opencensus-meetup/</guid>
+      <description>はじめに https://opencensus.connpass.com/event/123885/
+OpenCensusの勉強会の初回ということもあり、他の言語の人達がどのように利用しているか興味があったので、参加してきました。
+スライド    はじめは、自分のこれまで話してきたことと、開発が進んでいるOpenCensus Serviceで何か話せないかと思い、LT枠で登録していました。 が、Observability JapanのDiscordで@ymotongpooさんが発表枠に移って欲しいというお誘いをいただいたので、 Javaの他のライブラリとの比較をふまえた上で、自分が思っている勘所を紹介する内容にしました。
+他の登壇者の発表もとても参考になる内容だったので、興味深かったです。
+まだExporterを自作するまでには至っていないので、研鑽を深めていければと思います。
+スライドで宣伝しましたが、JJUG CCC 2019 SpringでOpenCensusで始める分散トレーシングと監視で話してきます。
+今回の内容に、カスタムメトリクスの取り方をデモをでお見せできればと思いますが、詳細は未定です。
+おわりに やばかった。
+あと、 Observabilityは港区用語 というパワーワードの生まれた現場にいられてよかった。
+ Observabilityは港区用語。俺たちは現実《リアル》を把握していく と表現することで足立区まで到達していける #opencensusjp
+&amp;mdash; わかめ@毎日猫がいる (@vvakame) 2019年4月3日 
+ 次回の開催も楽しみにしています。</description>
+    </item>
     
     <item>
       <title>2018年の振り返り</title>
