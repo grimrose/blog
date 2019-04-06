@@ -18,7 +18,7 @@ OpenCensusの勉強会の初回ということもあり、他の言語の人達�
 > <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRkJSRrJCd6Kv5uSUltrgyXQFNJCG83vShAkJD1RAkkMhGDjqGKVWLuQZP2NfvZUySbyUYBomMf2y5u/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 はじめは、自分のこれまで話してきたことと、開発が進んでいる[OpenCensus Service](https://opencensus.io/service/)で何か話せないかと思い、LT枠で登録していました。
-が、Observability JapanのDiscordで[@ymotongpoo](https://twitter.com/ymotongpoo)さんが発表枠に移って欲しいというお誘いをいただいたので、
+が、[Observability JapanのDiscord](https://discordapp.com/invite/dcvSbt2)で[@ymotongpoo](https://twitter.com/ymotongpoo)さんが発表枠に移って欲しいというお誘いをいただいたので、
 Javaの他のライブラリとの比較をふまえた上で、自分が思っている勘所を紹介する内容にしました。
 
 他の登壇者の発表もとても参考になる内容だったので、興味深かったです。
