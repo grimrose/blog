@@ -12,3 +12,9 @@ down:
 
 up:
 	docker-compose up
+
+TITLE:="title"
+YM=`date +%Y/%m`
+
+post:
+	docker-compose run --rm hugo new posts/${YM}/${TITLE}.md
