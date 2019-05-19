@@ -6,10 +6,41 @@
     <description>Recent content in Java on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 06 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.grimrose.org/blog/categories/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JJUG CCC 2019 Springに参加してきました #jjug_ccc</title>
+      <link>https://www.grimrose.org/blog/2019/05/jjug-ccc-2019/</link>
+      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.grimrose.org/blog/2019/05/jjug-ccc-2019/</guid>
+      <description>はじめに http://www.java-users.jp/ccc2019spring/
+ 「CfPを出さないと約束したな。あれは嘘だ。」
+CfP2本出して片方当選した。
+というわけで、久しぶりにJJUG CCCで話します。
+&amp;mdash; とーますは労働なんかしないで 光合成だけで生きたい (@grimrose) 2019年3月17日  2016年の登壇からしばらく聴く側にいました。
+この1年くらいずっとOpenCensusを触っていましたがJJUG CCCでは話してなかったのと、micrometerを使っているので、そちらもあわせてCfPに出してみました。
+運良くOpenCensusの方が採択されたので、今回はカスタムメトリクスの取り方を調べつつ自分たちのアプリケーションに組み込む方法を勉強できればと思い、いろいろ検証内容を元に発表できればと思っていました。
+発表 OpenCensusで始める分散トレーシングと監視
+   今回の発表のベースとなったのは、Stackdriver担当者の@ymotongpooさんの以下の記事でした。
+ オブザーバビリティ（可観測性）がなぜ必要だと考えるのか
+ その後、ajitofm 42: You must unlearn what you have learnedを聴いたときに感じた内容(ツイートでは43となっているが42の間違い)と、
+ 土日で #ajitofm の40, 43を聞き直して、ここ数ヶ月 trainingやmetricsに興味を持ったのは、必然だったのではないかと考えている
+&amp;mdash; とーますは労働なんかしないで 光合成だけで生きたい (@grimrose) 2019年3月4日  入門 監視を読み終えたので、これらをふまえてOpenCensusを使って実現していく方法とStackdriverによる可視化までを繋げられないかと思い、 構成を練っていました。
+途中でOpenCensus meetup vol.1 で話す機会が得られたので、これまでに得られたOpenCensusのJava実装についてを発表しました。
+残りの期間は、OpenCensusのカスタムメトリクスの取り方とGCP上でStackdriverを利用したデモの作成に取り組んでいました。
+デモで利用したソースコードはこちらにあります。
+https://github.com/grimrose/JJUG-CCC-2019-Spring
+GitHubにpushしたのをトリガーにCloud Buildを利用して、GAEへデプロイをするようにしました。
+GAEは、Stackdriverをそのまま使える環境なのと併せて、Custom Runtimeでやってみたことで、ローカルのデモと同じDocker imageをそのまま利用できたのがとても便利でした。
+opencensus-scala のStatsに関するラッパーが用意されていたので、とても簡単にカスタムメトリクスを作ることが出来ました。
+盛り込んだ内容だったので、かなり駆け足で発表してなんとか収めた感じでした。休憩ポイントを入れることで整える時間が出来たので今後の発表でも継続できればと思います。
+参加したセッション 今回は、以下のセッションに参加してきました。
+ Big Data Exploration with Spark SQL and Java Cloud Native時代の開発環境とアプリケーション基盤 DevOps without Measurement is a Fail Cloud (K)native Java Services &amp;ndash; Deploying your Java services in Serverless World &amp;ndash; The 4 Rules of Simple Design In Functional Programming Project Loom - 限定継続と軽量スレッド Reladomoを使ったトランザクション履歴管理をプロダクトに適用した際のメリット/デメリット/課題など  特に DevOps without Measurement is a Fail はMonitoringについて気になっていたことがいくつかあったので、スライドが公開されたら見直してみたいと思いました。</description>
+    </item>
     
     <item>
       <title>OpenCensus meetup vol.1 に参加してきました #opencensusjp</title>
