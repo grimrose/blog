@@ -6,7 +6,7 @@
     <description>Recent content in Categories on open build/reports/life/index.html</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 19 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 31 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.grimrose.org/blog/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>Blog</title>
       <link>https://www.grimrose.org/blog/categories/blog/</link>
-      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 31 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.grimrose.org/blog/categories/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Life</title>
+      <link>https://www.grimrose.org/blog/categories/life/</link>
+      <pubDate>Fri, 31 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.grimrose.org/blog/categories/life/</guid>
       <description></description>
     </item>
     
@@ -62,15 +71,6 @@
       <pubDate>Fri, 04 May 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.grimrose.org/blog/categories/scalamatsuri/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Life</title>
-      <link>https://www.grimrose.org/blog/categories/life/</link>
-      <pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.grimrose.org/blog/categories/life/</guid>
       <description></description>
     </item>
     
