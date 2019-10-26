@@ -5,31 +5,26 @@
   <url>
     <loc>https://www.grimrose.org/blog/categories/blog/</loc>
     <lastmod>2019-05-31T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.grimrose.org/blog/categories/</loc>
     <lastmod>2019-05-31T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.grimrose.org/blog/categories/life/</loc>
     <lastmod>2019-05-31T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.grimrose.org/blog/posts/</loc>
-    <lastmod>2019-05-31T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.grimrose.org/blog/</loc>
     <lastmod>2019-05-31T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.grimrose.org/blog/posts/</loc>
+    <lastmod>2019-05-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -38,20 +33,18 @@
   </url>
   
   <url>
+    <loc>https://www.grimrose.org/blog/categories/java/</loc>
+    <lastmod>2019-05-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.grimrose.org/blog/2019/05/jjug-ccc-2019/</loc>
     <lastmod>2019-05-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.grimrose.org/blog/categories/java/</loc>
-    <lastmod>2019-05-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.grimrose.org/blog/categories/opencensus/</loc>
     <lastmod>2019-05-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -72,13 +65,11 @@
   <url>
     <loc>https://www.grimrose.org/blog/categories/scala/</loc>
     <lastmod>2018-12-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.grimrose.org/blog/categories/ddd/</loc>
     <lastmod>2018-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -104,7 +95,6 @@
   <url>
     <loc>https://www.grimrose.org/blog/categories/scalamatsuri/</loc>
     <lastmod>2018-05-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -120,7 +110,6 @@
   <url>
     <loc>https://www.grimrose.org/blog/categories/graphql/</loc>
     <lastmod>2017-12-18T00:00:00+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -166,7 +155,6 @@
   <url>
     <loc>https://www.grimrose.org/blog/categories/groovy/</loc>
     <lastmod>2017-04-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -182,7 +170,6 @@
   <url>
     <loc>https://www.grimrose.org/blog/categories/ergodox/</loc>
     <lastmod>2016-12-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -193,7 +180,6 @@
   <url>
     <loc>https://www.grimrose.org/blog/categories/mithril/</loc>
     <lastmod>2016-12-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -204,7 +190,6 @@
   <url>
     <loc>https://www.grimrose.org/blog/categories/typescript/</loc>
     <lastmod>2016-12-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -245,7 +230,6 @@
   <url>
     <loc>https://www.grimrose.org/blog/categories/python/</loc>
     <lastmod>2016-09-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -256,7 +240,6 @@
   <url>
     <loc>https://www.grimrose.org/blog/categories/gradle/</loc>
     <lastmod>2016-05-26T00:00:00+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -277,7 +260,6 @@
   <url>
     <loc>https://www.grimrose.org/blog/categories/spock/</loc>
     <lastmod>2015-12-19T00:00:00+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -288,7 +270,6 @@
   <url>
     <loc>https://www.grimrose.org/blog/categories/clojure/</loc>
     <lastmod>2015-12-14T00:00:00+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -299,13 +280,11 @@
   <url>
     <loc>https://www.grimrose.org/blog/categories/%E5%A4%A7%E9%83%BD%E4%BC%9A%E5%B2%A1%E5%B1%B1/</loc>
     <lastmod>2015-12-13T00:00:00+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.grimrose.org/blog/categories/%E5%BF%98%E5%B9%B4%E4%BC%9A%E8%AD%B0/</loc>
     <lastmod>2015-12-13T00:00:00+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -321,7 +300,6 @@
   <url>
     <loc>https://www.grimrose.org/blog/categories/jjug/</loc>
     <lastmod>2015-11-30T00:00:00+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -332,7 +310,6 @@
   <url>
     <loc>https://www.grimrose.org/blog/categories/seasar/</loc>
     <lastmod>2015-09-29T01:25:47+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -343,7 +320,6 @@
   <url>
     <loc>https://www.grimrose.org/blog/categories/junit/</loc>
     <lastmod>2015-09-19T00:04:27+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -354,13 +330,11 @@
   <url>
     <loc>https://www.grimrose.org/blog/categories/perl/</loc>
     <lastmod>2015-08-23T22:34:34+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.grimrose.org/blog/categories/yapc/</loc>
     <lastmod>2015-08-23T22:34:34+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -381,7 +355,6 @@
   <url>
     <loc>https://www.grimrose.org/blog/categories/machine-learning/</loc>
     <lastmod>2015-05-04T11:49:15+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -397,7 +370,6 @@
   <url>
     <loc>https://www.grimrose.org/blog/categories/jvm/</loc>
     <lastmod>2015-04-21T00:05:36+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -408,13 +380,11 @@
   <url>
     <loc>https://www.grimrose.org/blog/categories/node/</loc>
     <lastmod>2015-04-18T01:00:10+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.grimrose.org/blog/categories/nodeschool/</loc>
     <lastmod>2015-04-18T01:00:10+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -430,7 +400,6 @@
   <url>
     <loc>https://www.grimrose.org/blog/categories/hugo/</loc>
     <lastmod>2015-04-13T00:25:58+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -440,7 +409,6 @@
   
   <url>
     <loc>https://www.grimrose.org/blog/tags/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>
