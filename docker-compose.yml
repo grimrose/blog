@@ -3,15 +3,15 @@ version: "3"
 services:
   hugo:
     build: .
-    ports: 
+    ports:
       - "1313:1313"
-    expose: 
+    expose:
       - 1313
-    volumes: 
+    volumes:
       - "./:/src"
     command: "server -w --bind 0.0.0.0"
-    networks: 
+    networks:
       - blog_net
 
-networks: 
+networks:
   blog_net:
