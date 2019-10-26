@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 
 <main role="main">
-    {{ $paginator := .Paginate (where .Data.Pages "Type" "posts") }}
+    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
     {{ range $paginator.Pages }}
     <article itemscope itemtype="http://schema.org/Blog">
         <h2 class="entry-title" itemprop="headline"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
