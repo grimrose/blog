@@ -1,23 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>GraphQL on open build/reports/life/index.html</title>
-    <link>https://www.grimrose.org/blog/categories/graphql/</link>
-    <description>Recent content in GraphQL on open build/reports/life/index.html</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Mon, 18 Dec 2017 00:00:00 +0900</lastBuildDate>
-    
-	<atom:link href="https://www.grimrose.org/blog/categories/graphql/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>GraphQLとScala</title>
-      <link>https://www.grimrose.org/blog/2017/12/graphql-with-scala/</link>
-      <pubDate>Mon, 18 Dec 2017 00:00:00 +0900</pubDate>
-      
-      <guid>https://www.grimrose.org/blog/2017/12/graphql-with-scala/</guid>
-      <description>はじめに この記事は、Scala Advent Calendar 2017の18日目の記事です。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GraphQL on open build/reports/life/index.html</title><link>https://www.grimrose.org/blog/categories/graphql/</link><description>Recent content in GraphQL on open build/reports/life/index.html</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Mon, 18 Dec 2017 00:00:00 +0900</lastBuildDate><atom:link href="https://www.grimrose.org/blog/categories/graphql/index.xml" rel="self" type="application/rss+xml"/><item><title>GraphQLとScala</title><link>https://www.grimrose.org/blog/2017/12/graphql-with-scala/</link><pubDate>Mon, 18 Dec 2017 00:00:00 +0900</pubDate><guid>https://www.grimrose.org/blog/2017/12/graphql-with-scala/</guid><description>はじめに この記事は、Scala Advent Calendar 2017の18日目の記事です。
 前日は、esploさんによるslick-codegenの利用例と中身の説明でした。
 自分たちのプロジェクトでもGraphQLをCQRS(Command Query Responsibility Segregation)のQuery側として利用できないかを確認してみたかったので、 Advent Calendar駆動で調べてみました。
 その中で2つ、ScalaとGraphQLに関することを知ることが出来たので紹介します。
@@ -34,33 +15,20 @@ dependencies.scalaを みると、様々なミドルウェアを駆使してい�
 自前でミドルウェアへのアクセスライブラリを作成していたり、ScalaでのGraphQL Clientを作成していたりと、いろいろ勉強になります。
 その他のGraphQLのバックエンドのサービスというと、先日発表されたAWS AppSyncの他にも、 Scaphold.ioがあったりします。
 バックエンドサービスが何をやっているのか知ることで、自分たちで運用するには何が必要なのか、ツラミ等を知ることが出来るので、 OSSで公開してくれたGraphcoolには感謝しています。
-おわりに 出来れば何かしら検証したコードを踏まえつつ説明が出来れば良かったのですが、 知れば知るほど、グラフ構造を持ったオブジェクトとRDBMSの関係、NoSQLの選択、Query側のスケーリング等考えなければいけないことが増えていき、 検証が進まなくなってしまったので、参照記事の紹介ばかりになってしまいました。</description>
-    </item>
-    
-    <item>
-      <title>Introduction to Sangria</title>
-      <link>https://www.grimrose.org/blog/2017/12/sangria-graphql/</link>
-      <pubDate>Sun, 17 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.grimrose.org/blog/2017/12/sangria-graphql/</guid>
-      <description>はじめに この記事は、GraphQL Advent Calendar 2017の17日目の記事です。
+おわりに 出来れば何かしら検証したコードを踏まえつつ説明が出来れば良かったのですが、 知れば知るほど、グラフ構造を持ったオブジェクトとRDBMSの関係、NoSQLの選択、Query側のスケーリング等考えなければいけないことが増えていき、 検証が進まなくなってしまったので、参照記事の紹介ばかりになってしまいました。</description></item><item><title>Introduction to Sangria</title><link>https://www.grimrose.org/blog/2017/12/sangria-graphql/</link><pubDate>Sun, 17 Dec 2017 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2017/12/sangria-graphql/</guid><description>はじめに この記事は、GraphQL Advent Calendar 2017の17日目の記事です。
 Sangriaとは 概要 graphql.orgでも紹介されている通り、GraphQLのサーバーサイド実装です。
 Sangriaは、幾つかのモジュールによって構成されていますが、おおよそ以下のような分類が可能です。
- コア JSONパーサー向けのライブラリ Relay用ライブラリ  JSONパーサーに関してなんでこんなにあるんだと他の言語の人は驚くかもしれませんが、 Scalaでは歴史的経緯により様々なJSONパーサーにまつわるライブラリが作られ、そして現在に至っています。
+コア JSONパーサー向けのライブラリ Relay用ライブラリ JSONパーサーに関してなんでこんなにあるんだと他の言語の人は驚くかもしれませんが、 Scalaでは歴史的経緯により様々なJSONパーサーにまつわるライブラリが作られ、そして現在に至っています。
 歴史的経緯については、eed3si9n_jaさんのスライドを参考にしてください。
-  sbt, history of JSON libraries, microservices, and schema evolution (Tokyo ver)  from Eugene Yokota 
+sbt, history of JSON libraries, microservices, and schema evolution (Tokyo ver) from Eugene Yokota
 JSONパーサー自体もバックグラウンドで利用する関数型プログラミング向けのライブラリを選択できるようになっているため、バリエーションは様々です。 なので自分たちの好み、チーム事情に応じたライブラリを使うことが多いです。
 初め方 2017-12-17時点でのリリースバージョンは、v1.3.3です。
 http://sangria-graphql.org/getting-started/
 Sangriaを使ってGraphQLを実装する手順は、以下のとおりです。
- Schemaの定義 Schemaのチェック Akka HTTPやPlayを使ってGraphQLのエンドポイントを用意すること  Define a GraphQL Schema Sangriaでは、Schemaの定義にmacroを用います。
+Schemaの定義 Schemaのチェック Akka HTTPやPlayを使ってGraphQLのエンドポイントを用意すること Define a GraphQL Schema Sangriaでは、Schemaの定義にmacroを用います。
 とはいっても、ボイラープレートになりがちな箇所をSangriaがサポートするような形なので、そこまで複雑なことをやっているわけではありません。
 Schema Execution Sangriaは、Schemaと、エンドポイントで受け取ったGraphQLのクエリを用いて、 Repository(Schemaにて取得の仕方を記載しておく)から目的に応じてExecutorが処理をします。 その際に、文字列からオブジェクトへ変換するInputUnmarshallerやオブジェクトからJSONへ変換するResultMarshallerを暗黙的に渡して、 必要なオブジェクトをJSONにして返すようにしてくれます。
 GraphQLの操作(Query, Mutation, Subscription)に応じて、予めそれぞれSchemaに定義しておきます。
 GraphQLのクエリは、QueryParserがASTへ変換します。 ここでは、Scalaのパーサコンビネータではなく、parboiledが使われています。
 エンドポイントには、Akka HTTPとPlayを用いる方法が紹介されています。
- Akka-http GraphQL Endpoint Play GraphQL Endpoint  他のフレームワークでも、応用は出来ると思いますので、導入も簡単だと思います。</description>
-    </item>
-    
-  </channel>
-</rss>
+Akka-http GraphQL Endpoint Play GraphQL Endpoint 他のフレームワークでも、応用は出来ると思いますので、導入も簡単だと思います。</description></item></channel></rss>

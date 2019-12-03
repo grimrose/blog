@@ -1,31 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Perl on open build/reports/life/index.html</title>
-    <link>https://www.grimrose.org/blog/categories/perl/</link>
-    <description>Recent content in Perl on open build/reports/life/index.html</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Sun, 23 Aug 2015 22:34:34 +0900</lastBuildDate>
-    
-	<atom:link href="https://www.grimrose.org/blog/categories/perl/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>YAPC::Asia Tokyo 2015 に参加してきました。 #yapcasia</title>
-      <link>https://www.grimrose.org/blog/2015/08/yapc-asia-tokyo-2015/</link>
-      <pubDate>Sun, 23 Aug 2015 22:34:34 +0900</pubDate>
-      
-      <guid>https://www.grimrose.org/blog/2015/08/yapc-asia-tokyo-2015/</guid>
-      <description>http://yapcasia.org/2015/
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Perl on open build/reports/life/index.html</title><link>https://www.grimrose.org/blog/categories/perl/</link><description>Recent content in Perl on open build/reports/life/index.html</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sun, 23 Aug 2015 22:34:34 +0900</lastBuildDate><atom:link href="https://www.grimrose.org/blog/categories/perl/index.xml" rel="self" type="application/rss+xml"/><item><title>YAPC::Asia Tokyo 2015 に参加してきました。 #yapcasia</title><link>https://www.grimrose.org/blog/2015/08/yapc-asia-tokyo-2015/</link><pubDate>Sun, 23 Aug 2015 22:34:34 +0900</pubDate><guid>https://www.grimrose.org/blog/2015/08/yapc-asia-tokyo-2015/</guid><description>http://yapcasia.org/2015/
 きっかけ Guest Speakerにそうそうたるメンバーがいらっしゃったのと、PHPをやり始めてから気になった次のスライドがYAPC::Asia Tokyo 2014だったのが気になったので、参加してみようと思いました。
-   YAPC::Asia 2014 - 半端なPHPDisでPHPerに陰で笑われないためのPerl Monger向け最新PHP事情  from Junichi Ishida 
- 個人スポンサー YAPC::Asia Tokyoのチケットは、非常に取りにくいということで、個人スポンサーで申し込みました。
+YAPC::Asia 2014 - 半端なPHPDisでPHPerに陰で笑われないためのPerl Monger向け最新PHP事情 from Junichi Ishida
+個人スポンサー YAPC::Asia Tokyoのチケットは、非常に取りにくいということで、個人スポンサーで申し込みました。
 Tシャツやパーカー等のノベルティも楽しみでしたが、ひとまずチケットを取れたことに安堵してました。
 当日ノベルティとして受け取ったタンブラーは、とても使いやすくて重宝してます。
 セッション 参加したセッションは、以下のとおりです。
-前夜祭  我々にできるOSSとそのコミュニティの育てかた  1日目  メリークリスマス！ Effective ES6 TBD Conway&amp;rsquo;s Law of Distributed Work Electron: Building desktop apps with web technologies Perl6 on JVM: It works??  2日目  ISUCONの勝ち方 我々はどのように冗長化を失敗したのか MySQLで2億件のシリアルデータと格闘したチューニングの話 データ分析基盤を支える技術 Parallelism, Concurrency, and Asynchrony in Perl 6 HTTP2 時代の Web  概ね見たいと思ったセッションを見ることが出来たと思います。</description>
-    </item>
-    
-  </channel>
-</rss>
+前夜祭 我々にできるOSSとそのコミュニティの育てかた 1日目 メリークリスマス！ Effective ES6 TBD Conway&amp;rsquo;s Law of Distributed Work Electron: Building desktop apps with web technologies Perl6 on JVM: It works?? 2日目 ISUCONの勝ち方 我々はどのように冗長化を失敗したのか MySQLで2億件のシリアルデータと格闘したチューニングの話 データ分析基盤を支える技術 Parallelism, Concurrency, and Asynchrony in Perl 6 HTTP2 時代の Web 概ね見たいと思ったセッションを見ることが出来たと思います。</description></item></channel></rss>

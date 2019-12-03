@@ -1,56 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>ScalaMatsuri on open build/reports/life/index.html</title>
-    <link>https://www.grimrose.org/blog/categories/scalamatsuri/</link>
-    <description>Recent content in ScalaMatsuri on open build/reports/life/index.html</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Fri, 04 May 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.grimrose.org/blog/categories/scalamatsuri/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Scala Matsuri 2018に参加してきました #ScalaMatsuri</title>
-      <link>https://www.grimrose.org/blog/2018/05/scala-matsuri/</link>
-      <pubDate>Fri, 04 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.grimrose.org/blog/2018/05/scala-matsuri/</guid>
-      <description>はじめに ScalaMatsuri
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ScalaMatsuri on open build/reports/life/index.html</title><link>https://www.grimrose.org/blog/categories/scalamatsuri/</link><description>Recent content in ScalaMatsuri on open build/reports/life/index.html</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Fri, 04 May 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://www.grimrose.org/blog/categories/scalamatsuri/index.xml" rel="self" type="application/rss+xml"/><item><title>Scala Matsuri 2018に参加してきました #ScalaMatsuri</title><link>https://www.grimrose.org/blog/2018/05/scala-matsuri/</link><pubDate>Fri, 04 May 2018 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2018/05/scala-matsuri/</guid><description>はじめに ScalaMatsuri
 今年もスタッフとして、参加してきました。
 担当 今回担当したのは、ほぼWeb周り全般でした。
 Web周り 今回も、前年のをベースにしつつ、以下のような改善をしてました。
- 新たに簡体字と繁体字のトップページに追加 更新コストの削減のためテンプレート化 エラー検知が出来るようにした  特に更新コストの削減のためのテンプレート化は、振り返ってみてやっておいて正解だったと思いました。
+新たに簡体字と繁体字のトップページに追加 更新コストの削減のためテンプレート化 エラー検知が出来るようにした 特に更新コストの削減のためのテンプレート化は、振り返ってみてやっておいて正解だったと思いました。
 トップページは、開催までの告知や、アンカンファレンス当日でのタイムテーブルの表示等で一番変更が加わるので、 変更に関係ない箇所はどんどん切り出してincludeするようにしておきました。
 アンカンファレンスのタイムテーブルが去年より早く公開出来たのは、個人的に満足でした。 が、コピペミスで一部のセッションの時間帯を間違えていたので、ミスを減らせるような仕組みにしておく必要がありそうです。
 テンプレート化に併せてタイプミスや入力漏れを予め検知出来るようにしたのですが、 jekyllがというよりテンプレートエンジンであるliquidがエラーのメッセージが人に優しくないので、 来年以降は、別の仕組みでなんとか出来るといいかもしれません。
 その他にも、当日指摘を受けて会場までの地図をGoogle Mapのに変えたりしてました。
- 載ってる地図は新宿だし、会場への道案内はこちら、をみつけたけど懇親会だし、サイトに関してはとにかくひどい。みんなどうやってたどりついてるんや。。。 #ScalaMatsuri
-&amp;mdash; きしだൠ (@kis) March 17, 2018  中の人になると指摘を受けるまで気づけなかったりするので、こういった指摘は本当にありがたいです。
+載ってる地図は新宿だし、会場への道案内はこちら、をみつけたけど懇親会だし、サイトに関してはとにかくひどい。みんなどうやってたどりついてるんや。。。 #ScalaMatsuri
+&amp;mdash; きしだൠ (@kis) March 17, 2018 中の人になると指摘を受けるまで気づけなかったりするので、こういった指摘は本当にありがたいです。
 typoなどを気づいてPull Requestをくださる方がいらっしゃって、とても助かりました。
 ありがとうございました。
 来年への改善点ややりたいこと等をまとめておこうとおもいます。
 当日 当日は、進行やタイムキーパー等をやっていました。
 聞きたいセッションはほぼ聴けたのと、アンカンファレンスでは自分で書いたテーマさ採択されてセッションを受け持つことが出来たので、よかったです。
- 自分の知りたい事がニッチなので、なにげに unconferenceの方が本番な気がする #scalamatsuri
-&amp;mdash; とーます@悪いオタクらしい (@grimrose) March 17, 2018  アンカンファレンスのセッションでは、以下のような内容のをハンガーフライト形式でやってみました。
- 16:00からのセッションの概要です。よろしくお願いします。
+自分の知りたい事がニッチなので、なにげに unconferenceの方が本番な気がする #scalamatsuri
+&amp;mdash; とーます@悪いオタクらしい (@grimrose) March 17, 2018 アンカンファレンスのセッションでは、以下のような内容のをハンガーフライト形式でやってみました。
+16:00からのセッションの概要です。よろしくお願いします。
 ScalaMatsuri 2018 業務システム in Scalaの概要 https://t.co/x6utGcQvYY #scalamatsuri https://t.co/RHu2mnehp5
-&amp;mdash; とーます@悪いオタクらしい (@grimrose) March 18, 2018  きっかけとしては、なかなかWebサービスのように外に見えやすいシステムに比べ、外に見えにくい場所にあるシステムなので、 他の人がどうやっているのか興味があったので、出してみました。</description>
-    </item>
-    
-    <item>
-      <title>Scala Matsuri 2017に参加してきました #ScalaMatsuri</title>
-      <link>https://www.grimrose.org/blog/2017/05/scala-matsuri/</link>
-      <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.grimrose.org/blog/2017/05/scala-matsuri/</guid>
-      <description>はじめに ScalaMatsuri
+&amp;mdash; とーます@悪いオタクらしい (@grimrose) March 18, 2018 きっかけとしては、なかなかWebサービスのように外に見えやすいシステムに比べ、外に見えにくい場所にあるシステムなので、 他の人がどうやっているのか興味があったので、出してみました。</description></item><item><title>Scala Matsuri 2017に参加してきました #ScalaMatsuri</title><link>https://www.grimrose.org/blog/2017/05/scala-matsuri/</link><pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2017/05/scala-matsuri/</guid><description>はじめに ScalaMatsuri
 今年もスタッフとして、参加してきました。
 ブログを書こうとしてましたが、なかなか踏み出せていなかったのでScala将軍達の後の祭り2017のLTに応募して、 LT駆動でなんとか思い出しながら書いてみました。
 担当 担当したのは以下の内容でした。
- Web周り 海外スピーカー向けのホテル予約 配信周りの調整  web周り Web周りは、上記のURLに表示するためのコンテンツをGithubで管理していて、スポンサーのロゴや原稿、タイムテーブル等、必要に応じて変更がPull Requestとして上がってくるので、パス等の確認をしてmergeボタンを押してました。
+Web周り 海外スピーカー向けのホテル予約 配信周りの調整 web周り Web周りは、上記のURLに表示するためのコンテンツをGithubで管理していて、スポンサーのロゴや原稿、タイムテーブル等、必要に応じて変更がPull Requestとして上がってくるので、パス等の確認をしてmergeボタンを押してました。
 デプロイはtravis ciが、デプロイ先はGithub pagesなので、デプロイされたらslackに通知が来るので、違和感や位置ずれが無いか確認してました。
 時々、typoなどを気づいてPull Requestをくださる方がいらっしゃってとても助かりました。
 海外スピーカー向けのホテル予約 ホテルの団体予約とか普段の生活では全くやる機会がなかったのですが、前年の担当の方が資料を残してくださったお陰で手順や反省点を踏まえて始めました。
@@ -60,16 +32,7 @@ ScalaMatsuri 2018 業務システム in Scalaの概要 https://t.co/x6utGcQvYY #
 当日 当日は、進行やタイムキーパーをやっていました。 スタッフをやっていると聞きたいセッションを聞けるというのはなかなか実現されないことが多いと思われがちですが、調整することが出来ます。 今回は進行とタイムキーパーのセッションが聞いてみたかったのに割り振られていて調整する手間が省けてよかったです。
 おわりに ScalaMatsuriの初社員採用プロジェクト これまでの運営の失敗と成功の歴史 ~ScalaMatsuri 2017を振り返って~で紹介されている社員の方がいて下さったおかげで、 前回に比べて情報共有や交通整理がされるようになりました。
 また、ScalaMatsuri2017（スタッフ）打ち上げの前に、振り返りの機会を設けて今回の反省点を共有して、次回に繋げることが出来ました。
-遅くなってしまいましたが、ご参加いただいた皆さん、ご協賛いただいたスポンサーの皆さん、そして一緒に尽力してくださったスタッフの皆さん、本当にありがとうございました。</description>
-    </item>
-    
-    <item>
-      <title>ScalaMatsuri2016に参加してきました。 #ScalaMatsuri</title>
-      <link>https://www.grimrose.org/blog/2016/02/scalamatsuri2016/</link>
-      <pubDate>Mon, 08 Feb 2016 20:31:14 +0900</pubDate>
-      
-      <guid>https://www.grimrose.org/blog/2016/02/scalamatsuri2016/</guid>
-      <description>ScalaMatsuri
+遅くなってしまいましたが、ご参加いただいた皆さん、ご協賛いただいたスポンサーの皆さん、そして一緒に尽力してくださったスタッフの皆さん、本当にありがとうございました。</description></item><item><title>ScalaMatsuri2016に参加してきました。 #ScalaMatsuri</title><link>https://www.grimrose.org/blog/2016/02/scalamatsuri2016/</link><pubDate>Mon, 08 Feb 2016 20:31:14 +0900</pubDate><guid>https://www.grimrose.org/blog/2016/02/scalamatsuri2016/</guid><description>ScalaMatsuri
 はじまり 前回のScalaMatsuriが楽しかったので、スタッフとして参加してみようと思い飛び込んでみました。
 https://japan-scala-association.doorkeeper.jp/events/23255
 スタッフとして 約半年関わってみて、ここまで大きなカンファレンスの裏側をScalaのコミュニティの人たちと一緒に体験できたのは、正直楽しかったです。
@@ -79,8 +42,4 @@ https://japan-scala-association.doorkeeper.jp/events/23255
 ですが、短い時間でとっさにフレーズが出てこなくて慌てていて、相手にもその雰囲気が伝わるので申し訳ない気になって、さらにパニクるといった感じでした。
 ジェスチャーや一緒に対応してくれていた人に助けてもらったり、最終的に英語が話せるスタッフの人にお願いしてなんとかしました。
 おわりに まだ、残務がいろいろあって終わっていませんが、次回があるのならまたスタッフとして参加してみたいと思います。
-ご参加いただいた皆さん、ご協賛いただいたスポンサーの皆さん、そして一緒に尽力してくださったスタッフの皆さん、本当にありがとうございました。</description>
-    </item>
-    
-  </channel>
-</rss>
+ご参加いただいた皆さん、ご協賛いただいたスポンサーの皆さん、そして一緒に尽力してくださったスタッフの皆さん、本当にありがとうございました。</description></item></channel></rss>

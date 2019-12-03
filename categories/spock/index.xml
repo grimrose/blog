@@ -1,28 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Spock on open build/reports/life/index.html</title>
-    <link>https://www.grimrose.org/blog/categories/spock/</link>
-    <description>Recent content in Spock on open build/reports/life/index.html</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Sat, 19 Dec 2015 00:00:00 +0900</lastBuildDate>
-    
-	<atom:link href="https://www.grimrose.org/blog/categories/spock/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Spock Frameworkに関する電子書籍たち</title>
-      <link>https://www.grimrose.org/blog/2015/12/gadvent-2015/</link>
-      <pubDate>Sat, 19 Dec 2015 00:00:00 +0900</pubDate>
-      
-      <guid>https://www.grimrose.org/blog/2015/12/gadvent-2015/</guid>
-      <description>はじめに この記事は、G* Advent Calendar 2015の19日目のエントリです。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Spock on open build/reports/life/index.html</title><link>https://www.grimrose.org/blog/categories/spock/</link><description>Recent content in Spock on open build/reports/life/index.html</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sat, 19 Dec 2015 00:00:00 +0900</lastBuildDate><atom:link href="https://www.grimrose.org/blog/categories/spock/index.xml" rel="self" type="application/rss+xml"/><item><title>Spock Frameworkに関する電子書籍たち</title><link>https://www.grimrose.org/blog/2015/12/gadvent-2015/</link><pubDate>Sat, 19 Dec 2015 00:00:00 +0900</pubDate><guid>https://www.grimrose.org/blog/2015/12/gadvent-2015/</guid><description>はじめに この記事は、G* Advent Calendar 2015の19日目のエントリです。
 Spockについて Spock Frameworkは、JavaやGroovyで作られたアプリケーション向けのテスティングフレームワークです。
 個人的にSpock Frameworkが好きな理由の一つは、power-assert機能です。
 power-assertが他の言語のテスティングフレームワークでも取り入れられていったのは、覚えるAPIが少ない上にテストで失敗した時の情報が分かりやすいからだと思います。
- アサーション失敗時の情報量を大幅に増やすことができるPower Assertの系譜
- 仕事ではScalaTestを使っていますが、 power-assertのように使えるDiagrammedAssertionsをメインに使ってます。
+アサーション失敗時の情報量を大幅に増やすことができるPower Assertの系譜
+仕事ではScalaTestを使っていますが、 power-assertのように使えるDiagrammedAssertionsをメインに使ってます。
 その他にもパラメタライズドテストが書きやすかったり、Given-When-Thenと振る舞いを分かりやすく書ける機能があったりと、開発者がテストを書くのを助けてくれるのがとても好きです。
 2015年のSpock Frameworkと言えば、なんと言ってもついに1.0がリリースされたのことでしょう。
 Google Codeが終了するするにあたって、さまざまな事が一気に前進したように思えます。
@@ -32,12 +13,8 @@ Spockを題材とした電子書籍 日本でも利用されている方が増�
 公式のリファレンスが充実しているので困ることは少ないですが、やはり自分たちのユースケースに近いサンプルがあるのが望ましいと思います。
 そういう場合は書籍の出番となりますが、今回は入手しやすい電子書籍を探してみました。
 普段利用している電子書籍を購入できるサイトで、Spockに関する書籍が見つかったのは、以下のとおりです。
- O&amp;rsquo;Reilly Manning Publications Leanpub  O&amp;rsquo;Reillyは有名なので割愛するとして、Manning PublicationsはGroovy In Actionや Grails in Actionで以前からGroovyに関する書籍を取り扱っているのは知ってました。
+O&amp;rsquo;Reilly Manning Publications Leanpub O&amp;rsquo;Reillyは有名なので割愛するとして、Manning PublicationsはGroovy In Actionや Grails in Actionで以前からGroovyに関する書籍を取り扱っているのは知ってました。
 注目したいのは、Leanpubで以前Everyday Rails - RSpecによるRailsテスト入門を購入した際に利用していました。
 Groovyについて困っている時やどう書いたらいいのか分からない時にMessages from mrhakiで探していますが、 その著者がLeanpubでGroovy Goodness NotebookやGradle Goodness Notebookといった Groovyに関する書籍を販売しており、その一つにSpockに関するものもありました。
 購入したもの これまで購入したのは、以下の3冊です。
- Spocklight Notebook Groovy in Action, Second Edition Spock: Up and Running  まずSpocklight Notebookですが、Leanpubで購入できます。実はWebで全部見れてしまう上に最低価格が$0なので実質Freeなのです。 中身もユースケース毎に細かく分かれているため、自分たちの求めている内容がきっとあると思います。</description>
-    </item>
-    
-  </channel>
-</rss>
+Spocklight Notebook Groovy in Action, Second Edition Spock: Up and Running まずSpocklight Notebookですが、Leanpubで購入できます。実はWebで全部見れてしまう上に最低価格が$0なので実質Freeなのです。 中身もユースケース毎に細かく分かれているため、自分たちの求めている内容がきっとあると思います。</description></item></channel></rss>

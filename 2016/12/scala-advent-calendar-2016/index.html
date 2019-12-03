@@ -1,105 +1,13 @@
-<!DOCTYPE html>
-<html lang="ja" prefix="og: http://ogp.me/ns#">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.grimrose.org/blog/2016/12/scala-advent-calendar-2016/" />
-<meta property="og:image" content="https://www.grimrose.org/blog/assets/images/logo.jpg" />
-<meta property="og:locale" content="ja_JP">
-<meta name="twitter:site" content="@grimrose">
-<meta name="twitter:card" content="summary">
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Sans:400,700" type="text/css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/github.min.css">
-<link rel="stylesheet" href="https://www.grimrose.org/blog/css/normalize.css">
-<link rel="stylesheet" href="https://www.grimrose.org/blog/css/skeleton.css">
-<link rel="stylesheet" href="https://www.grimrose.org/blog/css/custom.css">
-<link rel="alternate" href="https://www.grimrose.org/blog/index.xml" type="application/rss+xml" title="open build/reports/life/index.html">
-
-<title>ScalikeJDBCを使ってAmazon Athenaへアクセスしてみた - open build/reports/life/index.html</title>
-<meta property="og:title"  content="ScalikeJDBCを使ってAmazon Athenaへアクセスしてみた - open build/reports/life/index.html" />
-<meta name="twitter:description" content="ScalikeJDBC and Amazon Athena">
-</head>
-<body>
-
-<div class="container">
-
-	<header role="banner">
-		<div class="header-logo">
-			<a href="https://www.grimrose.org/blog/"><img src="https://www.grimrose.org/blog/assets/images/logo.jpg" width="60" height="60"></a>
-		</div>
-		
-	</header>
-
-
-<main role="main">
-    <article itemscope itemtype="http://schema.org/BlogPosting">
-        <h1 class="entry-title" itemprop="headline"><i class="fa fa-book"></i>&nbsp;ScalikeJDBCを使ってAmazon Athenaへアクセスしてみた</h1>
-        <span class="entry-meta">
-            <time itemprop="datePublished" datetime=" 2016-12-11">December 11, 2016</time>
-        </span>
-        <span class="entry-meta">
-          
-              
-              
-              <i class="fa fa-pencil"></i>
-              <a class="label" href="https://www.grimrose.org/blog/categories/blog">Blog</a>&nbsp;
-              
-              <i class="fa fa-pencil"></i>
-              <a class="label" href="https://www.grimrose.org/blog/categories/scala">Scala</a>&nbsp;
-              
-          
-        </span>
-        <section itemprop="entry-text">
-            
-
-<h2 id="はじめに">はじめに</h2>
-
-<p>この記事は、<a href="http://qiita.com/advent-calendar/2016/scala">Scala Advent Calendar 2016</a>の11日目のエントリです。</p>
-
-<p>10日目 &gt; <a href="http://qiita.com/ponkotuy">ponkotuy</a>さんの<a href="http://qiita.com/ponkotuy/items/7a293436c68ebfca0472">SkinnyORMのjoin定義について</a>です。</p>
-
-<p>12日目 &gt; <a href="http://qiita.com/aoiroaoino">aoiroaoino</a>さんの<a href="http://aoino.hatenablog.com/entry/2016/12/13/034121">Scala関西 Summit 2016 で Lens/Prism について発表してきた</a>です。</p>
-
-<h2 id="scalikejdbcについて">ScalikeJDBCについて</h2>
-
-<p><a href="http://scalikejdbc.org/">ScalikeJDBC</a>は、SQLを使ってDBにアクセスしたい場合にとても使いやすいライブラリです。</p>
-
-<h2 id="amazon-athenaについて">Amazon Athenaについて</h2>
-
-<p>AWS re:Invent 2016で発表された新しいサービスです。</p>
-
-<p>詳細については、
-<a href="https://aws.amazon.com/jp/blogs/news/amazon-athena-interactive-sql-queries-for-data-in-amazon-s3/">Amazon Athena – Amazon S3上のデータに対話的にSQLクエリを</a>
-や、<a href="http://dev.classmethod.jp/cloud/aws/amazon-athena-accessing-amazon-athena-with-jdbc/">AthenaのJDBCドライバを使ってS3のデータにSQL Workbench経由でアクセスする #reinvent #athena</a>
-を見ていただければと思います。</p>
-
-<p>S3に保存したデータに対してスキーマを定義してSQLでアクセスできるようになるのは、今後の自分の仕事にもつながってくるサービスでもあるので注目しています。</p>
-
-<h2 id="アクセスしてみた">アクセスしてみた</h2>
-
-<p>検証したサンプルコードはこちらです。</p>
-
-<p><a href="https://github.com/grimrose/Scala-Advent-Calendar-2016">grimrose/Scala-Advent-Calendar-2016</a></p>
-
-<p>まずはじめに遭遇したのは、<code>auto commit</code>が常にONにするのが想定されているということでした。</p>
-
-<p>遭遇した例外は、以下のような内容でした。</p>
-
-<pre><code>Exception encountered when invoking run on a nested suite - Failed to initialize pool: Disabling auto-commit mode not supported
+<!doctype html><html lang=ja prefix="og: http://ogp.me/ns#"><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:type" content="article"><meta property="og:url" content="https://www.grimrose.org/blog/2016/12/scala-advent-calendar-2016/"><meta property="og:image" content="https://www.grimrose.org/blog/assets/images/logo.jpg"><meta property="og:locale" content="ja_JP"><meta name=twitter:site content="@grimrose"><meta name=twitter:card content="summary"><link rel=stylesheet href="//fonts.googleapis.com/css?family=PT+Sans:400,700" type=text/css><link rel=stylesheet href=//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/github.min.css><link rel=stylesheet href=https://www.grimrose.org/blog/css/normalize.css><link rel=stylesheet href=https://www.grimrose.org/blog/css/skeleton.css><link rel=stylesheet href=https://www.grimrose.org/blog/css/custom.css><link rel=alternate href=https://www.grimrose.org/blog/index.xml type=application/rss+xml title="open build/reports/life/index.html"><title>ScalikeJDBCを使ってAmazon Athenaへアクセスしてみた - open build/reports/life/index.html</title><meta property="og:title" content="ScalikeJDBCを使ってAmazon Athenaへアクセスしてみた - open build/reports/life/index.html"><meta name=twitter:description content="ScalikeJDBC and Amazon Athena"></head><body><div class=container><header role=banner><div class=header-logo><a href=https://www.grimrose.org/blog/><img src=https://www.grimrose.org/blog/assets/images/logo.jpg width=60 height=60></a></div></header><main role=main><article itemscope itemtype=http://schema.org/BlogPosting><h1 class=entry-title itemprop=headline><i class="fa fa-book"></i>&nbsp;ScalikeJDBCを使ってAmazon Athenaへアクセスしてみた</h1><span class=entry-meta><time itemprop=datePublished datetime=2016-12-11>December 11, 2016</time></span>
+<span class=entry-meta><i class="fa fa-pencil"></i><a class=label href=https://www.grimrose.org/blog/categories/blog>Blog</a>&nbsp;
+<i class="fa fa-pencil"></i><a class=label href=https://www.grimrose.org/blog/categories/scala>Scala</a>&nbsp;</span><section itemprop=entry-text><h2 id=はじめに>はじめに</h2><p>この記事は、<a href=http://qiita.com/advent-calendar/2016/scala>Scala Advent Calendar 2016</a>の11日目のエントリです。</p><p>10日目 &gt; <a href=http://qiita.com/ponkotuy>ponkotuy</a>さんの<a href=http://qiita.com/ponkotuy/items/7a293436c68ebfca0472>SkinnyORMのjoin定義について</a>です。</p><p>12日目 &gt; <a href=http://qiita.com/aoiroaoino>aoiroaoino</a>さんの<a href=http://aoino.hatenablog.com/entry/2016/12/13/034121>Scala関西 Summit 2016 で Lens/Prism について発表してきた</a>です。</p><h2 id=scalikejdbcについて>ScalikeJDBCについて</h2><p><a href=http://scalikejdbc.org/>ScalikeJDBC</a>は、SQLを使ってDBにアクセスしたい場合にとても使いやすいライブラリです。</p><h2 id=amazon-athenaについて>Amazon Athenaについて</h2><p>AWS re:Invent 2016で発表された新しいサービスです。</p><p>詳細については、
+<a href=https://aws.amazon.com/jp/blogs/news/amazon-athena-interactive-sql-queries-for-data-in-amazon-s3/>Amazon Athena – Amazon S3上のデータに対話的にSQLクエリを</a>
+や、<a href=http://dev.classmethod.jp/cloud/aws/amazon-athena-accessing-amazon-athena-with-jdbc/>AthenaのJDBCドライバを使ってS3のデータにSQL Workbench経由でアクセスする #reinvent #athena</a>
+を見ていただければと思います。</p><p>S3に保存したデータに対してスキーマを定義してSQLでアクセスできるようになるのは、今後の自分の仕事にもつながってくるサービスでもあるので注目しています。</p><h2 id=アクセスしてみた>アクセスしてみた</h2><p>検証したサンプルコードはこちらです。</p><p><a href=https://github.com/grimrose/Scala-Advent-Calendar-2016>grimrose/Scala-Advent-Calendar-2016</a></p><p>まずはじめに遭遇したのは、<code>auto commit</code>が常にONにするのが想定されているということでした。</p><p>遭遇した例外は、以下のような内容でした。</p><pre><code>Exception encountered when invoking run on a nested suite - Failed to initialize pool: Disabling auto-commit mode not supported
 com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Disabling auto-commit mode not supported
-</code></pre>
-
-<p>仕方ないので、以下のようにして、<code>auto commit</code>を<code>true</code>へ変えました。</p>
-
-<pre><code class="language-scala">val config = new HikariConfig()
+</code></pre><p>仕方ないので、以下のようにして、<code>auto commit</code>を<code>true</code>へ変えました。</p><pre><code class=language-scala>val config = new HikariConfig()
 config.setAutoCommit(true)
-</code></pre>
-
-<p>例えば、ScalikeJDBCでは、読み取り専用のクエリを書きたい場合は、以下のようなコードを書きます。</p>
-
-<pre><code class="language-scala">// サンプルのため敢えて文字列で
+</code></pre><p>例えば、ScalikeJDBCでは、読み取り専用のクエリを書きたい場合は、以下のようなコードを書きます。</p><pre><code class=language-scala>// サンプルのため敢えて文字列で
 val from = &quot;2014-07-05&quot;
 val to = &quot;2014-07-05&quot;
 
@@ -109,21 +17,9 @@ val results = DB readOnly { implicit session: DBSession =&gt;
     .list().apply()
 }
 results.foreach(println)
-</code></pre>
-
-<p>しかしながら、これを実行すると以下のような例外が発生します。</p>
-
-<pre><code>Method Connection.prepareStatement is not yet implemented
+</code></pre><p>しかしながら、これを実行すると以下のような例外が発生します。</p><pre><code>Method Connection.prepareStatement is not yet implemented
 com.amazonaws.athena.jdbc.NotImplementedException: Method Connection.prepareStatement is not yet implemented
-</code></pre>
-
-<p>そう、<code>PreparedStatement</code>が実装されていないのです。</p>
-
-<p>仕方ないので、JDBCのナマの<code>Statement</code>を生成する必要があります。</p>
-
-<p>最終的に以下のようなコードにすることで、ようやく通るようになりました。</p>
-
-<pre><code class="language-scala">using(ConnectionPool.borrow()) { conn ⇒
+</code></pre><p>そう、<code>PreparedStatement</code>が実装されていないのです。</p><p>仕方ないので、JDBCのナマの<code>Statement</code>を生成する必要があります。</p><p>最終的に以下のようなコードにすることで、ようやく通るようになりました。</p><pre><code class=language-scala>using(ConnectionPool.borrow()) { conn ⇒
   using(conn.createStatement()) { stmt ⇒
     // language=SQL
     val sql =
@@ -150,105 +46,10 @@ com.amazonaws.athena.jdbc.NotImplementedException: Method Connection.prepareStat
     result.foreach(println)
   }
 }
-</code></pre>
-
-<p>久しぶりにナマのJDBCを触りましたが、過去の記憶を呼び覚まされて頭がウッとなりました。</p>
-
-<p>あと、closeし忘れが無いか確認してましたが、<code>ResultSet</code>は<code>Statement</code>がcloseされるときにcloseされるのも、
-指摘いただいて改めて認識しました。</p>
-
-<h2 id="おわりに">おわりに</h2>
-
-<p>JDBC Driverが提供されているとはいえ、まだいろいろ実装されていない箇所が見受けられたりなど、これからの部分が多いと思いました。</p>
-
-<p>しかしながら、サービス提供開始時にここまでのものをリリースするのはさすがだと感じました。</p>
-
-<p>とはいえ、Maven Centralにも無い状況では、ワークフローへ組み込むのは時期尚早だと思います。</p>
-
-<p>結果はS3にcsvの形式で出力されますし、ナマとはいえJDBCを使えるので、<code>embulk</code>も使えるのではないかと思いますので、
-今後も期待できるサービスになるのではないかと思います。</p>
-
-        </section>
-        <div class="hr"></div>
-        <div>
-            
-            <div>
-              <a class="previous" href="https://www.grimrose.org/blog/2016/12/mithril/"> Mithril.jsをTypescript2.xで書いてみよう</a>
-              <i class="fa fa-arrow-left"></i>
-            </div>
-            
-            
-            <div>
-              <i class="fa fa-arrow-right"></i>
-              <a class="next" href="https://www.grimrose.org/blog/2016/12/gadvent-2016/"> GParsのActorでアクターモデルに入門する</a>
-            </div>
-            
-        </div>
-        <div class="hr"></div>
-<div class="post-share-buttons">
-    
-    <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon"
-       data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img
-            src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20"
-            height="20" style="border: none;"/></a>
-    <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8"
-            async="async"></script>
-    
-    <a class="tumblr-share-button" data-color="blue" data-notes="right" data-locale="ja_JP"
-       href="https://embed.tumblr.com/share"></a>
-    <script>!function (d, s, id) {
-        var js, ajs = d.getElementsByTagName(s)[0];
-        if (!d.getElementById(id)) {
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "https://secure.assets.tumblr.com/share-button.js";
-            ajs.parentNode.insertBefore(js, ajs);
-        }
-    }(document, "script", "tumblr-js");</script>
-    
-    <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a>
-    <script>!function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-        if (!d.getElementById(id)) {
-            js = d.createElement(s);
-            js.id = id;
-            js.src = p + '://platform.twitter.com/widgets.js';
-            fjs.parentNode.insertBefore(js, fjs);
-        }
-    }(document, 'script', 'twitter-wjs');</script>
-</div>
-
-    </article>
-</main>
-
-
-	<footer role="contentinfo">
-		<div class="hr"></div>
-		<div class="footer-link">
-			
-			<i class="fa fa-twitter-square">
-				<a href="https://twitter.com/grimrose" target="_blank">Twitter</a>
-			</i>
-			
-			
-			<i class="fa fa-github-alt">
-				<a href="https://github.com/grimrose/" target="_blank">GitHub</a>
-			</i>
-			
-		</div>
-		<div class="copyright">Copyright &copy; <a href="https://grimrose.org/">grimrose</a> All rights reserved.</div>
-	</footer>
-
-</div>
-
-
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/languages/scala.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/languages/groovy.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/languages/shell.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
-</body>
-</html>
-
+</code></pre><p>久しぶりにナマのJDBCを触りましたが、過去の記憶を呼び覚まされて頭がウッとなりました。</p><p>あと、closeし忘れが無いか確認してましたが、<code>ResultSet</code>は<code>Statement</code>がcloseされるときにcloseされるのも、
+指摘いただいて改めて認識しました。</p><h2 id=おわりに>おわりに</h2><p>JDBC Driverが提供されているとはいえ、まだいろいろ実装されていない箇所が見受けられたりなど、これからの部分が多いと思いました。</p><p>しかしながら、サービス提供開始時にここまでのものをリリースするのはさすがだと感じました。</p><p>とはいえ、Maven Centralにも無い状況では、ワークフローへ組み込むのは時期尚早だと思います。</p><p>結果はS3にcsvの形式で出力されますし、ナマとはいえJDBCを使えるので、<code>embulk</code>も使えるのではないかと思いますので、
+今後も期待できるサービスになるのではないかと思います。</p></section><div class=hr></div><div><div><a class=previous href=https://www.grimrose.org/blog/2016/12/mithril/>Mithril.jsをTypescript2.xで書いてみよう</a>
+<i class="fa fa-arrow-left"></i></div><div><i class="fa fa-arrow-right"></i><a class=next href=https://www.grimrose.org/blog/2016/12/gadvent-2016/>GParsのActorでアクターモデルに入門する</a></div></div><div class=hr></div><div class=post-share-buttons><a href=http://b.hatena.ne.jp/entry/ class=hatena-bookmark-button data-hatena-bookmark-layout=standard-balloon data-hatena-bookmark-lang=ja title=このエントリーをはてなブックマークに追加><img src=https://b.st-hatena.com/images/entry-button/button-only@2x.png alt=このエントリーをはてなブックマークに追加 width=20 height=20 style=border:none></a>
+<script type=text/javascript src=https://b.st-hatena.com/js/bookmark_button.js async></script><a class=tumblr-share-button data-color=blue data-notes=right data-locale=ja_JP href=https://embed.tumblr.com/share></a><script>!function(d,s,id){var js,ajs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://secure.assets.tumblr.com/share-button.js";ajs.parentNode.insertBefore(js,ajs);}}(document,"script","tumblr-js");</script><a href=https://twitter.com/share class=twitter-share-button data-lang=ja>ツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script></div></article></main><footer role=contentinfo><div class=hr></div><div class=footer-link><i class="fa fa-twitter-square"><a href=https://twitter.com/grimrose target=_blank>Twitter</a></i>
+<i class="fa fa-github-alt"><a href=https://github.com/grimrose/ target=_blank>GitHub</a></i></div><div class=copyright>Copyright &copy; <a href=https://grimrose.org/>grimrose</a> All rights reserved.</div></footer></div><script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js></script><script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/languages/scala.min.js></script><script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/languages/groovy.min.js></script><script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/languages/shell.min.js></script><script>hljs.initHighlightingOnLoad();</script></body></html>

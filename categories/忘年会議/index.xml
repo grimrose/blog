@@ -1,23 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>忘年会議 on open build/reports/life/index.html</title>
-    <link>https://www.grimrose.org/blog/categories/%E5%BF%98%E5%B9%B4%E4%BC%9A%E8%AD%B0/</link>
-    <description>Recent content in 忘年会議 on open build/reports/life/index.html</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Sun, 13 Dec 2015 00:00:00 +0900</lastBuildDate>
-    
-	<atom:link href="https://www.grimrose.org/blog/categories/%E5%BF%98%E5%B9%B4%E4%BC%9A%E8%AD%B0/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>業務アプリケーションをElectronで作ってみた話をしてきました #gbdaitokai #忘年会議</title>
-      <link>https://www.grimrose.org/blog/2015/12/daitokai-2015/</link>
-      <pubDate>Sun, 13 Dec 2015 00:00:00 +0900</pubDate>
-      
-      <guid>https://www.grimrose.org/blog/2015/12/daitokai-2015/</guid>
-      <description>はじめに このエントリーは、Electron Advent Calendar 2015の13日目の記事です。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>忘年会議 on open build/reports/life/index.html</title><link>https://www.grimrose.org/blog/categories/%E5%BF%98%E5%B9%B4%E4%BC%9A%E8%AD%B0/</link><description>Recent content in 忘年会議 on open build/reports/life/index.html</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sun, 13 Dec 2015 00:00:00 +0900</lastBuildDate><atom:link href="https://www.grimrose.org/blog/categories/%E5%BF%98%E5%B9%B4%E4%BC%9A%E8%AD%B0/index.xml" rel="self" type="application/rss+xml"/><item><title>業務アプリケーションをElectronで作ってみた話をしてきました #gbdaitokai #忘年会議</title><link>https://www.grimrose.org/blog/2015/12/daitokai-2015/</link><pubDate>Sun, 13 Dec 2015 00:00:00 +0900</pubDate><guid>https://www.grimrose.org/blog/2015/12/daitokai-2015/</guid><description>はじめに このエントリーは、Electron Advent Calendar 2015の13日目の記事です。
 公開資料 発表で利用した資料はこちらです。 -&amp;gt; スライド
 スライドは、jupyterにdamianavila/RISEの拡張を入れて作りました。
 公開当日は、nbviewerのサイトの調子が良くなかったのかメンテナンスだったのか見えませんでしたが、現在は見えるようになりました。
@@ -40,8 +21,4 @@ Loki.jsであれば、IndexedDBとファイルのどちらでも利用できる�
 デスクトップアプリもWebと同じように作っていけるElectronは、業務アプリケーションとしての選択肢としてあり得ると思います。 Node.jsのライブラリがそのままWebアプリケーションから呼び出せる感覚は新鮮でした。
 さいごに 忘年会議のLTの内容が皆さんかなり尖っていて、技術方向に全振りした自分の内容は面白い要素ゼロだったので完全アウェーな気分でした。 ですが、あの場所でLTすることが今回の最大の目的だったので、最後までやりきれて感無量でした。
 LTの猛者でまだあの場所でLTをされてない方は、一度でもいいので体験してもらいたいと思いました。
-次回は、座駆動LT大会20160220らしいので、是非参加してみてはいかがでしょうか？</description>
-    </item>
-    
-  </channel>
-</rss>
+次回は、座駆動LT大会20160220らしいので、是非参加してみてはいかがでしょうか？</description></item></channel></rss>

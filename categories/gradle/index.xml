@@ -1,26 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Gradle on open build/reports/life/index.html</title>
-    <link>https://www.grimrose.org/blog/categories/gradle/</link>
-    <description>Recent content in Gradle on open build/reports/life/index.html</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Thu, 26 May 2016 00:00:00 +0900</lastBuildDate>
-    
-	<atom:link href="https://www.grimrose.org/blog/categories/gradle/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>JJUG CCC 2016 Springに参加してきました #jjug_ccc #ccc_m61</title>
-      <link>https://www.grimrose.org/blog/2016/05/jjug-ccc-2016/</link>
-      <pubDate>Thu, 26 May 2016 00:00:00 +0900</pubDate>
-      
-      <guid>https://www.grimrose.org/blog/2016/05/jjug-ccc-2016/</guid>
-      <description>発表のキッカケ ちょうど日々の業務でGradleのタスク機能を利用して、共有ディレクトリにあるExcelのデータとDBの値とチェックしたり、 前回の作業との差分を抽出して入力ミスがないかチェックしたり、といった小さい業務タスクを自動化していたので、 50分は無理でも新しく出来た20分枠ならイケるんではないかと思い、 Groovy枠として選ばれたら本気でやるかといった感じで応募しました。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gradle on open build/reports/life/index.html</title><link>https://www.grimrose.org/blog/categories/gradle/</link><description>Recent content in Gradle on open build/reports/life/index.html</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 May 2016 00:00:00 +0900</lastBuildDate><atom:link href="https://www.grimrose.org/blog/categories/gradle/index.xml" rel="self" type="application/rss+xml"/><item><title>JJUG CCC 2016 Springに参加してきました #jjug_ccc #ccc_m61</title><link>https://www.grimrose.org/blog/2016/05/jjug-ccc-2016/</link><pubDate>Thu, 26 May 2016 00:00:00 +0900</pubDate><guid>https://www.grimrose.org/blog/2016/05/jjug-ccc-2016/</guid><description>発表のキッカケ ちょうど日々の業務でGradleのタスク機能を利用して、共有ディレクトリにあるExcelのデータとDBの値とチェックしたり、 前回の作業との差分を抽出して入力ミスがないかチェックしたり、といった小さい業務タスクを自動化していたので、 50分は無理でも新しく出来た20分枠ならイケるんではないかと思い、 Groovy枠として選ばれたら本気でやるかといった感じで応募しました。
 なので、十徳ナイフとしてのGradle / @grimrose #35に投票して頂いた皆様には、大変感謝しております。
 jupyter使ってる理由 ここ最近、発表資料にはjupyterを活用しています。理由としては以下のとおりです。
- 日常的に使っている。 Markdownで書ける。  スライドの確認がし易い。 リンクや画像を埋めるのが楽。 コードのシンタックスハイライトもされる。  Docker imageにしてしまえば、docker runかdocker-compose upですぐに使える。 takluyver/bash_kernelを入れれば、jupyer-notebookからbashが使える。 GitHubへpublishすれば、nbviewerで閲覧できる。  標準のPythonやSpark向けのイメージを使えば、REPL代わりに使えるし、実行結果も保存出来たり等重宝してます。
+日常的に使っている。 Markdownで書ける。 スライドの確認がし易い。 リンクや画像を埋めるのが楽。 コードのシンタックスハイライトもされる。 Docker imageにしてしまえば、docker runかdocker-compose upですぐに使える。 takluyver/bash_kernelを入れれば、jupyer-notebookからbashが使える。 GitHubへpublishすれば、nbviewerで閲覧できる。 標準のPythonやSpark向けのイメージを使えば、REPL代わりに使えるし、実行結果も保存出来たり等重宝してます。
 発表の主旨 今回の発表で一番伝えたかったのは、「ツールは達成したい目的によって変えましょう」ということです。 「日常業務を楽にしたい。」であれば、自分の本来やらなければならないメインの仕事に割り当てる時間を増やすというのが目的なので、 今回は自分が使えて、すぐに解決出来る「Gradle」を採用したまでです。
 もちろん、Excelを使うヒトとの協調が必要であれば、Excel VBAも利用します。
 Gradleで解決したタスクもゆくゆくはシステム化を目指すのであれば、それに依存するのではなく捨てられるようにしておくのが望ましいと思います。
@@ -32,8 +13,4 @@ grimrose/JJUG-CCC-2016-Spring
 特にフロントエンドは、完全に趣味とトライアルに走ってみました。 個人的に気になっているMithrilとTypescript, power-assert-js, webpackの組み合わせに挑戦してみました。
 その他のプロジェクトも、jarを動かしたり、JRubyを使ってRubyのプロダクトを動かしたり等、Gradle WrapperとJDKが入っているだけのマシンでここまでやれたり、 プロダクトを統括するタスクランナーとしてのGradleというのを示すことが出来たのではないかと思います。
 参加したセッション 今回参加したセッションは、以下のとおりです。
- E-2 ブラウザテストをサクサク進めるためのGeb実践入門 GH-3 Jenkins2.0 AB-4 Introduction to JShell: The Java REPL Tool AB-5 Apache Apexとインメモリー最適化による超高速処理の世界 AB-6 ビッグデータじゃなくても使えるSpark☆Streaming GH-7 Java Pazzler M-7_2 JVM上でのストリーム処理エンジンの変遷  セッション数が増えたのと20分枠のおかげで、体がいくつあっても足りないという感じでしたが、 休憩のタイミングと間隔にゆとりがあったおかげでそこまで大変では無かったと思いました。</description>
-    </item>
-    
-  </channel>
-</rss>
+E-2 ブラウザテストをサクサク進めるためのGeb実践入門 GH-3 Jenkins2.0 AB-4 Introduction to JShell: The Java REPL Tool AB-5 Apache Apexとインメモリー最適化による超高速処理の世界 AB-6 ビッグデータじゃなくても使えるSpark☆Streaming GH-7 Java Pazzler M-7_2 JVM上でのストリーム処理エンジンの変遷 セッション数が増えたのと20分枠のおかげで、体がいくつあっても足りないという感じでしたが、 休憩のタイミングと間隔にゆとりがあったおかげでそこまで大変では無かったと思いました。</description></item></channel></rss>

@@ -1,40 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Groovy on open build/reports/life/index.html</title>
-    <link>https://www.grimrose.org/blog/categories/groovy/</link>
-    <description>Recent content in Groovy on open build/reports/life/index.html</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Sun, 23 Apr 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.grimrose.org/blog/categories/groovy/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>JVMからSSHのポート転送でJDBC接続する</title>
-      <link>https://www.grimrose.org/blog/2017/04/ssh-port-forward/</link>
-      <pubDate>Sun, 23 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.grimrose.org/blog/2017/04/ssh-port-forward/</guid>
-      <description>はじめに 仕事上、windowsの端末からリモートのlinuxのDBにデータを送る必要があったのですが、 GUIでの手作業はしんどいので、簡単なツールを作ることにしました。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Groovy on open build/reports/life/index.html</title><link>https://www.grimrose.org/blog/categories/groovy/</link><description>Recent content in Groovy on open build/reports/life/index.html</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sun, 23 Apr 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://www.grimrose.org/blog/categories/groovy/index.xml" rel="self" type="application/rss+xml"/><item><title>JVMからSSHのポート転送でJDBC接続する</title><link>https://www.grimrose.org/blog/2017/04/ssh-port-forward/</link><pubDate>Sun, 23 Apr 2017 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2017/04/ssh-port-forward/</guid><description>はじめに 仕事上、windowsの端末からリモートのlinuxのDBにデータを送る必要があったのですが、 GUIでの手作業はしんどいので、簡単なツールを作ることにしました。
 幸いなことにJVMが入っているので、JavaのSSHクライアントとJDBCを使ってやってみました。
 検証 grimrose/ssh-port-forward-study
 対象のサーバは、模擬的にDockerで作りました。
 使用した言語は、慣れているgroovyと仕事で使ってるscala、ライブラリは、以下の通り。
- groovy  groovy-ssh groovy-sql  scala  dacr/jassh ScalikeJDBC   どちらのSSHクライアントもJSchをベースにしているのですが、Javaで書くよりだいぶ楽になっています。
+groovy groovy-ssh groovy-sql scala dacr/jassh ScalikeJDBC どちらのSSHクライアントもJSchをベースにしているのですが、Javaで書くよりだいぶ楽になっています。
 SSHからリモートのコマンドやシェルスクリプトを動作させたり、実行結果の文字列やexit codeを受け取って更に次に繋げられるようになっていたり、 その他にもsftpやいろいろコマンドが用意されているみたいなので、デプロイツールとしてやミドルウェアの検証にも使えそうです。
 おわりに windowsという制約はちょっとしたツールを作るだけでもホントにしんどいので、JVMがあってよかったと思ってます。
-JVMやその他の言語でもランタイムをwindowsで動かせるようにしている人たちに感謝しつつ、日々の業務を楽にしていきたいと思います。</description>
-    </item>
-    
-    <item>
-      <title>GParsのActorでアクターモデルに入門する</title>
-      <link>https://www.grimrose.org/blog/2016/12/gadvent-2016/</link>
-      <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.grimrose.org/blog/2016/12/gadvent-2016/</guid>
-      <description>はじめに この記事は、G*Advent Calendar(Groovy,Grails,Gradle,Spock&amp;hellip;) Advent Calendar 2016の10日目のエントリです。
+JVMやその他の言語でもランタイムをwindowsで動かせるようにしている人たちに感謝しつつ、日々の業務を楽にしていきたいと思います。</description></item><item><title>GParsのActorでアクターモデルに入門する</title><link>https://www.grimrose.org/blog/2016/12/gadvent-2016/</link><pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2016/12/gadvent-2016/</guid><description>はじめに この記事は、G*Advent Calendar(Groovy,Grails,Gradle,Spock&amp;hellip;) Advent Calendar 2016の10日目のエントリです。
 9日目 &amp;gt; nobeansさんのGrailsでUnix/Linux的実行可能WARファイルをつくるです。
 11日目 &amp;gt; tyamaさんのGrailsでServer Sent Eventsを送信！(意訳版)です。
 GParsとは GParsは、GroovyとJavaで利用できる並行・並列処理を利用しやすくなるライブラリです。
@@ -43,24 +15,15 @@ GroovyがApacheに寄贈され、codehausが停止してしまったため、ソ
 GPars/GPars
 versionは、1.2.1のままです。
 ですので、Gradleで利用する際は、以下のように依存を追加すれば利用できるようになります。
-// https://mvnrepository.com/artifact/org.codehaus.gpars/gpars compile group: &#39;org.codehaus.gpars&#39;, name: &#39;gpars&#39;, version: &#39;1.2.1&#39;  Actorモデルについて アクターモデルについては、アクターモデルを見てください。
+// https://mvnrepository.com/artifact/org.codehaus.gpars/gpars compile group: &#39;org.codehaus.gpars&#39;, name: &#39;gpars&#39;, version: &#39;1.2.1&#39; Actorモデルについて アクターモデルについては、アクターモデルを見てください。
 アクターモデルの実装されているもので代表的なものは、ErlangとAkkaが挙げられます。
 この2つについては、もうエコシステムとも呼べるようなものになってしまっているので、アクターモデルだけを知ろうとすると、どこから手をつけていいのか分かりにくくなります。
 そこで、GParsのActorを使ってアクターモデルの考え方を理解して行こうと思います。
 GParsのActor GParsのActorのドキュメントを見ると、Actorの作り方はとてもシンプルです。
-import groovyx.gpars.actor.Actor def actor = Actors.actor { loop { react { msg -&amp;gt; println &amp;quot;Received: $msg&amp;quot; } } } actor.send &#39;Hello, GPars!&#39; actor.join() // 停止するまで立ち上がったままにする。 // 止めるときはCtrl-C or プロセスを落とす  いわゆるPingPongをする場合はこんな感じです。</description>
-    </item>
-    
-    <item>
-      <title>JJUG CCC 2016 Springに参加してきました #jjug_ccc #ccc_m61</title>
-      <link>https://www.grimrose.org/blog/2016/05/jjug-ccc-2016/</link>
-      <pubDate>Thu, 26 May 2016 00:00:00 +0900</pubDate>
-      
-      <guid>https://www.grimrose.org/blog/2016/05/jjug-ccc-2016/</guid>
-      <description>発表のキッカケ ちょうど日々の業務でGradleのタスク機能を利用して、共有ディレクトリにあるExcelのデータとDBの値とチェックしたり、 前回の作業との差分を抽出して入力ミスがないかチェックしたり、といった小さい業務タスクを自動化していたので、 50分は無理でも新しく出来た20分枠ならイケるんではないかと思い、 Groovy枠として選ばれたら本気でやるかといった感じで応募しました。
+import groovyx.gpars.actor.Actor def actor = Actors.actor { loop { react { msg -&amp;gt; println &amp;quot;Received: $msg&amp;quot; } } } actor.send &#39;Hello, GPars!&#39; actor.join() // 停止するまで立ち上がったままにする。 // 止めるときはCtrl-C or プロセスを落とす いわゆるPingPongをする場合はこんな感じです。</description></item><item><title>JJUG CCC 2016 Springに参加してきました #jjug_ccc #ccc_m61</title><link>https://www.grimrose.org/blog/2016/05/jjug-ccc-2016/</link><pubDate>Thu, 26 May 2016 00:00:00 +0900</pubDate><guid>https://www.grimrose.org/blog/2016/05/jjug-ccc-2016/</guid><description>発表のキッカケ ちょうど日々の業務でGradleのタスク機能を利用して、共有ディレクトリにあるExcelのデータとDBの値とチェックしたり、 前回の作業との差分を抽出して入力ミスがないかチェックしたり、といった小さい業務タスクを自動化していたので、 50分は無理でも新しく出来た20分枠ならイケるんではないかと思い、 Groovy枠として選ばれたら本気でやるかといった感じで応募しました。
 なので、十徳ナイフとしてのGradle / @grimrose #35に投票して頂いた皆様には、大変感謝しております。
 jupyter使ってる理由 ここ最近、発表資料にはjupyterを活用しています。理由としては以下のとおりです。
- 日常的に使っている。 Markdownで書ける。  スライドの確認がし易い。 リンクや画像を埋めるのが楽。 コードのシンタックスハイライトもされる。  Docker imageにしてしまえば、docker runかdocker-compose upですぐに使える。 takluyver/bash_kernelを入れれば、jupyer-notebookからbashが使える。 GitHubへpublishすれば、nbviewerで閲覧できる。  標準のPythonやSpark向けのイメージを使えば、REPL代わりに使えるし、実行結果も保存出来たり等重宝してます。
+日常的に使っている。 Markdownで書ける。 スライドの確認がし易い。 リンクや画像を埋めるのが楽。 コードのシンタックスハイライトもされる。 Docker imageにしてしまえば、docker runかdocker-compose upですぐに使える。 takluyver/bash_kernelを入れれば、jupyer-notebookからbashが使える。 GitHubへpublishすれば、nbviewerで閲覧できる。 標準のPythonやSpark向けのイメージを使えば、REPL代わりに使えるし、実行結果も保存出来たり等重宝してます。
 発表の主旨 今回の発表で一番伝えたかったのは、「ツールは達成したい目的によって変えましょう」ということです。 「日常業務を楽にしたい。」であれば、自分の本来やらなければならないメインの仕事に割り当てる時間を増やすというのが目的なので、 今回は自分が使えて、すぐに解決出来る「Gradle」を採用したまでです。
 もちろん、Excelを使うヒトとの協調が必要であれば、Excel VBAも利用します。
 Gradleで解決したタスクもゆくゆくはシステム化を目指すのであれば、それに依存するのではなく捨てられるようにしておくのが望ましいと思います。
@@ -72,21 +35,12 @@ grimrose/JJUG-CCC-2016-Spring
 特にフロントエンドは、完全に趣味とトライアルに走ってみました。 個人的に気になっているMithrilとTypescript, power-assert-js, webpackの組み合わせに挑戦してみました。
 その他のプロジェクトも、jarを動かしたり、JRubyを使ってRubyのプロダクトを動かしたり等、Gradle WrapperとJDKが入っているだけのマシンでここまでやれたり、 プロダクトを統括するタスクランナーとしてのGradleというのを示すことが出来たのではないかと思います。
 参加したセッション 今回参加したセッションは、以下のとおりです。
- E-2 ブラウザテストをサクサク進めるためのGeb実践入門 GH-3 Jenkins2.0 AB-4 Introduction to JShell: The Java REPL Tool AB-5 Apache Apexとインメモリー最適化による超高速処理の世界 AB-6 ビッグデータじゃなくても使えるSpark☆Streaming GH-7 Java Pazzler M-7_2 JVM上でのストリーム処理エンジンの変遷  セッション数が増えたのと20分枠のおかげで、体がいくつあっても足りないという感じでしたが、 休憩のタイミングと間隔にゆとりがあったおかげでそこまで大変では無かったと思いました。</description>
-    </item>
-    
-    <item>
-      <title>Spock Frameworkに関する電子書籍たち</title>
-      <link>https://www.grimrose.org/blog/2015/12/gadvent-2015/</link>
-      <pubDate>Sat, 19 Dec 2015 00:00:00 +0900</pubDate>
-      
-      <guid>https://www.grimrose.org/blog/2015/12/gadvent-2015/</guid>
-      <description>はじめに この記事は、G* Advent Calendar 2015の19日目のエントリです。
+E-2 ブラウザテストをサクサク進めるためのGeb実践入門 GH-3 Jenkins2.0 AB-4 Introduction to JShell: The Java REPL Tool AB-5 Apache Apexとインメモリー最適化による超高速処理の世界 AB-6 ビッグデータじゃなくても使えるSpark☆Streaming GH-7 Java Pazzler M-7_2 JVM上でのストリーム処理エンジンの変遷 セッション数が増えたのと20分枠のおかげで、体がいくつあっても足りないという感じでしたが、 休憩のタイミングと間隔にゆとりがあったおかげでそこまで大変では無かったと思いました。</description></item><item><title>Spock Frameworkに関する電子書籍たち</title><link>https://www.grimrose.org/blog/2015/12/gadvent-2015/</link><pubDate>Sat, 19 Dec 2015 00:00:00 +0900</pubDate><guid>https://www.grimrose.org/blog/2015/12/gadvent-2015/</guid><description>はじめに この記事は、G* Advent Calendar 2015の19日目のエントリです。
 Spockについて Spock Frameworkは、JavaやGroovyで作られたアプリケーション向けのテスティングフレームワークです。
 個人的にSpock Frameworkが好きな理由の一つは、power-assert機能です。
 power-assertが他の言語のテスティングフレームワークでも取り入れられていったのは、覚えるAPIが少ない上にテストで失敗した時の情報が分かりやすいからだと思います。
- アサーション失敗時の情報量を大幅に増やすことができるPower Assertの系譜
- 仕事ではScalaTestを使っていますが、 power-assertのように使えるDiagrammedAssertionsをメインに使ってます。
+アサーション失敗時の情報量を大幅に増やすことができるPower Assertの系譜
+仕事ではScalaTestを使っていますが、 power-assertのように使えるDiagrammedAssertionsをメインに使ってます。
 その他にもパラメタライズドテストが書きやすかったり、Given-When-Thenと振る舞いを分かりやすく書ける機能があったりと、開発者がテストを書くのを助けてくれるのがとても好きです。
 2015年のSpock Frameworkと言えば、なんと言ってもついに1.0がリリースされたのことでしょう。
 Google Codeが終了するするにあたって、さまざまな事が一気に前進したように思えます。
@@ -96,24 +50,15 @@ Spockを題材とした電子書籍 日本でも利用されている方が増�
 公式のリファレンスが充実しているので困ることは少ないですが、やはり自分たちのユースケースに近いサンプルがあるのが望ましいと思います。
 そういう場合は書籍の出番となりますが、今回は入手しやすい電子書籍を探してみました。
 普段利用している電子書籍を購入できるサイトで、Spockに関する書籍が見つかったのは、以下のとおりです。
- O&amp;rsquo;Reilly Manning Publications Leanpub  O&amp;rsquo;Reillyは有名なので割愛するとして、Manning PublicationsはGroovy In Actionや Grails in Actionで以前からGroovyに関する書籍を取り扱っているのは知ってました。
+O&amp;rsquo;Reilly Manning Publications Leanpub O&amp;rsquo;Reillyは有名なので割愛するとして、Manning PublicationsはGroovy In Actionや Grails in Actionで以前からGroovyに関する書籍を取り扱っているのは知ってました。
 注目したいのは、Leanpubで以前Everyday Rails - RSpecによるRailsテスト入門を購入した際に利用していました。
 Groovyについて困っている時やどう書いたらいいのか分からない時にMessages from mrhakiで探していますが、 その著者がLeanpubでGroovy Goodness NotebookやGradle Goodness Notebookといった Groovyに関する書籍を販売しており、その一つにSpockに関するものもありました。
 購入したもの これまで購入したのは、以下の3冊です。
- Spocklight Notebook Groovy in Action, Second Edition Spock: Up and Running  まずSpocklight Notebookですが、Leanpubで購入できます。実はWebで全部見れてしまう上に最低価格が$0なので実質Freeなのです。 中身もユースケース毎に細かく分かれているため、自分たちの求めている内容がきっとあると思います。</description>
-    </item>
-    
-    <item>
-      <title>Yokohama.groovy #31 に参加してきました。#yokohamagroovy</title>
-      <link>https://www.grimrose.org/blog/2015/04/yokohama-groovy-31/</link>
-      <pubDate>Wed, 29 Apr 2015 22:28:34 +0900</pubDate>
-      
-      <guid>https://www.grimrose.org/blog/2015/04/yokohama-groovy-31/</guid>
-      <description>http://connpass.com/event/13786/
+Spocklight Notebook Groovy in Action, Second Edition Spock: Up and Running まずSpocklight Notebookですが、Leanpubで購入できます。実はWebで全部見れてしまう上に最低価格が$0なので実質Freeなのです。 中身もユースケース毎に細かく分かれているため、自分たちの求めている内容がきっとあると思います。</description></item><item><title>Yokohama.groovy #31 に参加してきました。#yokohamagroovy</title><link>https://www.grimrose.org/blog/2015/04/yokohama-groovy-31/</link><pubDate>Wed, 29 Apr 2015 22:28:34 +0900</pubDate><guid>https://www.grimrose.org/blog/2015/04/yokohama-groovy-31/</guid><description>http://connpass.com/event/13786/
 プログラミングGROOVY読書会 主催している「プログラミングGROOVY」の読書会の最終回でした。
 2012年に開催されていた読書会の時間数から、おおよそ3回くらいだろうと見積もっていましたが、余裕を持って終えることが出来ました。
 少し早めに終わったので、2.3から導入されたGroovyのtraitについて、スライドとサンプルを見ながら学んでました。
-  Introduce Groovy 2.3 trait   from * * 
+Introduce Groovy 2.3 trait from * *
 サンプルは、Groovy Goodness: Chaining Traitsです。
 残り時間は、次回以降やりたいことを決めていました。
 https://github.com/yokohamagroovy/support/issues/11
@@ -125,8 +70,4 @@ http://connpass.com/event/14584/
 予定としては、基礎編を2回位で学んで、3回以降は発展編で試していく予定です。
 が、需要がどれくらいあるか全く読めないので、ひとまず会場と人数は今まで通りです。
 もし私を含め5人以上になった場合、別の会場を探すことになると思います。
-もし興味がありましたら、よろしくお願いします。</description>
-    </item>
-    
-  </channel>
-</rss>
+もし興味がありましたら、よろしくお願いします。</description></item></channel></rss>

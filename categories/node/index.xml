@@ -1,23 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>node on open build/reports/life/index.html</title>
-    <link>https://www.grimrose.org/blog/categories/node/</link>
-    <description>Recent content in node on open build/reports/life/index.html</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Sat, 18 Apr 2015 01:00:10 +0900</lastBuildDate>
-    
-	<atom:link href="https://www.grimrose.org/blog/categories/node/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>nodeschool tokyo (東京Node学園 入学式) に参加してきました。 #nodeschool_tokyo</title>
-      <link>https://www.grimrose.org/blog/2015/04/node-school/</link>
-      <pubDate>Sat, 18 Apr 2015 01:00:10 +0900</pubDate>
-      
-      <guid>https://www.grimrose.org/blog/2015/04/node-school/</guid>
-      <description>http://nodejs.connpass.com/event/13182/
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>node on open build/reports/life/index.html</title><link>https://www.grimrose.org/blog/categories/node/</link><description>Recent content in node on open build/reports/life/index.html</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sat, 18 Apr 2015 01:00:10 +0900</lastBuildDate><atom:link href="https://www.grimrose.org/blog/categories/node/index.xml" rel="self" type="application/rss+xml"/><item><title>nodeschool tokyo (東京Node学園 入学式) に参加してきました。 #nodeschool_tokyo</title><link>https://www.grimrose.org/blog/2015/04/node-school/</link><pubDate>Sat, 18 Apr 2015 01:00:10 +0900</pubDate><guid>https://www.grimrose.org/blog/2015/04/node-school/</guid><description>http://nodejs.connpass.com/event/13182/
 node.jsを体系だって学ぶ機会がこれまで無かったので、参加してきました。
 nodeschool http://nodeschool.io/index.html
 http://nodeschool.io/tokyo/
@@ -33,8 +14,4 @@ LT 興味深かったのは、https://hexi.pics/ についてのLTでした。
 International Day http://nodeschool.io/international-day/
 2015年5月23日にまた開催される予定らしいです。
 期待して待ってみましょう。
-メンター、参加者の皆様、会場を提供して下さったサイバーエージェント様、ありがとうございました。</description>
-    </item>
-    
-  </channel>
-</rss>
+メンター、参加者の皆様、会場を提供して下さったサイバーエージェント様、ありがとうございました。</description></item></channel></rss>
