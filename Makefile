@@ -18,3 +18,9 @@ YM=`date +%Y/%m`
 
 post:
 	docker-compose run --rm hugo new posts/${YM}/${TITLE}.md
+
+hugo:
+	docker-compose run --rm hugo --watch=false
+
+minify:
+	docker-compose run --rm hugo --watch=false --minify
