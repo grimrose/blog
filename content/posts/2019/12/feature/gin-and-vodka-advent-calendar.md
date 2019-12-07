@@ -13,7 +13,7 @@ slug = "gin-and-vodka-advent-calendar"
 
 3日目は、[oh_sky](https://adventar.org/users/4172)さんの[好きなジンについて書きます](https://www.instagram.com/p/B5ltpxbjqSA/)でした。
 
-5日目は、[reonaarticle](https://adventar.org/users/7447)さんです。
+5日目は、[reonaarticle](https://adventar.org/users/7447)さんの[好きなジンについて](https://www.reonalab.org/post/adventcalender2019/)です。
 
 自分の好きなジンについて書いてみようと思います。
 
