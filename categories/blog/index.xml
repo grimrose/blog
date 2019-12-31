@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on open build/reports/life/index.html</title><link>https://www.grimrose.org/blog/categories/blog/</link><description>Recent content in Blog on open build/reports/life/index.html</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Tue, 03 Dec 2019 15:00:00 +0000</lastBuildDate><atom:link href="https://www.grimrose.org/blog/categories/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>自分の好きなジン #gin #adventcalendar</title><link>https://www.grimrose.org/blog/2019/12/gin-and-vodka-advent-calendar/</link><pubDate>Tue, 03 Dec 2019 15:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2019/12/gin-and-vodka-advent-calendar/</guid><description>はじめに この記事はジン・ウォッカアドベントカレンダー の4日目の記事です。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on open build/reports/life/index.html</title><link>https://www.grimrose.org/blog/categories/blog/</link><description>Recent content in Blog on open build/reports/life/index.html</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Tue, 31 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://www.grimrose.org/blog/categories/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>2019年の振り返り</title><link>https://www.grimrose.org/blog/2019/12/retrospect/</link><pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2019/12/retrospect/</guid><description>今年も大晦日になったので、振り返ってみたいと思います。
+2018年の振り返りは、こちらでした。
+やってみたかったことの振り返り 2019にやってみたかったことは、以下のとおりでした。
+Golangを使ったアプリケーションを作る AWS Lambdaを使ったプロダクトを作る ScalaのライブラリにContributeする Golangを使ったアプリケーションについては、一時期Cloud Functionsで利用しようかと考えていましたが、作りたいものと自分のスキルを鑑みて見合わせました。 まずは、チュートリアル的な内容である、slackへの通知からやっていこうかと思います。
+AWS Lambdaを使ったプロダクトを作る機会がなくなってしまったのと、Cloud Functionsの事を調べていたので、触る機会がなくなってしまいました。
+ScalaのライブラリへのContributeは、Cloud FunctionsでScala.jsを使ってみようとした過程で知ったpepegar/hammockにPRを出すことが出来ました。
+やってみたかったことは、概ね出来たのでは無いかと思います。
+やってきたことの振り返り 今年は、去年から継続していたOpenCensusに関する登壇をすることが出来ました。
+OpenCensus meetup vol.1 に参加してきました #opencensusjp JJUG CCC 2019 Springに参加してきました #jjug_ccc OpenCensusは、OpenTelemetryへ移行中なので、引き続き注目していこうかと思います。
+また、上記にも出てきましたが、自分で作ってみたいものをFirebaseの上で作ってみようかと思い立ったので、自分が今一番使える言語であるScalaとFirebaseで何が出来るかを調べていた過程で、Cloud FunctionsでScala.jsを使ってやれないか試していたのをまとめて、Scala関西Summit 2019で登壇しました。
+Scala.jsでGoogle Cloud Functionsを利用する前に知りたかったこと blogを書いていなかったので、後で書きます。
+今年の一番大きな出来事は、やはり転職でした。
+12月で転職して半年が経って改めて思うのは、評価される環境で自分の能力を発揮できて、それを評価してもらえるのが、一番良かったと思えました。
+「いい転職ってなんですか？」と聞かれるけど、僕は「自分が入社後に活躍できる転職」がいい転職だと思う。自分の価値を発揮して信頼を獲得できる環境にいることが「いい転職が出来た」と思える要素になる。転職に正解はないけど、自分にとって正解にするためにも「評価される環境」に行くのが大切よ。
+&amp;mdash; motoさん (@moto_recruit) December 16, 2019 少なくとも前職で私のエンジニアとしてのスキルを評価できる人が上には存在しなかったのは事実です。 もちろん、評価基準がそもそも違うので、単純に比較出来るものではありませんし、評価そのものが環境に依存しているものだと思うので、あくまでも現時点の評価は満足できるものではありました。
+今年買ってよかったもの 今年は、挙げたらキリが無いのですが、ガジェットはこの2つが一番良かったと思います。
+Satechi 75W デュアル Type-C PD トラベルチャージャー 2 MBP 13inchのを充電出来てかつ、もう一つのUSB Type-CでZenfone 5も充電出来るのでとてもありがたいです。</description></item><item><title>自分の好きなジン #gin #adventcalendar</title><link>https://www.grimrose.org/blog/2019/12/gin-and-vodka-advent-calendar/</link><pubDate>Tue, 03 Dec 2019 15:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2019/12/gin-and-vodka-advent-calendar/</guid><description>はじめに この記事はジン・ウォッカアドベントカレンダー の4日目の記事です。
 3日目は、oh_skyさんの好きなジンについて書きますでした。
 5日目は、reonaarticleさんの好きなジンについてです。
 自分の好きなジンについて書いてみようと思います。
