@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on open build/reports/life/index.html</title><link>https://www.grimrose.org/blog/categories/blog/</link><description>Recent content in Blog on open build/reports/life/index.html</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Tue, 31 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://www.grimrose.org/blog/categories/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>2019年の振り返り</title><link>https://www.grimrose.org/blog/2019/12/retrospect/</link><pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2019/12/retrospect/</guid><description>今年も大晦日になったので、振り返ってみたいと思います。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on open build/reports/life/index.html</title><link>https://www.grimrose.org/blog/categories/blog/</link><description>Recent content in Blog on open build/reports/life/index.html</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sun, 19 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.grimrose.org/blog/categories/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>オーダーメイド枕をお願いしてみた</title><link>https://www.grimrose.org/blog/2020/01/order-pillow/</link><pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2020/01/order-pillow/</guid><description> はじめに 知り合いの人から、ソウ・エクスペリエンスの体験型ギフトを贈ってもらったのですが、その中から今回はオーダーメイド枕を作る体験を選んでみました。
+オーダーメイド枕 当日の流れは、ここに載っている通りでした。
+フィッティングをしていたときですが、段々と違和感がなくなっていく感覚はとても良かったです。
+また、その時に寝ていたマットレスが腰に全く違和感がなくてびっくりしました。
+以前から、良いマットレスがあれば買おうかと思っていたのですが、なかなか体験できる機会がなかったので、悩みました。
+ですが、気に入ってしまったのでオーダーメイド枕と併せて購入しました。
+マットレスに横たわったと思ったら、カードを差し出していた…
+催眠術だとか超スピードだとか
+そんなチャチなもんじゃあ　断じてねえ
+もっと恐ろしいものの片鱗を　味わったぜ…
+&amp;mdash; とーます (@grimrose) December 15, 2019 おわりに 利用し始めてから1ヶ月ほど経ちましたが、睡眠の質が上がったように感じます。
+枕カバーの高さ等で若干の微調整が必要に思えるので、空いた時間にメンテナンスに行こうかと思っています。
+体験型ギフトを贈ってくれた知り合いにはとても感謝しています。ありがとうございました。</description></item><item><title>2019年の振り返り</title><link>https://www.grimrose.org/blog/2019/12/retrospect/</link><pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2019/12/retrospect/</guid><description>今年も大晦日になったので、振り返ってみたいと思います。
 2018年の振り返りは、こちらでした。
 やってみたかったことの振り返り 2019にやってみたかったことは、以下のとおりでした。
 Golangを使ったアプリケーションを作る AWS Lambdaを使ったプロダクトを作る ScalaのライブラリにContributeする Golangを使ったアプリケーションについては、一時期Cloud Functionsで利用しようかと考えていましたが、作りたいものと自分のスキルを鑑みて見合わせました。 まずは、チュートリアル的な内容である、slackへの通知からやっていこうかと思います。
