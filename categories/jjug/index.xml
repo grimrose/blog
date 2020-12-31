@@ -4,12 +4,12 @@ keynote-1 基調講演1: 「Javaは守りに入らない、これが今のJava�
 この1年、素のJavaを書くことは無くなってしまったので、選択も運用やDB等言語としてのJava以外を中心とした内容になりました。
 どのセッションも面白かったですが、てらださんが楽しそうに活動をされている話を聞けたのが、一番印象的でした。
 さらに懇親会や帰り道でいろいろな人とお話が出来て、その中でいろいろ解決手段などを教えていただくことが出来ました。 ありがとうございました。
-懇親会と帰宅までの間が一番実りがある話が聞けた。&amp;#10;これがあるから止められない。
-&amp;mdash; とーます (@grimrose) 2015, 11月 28</description></item><item><title>【東京】JJUG ナイトセミナー 「Reactive Streams特集」 に参加してきました。 #jjug</title><link>https://www.grimrose.org/blog/2015/06/jjug-2015-reactive-streams/</link><pubDate>Sat, 27 Jun 2015 18:19:34 +0900</pubDate><guid>https://www.grimrose.org/blog/2015/06/jjug-2015-reactive-streams/</guid><description>はじめに https://jjug.doorkeeper.jp/events/26547
+おわりに 今回もYokohama.groovyの宣伝も兼ねたLTをしてきました。
+pythonの勉強に使っているjupyterを使って、スライドを作りました。
+Markdownでwebブラウザで再生出来るスライドに出来るので、こういう時には結構使えますね。
+予定としては、Spock: Up and Running Writing Expressive Tests in Java and Groovyが出版され次第、読書会をやろうと思っています。</description></item><item><title>【東京】JJUG ナイトセミナー 「Reactive Streams特集」 に参加してきました。 #jjug</title><link>https://www.grimrose.org/blog/2015/06/jjug-2015-reactive-streams/</link><pubDate>Sat, 27 Jun 2015 18:19:34 +0900</pubDate><guid>https://www.grimrose.org/blog/2015/06/jjug-2015-reactive-streams/</guid><description>はじめに https://jjug.doorkeeper.jp/events/26547
 @makingさんから、@okapiesさんと一緒に「Reactive Streams」について話してくれと頼まれましたので、参加してきました。
 元々は、@cero_tさんが発端らしいです。
-ちなみに今日のReactive Streams勉強会の発端は、ゴールデンウィーク明けに @cero_t さんがReactiveについてほげほげ言ってたことで、ナイトセミナーやろうぜって感じだったんだけど、当の本人は来ていないっていう
-&amp;mdash; Toshiaki Maki (@making) 2015, 6月 24
 初めは、マイナーなネタならそんなに人集まらないだろうと思ってたのですが、キャンセル待ちが100人超えするくらいまで期待されてて正直びっくりしました。
 当日のアンケートシステム、とても良かったので次回以降改善されるのを期待してます。
 資料 @okapiesさんの資料は、こちらです。

@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>java on open build/reports/life/index.html</title><link>https://www.grimrose.org/blog/categories/java/</link><description>Recent content in java on open build/reports/life/index.html</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sun, 19 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://www.grimrose.org/blog/categories/java/index.xml" rel="self" type="application/rss+xml"/><item><title>JJUG CCC 2019 Springに参加してきました #jjug_ccc</title><link>https://www.grimrose.org/blog/2019/05/jjug-ccc-2019/</link><pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2019/05/jjug-ccc-2019/</guid><description>はじめに http://www.java-users.jp/ccc2019spring/
-「CfPを出さないと約束したな。あれは嘘だ。」
-CfP2本出して片方当選した。
-というわけで、久しぶりにJJUG CCCで話します。
-&amp;mdash; とーますは労働なんかしないで 光合成だけで生きたい (@grimrose) 2019年3月17日 2016年の登壇からしばらく聴く側にいました。
+2016年の登壇からしばらく聴く側にいました。
 この1年くらいずっとOpenCensusを触っていましたがJJUG CCCでは話してなかったのと、micrometerを使っているので、そちらもあわせてCfPに出してみました。
 運良くOpenCensusの方が採択されたので、今回はカスタムメトリクスの取り方を調べつつ自分たちのアプリケーションに組み込む方法を勉強できればと思い、いろいろ検証内容を元に発表できればと思っていました。
 発表 OpenCensusで始める分散トレーシングと監視
 今回の発表のベースとなったのは、Stackdriver担当者の@ymotongpooさんの以下の記事でした。
 オブザーバビリティ（可観測性）がなぜ必要だと考えるのか
 その後、ajitofm 42: You must unlearn what you have learnedを聴いたときに感じた内容(ツイートでは43となっているが42の間違い)と、
-土日で #ajitofm の40, 43を聞き直して、ここ数ヶ月 trainingやmetricsに興味を持ったのは、必然だったのではないかと考えている
-&amp;mdash; とーますは労働なんかしないで 光合成だけで生きたい (@grimrose) 2019年3月4日 入門 監視を読み終えたので、これらをふまえてOpenCensusを使って実現していく方法とStackdriverによる可視化までを繋げられないかと思い、 構成を練っていました。
+入門 監視を読み終えたので、これらをふまえてOpenCensusを使って実現していく方法とStackdriverによる可視化までを繋げられないかと思い、 構成を練っていました。
 途中でOpenCensus meetup vol.1 で話す機会が得られたので、これまでに得られたOpenCensusのJava実装についてを発表しました。
 残りの期間は、OpenCensusのカスタムメトリクスの取り方とGCP上でStackdriverを利用したデモの作成に取り組んでいました。
 デモで利用したソースコードはこちらにあります。
@@ -29,36 +25,23 @@ OpenCensusの勉強会の初回ということもあり、他の言語の人達�
 今回の内容に、カスタムメトリクスの取り方をデモをでお見せできればと思いますが、詳細は未定です。
 おわりに やばかった。
 あと、 Observabilityは港区用語 というパワーワードの生まれた現場にいられてよかった。
-Observabilityは港区用語。俺たちは現実《リアル》を把握していく と表現することで足立区まで到達していける #opencensusjp
-&amp;mdash; わかめ@毎日猫がいる (@vvakame) 2019年4月3日
 次回の開催も楽しみにしています。</description></item><item><title>JJUG CCC 2018 Springに参加してきました #jjug_ccc</title><link>https://www.grimrose.org/blog/2018/06/jjug-ccc-2018/</link><pubDate>Sat, 09 Jun 2018 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2018/06/jjug-ccc-2018/</guid><description>http://www.java-users.jp/ccc2018spring/
 参加したセッション 今回は、午後から参加したので、以下のセッションに参加してきました。
 Scala製システムを3年間運用することで起きた様々なことへの対処 Apache Kafkaとストリーム処理 Spring Cloud, Docker &amp;amp; Kubernetes - Lessons Learned in the context of an OSS Project Networks and Types &amp;ndash; Typed Reactive Systems with Akka GKEとgRPCで実装する多言語対応・スケーラブルな内部API Google Dataflow(Java)を使ったビッグデータのバリデーション Javaを書かなくなって以来、そういうセッションをメインに選んできましたが、そういう傾向なのかセッションもJavaだけでなくアプリケーションを取り巻くミドルウェアやインフラ周りの内容が増えて来ましたし、 興味深いセッションが多く、今回は迷いました。
 k8sやmicro serviceといった内容が増えてきたことでJavaだけでなく参加者が携わる領域が増えてきているということなんだと思いました。
 特にモノリシックなサービスをk8sに載せられるように改善していく事例の紹介はとても勉強になりましたが、しゃべるスピードが早すぎてついていくので精一杯でした。
-JJUG CCC 2018 : Lessons Learned: Spring Cloud -&amp;gt; Docker -&amp;gt; Kubernetes from Mauricio (Salaboy) Salatino
 あとから資料見直してみるととても示唆に富んだいい内容だったので、もっと英語のスキルを上げていければと思いました。
 その他のセッションも、普段の開発にも取り入れられそうなものがあったので、試してみたいと思います。
 おわりに 今回は、参加者も慣れたのか動線がしっかりしていて、前回よりもさらにスムーズだと感じました。
 懇親会も普段会えない人と話することが出来てとても楽しかったです。 いろいろ第一人者から直接聞ける機会は少ないので、懇親会はとてもありがたいです。
-@grimrose7がシェアした投稿 - 2018年 5月月26日午前3時29分PDT</description></item><item><title>JJUG CCC 2017 Fallに参加してきました #jjug_ccc</title><link>https://www.grimrose.org/blog/2017/11/jjug-ccc-2017/</link><pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2017/11/jjug-ccc-2017/</guid><description>http://www.java-users.jp/ccc2017fall/
+JJUGのスタッフの皆様、スポンサーの皆様、講演者の皆様、参加者の皆様、ありがとうございました。</description></item><item><title>JJUG CCC 2017 Fallに参加してきました #jjug_ccc</title><link>https://www.grimrose.org/blog/2017/11/jjug-ccc-2017/</link><pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2017/11/jjug-ccc-2017/</guid><description>http://www.java-users.jp/ccc2017fall/
 参加したセッション 今回は、午後から参加したので、以下のセッションに参加してきました。
 モブプロで実施する Cognitive Service &amp;amp; Bot ハッカソン #2 ゴールドマン・サックスにおけるCamundaを用いたビジネスプロセスの可視化とワークフローの自動化 Spring BootとKafkaでCQRSなアプリを動かしてみる Java でつくる本格形態素解析器 今回は、Java以外で面白そうなのと仕事で使えそうなのを選んでみました。
 特に一番印象深かったのCQRSの話でした。
-しーばさんのCQRSの話を聞いて、今の課題をどう伝えたらCQRSの考え方で解決してもらえるかいろいろ思い浮かべてる
-&amp;mdash; とーます (@grimrose) November 18, 2017
 実際にCQRSが使ったほうがいい課題があるのですが、CQRSを全く知らない人にどうやって伝えたらいいのか考えてました。
 その後に、公開された資料を元に自分たちの課題を題材に、いろいろ議論しながらモブプロ出来たらいいなぁとふわふわ考えてました。
 アンカンファレンスで話したこと 今回、JJUGでアンカンファレンスが実施されるとのことなので、ScalaMatsuri 2018の宣伝をしてきました。
 「コミュニティの宣伝でもいい？」と相談してみたところ、良い返事がいただけたので、「ScalaMatsuriへのお誘い」ということで出したところ採択されました。
-アンカンファレンスのテーマが決まりました！
-13:30よりL部屋で実施します。ぜひお越しください！
-13:30- プログラミング教育、スキルの伸ばし方について
-14:30- Javaプロセス監視について
-15:45- お仕事のやりがい、コミュニティについて
-16:45- マイクロサービスについて
-17:45- JVM言語について
-&amp;mdash; JJUG (@JJUG) 2017年11月18日
 15:45からの回に決まったので、話す内容はScalaMatsuriの宣伝で、今年の新しい試みであるScalaMatsuri Tranining Dayの紹介をしようと考えてました。
 実際は、「仕事のやりがい、コミュニティについて」という括りの中でいろいろディスカッションする感じでした。 なので、内容もちょっと変えて、私が知っている範囲ではありますが、Scalaのコミュニティへ参加している人たちの変遷や、 ScalaMatsuriが公開している資料を元にコミュニティやカンファレンスに参加している人たちの変遷や、 コミュニティそのものの成熟度合いとの関係を話しました。
 上手く伝えられたかは実感が無かったのでどこまで宣伝できたか分かりませんが、JJUG CCCに参加している人たちの働いている環境について知る機会が出来たのは、とても良かったです。
@@ -69,12 +52,9 @@ JJUGのスタッフの皆様、スポンサーの皆様、講演者の皆様、�
 Java libraries you can&amp;rsquo;t afford to miss Unified JVM Logging: Java 9 から変わる JVM ログ 今日からDL4J グラフデータベース入門 Engineers can change the world ～ &amp;ldquo;世界&amp;rdquo; で活躍するエンジニアになるために Ordinary Object Pointer について調べてみた 今回は、業務で使うJVMに関する内容や使いそうなグラフデータベースやDL4J、英語を聞く機会を増やしたいと思ったので、このリストになりました。
 他のセッションも興味深かったり、被ってさえいなければ聞きたかったのもあったので、ここ数年、JJUG-CCCのセッション選びはホントに悩ましいです。
 今回一番印象に残ったセッションは、「Engineers can change the world ～ &amp;ldquo;世界&amp;rdquo; で活躍するエンジニアになるために」で、Microsoftに移られた寺田さんと上司である Drew Robbinsさんの働き方についての内容でした。
-JJUG-CCC-Dreams-Come-True-With-Drew—Terada YoshioDocs.com
 人材紹介のドメインで業務をしていると、求職している人の働き方や考え方、企業自体がどういった人が求めているのかを着目するようになってきました。
 その中でもソフトウェアエンジニアは、自分の職業の一つでもあるので、他の企業の、しかも日本ではなく世界に同じ職種を抱えている人の話を聞くのはとても興味深かったです。
 最後にビデオを見る機会があったのですが、昔はSFの話だと思っていたことが、実はコードで実現出来るかもしれない未来がそこまで来ているのを見せられたので、とても印象に残ってました。
-コードで世界を変えていく仕事って、やっぱカッコイイよな。って思わせてくれるいいセッションでした #ccc_g6
-&amp;mdash; とーます (@grimrose) 2017年5月20日
 おわりに 懇親会では、twitterでしか知っていなかった人たちにご挨拶出来てよかったです。
 1000人規模のカンファレンスになってしまい、いろいろと課題点とか見えているみたいですが、 以前に比べて裾野が広がっているように思えるので、ぜひよりよい結果に繋がるようになって欲しいと思います。
 JJUGのスタッフの皆様、スポンサーの皆様、講演者の皆様、参加者の皆様、ありがとうございました。</description></item><item><title>GParsのActorでアクターモデルに入門する</title><link>https://www.grimrose.org/blog/2016/12/gadvent-2016/</link><pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2016/12/gadvent-2016/</guid><description>はじめに この記事は、G*Advent Calendar(Groovy,Grails,Gradle,Spock&amp;hellip;) Advent Calendar 2016の10日目のエントリです。
@@ -86,12 +66,13 @@ GroovyがApacheに寄贈され、codehausが停止してしまったため、ソ
 GPars/GPars
 versionは、1.2.1のままです。
 ですので、Gradleで利用する際は、以下のように依存を追加すれば利用できるようになります。
-// https://mvnrepository.com/artifact/org.codehaus.gpars/gpars compile group: &#39;org.codehaus.gpars&#39;, name: &#39;gpars&#39;, version: &#39;1.2.1&#39; Actorモデルについて アクターモデルについては、アクターモデルを見てください。
+// https://mvnrepository.com/artifact/org.codehaus.gpars/gpars compile group: &amp;#39;org.codehaus.gpars&amp;#39;, name: &amp;#39;gpars&amp;#39;, version: &amp;#39;1.2.1&amp;#39; Actorモデルについて アクターモデルについては、アクターモデルを見てください。
 アクターモデルの実装されているもので代表的なものは、ErlangとAkkaが挙げられます。
 この2つについては、もうエコシステムとも呼べるようなものになってしまっているので、アクターモデルだけを知ろうとすると、どこから手をつけていいのか分かりにくくなります。
 そこで、GParsのActorを使ってアクターモデルの考え方を理解して行こうと思います。
 GParsのActor GParsのActorのドキュメントを見ると、Actorの作り方はとてもシンプルです。
-import groovyx.gpars.actor.Actor def actor = Actors.actor { loop { react { msg -&amp;gt; println &amp;quot;Received: $msg&amp;quot; } } } actor.send &#39;Hello, GPars!&#39; actor.join() // 停止するまで立ち上がったままにする。 // 止めるときはCtrl-C or プロセスを落とす いわゆるPingPongをする場合はこんな感じです。</description></item><item><title>JJUG CCC 2016 Fallに参加してきました #jjug_ccc</title><link>https://www.grimrose.org/blog/2016/12/jjug-ccc-2016/</link><pubDate>Sun, 04 Dec 2016 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2016/12/jjug-ccc-2016/</guid><description>http://www.java-users.jp/ccc2016fall/
+import groovyx.gpars.actor.Actor def actor = Actors.actor { loop { react { msg -&amp;gt; println &amp;#34;Received: $msg&amp;#34; } } } actor.send &amp;#39;Hello, GPars!&amp;#39; actor.join() // 停止するまで立ち上がったままにする。 // 止めるときはCtrl-C or プロセスを落とす いわゆるPingPongをする場合はこんな感じです。
+@Immutable class PingMessage { String message } @Immutable class PongMessage { String message } @Log class PongActor extends DefaultActor { @Override protected void act() { loop { react { msg -&amp;gt; log.</description></item><item><title>JJUG CCC 2016 Fallに参加してきました #jjug_ccc</title><link>https://www.grimrose.org/blog/2016/12/jjug-ccc-2016/</link><pubDate>Sun, 04 Dec 2016 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2016/12/jjug-ccc-2016/</guid><description>http://www.java-users.jp/ccc2016fall/
 参加したセッション 今回参加したセッションは、以下のとおりです。
 SIerもはじめる、わたしたちのDevOps 先取り Elasticsearch 5.0 ハンズオン！ JVMのトラブル解決のためにやったこと~メモリー/スレッド Spring Cloudアプリケーションの開発にDockerを活用し、Kubernetes上にデプロイするまで Featherweight JavaやGroovyの漸進的型付けについて 今回は、仕事でElasticsearchを検証している際に入門的なものを知らないと先に進めなさそうと感じたので、ハンズオンを優先的に選択しました。
 その他のセッションについては、Javaのセッションよりも仕事で使うJVMやkubernetesに関するものや、数少ないGroovyのセッションを選んでみました。
@@ -144,18 +125,17 @@ keynote-1 基調講演1: 「Javaは守りに入らない、これが今のJava�
 この1年、素のJavaを書くことは無くなってしまったので、選択も運用やDB等言語としてのJava以外を中心とした内容になりました。
 どのセッションも面白かったですが、てらださんが楽しそうに活動をされている話を聞けたのが、一番印象的でした。
 さらに懇親会や帰り道でいろいろな人とお話が出来て、その中でいろいろ解決手段などを教えていただくことが出来ました。 ありがとうございました。
-懇親会と帰宅までの間が一番実りがある話が聞けた。&amp;#10;これがあるから止められない。
-&amp;mdash; とーます (@grimrose) 2015, 11月 28</description></item><item><title>Seasar Conference 2015 Not 同窓会 に参加してきました #seasarcon</title><link>https://www.grimrose.org/blog/2015/09/seasarcon2015/</link><pubDate>Tue, 29 Sep 2015 01:25:47 +0900</pubDate><guid>https://www.grimrose.org/blog/2015/09/seasarcon2015/</guid><description>https://event.seasarfoundation.org/sc2015/
+おわりに 今回もYokohama.groovyの宣伝も兼ねたLTをしてきました。
+pythonの勉強に使っているjupyterを使って、スライドを作りました。
+Markdownでwebブラウザで再生出来るスライドに出来るので、こういう時には結構使えますね。
+予定としては、Spock: Up and Running Writing Expressive Tests in Java and Groovyが出版され次第、読書会をやろうと思っています。</description></item><item><title>Seasar Conference 2015 Not 同窓会 に参加してきました #seasarcon</title><link>https://www.grimrose.org/blog/2015/09/seasarcon2015/</link><pubDate>Tue, 29 Sep 2015 01:25:47 +0900</pubDate><guid>https://www.grimrose.org/blog/2015/09/seasarcon2015/</guid><description>https://event.seasarfoundation.org/sc2015/
 http://seasar.connpass.com/event/19317/
 Seasar2はプロダクトでも使ったことがあるし、Seasar Conferenceがあったおかげで今の自分があると思っているので、参加してきました。
 セッション Seasar ユーザだったプログラマが目指す OSS の世界展開
 瀬良さんのセッションは、大学の教室ということもあり本当に歴史の授業っぽい雰囲気でした。 Skinny Frameworkは、今のプロジェクトで使っていて大変お世話になっています。 特にSkinny-ORM, ScalikeJDBCはSQLをゴリゴリ書くようなプロダクトに向いていると思います。 GitHubがデファクトとなっている現状では、日本語より英語のドキュメントを充実するほうがより使ってもらえる可能性が高いのは確かだと思います。 Play Framework + Scala は Next Seasar なのか
 Next Seasarについては、既存のSeasar2を利用したプロダクトを別のフレームワークに置き換えてもそれなりに利益を生むようなものでない限り時代に取り残されて行く運命なのかも知れないと感じました。 挙げられそうなNext Seasarとしては、Spring bootやJavaのMicroframeworkやJava EE等があります。 ですが、メンテナンスする人達がJavaの進化に置いて行かれるような場合、選択すら出来ずどうすることも出来ない状態に陥るのではないかと思います。 「Single Command Deployのためのgradle-aws-plugin講座」〜自動ビルド厨はここまで大きくなりました〜
 Gradleの話を聞いてみたかったのと、AWSへのデプロイツールとしてどう使うのか興味がありました。 ドキュメントに残さなければいけない箇所を出来る限り少なくして、自動化するというのはとても参考になりました。 Spring Boot for the Seasar Developers – みんなが欲しかったアレもソレもここにある
-ライブコーディングでサクサクとSpring bootを使ったWebアプリを作っていくのは、楽しそうに見えました。 Spring bootのremote-shellは、CRaSHがベースなので、単体でも使うことが出来ます。 IntelliJ IDEAであれば、Using Language Injectionsを使うことで、StringのSQLに対してシンタックスハイライトを付けることが出来るようになります。 SIは本当に終わったのか?
-受託やSIの世界から遠ざかってしまったので、第三者的な視点で見てました。 元請けの視点がメインだったので、下請けからの視点が無かったのはちょっと残念だと思いました。 実際に利用するユーザのフィードバックと取り込めるような距離感が無いと、今後も厳しそうだと感じました。 おわりに Seasar2から卒業ということで、自分が変わるキッカケになったSeasar Conferenceに久しぶりに参加できてよかったと思います。</description></item><item><title>JUnit Lambda に寄付をしました #fundJUnit</title><link>https://www.grimrose.org/blog/2015/09/junit-lambda/</link><pubDate>Sat, 19 Sep 2015 00:04:27 +0900</pubDate><guid>https://www.grimrose.org/blog/2015/09/junit-lambda/</guid><description>@t_wada さんのツイートから知りましたが、JUnitのプロジェクトが援助を求めているそうです。
-JUnit がクラウドファンディングで援助を求めている。現在フルタイムのメンテナがおらず、 issue 解決や Java8 対応 (特にラムダ式) の余力が無い。現時点の JUnit の問題点や将来像も示されている #fundJUn… http://t.co/o8ijOxTWr2
-&amp;mdash; Takuto Wada (@t_wada) 2015, 9月 16
+ライブコーディングでサクサクとSpring bootを使ったWebアプリを作っていくのは、楽しそうに見えました。 Spring bootのremote-shellは、CRaSHがベースなので、単体でも使うことが出来ます。 IntelliJ IDEAであれば、Using Language Injectionsを使うことで、StringのSQLに対してシンタックスハイライトを付けることが出来るようになります。 SIは本当に終わったのか?</description></item><item><title>JUnit Lambda に寄付をしました #fundJUnit</title><link>https://www.grimrose.org/blog/2015/09/junit-lambda/</link><pubDate>Sat, 19 Sep 2015 00:04:27 +0900</pubDate><guid>https://www.grimrose.org/blog/2015/09/junit-lambda/</guid><description>@t_wada さんのツイートから知りましたが、JUnitのプロジェクトが援助を求めているそうです。
 Crowdfunding JUnit Lambda
 日本語での詳細な内容については、JUnitの開発が資金不足で行き詰まり。クラウドファンディングで寄付金を募集中 を見ていだくのがいいと思います。
 JUnitと私 個人的にJUnitを真面目に使い始めたのは、TDDBCで使い方を教わってからだと思います。
@@ -176,8 +156,6 @@ Java8対応で特にDateTime APIでMatcherが早急に欲しい人は、AssertJ�
 もし、JUnitを使っていたり、今後も使い続ける事になるのであれば、既にゴール金額に到達していますが、寄付を考えてみてはいかがでしょうか？</description></item><item><title>【東京】JJUG ナイトセミナー 「Reactive Streams特集」 に参加してきました。 #jjug</title><link>https://www.grimrose.org/blog/2015/06/jjug-2015-reactive-streams/</link><pubDate>Sat, 27 Jun 2015 18:19:34 +0900</pubDate><guid>https://www.grimrose.org/blog/2015/06/jjug-2015-reactive-streams/</guid><description>はじめに https://jjug.doorkeeper.jp/events/26547
 @makingさんから、@okapiesさんと一緒に「Reactive Streams」について話してくれと頼まれましたので、参加してきました。
 元々は、@cero_tさんが発端らしいです。
-ちなみに今日のReactive Streams勉強会の発端は、ゴールデンウィーク明けに @cero_t さんがReactiveについてほげほげ言ってたことで、ナイトセミナーやろうぜって感じだったんだけど、当の本人は来ていないっていう
-&amp;mdash; Toshiaki Maki (@making) 2015, 6月 24
 初めは、マイナーなネタならそんなに人集まらないだろうと思ってたのですが、キャンセル待ちが100人超えするくらいまで期待されてて正直びっくりしました。
 当日のアンケートシステム、とても良かったので次回以降改善されるのを期待してます。
 資料 @okapiesさんの資料は、こちらです。

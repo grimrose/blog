@@ -3,33 +3,35 @@
 10日目は、@j5ik2oさんです。
 準備の期間を含めて約4ヶ月位 census-ecosystem/opencensus-scala に触れていたので振り返りつつ、 Japan Container Daysの参加した感想を書こうかと思います。
 Japan Container Days v18.12 https://containerdays.jp/
-.@grimrose による「OpenCensusとJaegerで分散トレーシングを見てみよう」を受け付けました。このプロポーザルを聞いてみたい人はいいねやリツイートでぜひ応援してください！ #containerdaysjp の公募セッション一覧はこちら https://t.co/EEbrgf1bBv
-&amp;mdash; JapanContainerDays (@containerdaysjp) 2018年9月5日 OpenCensusとJaegerで分散トレーシングを見てみよう スライドは、こちらで公開してあります。
-OpenCensusとJaegerで分散トレーシングを見てみよう のスライドを公開しました。#containerdaysjp #TerraceRoomhttps://t.co/Y9oTfsZ7Yg
-&amp;mdash; とーます@悪いオタクらしい (@grimrose) 2018年12月5日 内容としては、Scala関西 Summit 2018へ参加してきました #scala_ks で話した内容からScalaの要素を削って、OpenCensusの内容を増やしました。
+OpenCensusとJaegerで分散トレーシングを見てみよう スライドは、こちらで公開してあります。
+内容としては、Scala関西 Summit 2018へ参加してきました #scala_ks で話した内容からScalaの要素を削って、OpenCensusの内容を増やしました。
 段取りを間違えてしまって、デモの時間を減らしてしまうという痛恨のミスを犯してしまったのが心残りです。
-心残りがあるとすれば、elasticsearchをバックエンドにした理由であるkibanaでfluentdで送ったログとjaegerのtracingが一緒に見られるところまでデモをしたかった…
-&amp;mdash; とーます@悪いオタクらしい (@grimrose) 2018年12月5日 OpenCensus Scalaについて census-ecosystem/opencensus-scala
+OpenCensus Scalaについて census-ecosystem/opencensus-scala
 Akka-HTTPで使う前にREADME.mdを見てもらうと、 どうやってRouterからSpanを受け取って、Tracingを組み立てて行くことが出来るかが分かります。
 あとは、自分が使いたいExporterの設定をapplication.confで有効にすることで、転送されるようになります。
 0.6.1で利用できるExporterは以下のとおりです。
-Stackdriver Logging Zipkin Instana 今回紹介したJaegerはZipkinと互換性があるので、転送先をJaegerのCollectorにすることで利用可能になります。</description></item><item><title>Scala関西 Summit 2018へ参加してきました #scala_ks</title><link>https://www.grimrose.org/blog/2018/11/scala-kansai-summit/</link><pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2018/11/scala-kansai-summit/</guid><description>はじめに https://2018.scala-kansai.org/
+Stackdriver Logging Zipkin Instana 今回紹介したJaegerはZipkinと互換性があるので、転送先をJaegerのCollectorにすることで利用可能になります。
+あくまでwrapperなので、census-instrumentation/opencensus-javaが対応していないExporterは、自分でCustom Exporterを作る必要があります。
+その際は、Trace exporterを参考にしつつ、 census-instrumentation/opencensus-specsでSpanの中身をみつつ、 利用したいTracingのプロダクトのフォーマットにしていく必要があります。
+また、Spanは伝播させる必要があるので、ReaderTのような合成しやすい型と組み合わせて対応するといいと思われます。
+import cats.data.ReaderT // or import scalaz.ReaderT type ReaderSpanT[F[_], A] = ReaderT[F, Span[F], A] Module for tagless-final &amp;amp; cats-effectのように、そもそも組み込んでしまうissueも上がっています。</description></item><item><title>Scala関西 Summit 2018へ参加してきました #scala_ks</title><link>https://www.grimrose.org/blog/2018/11/scala-kansai-summit/</link><pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2018/11/scala-kansai-summit/</guid><description>はじめに https://2018.scala-kansai.org/
 https://skug.connpass.com/event/100075/
 https://skug.connpass.com/event/99741/
 去年のScala関西 Summit 2017に引き続いて、参加してきました。
 今回は、2日間の開催ということで、1日目のセッションのCfPが通らなかったら、2日目のアンカンファレンスでなにか出来ればと思っていました。
-Scala関西summit #scala_ks のCfP通ったー。また関西でしゃべるぞ!
-&amp;mdash; とーます@悪いオタクらしい (@grimrose) 2018年9月5日 今回は、Akkaを分散トレーシングで見てみよう というタイトルで、仕事で直面したネタをもとにデモをする内容を考えていました。
-Scala関西Summit2018 当日のセッションをご紹介します！スピーカー: grimroseさん タイトル: Akkaを分散トレーシングで見てみよう https://t.co/q1JO0weX9f #scala_ks
-&amp;mdash; Scala関西Summit@2018/11/10-11 (@ScalaKansai) 2018年10月22日 今回は自分なりに練に練った文言にしたので、CfP通ってよかった。
-&amp;mdash; とーます@悪いオタクらしい (@grimrose) 2018年9月5日 Akkaを分散トレーシングで見てみよう https://2018.scala-kansai.org/session/#grimrose
-「Akkaを分散トレーシングで見てみよう」のスライドを公開しました。#scala_ks Jupyter Notebook Viewer https://t.co/HhnsaZTpVt
-&amp;mdash; とーます@悪いオタクらしい (@grimrose) 2018年11月10日 デモで使用したコードは、grimrose/scala-kansai-summit-2018にあります。
+今回は、Akkaを分散トレーシングで見てみよう というタイトルで、仕事で直面したネタをもとにデモをする内容を考えていました。
+Akkaを分散トレーシングで見てみよう https://2018.scala-kansai.org/session/#grimrose
+デモで使用したコードは、grimrose/scala-kansai-summit-2018にあります。
 CfPが通ったあと、Jaegerについてや、OpenCensusについていろいろと調べ回っていました。
 Google Cloud Next &amp;lsquo;18 in Tokyoでは、StackdriverとOpenCensusの開発に携わっている方に、直接質問が出来る機会があってとても助かりました。 その際に教えていただいたのが、以下の動画でした。
 その他にも調べていく上で多くのことを知ることが出来ました。
 幾つか質問を受けた中で、Akka Streamでも利用出来るのかという話がありました。
-もちろんissueは立っているのですが、現在はAkka HTTPのサポートにとどまっています。 なので、自分で頑張るしか無い状況ですが、親となるio.opencensus.trace.Span をどうやってAkka StreamのGraphに乗せるのかが考えどころだと思います。</description></item><item><title>Scala Matsuri 2018に参加してきました #ScalaMatsuri</title><link>https://www.grimrose.org/blog/2018/05/scala-matsuri/</link><pubDate>Fri, 04 May 2018 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2018/05/scala-matsuri/</guid><description>はじめに ScalaMatsuri
+もちろんissueは立っているのですが、現在はAkka HTTPのサポートにとどまっています。 なので、自分で頑張るしか無い状況ですが、親となるio.opencensus.trace.Span をどうやってAkka StreamのGraphに乗せるのかが考えどころだと思います。
+あと、今回のCfPのきっかけとなったblogの記事がOpenCensus について調べて試したなのですが、 書いた方が質問に来てくださっていろいろ話すことが出来てとても楽しかったです。
+Day1 カンファレンス 今回、3トラックでしかもすべてのセッションが面白そうなので、ホントに悩みましたが以下を選びました。
+長期的なメンテナンスの必要なScala製システムにおいて気をつけるべきこと circeから学ぶ Generic Programming 入門 ZOZOSUITはScalaで動いてるよ！ Scala-erにも影響ありそうなJavaの現状まとめ DatabricksとSparkではじめる [データ分析/機械学習] 実践入門 Scala でつくる証券会社とスタートアップ 実践GraphQL on Scala どのセッションも興味深いものばかりでしたが、やはり今回一番のパワーワードは、これでしょう。
+Scalaも普及期に入り、いろいろな人が使ってみて様々な使われ方がされて、より裾野が広がったように感じました。
+Day2 アンカンファレンス 実は、Airframeハンズオンは、やりたい人が多かったらいいなぁ程度の気持ちでネタ出ししたら、思いの外シールがついてて驚きました。</description></item><item><title>Scala Matsuri 2018に参加してきました #ScalaMatsuri</title><link>https://www.grimrose.org/blog/2018/05/scala-matsuri/</link><pubDate>Fri, 04 May 2018 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2018/05/scala-matsuri/</guid><description>はじめに ScalaMatsuri
 今年もスタッフとして、参加してきました。
 担当 今回担当したのは、ほぼWeb周り全般でした。
 Web周り 今回も、前年のをベースにしつつ、以下のような改善をしてました。
@@ -38,18 +40,18 @@ Web周り 今回も、前年のをベースにしつつ、以下のような改�
 アンカンファレンスのタイムテーブルが去年より早く公開出来たのは、個人的に満足でした。 が、コピペミスで一部のセッションの時間帯を間違えていたので、ミスを減らせるような仕組みにしておく必要がありそうです。
 テンプレート化に併せてタイプミスや入力漏れを予め検知出来るようにしたのですが、 jekyllがというよりテンプレートエンジンであるliquidがエラーのメッセージが人に優しくないので、 来年以降は、別の仕組みでなんとか出来るといいかもしれません。
 その他にも、当日指摘を受けて会場までの地図をGoogle Mapのに変えたりしてました。
-載ってる地図は新宿だし、会場への道案内はこちら、をみつけたけど懇親会だし、サイトに関してはとにかくひどい。みんなどうやってたどりついてるんや。。。 #ScalaMatsuri
-&amp;mdash; きしだൠ (@kis) March 17, 2018 中の人になると指摘を受けるまで気づけなかったりするので、こういった指摘は本当にありがたいです。
+中の人になると指摘を受けるまで気づけなかったりするので、こういった指摘は本当にありがたいです。
 typoなどを気づいてPull Requestをくださる方がいらっしゃって、とても助かりました。
 ありがとうございました。
 来年への改善点ややりたいこと等をまとめておこうとおもいます。
 当日 当日は、進行やタイムキーパー等をやっていました。
 聞きたいセッションはほぼ聴けたのと、アンカンファレンスでは自分で書いたテーマさ採択されてセッションを受け持つことが出来たので、よかったです。
-自分の知りたい事がニッチなので、なにげに unconferenceの方が本番な気がする #scalamatsuri
-&amp;mdash; とーます@悪いオタクらしい (@grimrose) March 17, 2018 アンカンファレンスのセッションでは、以下のような内容のをハンガーフライト形式でやってみました。
-16:00からのセッションの概要です。よろしくお願いします。
-ScalaMatsuri 2018 業務システム in Scalaの概要 https://t.co/x6utGcQvYY #scalamatsuri https://t.co/RHu2mnehp5
-&amp;mdash; とーます@悪いオタクらしい (@grimrose) March 18, 2018 きっかけとしては、なかなかWebサービスのように外に見えやすいシステムに比べ、外に見えにくい場所にあるシステムなので、 他の人がどうやっているのか興味があったので、出してみました。</description></item><item><title>GraphQLとScala</title><link>https://www.grimrose.org/blog/2017/12/graphql-with-scala/</link><pubDate>Mon, 18 Dec 2017 00:00:00 +0900</pubDate><guid>https://www.grimrose.org/blog/2017/12/graphql-with-scala/</guid><description>はじめに この記事は、Scala Advent Calendar 2017の18日目の記事です。
+アンカンファレンスのセッションでは、以下のような内容のをハンガーフライト形式でやってみました。
+きっかけとしては、なかなかWebサービスのように外に見えやすいシステムに比べ、外に見えにくい場所にあるシステムなので、 他の人がどうやっているのか興味があったので、出してみました。
+私が当初想定したのは、自社の社内向けの業務システムでScalaを使ってる人を対象にしてましたが、 思った以上に受託などで業務システムでScalaを扱っている人が多かったのが、興味深かったです。
+終えてみて、各自の体験談や知見を共有出来たので、やってみてよかったのでは無いかと思いました。
+拙いファシリテーションでしたが、なんとかタイムボックスを守って終えることが出来ました。
+おわりに 遅くなってしまいましたが、ご参加いただいた皆さん、ご協賛いただいたスポンサーの皆さん、そして一緒に尽力してくださったスタッフの皆さん、本当にありがとうございました。</description></item><item><title>GraphQLとScala</title><link>https://www.grimrose.org/blog/2017/12/graphql-with-scala/</link><pubDate>Mon, 18 Dec 2017 00:00:00 +0900</pubDate><guid>https://www.grimrose.org/blog/2017/12/graphql-with-scala/</guid><description>はじめに この記事は、Scala Advent Calendar 2017の18日目の記事です。
 前日は、esploさんによるslick-codegenの利用例と中身の説明でした。
 自分たちのプロジェクトでもGraphQLをCQRS(Command Query Responsibility Segregation)のQuery側として利用できないかを確認してみたかったので、 Advent Calendar駆動で調べてみました。
 その中で2つ、ScalaとGraphQLに関することを知ることが出来たので紹介します。
@@ -71,7 +73,6 @@ Sangriaとは 概要 graphql.orgでも紹介されている通り、GraphQLの�
 Sangriaは、幾つかのモジュールによって構成されていますが、おおよそ以下のような分類が可能です。
 コア JSONパーサー向けのライブラリ Relay用ライブラリ JSONパーサーに関してなんでこんなにあるんだと他の言語の人は驚くかもしれませんが、 Scalaでは歴史的経緯により様々なJSONパーサーにまつわるライブラリが作られ、そして現在に至っています。
 歴史的経緯については、eed3si9n_jaさんのスライドを参考にしてください。
-sbt, history of JSON libraries, microservices, and schema evolution (Tokyo ver) from Eugene Yokota
 JSONパーサー自体もバックグラウンドで利用する関数型プログラミング向けのライブラリを選択できるようになっているため、バリエーションは様々です。 なので自分たちの好み、チーム事情に応じたライブラリを使うことが多いです。
 初め方 2017-12-17時点でのリリースバージョンは、v1.3.3です。
 http://sangria-graphql.org/getting-started/
@@ -82,23 +83,31 @@ Schema Execution Sangriaは、Schemaと、エンドポイントで受け取っ�
 GraphQLの操作(Query, Mutation, Subscription)に応じて、予めそれぞれSchemaに定義しておきます。
 GraphQLのクエリは、QueryParserがASTへ変換します。 ここでは、Scalaのパーサコンビネータではなく、parboiledが使われています。
 エンドポイントには、Akka HTTPとPlayを用いる方法が紹介されています。
-Akka-http GraphQL Endpoint Play GraphQL Endpoint 他のフレームワークでも、応用は出来ると思いますので、導入も簡単だと思います。</description></item><item><title>Scala関西 Summit 2017へ参加してきました #scala_ks</title><link>https://www.grimrose.org/blog/2017/09/scala-kansai-summit/</link><pubDate>Sun, 17 Sep 2017 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2017/09/scala-kansai-summit/</guid><description>はじめに http://summit.scala-kansai.org/
+Akka-http GraphQL Endpoint Play GraphQL Endpoint 他のフレームワークでも、応用は出来ると思いますので、導入も簡単だと思います。
+サンプルについて sangria-playground、sangria-relay-playgroundにて公開されています。
+どちらもベースとなるフレームワークは、Playが使われています。
+ソースコードは、sangria-graphql/sangria-playground、 sangria-graphql/sangria-relay-playgroundで公開されているので、 サクッとローカルでも立ち上げることが可能です。
+どちらも、graphiqlが導入されているので、簡単に試すことが出来ます。
+触ってみて サンプルに出てくるProductRepo等のオブジェクトの集まりであるコンテキストをどうやって実装するか、 サーバーサイドが注力すべき場所になるように、Sangriaがある程度お膳立てをしてくれているように感じました。
+特にグラフ構造を持つようなコンテキストでは、グラフ構造が得意ではないRDBMSを操作するのは、正直厳しいように思えます。 他の言語のサーバーサイド実装の事情がよく分かっていないので、このような問題をどうやって解決しているのか気になるところではあります。
+個人的には、Infinispan、Apache Geode、Apache IgniteやHazelcastといった、 In-Memory Data Gridのようなものと組み合わせて、オブジェクトをそのままメモリで扱いながら、CQRS(Command Query Responsibility Segregation)と上手く組み合わせて行くのが現状なのではないかと考えています。</description></item><item><title>Scala関西 Summit 2017へ参加してきました #scala_ks</title><link>https://www.grimrose.org/blog/2017/09/scala-kansai-summit/</link><pubDate>Sun, 17 Sep 2017 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2017/09/scala-kansai-summit/</guid><description>はじめに http://summit.scala-kansai.org/
 https://skug.connpass.com/event/62304/
 去年のScala関西 Summit 2016に参加してまた参加したいと思っていました。
 そんな折CfPを受け付けていたので応募したところ受かったので、これまでやってきたことをまとめるいい機会でしたので、発表してきました。
-Scala関西summit #scala_ks のCfP通ったー。初めて関西でしゃべるぞー。
-&amp;mdash; とーます (@grimrose) 2017年7月9日
 Akka Streamsへ移行しとるんやけどちょっと聞いてや スライド
 発表してきたのは、これまでのプロジェクトでやってきたことと、Akka Streamsをプロジェクトの途中から導入したことで何を考えたのかです。
 幾つか質問を受けていて、その中で出てきたAlpakkaですが、まだakka-stream-alpakka-csvだけ導入していて、akka-stream-alpakka-s3を含めその他のモジュールについてはまだ検証中です。 モジュールによっても開発中だったりするので、ハマりどころもあります。
 初期に導入したScalikeJDBC + SkinnyORMのデータ取り込み処理については、現在のところ他のバッチ処理の優先順位が高く、Akka Streamsの移行対象になってません。
 今回紹介した制約ですが、既存の処理をどうやってAkka Streamsへ繋げるか、移行していくかという課題を元に考えたものなので、これを推奨しているわけではありません。
 自分の発表の前にAkka Streamsのセッションが並んでいて、スタッフのタイムテーブルの組み方に助けていただいたと思っています。 おかげさまで説明や資料については、このセッションに来るくらいだから前のも来てるだろうという前提で作ることが出来ました。
-Akka Streams 関連のセッション、打順が完璧すぎる……
-&amp;mdash; にしかわささき (@nishikawasasaki) 2017年9月9日
 失敗したなと思ったのは、本番になると緊張して早口になってしまったのと、 それを緩和するために予めスライドにあと何分かを知れるのを仕込んでいたのにもかかわらず、上手く活用出来ず、予想よりも早く終わってしまったことでした。
 セッション 今回参加したの以下のセッションです。
-ユーザーデータ基盤を１からScalaでつくった話し Scala and Akka apps on Kubernetes in ChatWork Scala の Functional Programming を支える技術 Scala on Docker(AWS ECS) グラフを知って理解するAkka Stream 「Scale with Scala」の道程 Scala on JVM をプロファイリングするツールの紹介 Property Based Testingでドメインロジックをテストする 今回一番印象的だったセッションは、ユーザデータ基盤についての話でした。 今関わっているプロジェクトの未来にも繋がる話だったり、周りを巻き込んでの検証をすすめていく方法など大変参考になりました。</description></item><item><title>Scala Matsuri 2017に参加してきました #ScalaMatsuri</title><link>https://www.grimrose.org/blog/2017/05/scala-matsuri/</link><pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2017/05/scala-matsuri/</guid><description>はじめに ScalaMatsuri
+ユーザーデータ基盤を１からScalaでつくった話し Scala and Akka apps on Kubernetes in ChatWork Scala の Functional Programming を支える技術 Scala on Docker(AWS ECS) グラフを知って理解するAkka Stream 「Scale with Scala」の道程 Scala on JVM をプロファイリングするツールの紹介 Property Based Testingでドメインロジックをテストする 今回一番印象的だったセッションは、ユーザデータ基盤についての話でした。 今関わっているプロジェクトの未来にも繋がる話だったり、周りを巻き込んでの検証をすすめていく方法など大変参考になりました。
+トラック数の関係で参加出来なかったセッションも、Twitterのタイムラインを見ていると聞きたかった話ばかりでした。
+資料をまとめてくださっていたので、見返しておきたいと思います。
+Scala関西 Summit 2017で公開された資料へのリンク集
+おわりに 前日は、スポンサーでもある燻製と地ビール　和知で呑むために京都へ前乗りしました。
+翌日は、桃ヴァイツェンを呑むためにビアベリー天満へ行ってきました。</description></item><item><title>Scala Matsuri 2017に参加してきました #ScalaMatsuri</title><link>https://www.grimrose.org/blog/2017/05/scala-matsuri/</link><pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2017/05/scala-matsuri/</guid><description>はじめに ScalaMatsuri
 今年もスタッフとして、参加してきました。
 ブログを書こうとしてましたが、なかなか踏み出せていなかったのでScala将軍達の後の祭り2017のLTに応募して、 LT駆動でなんとか思い出しながら書いてみました。
 担当 担当したのは以下の内容でした。
@@ -140,12 +149,13 @@ GroovyがApacheに寄贈され、codehausが停止してしまったため、ソ
 GPars/GPars
 versionは、1.2.1のままです。
 ですので、Gradleで利用する際は、以下のように依存を追加すれば利用できるようになります。
-// https://mvnrepository.com/artifact/org.codehaus.gpars/gpars compile group: &#39;org.codehaus.gpars&#39;, name: &#39;gpars&#39;, version: &#39;1.2.1&#39; Actorモデルについて アクターモデルについては、アクターモデルを見てください。
+// https://mvnrepository.com/artifact/org.codehaus.gpars/gpars compile group: &amp;#39;org.codehaus.gpars&amp;#39;, name: &amp;#39;gpars&amp;#39;, version: &amp;#39;1.2.1&amp;#39; Actorモデルについて アクターモデルについては、アクターモデルを見てください。
 アクターモデルの実装されているもので代表的なものは、ErlangとAkkaが挙げられます。
 この2つについては、もうエコシステムとも呼べるようなものになってしまっているので、アクターモデルだけを知ろうとすると、どこから手をつけていいのか分かりにくくなります。
 そこで、GParsのActorを使ってアクターモデルの考え方を理解して行こうと思います。
 GParsのActor GParsのActorのドキュメントを見ると、Actorの作り方はとてもシンプルです。
-import groovyx.gpars.actor.Actor def actor = Actors.actor { loop { react { msg -&amp;gt; println &amp;quot;Received: $msg&amp;quot; } } } actor.send &#39;Hello, GPars!&#39; actor.join() // 停止するまで立ち上がったままにする。 // 止めるときはCtrl-C or プロセスを落とす いわゆるPingPongをする場合はこんな感じです。</description></item><item><title>Scala関西Summit 2016へ参加してきました #scala_ks</title><link>https://www.grimrose.org/blog/2016/10/scalakansai2016/</link><pubDate>Sun, 09 Oct 2016 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2016/10/scalakansai2016/</guid><description>はじめに http://summit.scala-kansai.org/
+import groovyx.gpars.actor.Actor def actor = Actors.actor { loop { react { msg -&amp;gt; println &amp;#34;Received: $msg&amp;#34; } } } actor.send &amp;#39;Hello, GPars!&amp;#39; actor.join() // 停止するまで立ち上がったままにする。 // 止めるときはCtrl-C or プロセスを落とす いわゆるPingPongをする場合はこんな感じです。
+@Immutable class PingMessage { String message } @Immutable class PongMessage { String message } @Log class PongActor extends DefaultActor { @Override protected void act() { loop { react { msg -&amp;gt; log.</description></item><item><title>Scala関西Summit 2016へ参加してきました #scala_ks</title><link>https://www.grimrose.org/blog/2016/10/scalakansai2016/</link><pubDate>Sun, 09 Oct 2016 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2016/10/scalakansai2016/</guid><description>はじめに http://summit.scala-kansai.org/
 http://skug.connpass.com/event/38349/
 去年のScala関西 Summit 2015に参加してまた参加したいと思っていたのと、 ScalaMatsuriの運営の参考になればと思い、参加しました。
 セッション 今回は、どのセッションも面白そうだったのと、社内に持ち帰って共有したい内容が多かったので、悩みました。

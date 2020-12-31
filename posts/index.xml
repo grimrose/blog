@@ -1,14 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on open build/reports/life/index.html</title><link>https://www.grimrose.org/blog/posts/</link><description>Recent content in Posts on open build/reports/life/index.html</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sun, 19 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.grimrose.org/blog/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>オーダーメイド枕をお願いしてみた</title><link>https://www.grimrose.org/blog/2020/01/order-pillow/</link><pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2020/01/order-pillow/</guid><description> はじめに 知り合いの人から、ソウ・エクスペリエンスの体験型ギフトを贈ってもらったのですが、その中から今回はオーダーメイド枕を作る体験を選んでみました。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on open build/reports/life/index.html</title><link>https://www.grimrose.org/blog/posts/</link><description>Recent content in Posts on open build/reports/life/index.html</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 31 Dec 2020 08:06:16 +0000</lastBuildDate><atom:link href="https://www.grimrose.org/blog/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>2020年の振り返り</title><link>https://www.grimrose.org/blog/2020/12/retrospect/</link><pubDate>Thu, 31 Dec 2020 08:06:16 +0000</pubDate><guid>https://www.grimrose.org/blog/2020/12/retrospect/</guid><description>はじめに 今年も大晦日になったので、振り返ってみたいと思います。
+2019年の振り返りは、こちらでした。
+やってみたかったことの振り返り 2020年にやってみたかったことは、以下のとおりでした。
+typelevelのプロダクトを発表する Cloud Runを使ってGraalVMでnativeに出来るScalaのフレームワークを試す コロナ禍のおかげで、そもそも出勤することが数える程度になりずっとリモートワークになってしまったので、帰宅の途中で勉強会に参加することも無くなってしまいました。
+リモートワークのおかげで自宅でコードをずっと書いていたので、仕事が終わったあとまでコードを書くモチベーションが無くなってました。
+また、発表したいこともコードを書くことが無くなった影響で持ちネタが無く、勉強会やカンファレンスが軒並みオンラインになってしまったので、参加するだけで満足してしまいました。
+今はだいぶ落ち着いてきた気がするので、自分のコードを書く機会を少しでも増やしていくのが目標になっています。
+リモートワークと環境整備 通勤するのは元々苦ではなかったのですが、リモートワークを始めて分かったのが気持ちの切り替えになっていたことでした。
+加えて、なるべく新しい店を探すためにランチを外で取っていたのが出来なくなり、自宅の周りは住宅街なのでそんなにランチのバリエーションがなかったのが影響してました。
+リモートワークの環境を整えるため、PCの机と椅子は重要だと思い割と初期の段階で揃えました。
+特に椅子については会社の元同僚に紹介された店に行って実際に座ってみて相談しながら決めました。今年買って良かったもので紹介します。
+ここで長時間座って悩んで相談もして選んでみた。
+自分にfitした椅子を買えて良かった😊https://t.co/dPdH6zmYog
+&amp;mdash; とーます (@grimrose) April 4, 2020 まずはPCラックをモニター置きに変えて、机を高さを買えられる Bauhütteのコックピットデスク を購入しました(ついさっきバージョンアップして不満点が解消されているのを知りました)。
+マイクは２月頃にリモートワークが始まった頃に Umpire を購入してました。その後に品切れになっていたりしていて早めに買っていて良かったと思いました。
+Webカメラは、 ロジクールのC615n にしました。三脚用の穴がついているのが決め手でした。後でカメラ用のアームに乗せて自由な角度をつけられるようになったのでいい感じになりました。
+my workspace version up pic.twitter.com/qyzIZt8TcM
+&amp;mdash; とーます (@grimrose) April 7, 2020 その後モニターが大きいのがいいなと思ったので、EIZOのEV3895 を購入しました。
+my new gear pic.twitter.com/R7YnsjocaE
+&amp;mdash; とーます (@grimrose) November 7, 2020 今の所この環境で不満がだいぶ解消されたのでしばらくはこのままだろうと思います。
+今年買ってよかったもの ergohuman pro</description></item><item><title>オーダーメイド枕をお願いしてみた</title><link>https://www.grimrose.org/blog/2020/01/order-pillow/</link><pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2020/01/order-pillow/</guid><description>はじめに 知り合いの人から、ソウ・エクスペリエンスの体験型ギフトを贈ってもらったのですが、その中から今回はオーダーメイド枕を作る体験を選んでみました。
 オーダーメイド枕 当日の流れは、ここに載っている通りでした。
 フィッティングをしていたときですが、段々と違和感がなくなっていく感覚はとても良かったです。
 また、その時に寝ていたマットレスが腰に全く違和感がなくてびっくりしました。
 以前から、良いマットレスがあれば買おうかと思っていたのですが、なかなか体験できる機会がなかったので、悩みました。
 ですが、気に入ってしまったのでオーダーメイド枕と併せて購入しました。
-マットレスに横たわったと思ったら、カードを差し出していた…
-催眠術だとか超スピードだとか
-そんなチャチなもんじゃあ　断じてねえ
-もっと恐ろしいものの片鱗を　味わったぜ…
-&amp;mdash; とーます (@grimrose) December 15, 2019 おわりに 利用し始めてから1ヶ月ほど経ちましたが、睡眠の質が上がったように感じます。
+おわりに 利用し始めてから1ヶ月ほど経ちましたが、睡眠の質が上がったように感じます。
 枕カバーの高さ等で若干の微調整が必要に思えるので、空いた時間にメンテナンスに行こうかと思っています。
 体験型ギフトを贈ってくれた知り合いにはとても感謝しています。ありがとうございました。</description></item><item><title>2019年の振り返り</title><link>https://www.grimrose.org/blog/2019/12/retrospect/</link><pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2019/12/retrospect/</guid><description>今年も大晦日になったので、振り返ってみたいと思います。
 2018年の振り返りは、こちらでした。
@@ -23,10 +39,10 @@ OpenCensus meetup vol.1 に参加してきました #opencensusjp JJUG CCC 2019 
 Scala.jsでGoogle Cloud Functionsを利用する前に知りたかったこと blogを書いていなかったので、後で書きます。
 今年の一番大きな出来事は、やはり転職でした。
 12月で転職して半年が経って改めて思うのは、評価される環境で自分の能力を発揮できて、それを評価してもらえるのが、一番良かったと思えました。
-「いい転職ってなんですか？」と聞かれるけど、僕は「自分が入社後に活躍できる転職」がいい転職だと思う。自分の価値を発揮して信頼を獲得できる環境にいることが「いい転職が出来た」と思える要素になる。転職に正解はないけど、自分にとって正解にするためにも「評価される環境」に行くのが大切よ。
-&amp;mdash; motoさん (@moto_recruit) December 16, 2019 少なくとも前職で私のエンジニアとしてのスキルを評価できる人が上には存在しなかったのは事実です。 もちろん、評価基準がそもそも違うので、単純に比較出来るものではありませんし、評価そのものが環境に依存しているものだと思うので、あくまでも現時点の評価は満足できるものではありました。
+少なくとも前職で私のエンジニアとしてのスキルを評価できる人が上には存在しなかったのは事実です。 もちろん、評価基準がそもそも違うので、単純に比較出来るものではありませんし、評価そのものが環境に依存しているものだと思うので、あくまでも現時点の評価は満足できるものではありました。
 今年買ってよかったもの 今年は、挙げたらキリが無いのですが、ガジェットはこの2つが一番良かったと思います。
-Satechi 75W デュアル Type-C PD トラベルチャージャー 2 MBP 13inchのを充電出来てかつ、もう一つのUSB Type-CでZenfone 5も充電出来るのでとてもありがたいです。</description></item><item><title>自分の好きなジン #gin #adventcalendar</title><link>https://www.grimrose.org/blog/2019/12/gin-and-vodka-advent-calendar/</link><pubDate>Tue, 03 Dec 2019 15:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2019/12/gin-and-vodka-advent-calendar/</guid><description>はじめに この記事はジン・ウォッカアドベントカレンダー の4日目の記事です。
+Satechi 75W デュアル Type-C PD トラベルチャージャー 2 MBP 13inchのを充電出来てかつ、もう一つのUSB Type-CでZenfone 5も充電出来るのでとてもありがたいです。
+ただ、HyperJuice: World&amp;rsquo;s First &amp;amp; Smallest 100W GaN USB-C Charger も気になっています。</description></item><item><title>自分の好きなジン #gin #adventcalendar</title><link>https://www.grimrose.org/blog/2019/12/gin-and-vodka-advent-calendar/</link><pubDate>Tue, 03 Dec 2019 15:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2019/12/gin-and-vodka-advent-calendar/</guid><description>はじめに この記事はジン・ウォッカアドベントカレンダー の4日目の記事です。
 3日目は、oh_skyさんの好きなジンについて書きますでした。
 5日目は、reonaarticleさんの好きなジンについてです。
 自分の好きなジンについて書いてみようと思います。
@@ -45,39 +61,31 @@ GIN FESTIVAL TOKYO ​2019 Facebookの広告でふと見かけて興味を持っ
 ローンウルフは、六本木にあるBrewDog でも飲めるので、六本木で勉強会が開催された後に向かうことが多いです。
 元々BrewDogのクラフトビールが好きだったので、ジンも飲めることが分かったので更に好きな場所になりました。
 おわりに 来年開催されるかはわかりませんが、気になったメーカーや銘柄がいろいろあったので、次回もGIN FESTIVAL TOKYOに参加してみたいと思っています。
-&amp;ndash;</description></item><item><title>退職しました(4年7ヶ月ぶり2度目)</title><link>https://www.grimrose.org/blog/2019/05/career-change/</link><pubDate>Fri, 31 May 2019 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2019/05/career-change/</guid><description> はじめに タイトルで煽らない、かしこまった見出しもつけない、ウィッシュリストのせない、東亜飯店張らない、fromとtoを両方書く。職場崩壊を暴露しない。キラキラしない。これが私の求める退職エントリです。
-&amp;mdash; laiso (@laiso) 2017年8月1日 2019年06月30日を持って4年7ヶ月在籍した会社を退職します。
+&amp;ndash;</description></item><item><title>退職しました(4年7ヶ月ぶり2度目)</title><link>https://www.grimrose.org/blog/2019/05/career-change/</link><pubDate>Fri, 31 May 2019 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2019/05/career-change/</guid><description>はじめに 2019年06月30日を持って4年7ヶ月在籍した会社を退職します。
 2019年05月31日が最終出社日でした。
-最終出社Done. pic.twitter.com/n549mauYwp
-&amp;mdash; とーますは労働なんかしないで 光合成だけで生きたい (@grimrose) 2019年5月31日 from とある人材紹介会社 マーケティング部門 データエンジニア
+from とある人材紹介会社 マーケティング部門 データエンジニア
 to 多分そのうちバレるので、その時に察してください
 なんで辞めるの? 前回の退職エントリは、こちら。
 転職や異動といったものの個人的なスタンスは、こんな感じです。
-転職も社内異動も縁とお金とタイミングと運次第
-&amp;mdash; とーますは労働なんかしないで 光合成だけで生きたい (@grimrose) 2018年12月14日 特に転職活動をしていなかったのですが、様々な人から声かけてもらっていて、何度か面談をしていました。
+特に転職活動をしていなかったのですが、様々な人から声かけてもらっていて、何度か面談をしていました。
 もう一つのきっかけは、2018年の振り返りにも書いていた移行プロジェクトの目処が立ったのもありました。
 このまま続けていくのか別の道を探すのかを考えていた時に、何度目かの面談をする機会があったので、もう少し詳しい話を聴いたら面白そうだったので、応募して面接して内定をいただきました。
 ですので、今回の転職は全てが上手くフィットしていて、二度と無いようなめぐり合わせだと思いました。
 ただし、タイミングが良いという部分が重なってしまい、辞退を申し出なければならない企業も出てきてしまったのが、本当に申し訳なかったと思いました。
-ホントにタイミングが悪かったんや…
-&amp;mdash; とーますは労働なんかしないで 光合成だけで生きたい (@grimrose) 2019年4月9日 面談や面接の中で私が認識していなかった強みや素養を見けてくださったのは、今後どのようなキャリアを進むことが良いのか考えることが出来、とても感謝しています。
+面談や面接の中で私が認識していなかった強みや素養を見けてくださったのは、今後どのようなキャリアを進むことが良いのか考えることが出来、とても感謝しています。
 これからどうすんの? Scala書く(はず)のと併せて、これまでのバックエンドやデータマネジメントに関する知識を活かせる仕事に就く予定です。
 知り合いの人も何人か転職していましたし、凄い濃い人達がいっぱいいるので、「俺より強い奴に会いに行く」と「一番の下手くそでいよう」の2つの気持ちを持ちながら、 やっていこうかと思います。
 おわりに 6月末のScalaMatsuri 2019が終わるまでは気を抜けないのであまり休みという感じはしませんが、 人生初の有給消化なので貪るように休みたいと思います。
 今回例のリストは載せませんが、前回の退職エントリには残っているので、そちらからお願いします。 また、面倒くさい人向けにkampa!のリンクを置いておきますので、ご査収ください。
 約5年間、本当にお世話になりました。</description></item><item><title>JJUG CCC 2019 Springに参加してきました #jjug_ccc</title><link>https://www.grimrose.org/blog/2019/05/jjug-ccc-2019/</link><pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2019/05/jjug-ccc-2019/</guid><description>はじめに http://www.java-users.jp/ccc2019spring/
-「CfPを出さないと約束したな。あれは嘘だ。」
-CfP2本出して片方当選した。
-というわけで、久しぶりにJJUG CCCで話します。
-&amp;mdash; とーますは労働なんかしないで 光合成だけで生きたい (@grimrose) 2019年3月17日 2016年の登壇からしばらく聴く側にいました。
+2016年の登壇からしばらく聴く側にいました。
 この1年くらいずっとOpenCensusを触っていましたがJJUG CCCでは話してなかったのと、micrometerを使っているので、そちらもあわせてCfPに出してみました。
 運良くOpenCensusの方が採択されたので、今回はカスタムメトリクスの取り方を調べつつ自分たちのアプリケーションに組み込む方法を勉強できればと思い、いろいろ検証内容を元に発表できればと思っていました。
 発表 OpenCensusで始める分散トレーシングと監視
 今回の発表のベースとなったのは、Stackdriver担当者の@ymotongpooさんの以下の記事でした。
 オブザーバビリティ（可観測性）がなぜ必要だと考えるのか
 その後、ajitofm 42: You must unlearn what you have learnedを聴いたときに感じた内容(ツイートでは43となっているが42の間違い)と、
-土日で #ajitofm の40, 43を聞き直して、ここ数ヶ月 trainingやmetricsに興味を持ったのは、必然だったのではないかと考えている
-&amp;mdash; とーますは労働なんかしないで 光合成だけで生きたい (@grimrose) 2019年3月4日 入門 監視を読み終えたので、これらをふまえてOpenCensusを使って実現していく方法とStackdriverによる可視化までを繋げられないかと思い、 構成を練っていました。
+入門 監視を読み終えたので、これらをふまえてOpenCensusを使って実現していく方法とStackdriverによる可視化までを繋げられないかと思い、 構成を練っていました。
 途中でOpenCensus meetup vol.1 で話す機会が得られたので、これまでに得られたOpenCensusのJava実装についてを発表しました。
 残りの期間は、OpenCensusのカスタムメトリクスの取り方とGCP上でStackdriverを利用したデモの作成に取り組んでいました。
 デモで利用したソースコードはこちらにあります。
@@ -96,8 +104,6 @@ OpenCensusの勉強会の初回ということもあり、他の言語の人達�
 今回の内容に、カスタムメトリクスの取り方をデモをでお見せできればと思いますが、詳細は未定です。
 おわりに やばかった。
 あと、 Observabilityは港区用語 というパワーワードの生まれた現場にいられてよかった。
-Observabilityは港区用語。俺たちは現実《リアル》を把握していく と表現することで足立区まで到達していける #opencensusjp
-&amp;mdash; わかめ@毎日猫がいる (@vvakame) 2019年4月3日
 次回の開催も楽しみにしています。</description></item><item><title>2018年の振り返り</title><link>https://www.grimrose.org/blog/2018/12/retrospect/</link><pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2018/12/retrospect/</guid><description>今年も大晦日になったので、振り返ってみたいと思います。
 2017年の振り返りは、こちらでした。
 やってみたかったことの振り返り 2018にやってみたかったことは、以下のとおりでした。
@@ -120,23 +126,22 @@ Twitterのタイムラインで流れてきて、帰宅途中で購入しまし�
 10日目は、@j5ik2oさんです。
 準備の期間を含めて約4ヶ月位 census-ecosystem/opencensus-scala に触れていたので振り返りつつ、 Japan Container Daysの参加した感想を書こうかと思います。
 Japan Container Days v18.12 https://containerdays.jp/
-.@grimrose による「OpenCensusとJaegerで分散トレーシングを見てみよう」を受け付けました。このプロポーザルを聞いてみたい人はいいねやリツイートでぜひ応援してください！ #containerdaysjp の公募セッション一覧はこちら https://t.co/EEbrgf1bBv
-&amp;mdash; JapanContainerDays (@containerdaysjp) 2018年9月5日 OpenCensusとJaegerで分散トレーシングを見てみよう スライドは、こちらで公開してあります。
-OpenCensusとJaegerで分散トレーシングを見てみよう のスライドを公開しました。#containerdaysjp #TerraceRoomhttps://t.co/Y9oTfsZ7Yg
-&amp;mdash; とーます@悪いオタクらしい (@grimrose) 2018年12月5日 内容としては、Scala関西 Summit 2018へ参加してきました #scala_ks で話した内容からScalaの要素を削って、OpenCensusの内容を増やしました。
+OpenCensusとJaegerで分散トレーシングを見てみよう スライドは、こちらで公開してあります。
+内容としては、Scala関西 Summit 2018へ参加してきました #scala_ks で話した内容からScalaの要素を削って、OpenCensusの内容を増やしました。
 段取りを間違えてしまって、デモの時間を減らしてしまうという痛恨のミスを犯してしまったのが心残りです。
-心残りがあるとすれば、elasticsearchをバックエンドにした理由であるkibanaでfluentdで送ったログとjaegerのtracingが一緒に見られるところまでデモをしたかった…
-&amp;mdash; とーます@悪いオタクらしい (@grimrose) 2018年12月5日 OpenCensus Scalaについて census-ecosystem/opencensus-scala
+OpenCensus Scalaについて census-ecosystem/opencensus-scala
 Akka-HTTPで使う前にREADME.mdを見てもらうと、 どうやってRouterからSpanを受け取って、Tracingを組み立てて行くことが出来るかが分かります。
 あとは、自分が使いたいExporterの設定をapplication.confで有効にすることで、転送されるようになります。
 0.6.1で利用できるExporterは以下のとおりです。
-Stackdriver Logging Zipkin Instana 今回紹介したJaegerはZipkinと互換性があるので、転送先をJaegerのCollectorにすることで利用可能になります。</description></item><item><title>ぐるぐるDDDで気をつけてること</title><link>https://www.grimrose.org/blog/2018/12/ddd/</link><pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2018/12/ddd/</guid><description>はじめに この記事は、ドメイン駆動設計 Advent Calendar の2日目の記事です。
+Stackdriver Logging Zipkin Instana 今回紹介したJaegerはZipkinと互換性があるので、転送先をJaegerのCollectorにすることで利用可能になります。
+あくまでwrapperなので、census-instrumentation/opencensus-javaが対応していないExporterは、自分でCustom Exporterを作る必要があります。
+その際は、Trace exporterを参考にしつつ、 census-instrumentation/opencensus-specsでSpanの中身をみつつ、 利用したいTracingのプロダクトのフォーマットにしていく必要があります。
+また、Spanは伝播させる必要があるので、ReaderTのような合成しやすい型と組み合わせて対応するといいと思われます。
+import cats.data.ReaderT // or import scalaz.ReaderT type ReaderSpanT[F[_], A] = ReaderT[F, Span[F], A] Module for tagless-final &amp;amp; cats-effectのように、そもそも組み込んでしまうissueも上がっています。</description></item><item><title>ぐるぐるDDDで気をつけてること</title><link>https://www.grimrose.org/blog/2018/12/ddd/</link><pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2018/12/ddd/</guid><description>はじめに この記事は、ドメイン駆動設計 Advent Calendar の2日目の記事です。
 1日目は、@tanaka9230 さんの 「DDD」にまつわる諸課題の整理でした。
 3日目は、@bigwheel さんの 集約の境界と整合性の維持の仕方に悩んで2ヶ月ぐらい結論を出せていない話です。
 ぐるぐるDDDとは ぐるぐるDDD で検索すると、@haradakiro さんの資料がみつかると思います。
 DDDとScrumを回していくことで、モデリングと実装をしていくやり方です。
-ぐるぐるDDD/Scrum - モデリングと実装のうずまきをまわそう from Kiro Harada
-ぐるぐるDDDは何を目指しているのか from Kiro Harada
 ドメイン駆動設計というとどうしても実装の話が多いので、どうやってやっていくと、モデルと実装の乖離を減らしつつ、要求に答えられるシステムを開発出来るのか、 自分が気をつけてることを書きたいと思います。
 モデル探求のうずまき https://domainlanguage.com/ddd/whirlpool/
 この絵は、端的にシナリオとモデルとコードによる探査をどのように扱うかを表しています。
@@ -154,28 +159,28 @@ https://skug.connpass.com/event/100075/
 https://skug.connpass.com/event/99741/
 去年のScala関西 Summit 2017に引き続いて、参加してきました。
 今回は、2日間の開催ということで、1日目のセッションのCfPが通らなかったら、2日目のアンカンファレンスでなにか出来ればと思っていました。
-Scala関西summit #scala_ks のCfP通ったー。また関西でしゃべるぞ!
-&amp;mdash; とーます@悪いオタクらしい (@grimrose) 2018年9月5日 今回は、Akkaを分散トレーシングで見てみよう というタイトルで、仕事で直面したネタをもとにデモをする内容を考えていました。
-Scala関西Summit2018 当日のセッションをご紹介します！スピーカー: grimroseさん タイトル: Akkaを分散トレーシングで見てみよう https://t.co/q1JO0weX9f #scala_ks
-&amp;mdash; Scala関西Summit@2018/11/10-11 (@ScalaKansai) 2018年10月22日 今回は自分なりに練に練った文言にしたので、CfP通ってよかった。
-&amp;mdash; とーます@悪いオタクらしい (@grimrose) 2018年9月5日 Akkaを分散トレーシングで見てみよう https://2018.scala-kansai.org/session/#grimrose
-「Akkaを分散トレーシングで見てみよう」のスライドを公開しました。#scala_ks Jupyter Notebook Viewer https://t.co/HhnsaZTpVt
-&amp;mdash; とーます@悪いオタクらしい (@grimrose) 2018年11月10日 デモで使用したコードは、grimrose/scala-kansai-summit-2018にあります。
+今回は、Akkaを分散トレーシングで見てみよう というタイトルで、仕事で直面したネタをもとにデモをする内容を考えていました。
+Akkaを分散トレーシングで見てみよう https://2018.scala-kansai.org/session/#grimrose
+デモで使用したコードは、grimrose/scala-kansai-summit-2018にあります。
 CfPが通ったあと、Jaegerについてや、OpenCensusについていろいろと調べ回っていました。
 Google Cloud Next &amp;lsquo;18 in Tokyoでは、StackdriverとOpenCensusの開発に携わっている方に、直接質問が出来る機会があってとても助かりました。 その際に教えていただいたのが、以下の動画でした。
 その他にも調べていく上で多くのことを知ることが出来ました。
 幾つか質問を受けた中で、Akka Streamでも利用出来るのかという話がありました。
-もちろんissueは立っているのですが、現在はAkka HTTPのサポートにとどまっています。 なので、自分で頑張るしか無い状況ですが、親となるio.opencensus.trace.Span をどうやってAkka StreamのGraphに乗せるのかが考えどころだと思います。</description></item><item><title>JJUG CCC 2018 Springに参加してきました #jjug_ccc</title><link>https://www.grimrose.org/blog/2018/06/jjug-ccc-2018/</link><pubDate>Sat, 09 Jun 2018 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2018/06/jjug-ccc-2018/</guid><description>http://www.java-users.jp/ccc2018spring/
+もちろんissueは立っているのですが、現在はAkka HTTPのサポートにとどまっています。 なので、自分で頑張るしか無い状況ですが、親となるio.opencensus.trace.Span をどうやってAkka StreamのGraphに乗せるのかが考えどころだと思います。
+あと、今回のCfPのきっかけとなったblogの記事がOpenCensus について調べて試したなのですが、 書いた方が質問に来てくださっていろいろ話すことが出来てとても楽しかったです。
+Day1 カンファレンス 今回、3トラックでしかもすべてのセッションが面白そうなので、ホントに悩みましたが以下を選びました。
+長期的なメンテナンスの必要なScala製システムにおいて気をつけるべきこと circeから学ぶ Generic Programming 入門 ZOZOSUITはScalaで動いてるよ！ Scala-erにも影響ありそうなJavaの現状まとめ DatabricksとSparkではじめる [データ分析/機械学習] 実践入門 Scala でつくる証券会社とスタートアップ 実践GraphQL on Scala どのセッションも興味深いものばかりでしたが、やはり今回一番のパワーワードは、これでしょう。
+Scalaも普及期に入り、いろいろな人が使ってみて様々な使われ方がされて、より裾野が広がったように感じました。
+Day2 アンカンファレンス 実は、Airframeハンズオンは、やりたい人が多かったらいいなぁ程度の気持ちでネタ出ししたら、思いの外シールがついてて驚きました。</description></item><item><title>JJUG CCC 2018 Springに参加してきました #jjug_ccc</title><link>https://www.grimrose.org/blog/2018/06/jjug-ccc-2018/</link><pubDate>Sat, 09 Jun 2018 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2018/06/jjug-ccc-2018/</guid><description>http://www.java-users.jp/ccc2018spring/
 参加したセッション 今回は、午後から参加したので、以下のセッションに参加してきました。
 Scala製システムを3年間運用することで起きた様々なことへの対処 Apache Kafkaとストリーム処理 Spring Cloud, Docker &amp;amp; Kubernetes - Lessons Learned in the context of an OSS Project Networks and Types &amp;ndash; Typed Reactive Systems with Akka GKEとgRPCで実装する多言語対応・スケーラブルな内部API Google Dataflow(Java)を使ったビッグデータのバリデーション Javaを書かなくなって以来、そういうセッションをメインに選んできましたが、そういう傾向なのかセッションもJavaだけでなくアプリケーションを取り巻くミドルウェアやインフラ周りの内容が増えて来ましたし、 興味深いセッションが多く、今回は迷いました。
 k8sやmicro serviceといった内容が増えてきたことでJavaだけでなく参加者が携わる領域が増えてきているということなんだと思いました。
 特にモノリシックなサービスをk8sに載せられるように改善していく事例の紹介はとても勉強になりましたが、しゃべるスピードが早すぎてついていくので精一杯でした。
-JJUG CCC 2018 : Lessons Learned: Spring Cloud -&amp;gt; Docker -&amp;gt; Kubernetes from Mauricio (Salaboy) Salatino
 あとから資料見直してみるととても示唆に富んだいい内容だったので、もっと英語のスキルを上げていければと思いました。
 その他のセッションも、普段の開発にも取り入れられそうなものがあったので、試してみたいと思います。
 おわりに 今回は、参加者も慣れたのか動線がしっかりしていて、前回よりもさらにスムーズだと感じました。
 懇親会も普段会えない人と話することが出来てとても楽しかったです。 いろいろ第一人者から直接聞ける機会は少ないので、懇親会はとてもありがたいです。
-@grimrose7がシェアした投稿 - 2018年 5月月26日午前3時29分PDT</description></item><item><title>Scala Matsuri 2018に参加してきました #ScalaMatsuri</title><link>https://www.grimrose.org/blog/2018/05/scala-matsuri/</link><pubDate>Fri, 04 May 2018 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2018/05/scala-matsuri/</guid><description>はじめに ScalaMatsuri
+JJUGのスタッフの皆様、スポンサーの皆様、講演者の皆様、参加者の皆様、ありがとうございました。</description></item><item><title>Scala Matsuri 2018に参加してきました #ScalaMatsuri</title><link>https://www.grimrose.org/blog/2018/05/scala-matsuri/</link><pubDate>Fri, 04 May 2018 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2018/05/scala-matsuri/</guid><description>はじめに ScalaMatsuri
 今年もスタッフとして、参加してきました。
 担当 今回担当したのは、ほぼWeb周り全般でした。
 Web周り 今回も、前年のをベースにしつつ、以下のような改善をしてました。
@@ -184,18 +189,18 @@ Web周り 今回も、前年のをベースにしつつ、以下のような改�
 アンカンファレンスのタイムテーブルが去年より早く公開出来たのは、個人的に満足でした。 が、コピペミスで一部のセッションの時間帯を間違えていたので、ミスを減らせるような仕組みにしておく必要がありそうです。
 テンプレート化に併せてタイプミスや入力漏れを予め検知出来るようにしたのですが、 jekyllがというよりテンプレートエンジンであるliquidがエラーのメッセージが人に優しくないので、 来年以降は、別の仕組みでなんとか出来るといいかもしれません。
 その他にも、当日指摘を受けて会場までの地図をGoogle Mapのに変えたりしてました。
-載ってる地図は新宿だし、会場への道案内はこちら、をみつけたけど懇親会だし、サイトに関してはとにかくひどい。みんなどうやってたどりついてるんや。。。 #ScalaMatsuri
-&amp;mdash; きしだൠ (@kis) March 17, 2018 中の人になると指摘を受けるまで気づけなかったりするので、こういった指摘は本当にありがたいです。
+中の人になると指摘を受けるまで気づけなかったりするので、こういった指摘は本当にありがたいです。
 typoなどを気づいてPull Requestをくださる方がいらっしゃって、とても助かりました。
 ありがとうございました。
 来年への改善点ややりたいこと等をまとめておこうとおもいます。
 当日 当日は、進行やタイムキーパー等をやっていました。
 聞きたいセッションはほぼ聴けたのと、アンカンファレンスでは自分で書いたテーマさ採択されてセッションを受け持つことが出来たので、よかったです。
-自分の知りたい事がニッチなので、なにげに unconferenceの方が本番な気がする #scalamatsuri
-&amp;mdash; とーます@悪いオタクらしい (@grimrose) March 17, 2018 アンカンファレンスのセッションでは、以下のような内容のをハンガーフライト形式でやってみました。
-16:00からのセッションの概要です。よろしくお願いします。
-ScalaMatsuri 2018 業務システム in Scalaの概要 https://t.co/x6utGcQvYY #scalamatsuri https://t.co/RHu2mnehp5
-&amp;mdash; とーます@悪いオタクらしい (@grimrose) March 18, 2018 きっかけとしては、なかなかWebサービスのように外に見えやすいシステムに比べ、外に見えにくい場所にあるシステムなので、 他の人がどうやっているのか興味があったので、出してみました。</description></item><item><title>BuriKaigi2018 に参加してきました #burikaigi</title><link>https://www.grimrose.org/blog/2018/02/buri-kaigi/</link><pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2018/02/buri-kaigi/</guid><description>はじめに https://toyama-eng.connpass.com/event/72023/
+アンカンファレンスのセッションでは、以下のような内容のをハンガーフライト形式でやってみました。
+きっかけとしては、なかなかWebサービスのように外に見えやすいシステムに比べ、外に見えにくい場所にあるシステムなので、 他の人がどうやっているのか興味があったので、出してみました。
+私が当初想定したのは、自社の社内向けの業務システムでScalaを使ってる人を対象にしてましたが、 思った以上に受託などで業務システムでScalaを扱っている人が多かったのが、興味深かったです。
+終えてみて、各自の体験談や知見を共有出来たので、やってみてよかったのでは無いかと思いました。
+拙いファシリテーションでしたが、なんとかタイムボックスを守って終えることが出来ました。
+おわりに 遅くなってしまいましたが、ご参加いただいた皆さん、ご協賛いただいたスポンサーの皆さん、そして一緒に尽力してくださったスタッフの皆さん、本当にありがとうございました。</description></item><item><title>BuriKaigi2018 に参加してきました #burikaigi</title><link>https://www.grimrose.org/blog/2018/02/buri-kaigi/</link><pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2018/02/buri-kaigi/</guid><description>はじめに https://toyama-eng.connpass.com/event/72023/
 以前から気になっていたので、万難を排して参加することにしました。
 今年は、勉強会に参加するならLTまたは発表するのを心がけて行こうと思っているので、 Java + αの延長でLT出来ればいいかと思い、LT枠で参加してました (後で、地元の方がLT枠空いているか確認されていたので、申し訳ないことをしてしまったと思いました)。
 Scalaの導入について 発表した内容は、こちら。
@@ -207,16 +212,12 @@ Scalaをチームに導入した後で、プロダクトコードを任せられ
 社内勉強会も後々のプロダクトコード書くことを見据えて、ハマった時に探す手段や良し悪しを重視しました。
 ですので、自分で調べて進んでいけるような人で無ければ、そもそもリソースが足りていない小さいチームでの教育を十分行うには難しいと思います。
 そうでないような人は、初めからチームに入れない、採用しない、そういったチームであることを伝えるといった手段を行使しないと上手く運営出来ないというのが、今の認識です。
-小さな会社で新しい技術を採用するのは簡単なんだけど継続性を持たせる事が難しい。この辺りは結局採用する人がどれだけ本気になって、広めたり人を集めたり、教育したりできるかなんだろうな。
-&amp;mdash; V (@voluntas) January 21, 2018 LTでもVさんのツイートを紹介しましたが、自分たちのような事業会社の小さいエンジニアのチームで、持続可能な開発をしていくための環境づくりをどうして行ったらいいのか。 を考えていくことになりそうなので、いろいろ試行錯誤しながら前に進んで行ければと思います。
-鰤 @grimrose7がシェアした投稿 - 2月 2, 2018 at 7:52午後 PST
-氷見の寒ブリを勉強会の前に楽しんでました。
-#burikaigi pic.twitter.com/t7cKvz5TPo
-&amp;mdash; とーます (@grimrose) February 3, 2018 本番(?)の懇親会では、舟盛りが凄かった。
+LTでもVさんのツイートを紹介しましたが、自分たちのような事業会社の小さいエンジニアのチームで、持続可能な開発をしていくための環境づくりをどうして行ったらいいのか。 を考えていくことになりそうなので、いろいろ試行錯誤しながら前に進んで行ければと思います。
+鰤 氷見の寒ブリを勉強会の前に楽しんでました。
+本番(?)の懇親会では、舟盛りが凄かった。
 刺身とブリしゃぶで味が違ったんだけど、確かにそれぞれ美味しかった。
 写真を撮り忘れるくらい、どんどんごちそうが出てきて、美味しかった。
-富山ブラック @grimrose7がシェアした投稿 - 2月 3, 2018 at 6:39午後 PST
-駅のそばで食べられたので、満足です。
+富山ブラック 駅のそばで食べられたので、満足です。
 おわりに いたせりつくせりだったので、大変だったとは思いますが、BuriKaigiのスタッフの方のサポートが無かったら、ここまで楽しむことが出来なかったと思います。 ありがとうございました。
 次回もまた、鰤を学ぶ(食べる)ために、参加したいと思います。</description></item><item><title>2017年の振り返り</title><link>https://www.grimrose.org/blog/2017/12/retrospect/</link><pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2017/12/retrospect/</guid><description>今年も大晦日になったので、振り返ってみたいと思います。
 2016年の振り返りは、こちらでした。
@@ -233,7 +234,8 @@ Pythonを使ったシステムの構築については、幾つか制約や課�
 Golangを使ったクライアントの開発及び運用 Pythonを使ったシステムの構築及び運用(リベンジ) Alexa Skill or Action on Googleを使ったサービスを作る Golangについては、社内に実際に使ってサービスの運用までしている人たちがいるので、その人達の助けを借りながら、 今の業務フローを円滑にするツールやクライアントを作っているところなので、それを軌道に乗せたいと思います。
 Pythonを使ったシステムの構築については、上でも書いたように一つづつこなしていければと思います。
 最後のについては、Google HomeとAmazon Echoを購入して自宅で使っているので、何か自分の為だけのを作って見たくなったからです。
-おわりに 福岡や関西やいろんなイベントに行って、twitterやblogでしか知らなかった人にお会いすることが出来て、とても楽しかったです。 来年もまたいろんな場所に行っていろんな人とお会い出来るかと思うと、今から楽しみです。</description></item><item><title>GraphQLとScala</title><link>https://www.grimrose.org/blog/2017/12/graphql-with-scala/</link><pubDate>Mon, 18 Dec 2017 00:00:00 +0900</pubDate><guid>https://www.grimrose.org/blog/2017/12/graphql-with-scala/</guid><description>はじめに この記事は、Scala Advent Calendar 2017の18日目の記事です。
+おわりに 福岡や関西やいろんなイベントに行って、twitterやblogでしか知らなかった人にお会いすることが出来て、とても楽しかったです。 来年もまたいろんな場所に行っていろんな人とお会い出来るかと思うと、今から楽しみです。
+2018年もよろしくお願いします。</description></item><item><title>GraphQLとScala</title><link>https://www.grimrose.org/blog/2017/12/graphql-with-scala/</link><pubDate>Mon, 18 Dec 2017 00:00:00 +0900</pubDate><guid>https://www.grimrose.org/blog/2017/12/graphql-with-scala/</guid><description>はじめに この記事は、Scala Advent Calendar 2017の18日目の記事です。
 前日は、esploさんによるslick-codegenの利用例と中身の説明でした。
 自分たちのプロジェクトでもGraphQLをCQRS(Command Query Responsibility Segregation)のQuery側として利用できないかを確認してみたかったので、 Advent Calendar駆動で調べてみました。
 その中で2つ、ScalaとGraphQLに関することを知ることが出来たので紹介します。
@@ -255,7 +257,6 @@ Sangriaとは 概要 graphql.orgでも紹介されている通り、GraphQLの�
 Sangriaは、幾つかのモジュールによって構成されていますが、おおよそ以下のような分類が可能です。
 コア JSONパーサー向けのライブラリ Relay用ライブラリ JSONパーサーに関してなんでこんなにあるんだと他の言語の人は驚くかもしれませんが、 Scalaでは歴史的経緯により様々なJSONパーサーにまつわるライブラリが作られ、そして現在に至っています。
 歴史的経緯については、eed3si9n_jaさんのスライドを参考にしてください。
-sbt, history of JSON libraries, microservices, and schema evolution (Tokyo ver) from Eugene Yokota
 JSONパーサー自体もバックグラウンドで利用する関数型プログラミング向けのライブラリを選択できるようになっているため、バリエーションは様々です。 なので自分たちの好み、チーム事情に応じたライブラリを使うことが多いです。
 初め方 2017-12-17時点でのリリースバージョンは、v1.3.3です。
 http://sangria-graphql.org/getting-started/
@@ -266,39 +267,37 @@ Schema Execution Sangriaは、Schemaと、エンドポイントで受け取っ�
 GraphQLの操作(Query, Mutation, Subscription)に応じて、予めそれぞれSchemaに定義しておきます。
 GraphQLのクエリは、QueryParserがASTへ変換します。 ここでは、Scalaのパーサコンビネータではなく、parboiledが使われています。
 エンドポイントには、Akka HTTPとPlayを用いる方法が紹介されています。
-Akka-http GraphQL Endpoint Play GraphQL Endpoint 他のフレームワークでも、応用は出来ると思いますので、導入も簡単だと思います。</description></item><item><title>#現場で役立つシステム設計の原則 の読書会をしました</title><link>https://www.grimrose.org/blog/2017/12/principal-of-the-system-architecture/</link><pubDate>Sat, 02 Dec 2017 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2017/12/principal-of-the-system-architecture/</guid><description>はじめに 現場で役立つシステム設計の原則 〜変更を楽で安全にするオブジェクト指向の実践技法 を使って、中途入社の研修として読書会をしました。
-若者と現場で役立つシステム設計の原則の読書会を始めた。
-11月中に終わる予定…
-&amp;mdash; とーます (@grimrose) November 7, 2017
+Akka-http GraphQL Endpoint Play GraphQL Endpoint 他のフレームワークでも、応用は出来ると思いますので、導入も簡単だと思います。
+サンプルについて sangria-playground、sangria-relay-playgroundにて公開されています。
+どちらもベースとなるフレームワークは、Playが使われています。
+ソースコードは、sangria-graphql/sangria-playground、 sangria-graphql/sangria-relay-playgroundで公開されているので、 サクッとローカルでも立ち上げることが可能です。
+どちらも、graphiqlが導入されているので、簡単に試すことが出来ます。
+触ってみて サンプルに出てくるProductRepo等のオブジェクトの集まりであるコンテキストをどうやって実装するか、 サーバーサイドが注力すべき場所になるように、Sangriaがある程度お膳立てをしてくれているように感じました。
+特にグラフ構造を持つようなコンテキストでは、グラフ構造が得意ではないRDBMSを操作するのは、正直厳しいように思えます。 他の言語のサーバーサイド実装の事情がよく分かっていないので、このような問題をどうやって解決しているのか気になるところではあります。
+個人的には、Infinispan、Apache Geode、Apache IgniteやHazelcastといった、 In-Memory Data Gridのようなものと組み合わせて、オブジェクトをそのままメモリで扱いながら、CQRS(Command Query Responsibility Segregation)と上手く組み合わせて行くのが現状なのではないかと考えています。</description></item><item><title>#現場で役立つシステム設計の原則 の読書会をしました</title><link>https://www.grimrose.org/blog/2017/12/principal-of-the-system-architecture/</link><pubDate>Sat, 02 Dec 2017 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2017/12/principal-of-the-system-architecture/</guid><description>はじめに 現場で役立つシステム設計の原則 〜変更を楽で安全にするオブジェクト指向の実践技法 を使って、中途入社の研修として読書会をしました。
 11月中に終わったので、まとめておこうと思います。
 やってたこと 参加者は私と中途入社の2人だけに限定して、毎日空いている1時間を見つけて開催してました。 進め方は、電子版のpdfをモニタに映しつつ、1時間で進められるとこまで進めていくようにしました。
 第1章　小さくまとめてわかりやすくする 第2章　場合分けのロジックを整理する 第3章　業務ロジックをわかりやすく整理する コードのサンプルがJavaだったので、Scalaだとこう書けるよとか、PHPだとこれが出来ないからツライとか、プロダクションコードがこうなっているのはこの考えだからだよとか、実際のコードを見ながら説明をしていたりしてました。
 第4章　ドメインモデルの考え方で設計する 第5章　アプリケーション機能を組み立てる ドメインオブジェクトを成長させていくには、業務理解と併せてやっていかないといけないから、分析、設計、開発が別れてるようなプロジェクトだと無理だけど、今のプロジェクトはそうじゃないんだよということも伝えていました。
 また、プロダクションコードでイケてない部分も見せながら、この考えを参考にしながら改善していきたいというのも併せて伝えました。
-第6章　データベースの設計とドメインオブジェクト 若者との現場で役立つシステム設計の原則の読書会も6章のデータベースの話が出てきたので、SQLアンチパターン、 immutable data model、 データベース実践入門、CQRS + ESの話を盛り込んだら時間オーバーした
-&amp;mdash; とーます (@grimrose) November 16, 2017
-データ分析の部署なので、データベースに関する箇所を厚くしたら、盛り込みすぎてしまいました。
+第6章　データベースの設計とドメインオブジェクト データ分析の部署なので、データベースに関する箇所を厚くしたら、盛り込みすぎてしまいました。
 紹介したのは、以下の資料です。
-データ履歴管理のためのテンポラルデータモデルとReladomoの紹介 #jjug_ccc #ccc_g3 from Hiroshi Ito
-イミュータブルデータモデル(入門編) from Yoshitaka Kawashima
-イミュータブルデータモデル(世代編) from Yoshitaka Kawashima</description></item><item><title>JJUG CCC 2017 Fallに参加してきました #jjug_ccc</title><link>https://www.grimrose.org/blog/2017/11/jjug-ccc-2017/</link><pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2017/11/jjug-ccc-2017/</guid><description>http://www.java-users.jp/ccc2017fall/
+イミュータブルデータモデルや有効時間データモデルについては、実際にプロダクションで採用するとこうなるんだよという例を見せながら説明すると、納得していたように見えました。
+CQRS + ESについては、少なくともCommandとQueryを分けると責務もはっきりするし、参照が多いレポジトリのクラスがいろいろ巻き込んで肥大化するのを避けることが出来るという自分の考えも伝えていました。
+第7章　画面とドメインオブジェクトの設計を連動させる 第8章　アプリケーション間の連携 プレゼンテーション層については、今のプロダクションコードを見つつ、PHPのテンプレートに埋め込む部分と、Angular側に任せる部分と、APIとして何をレスポンスを返すのがいいかを、過去の経緯と今の考えを踏まえつつ説明してました。
+RESTをどこまで厳密にやるのが今のプロジェクトにあってるのか、あってるとしたらどのドメインのコンテキストなのかを一緒に考えながら、話し合っていました。
+興味を持っているGraphQLについてや、Akkaだとメッセージ基盤も内包してることを紹介してたりしてました。
+第9章　オブジェクト指向の開発プロセス SIerあるあるネタがお互いに出てきたので、どこも今もあんま変わってないんだなと思いました。
+第10章　オブジェクト指向設計の学び方と教え方 オブジェクト指向エクササイズについては、麻疹にかかるように一度やり過ぎるくらいにやってから、現場でどこまで適用するのがいいのか考える必要があることを伝えていました。
+最後の回では、「現場で役立つシステム設計の原則」批判 (1) ～何のために、「データとロジックを一体に」するのか？～ や「現場で役立つシステム設計の原則」批判 (2) ～ポリモーフィズムは何のために？～ を紹介しつつ、プロダクションコードの中の似たような箇所を見せつつ、どうしたらいいか自分なりの考えを出してもらいました。
+おわりに 今のプロダクションコードを見ながら、この本で指摘されている内容と照らし合わせていくと、 自分自身の振り返りも出来たので、こういった機会を定期的に設けるのはありなのかもしれないと思いました。</description></item><item><title>JJUG CCC 2017 Fallに参加してきました #jjug_ccc</title><link>https://www.grimrose.org/blog/2017/11/jjug-ccc-2017/</link><pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2017/11/jjug-ccc-2017/</guid><description>http://www.java-users.jp/ccc2017fall/
 参加したセッション 今回は、午後から参加したので、以下のセッションに参加してきました。
 モブプロで実施する Cognitive Service &amp;amp; Bot ハッカソン #2 ゴールドマン・サックスにおけるCamundaを用いたビジネスプロセスの可視化とワークフローの自動化 Spring BootとKafkaでCQRSなアプリを動かしてみる Java でつくる本格形態素解析器 今回は、Java以外で面白そうなのと仕事で使えそうなのを選んでみました。
 特に一番印象深かったのCQRSの話でした。
-しーばさんのCQRSの話を聞いて、今の課題をどう伝えたらCQRSの考え方で解決してもらえるかいろいろ思い浮かべてる
-&amp;mdash; とーます (@grimrose) November 18, 2017
 実際にCQRSが使ったほうがいい課題があるのですが、CQRSを全く知らない人にどうやって伝えたらいいのか考えてました。
 その後に、公開された資料を元に自分たちの課題を題材に、いろいろ議論しながらモブプロ出来たらいいなぁとふわふわ考えてました。
 アンカンファレンスで話したこと 今回、JJUGでアンカンファレンスが実施されるとのことなので、ScalaMatsuri 2018の宣伝をしてきました。
 「コミュニティの宣伝でもいい？」と相談してみたところ、良い返事がいただけたので、「ScalaMatsuriへのお誘い」ということで出したところ採択されました。
-アンカンファレンスのテーマが決まりました！
-13:30よりL部屋で実施します。ぜひお越しください！
-13:30- プログラミング教育、スキルの伸ばし方について
-14:30- Javaプロセス監視について
-15:45- お仕事のやりがい、コミュニティについて
-16:45- マイクロサービスについて
-17:45- JVM言語について
-&amp;mdash; JJUG (@JJUG) 2017年11月18日
 15:45からの回に決まったので、話す内容はScalaMatsuriの宣伝で、今年の新しい試みであるScalaMatsuri Tranining Dayの紹介をしようと考えてました。
 実際は、「仕事のやりがい、コミュニティについて」という括りの中でいろいろディスカッションする感じでした。 なので、内容もちょっと変えて、私が知っている範囲ではありますが、Scalaのコミュニティへ参加している人たちの変遷や、 ScalaMatsuriが公開している資料を元にコミュニティやカンファレンスに参加している人たちの変遷や、 コミュニティそのものの成熟度合いとの関係を話しました。
 上手く伝えられたかは実感が無かったのでどこまで宣伝できたか分かりませんが、JJUG CCCに参加している人たちの働いている環境について知る機会が出来たのは、とても良かったです。
@@ -308,19 +307,20 @@ JJUGのスタッフの皆様、スポンサーの皆様、講演者の皆様、�
 https://skug.connpass.com/event/62304/
 去年のScala関西 Summit 2016に参加してまた参加したいと思っていました。
 そんな折CfPを受け付けていたので応募したところ受かったので、これまでやってきたことをまとめるいい機会でしたので、発表してきました。
-Scala関西summit #scala_ks のCfP通ったー。初めて関西でしゃべるぞー。
-&amp;mdash; とーます (@grimrose) 2017年7月9日
 Akka Streamsへ移行しとるんやけどちょっと聞いてや スライド
 発表してきたのは、これまでのプロジェクトでやってきたことと、Akka Streamsをプロジェクトの途中から導入したことで何を考えたのかです。
 幾つか質問を受けていて、その中で出てきたAlpakkaですが、まだakka-stream-alpakka-csvだけ導入していて、akka-stream-alpakka-s3を含めその他のモジュールについてはまだ検証中です。 モジュールによっても開発中だったりするので、ハマりどころもあります。
 初期に導入したScalikeJDBC + SkinnyORMのデータ取り込み処理については、現在のところ他のバッチ処理の優先順位が高く、Akka Streamsの移行対象になってません。
 今回紹介した制約ですが、既存の処理をどうやってAkka Streamsへ繋げるか、移行していくかという課題を元に考えたものなので、これを推奨しているわけではありません。
 自分の発表の前にAkka Streamsのセッションが並んでいて、スタッフのタイムテーブルの組み方に助けていただいたと思っています。 おかげさまで説明や資料については、このセッションに来るくらいだから前のも来てるだろうという前提で作ることが出来ました。
-Akka Streams 関連のセッション、打順が完璧すぎる……
-&amp;mdash; にしかわささき (@nishikawasasaki) 2017年9月9日
 失敗したなと思ったのは、本番になると緊張して早口になってしまったのと、 それを緩和するために予めスライドにあと何分かを知れるのを仕込んでいたのにもかかわらず、上手く活用出来ず、予想よりも早く終わってしまったことでした。
 セッション 今回参加したの以下のセッションです。
-ユーザーデータ基盤を１からScalaでつくった話し Scala and Akka apps on Kubernetes in ChatWork Scala の Functional Programming を支える技術 Scala on Docker(AWS ECS) グラフを知って理解するAkka Stream 「Scale with Scala」の道程 Scala on JVM をプロファイリングするツールの紹介 Property Based Testingでドメインロジックをテストする 今回一番印象的だったセッションは、ユーザデータ基盤についての話でした。 今関わっているプロジェクトの未来にも繋がる話だったり、周りを巻き込んでの検証をすすめていく方法など大変参考になりました。</description></item><item><title>Scala福岡2017に参加してきました #scalafukuoka</title><link>https://www.grimrose.org/blog/2017/08/scala-fukuoka-2017/</link><pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2017/08/scala-fukuoka-2017/</guid><description>はじめに https://scala.connpass.com/event/57941/
+ユーザーデータ基盤を１からScalaでつくった話し Scala and Akka apps on Kubernetes in ChatWork Scala の Functional Programming を支える技術 Scala on Docker(AWS ECS) グラフを知って理解するAkka Stream 「Scale with Scala」の道程 Scala on JVM をプロファイリングするツールの紹介 Property Based Testingでドメインロジックをテストする 今回一番印象的だったセッションは、ユーザデータ基盤についての話でした。 今関わっているプロジェクトの未来にも繋がる話だったり、周りを巻き込んでの検証をすすめていく方法など大変参考になりました。
+トラック数の関係で参加出来なかったセッションも、Twitterのタイムラインを見ていると聞きたかった話ばかりでした。
+資料をまとめてくださっていたので、見返しておきたいと思います。
+Scala関西 Summit 2017で公開された資料へのリンク集
+おわりに 前日は、スポンサーでもある燻製と地ビール　和知で呑むために京都へ前乗りしました。
+翌日は、桃ヴァイツェンを呑むためにビアベリー天満へ行ってきました。</description></item><item><title>Scala福岡2017に参加してきました #scalafukuoka</title><link>https://www.grimrose.org/blog/2017/08/scala-fukuoka-2017/</link><pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2017/08/scala-fukuoka-2017/</guid><description>はじめに https://scala.connpass.com/event/57941/
 前回のScala福岡が楽しそうだったのと、 福岡に自分の足で行ったことがなかったので、参加してきました。
 セッション Play2 Scalaのハンズオンは、一度もやったことがなかったので、今回はいい機会だと思いそちらを選択しました。
 ハンズオンの準備が完了していなくて、IntelliJへのインポートと依存関係のダウンロードに時間が取られてしまいましたが、 最後まで進めることが出来ました。
@@ -342,12 +342,9 @@ LTとparadox LTでlightbend/paradoxの導入について話してみました。
 Java libraries you can&amp;rsquo;t afford to miss Unified JVM Logging: Java 9 から変わる JVM ログ 今日からDL4J グラフデータベース入門 Engineers can change the world ～ &amp;ldquo;世界&amp;rdquo; で活躍するエンジニアになるために Ordinary Object Pointer について調べてみた 今回は、業務で使うJVMに関する内容や使いそうなグラフデータベースやDL4J、英語を聞く機会を増やしたいと思ったので、このリストになりました。
 他のセッションも興味深かったり、被ってさえいなければ聞きたかったのもあったので、ここ数年、JJUG-CCCのセッション選びはホントに悩ましいです。
 今回一番印象に残ったセッションは、「Engineers can change the world ～ &amp;ldquo;世界&amp;rdquo; で活躍するエンジニアになるために」で、Microsoftに移られた寺田さんと上司である Drew Robbinsさんの働き方についての内容でした。
-JJUG-CCC-Dreams-Come-True-With-Drew—Terada YoshioDocs.com
 人材紹介のドメインで業務をしていると、求職している人の働き方や考え方、企業自体がどういった人が求めているのかを着目するようになってきました。
 その中でもソフトウェアエンジニアは、自分の職業の一つでもあるので、他の企業の、しかも日本ではなく世界に同じ職種を抱えている人の話を聞くのはとても興味深かったです。
 最後にビデオを見る機会があったのですが、昔はSFの話だと思っていたことが、実はコードで実現出来るかもしれない未来がそこまで来ているのを見せられたので、とても印象に残ってました。
-コードで世界を変えていく仕事って、やっぱカッコイイよな。って思わせてくれるいいセッションでした #ccc_g6
-&amp;mdash; とーます (@grimrose) 2017年5月20日
 おわりに 懇親会では、twitterでしか知っていなかった人たちにご挨拶出来てよかったです。
 1000人規模のカンファレンスになってしまい、いろいろと課題点とか見えているみたいですが、 以前に比べて裾野が広がっているように思えるので、ぜひよりよい結果に繋がるようになって欲しいと思います。
 JJUGのスタッフの皆様、スポンサーの皆様、講演者の皆様、参加者の皆様、ありがとうございました。</description></item><item><title>Scala Matsuri 2017に参加してきました #ScalaMatsuri</title><link>https://www.grimrose.org/blog/2017/05/scala-matsuri/</link><pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2017/05/scala-matsuri/</guid><description>はじめに ScalaMatsuri
@@ -396,8 +393,6 @@ WASD Keyboardsでの注文の仕方 今回欲しかったのは、10キーのキ
 配送業者が配送開始になったのは、2016年12月13日でした。 その週はアメリカでの雪の影響があったため、幾日か遅延の情報がUPSの配送状況から知ることが出来ました。 とは言え、日本に到着したのは、2016年12月15日でした。
 どうしても、早く欲しいのであれば、UPS Worldwide Saverを選択するのはありではないかと思います。
 装着 装着した結果、こんな感じになっています。
-仕事風景(会社から持ってきた) pic.twitter.com/dNZRRcmvgx
-&amp;mdash; とーます (@grimrose) 2016年12月23日
 写真は、あのErgoDox users meet upが行われたイベント＆コミュニティスペース dots.で撮りました。
 あのイベントの数日後には、ErgoDox EZのサイトで注文してました。
 それ以降、仕事場に持ち込んでずっと使っています。
@@ -438,12 +433,13 @@ GroovyがApacheに寄贈され、codehausが停止してしまったため、ソ
 GPars/GPars
 versionは、1.2.1のままです。
 ですので、Gradleで利用する際は、以下のように依存を追加すれば利用できるようになります。
-// https://mvnrepository.com/artifact/org.codehaus.gpars/gpars compile group: &#39;org.codehaus.gpars&#39;, name: &#39;gpars&#39;, version: &#39;1.2.1&#39; Actorモデルについて アクターモデルについては、アクターモデルを見てください。
+// https://mvnrepository.com/artifact/org.codehaus.gpars/gpars compile group: &amp;#39;org.codehaus.gpars&amp;#39;, name: &amp;#39;gpars&amp;#39;, version: &amp;#39;1.2.1&amp;#39; Actorモデルについて アクターモデルについては、アクターモデルを見てください。
 アクターモデルの実装されているもので代表的なものは、ErlangとAkkaが挙げられます。
 この2つについては、もうエコシステムとも呼べるようなものになってしまっているので、アクターモデルだけを知ろうとすると、どこから手をつけていいのか分かりにくくなります。
 そこで、GParsのActorを使ってアクターモデルの考え方を理解して行こうと思います。
 GParsのActor GParsのActorのドキュメントを見ると、Actorの作り方はとてもシンプルです。
-import groovyx.gpars.actor.Actor def actor = Actors.actor { loop { react { msg -&amp;gt; println &amp;quot;Received: $msg&amp;quot; } } } actor.send &#39;Hello, GPars!&#39; actor.join() // 停止するまで立ち上がったままにする。 // 止めるときはCtrl-C or プロセスを落とす いわゆるPingPongをする場合はこんな感じです。</description></item><item><title>MacBook Pro (13-inch, Late 2016, Two Thunderbolt 3 ports)とDELL P2715Q</title><link>https://www.grimrose.org/blog/2016/12/mbp-13-late-2016/</link><pubDate>Mon, 05 Dec 2016 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2016/12/mbp-13-late-2016/</guid><description>はじめに MacBook Pro (13-inch, Late 2016, Two Thunderbolt 3 ports)モデルを購入したので、 4KモニタのP2715Qとの動作検証を残しておこうと思います。
+import groovyx.gpars.actor.Actor def actor = Actors.actor { loop { react { msg -&amp;gt; println &amp;#34;Received: $msg&amp;#34; } } } actor.send &amp;#39;Hello, GPars!&amp;#39; actor.join() // 停止するまで立ち上がったままにする。 // 止めるときはCtrl-C or プロセスを落とす いわゆるPingPongをする場合はこんな感じです。
+@Immutable class PingMessage { String message } @Immutable class PongMessage { String message } @Log class PongActor extends DefaultActor { @Override protected void act() { loop { react { msg -&amp;gt; log.</description></item><item><title>MacBook Pro (13-inch, Late 2016, Two Thunderbolt 3 ports)とDELL P2715Q</title><link>https://www.grimrose.org/blog/2016/12/mbp-13-late-2016/</link><pubDate>Mon, 05 Dec 2016 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2016/12/mbp-13-late-2016/</guid><description>はじめに MacBook Pro (13-inch, Late 2016, Two Thunderbolt 3 ports)モデルを購入したので、 4KモニタのP2715Qとの動作検証を残しておこうと思います。
 MacBook Pro 13 Late 2016 non-Touch Bar カスタマイズは、以下の通り。
 2.4 GHz Intel Core i7 16 GB 1867 MHz LPDDR3 512GB SSD DELL P2715Q ここを見ると4K 60Hzで表示するには、HDMI 2.0かDisplay Portのモニタが必要です。
 しかし、HDMI 2.0の選択肢が無さすぎたので、Display Portで4K 60Hzを表示できるモニタから、DELL P2715Qを購入しました。 理由は、価格と店頭での印象でした。
@@ -466,10 +462,7 @@ Featherweight JavaはJava基礎勉強会の時に説明されていたので、�
 JJUGのスタッフの皆様、スポンサーの皆様、講演者の皆様、参加者の皆様、ありがとうございました。</description></item><item><title>転職して2年が経ちました。</title><link>https://www.grimrose.org/blog/2016/12/curriculum-vitae/</link><pubDate>Thu, 01 Dec 2016 00:00:00 +0900</pubDate><guid>https://www.grimrose.org/blog/2016/12/curriculum-vitae/</guid><description>はじめに 2014年12月に転職してから2年経ったので、振り返ってみました。
 1年前はこちら。
 引き続き、データ分析チームのエンジニアとして働いてます。
-職務経歴書のOSS化 転職して2年経ったし、やってみるか
-職務経歴書OSS化 - Qiita https://t.co/Yz5XAzR1uj
-&amp;mdash; とーます (@grimrose) 2016年11月29日
-職務経歴書OSS化を見て、ちょうどいい機会だと思ったので、作ってみました。
+職務経歴書のOSS化 職務経歴書OSS化を見て、ちょうどいい機会だと思ったので、作ってみました。
 職務経歴書はこちらです -&amp;gt; grimrose/Curriculum-Vitae
 前職の案件については、転職時に作成した資料を元にぼかして書きました。
 おわりに 今のところ、転職する意思はありませんが、転職のきっかけとなった方が新天地へ飛び立って行かれたので、 自分が今の会社で何を成したいのかを考えるいいきっかけだと感じました。
@@ -574,14 +567,10 @@ Groovyについて困っている時やどう書いたらいいのか分から�
 購入したもの これまで購入したのは、以下の3冊です。
 Spocklight Notebook Groovy in Action, Second Edition Spock: Up and Running まずSpocklight Notebookですが、Leanpubで購入できます。実はWebで全部見れてしまう上に最低価格が$0なので実質Freeなのです。 中身もユースケース毎に細かく分かれているため、自分たちの求めている内容がきっとあると思います。</description></item><item><title>Clojure ワークショップ(仮)に参加してきました #jc_ws</title><link>https://www.grimrose.org/blog/2015/12/jc-ws-2015/</link><pubDate>Mon, 14 Dec 2015 00:00:00 +0900</pubDate><guid>https://www.grimrose.org/blog/2015/12/jc-ws-2015/</guid><description>はじめに 【参加者募集】 Clojure ワークショップ(仮)に参加してきました。
 きっかけは、以前にしょぼちむにデータモデル設計について教えてくださいの会 #syobobenで@kawasimaさんが 以下のプレゼンをした時にでてきたDatomicが気になったからです。
-イミュータブルデータモデル(世代編) from Yoshitka Kawashima
 その後、@kawasimaさんがリリースしたJobStreamerがDatomicが使われていたので、 どうやって使ったらいいのかを知りたい、せめてClojureが読めるようになりたいと思ってました。
 その後の渋谷Javaなどで@kawasimaさんがClojureの話をされていたので、無意識に刷り込まれていたのかもしれません。
 あやぴーさんが開催されるとのことだったので、楽しみにしてました。
-キメるClojure キメるClojure from Yoshitka Kawashima
-タイトルは「Rubyをキメると気持ちいい」から来てるとおもいますが、挙げられているClojureのコードを後から見なおしてみるとすっきりしていて分かりやすかったです。
-#jc_ws だいたい色んなライブラリ読むけど、確かに小さいことが多いし、作りきられていることが多くて変更が少ないのも良い
-&amp;mdash; あやぴー (@_ayato_p) 2015, 12月 12
+キメるClojure タイトルは「Rubyをキメると気持ちいい」から来てるとおもいますが、挙げられているClojureのコードを後から見なおしてみるとすっきりしていて分かりやすかったです。
 こういう思想で作られていると使いやすいのではないかと思いました。
 ワークショップ あやぴーさんが用意して下さったjapan-clojurians/curriculumのチートシートをまず読んでました。
 はじめは、jupyterでもできないかなと思い、Clojureのroryk/clojupyterを入れてやろうとしてましたが、 ZeroMQとの連携が上手く行っていないのかエラーがでて使えませんでした。 ClojureではGorilla REPLを使うのが良いらしいので、今度使ってみようと思います。
@@ -634,18 +623,17 @@ keynote-1 基調講演1: 「Javaは守りに入らない、これが今のJava�
 この1年、素のJavaを書くことは無くなってしまったので、選択も運用やDB等言語としてのJava以外を中心とした内容になりました。
 どのセッションも面白かったですが、てらださんが楽しそうに活動をされている話を聞けたのが、一番印象的でした。
 さらに懇親会や帰り道でいろいろな人とお話が出来て、その中でいろいろ解決手段などを教えていただくことが出来ました。 ありがとうございました。
-懇親会と帰宅までの間が一番実りがある話が聞けた。&amp;#10;これがあるから止められない。
-&amp;mdash; とーます (@grimrose) 2015, 11月 28</description></item><item><title>Seasar Conference 2015 Not 同窓会 に参加してきました #seasarcon</title><link>https://www.grimrose.org/blog/2015/09/seasarcon2015/</link><pubDate>Tue, 29 Sep 2015 01:25:47 +0900</pubDate><guid>https://www.grimrose.org/blog/2015/09/seasarcon2015/</guid><description>https://event.seasarfoundation.org/sc2015/
+おわりに 今回もYokohama.groovyの宣伝も兼ねたLTをしてきました。
+pythonの勉強に使っているjupyterを使って、スライドを作りました。
+Markdownでwebブラウザで再生出来るスライドに出来るので、こういう時には結構使えますね。
+予定としては、Spock: Up and Running Writing Expressive Tests in Java and Groovyが出版され次第、読書会をやろうと思っています。</description></item><item><title>Seasar Conference 2015 Not 同窓会 に参加してきました #seasarcon</title><link>https://www.grimrose.org/blog/2015/09/seasarcon2015/</link><pubDate>Tue, 29 Sep 2015 01:25:47 +0900</pubDate><guid>https://www.grimrose.org/blog/2015/09/seasarcon2015/</guid><description>https://event.seasarfoundation.org/sc2015/
 http://seasar.connpass.com/event/19317/
 Seasar2はプロダクトでも使ったことがあるし、Seasar Conferenceがあったおかげで今の自分があると思っているので、参加してきました。
 セッション Seasar ユーザだったプログラマが目指す OSS の世界展開
 瀬良さんのセッションは、大学の教室ということもあり本当に歴史の授業っぽい雰囲気でした。 Skinny Frameworkは、今のプロジェクトで使っていて大変お世話になっています。 特にSkinny-ORM, ScalikeJDBCはSQLをゴリゴリ書くようなプロダクトに向いていると思います。 GitHubがデファクトとなっている現状では、日本語より英語のドキュメントを充実するほうがより使ってもらえる可能性が高いのは確かだと思います。 Play Framework + Scala は Next Seasar なのか
 Next Seasarについては、既存のSeasar2を利用したプロダクトを別のフレームワークに置き換えてもそれなりに利益を生むようなものでない限り時代に取り残されて行く運命なのかも知れないと感じました。 挙げられそうなNext Seasarとしては、Spring bootやJavaのMicroframeworkやJava EE等があります。 ですが、メンテナンスする人達がJavaの進化に置いて行かれるような場合、選択すら出来ずどうすることも出来ない状態に陥るのではないかと思います。 「Single Command Deployのためのgradle-aws-plugin講座」〜自動ビルド厨はここまで大きくなりました〜
 Gradleの話を聞いてみたかったのと、AWSへのデプロイツールとしてどう使うのか興味がありました。 ドキュメントに残さなければいけない箇所を出来る限り少なくして、自動化するというのはとても参考になりました。 Spring Boot for the Seasar Developers – みんなが欲しかったアレもソレもここにある
-ライブコーディングでサクサクとSpring bootを使ったWebアプリを作っていくのは、楽しそうに見えました。 Spring bootのremote-shellは、CRaSHがベースなので、単体でも使うことが出来ます。 IntelliJ IDEAであれば、Using Language Injectionsを使うことで、StringのSQLに対してシンタックスハイライトを付けることが出来るようになります。 SIは本当に終わったのか?
-受託やSIの世界から遠ざかってしまったので、第三者的な視点で見てました。 元請けの視点がメインだったので、下請けからの視点が無かったのはちょっと残念だと思いました。 実際に利用するユーザのフィードバックと取り込めるような距離感が無いと、今後も厳しそうだと感じました。 おわりに Seasar2から卒業ということで、自分が変わるキッカケになったSeasar Conferenceに久しぶりに参加できてよかったと思います。</description></item><item><title>JUnit Lambda に寄付をしました #fundJUnit</title><link>https://www.grimrose.org/blog/2015/09/junit-lambda/</link><pubDate>Sat, 19 Sep 2015 00:04:27 +0900</pubDate><guid>https://www.grimrose.org/blog/2015/09/junit-lambda/</guid><description>@t_wada さんのツイートから知りましたが、JUnitのプロジェクトが援助を求めているそうです。
-JUnit がクラウドファンディングで援助を求めている。現在フルタイムのメンテナがおらず、 issue 解決や Java8 対応 (特にラムダ式) の余力が無い。現時点の JUnit の問題点や将来像も示されている #fundJUn… http://t.co/o8ijOxTWr2
-&amp;mdash; Takuto Wada (@t_wada) 2015, 9月 16
+ライブコーディングでサクサクとSpring bootを使ったWebアプリを作っていくのは、楽しそうに見えました。 Spring bootのremote-shellは、CRaSHがベースなので、単体でも使うことが出来ます。 IntelliJ IDEAであれば、Using Language Injectionsを使うことで、StringのSQLに対してシンタックスハイライトを付けることが出来るようになります。 SIは本当に終わったのか?</description></item><item><title>JUnit Lambda に寄付をしました #fundJUnit</title><link>https://www.grimrose.org/blog/2015/09/junit-lambda/</link><pubDate>Sat, 19 Sep 2015 00:04:27 +0900</pubDate><guid>https://www.grimrose.org/blog/2015/09/junit-lambda/</guid><description>@t_wada さんのツイートから知りましたが、JUnitのプロジェクトが援助を求めているそうです。
 Crowdfunding JUnit Lambda
 日本語での詳細な内容については、JUnitの開発が資金不足で行き詰まり。クラウドファンディングで寄付金を募集中 を見ていだくのがいいと思います。
 JUnitと私 個人的にJUnitを真面目に使い始めたのは、TDDBCで使い方を教わってからだと思います。
@@ -665,16 +653,17 @@ Java8対応で特にDateTime APIでMatcherが早急に欲しい人は、AssertJ�
 また、「コードを書く」以外の事で貢献出来る何かを改めて考えさせられました。
 もし、JUnitを使っていたり、今後も使い続ける事になるのであれば、既にゴール金額に到達していますが、寄付を考えてみてはいかがでしょうか？</description></item><item><title>YAPC::Asia Tokyo 2015 に参加してきました。 #yapcasia</title><link>https://www.grimrose.org/blog/2015/08/yapc-asia-tokyo-2015/</link><pubDate>Sun, 23 Aug 2015 22:34:34 +0900</pubDate><guid>https://www.grimrose.org/blog/2015/08/yapc-asia-tokyo-2015/</guid><description>http://yapcasia.org/2015/
 きっかけ Guest Speakerにそうそうたるメンバーがいらっしゃったのと、PHPをやり始めてから気になった次のスライドがYAPC::Asia Tokyo 2014だったのが気になったので、参加してみようと思いました。
-YAPC::Asia 2014 - 半端なPHPDisでPHPerに陰で笑われないためのPerl Monger向け最新PHP事情 from Junichi Ishida
 個人スポンサー YAPC::Asia Tokyoのチケットは、非常に取りにくいということで、個人スポンサーで申し込みました。
 Tシャツやパーカー等のノベルティも楽しみでしたが、ひとまずチケットを取れたことに安堵してました。
 当日ノベルティとして受け取ったタンブラーは、とても使いやすくて重宝してます。
 セッション 参加したセッションは、以下のとおりです。
-前夜祭 我々にできるOSSとそのコミュニティの育てかた 1日目 メリークリスマス！ Effective ES6 TBD Conway&amp;rsquo;s Law of Distributed Work Electron: Building desktop apps with web technologies Perl6 on JVM: It works?? 2日目 ISUCONの勝ち方 我々はどのように冗長化を失敗したのか MySQLで2億件のシリアルデータと格闘したチューニングの話 データ分析基盤を支える技術 Parallelism, Concurrency, and Asynchrony in Perl 6 HTTP2 時代の Web 概ね見たいと思ったセッションを見ることが出来たと思います。</description></item><item><title>【東京】JJUG ナイトセミナー 「Reactive Streams特集」 に参加してきました。 #jjug</title><link>https://www.grimrose.org/blog/2015/06/jjug-2015-reactive-streams/</link><pubDate>Sat, 27 Jun 2015 18:19:34 +0900</pubDate><guid>https://www.grimrose.org/blog/2015/06/jjug-2015-reactive-streams/</guid><description>はじめに https://jjug.doorkeeper.jp/events/26547
+前夜祭 我々にできるOSSとそのコミュニティの育てかた 1日目 メリークリスマス！ Effective ES6 TBD Conway&amp;rsquo;s Law of Distributed Work Electron: Building desktop apps with web technologies Perl6 on JVM: It works?? 2日目 ISUCONの勝ち方 我々はどのように冗長化を失敗したのか MySQLで2億件のシリアルデータと格闘したチューニングの話 データ分析基盤を支える技術 Parallelism, Concurrency, and Asynchrony in Perl 6 HTTP2 時代の Web 概ね見たいと思ったセッションを見ることが出来たと思います。
+Perlのセッションもコードが出てきて分からない部分も多かったのですが、それなりに楽しむことが出来ました。
+個人的に、グッと来たのは、以下のセッションでした。
+Effective ES6
+早くES6が標準で使える環境を整えていきたい。 現在使用してるtypescriptをES6に移行する手順も考えておきたい。 ISUCONの勝ち方</description></item><item><title>【東京】JJUG ナイトセミナー 「Reactive Streams特集」 に参加してきました。 #jjug</title><link>https://www.grimrose.org/blog/2015/06/jjug-2015-reactive-streams/</link><pubDate>Sat, 27 Jun 2015 18:19:34 +0900</pubDate><guid>https://www.grimrose.org/blog/2015/06/jjug-2015-reactive-streams/</guid><description>はじめに https://jjug.doorkeeper.jp/events/26547
 @makingさんから、@okapiesさんと一緒に「Reactive Streams」について話してくれと頼まれましたので、参加してきました。
 元々は、@cero_tさんが発端らしいです。
-ちなみに今日のReactive Streams勉強会の発端は、ゴールデンウィーク明けに @cero_t さんがReactiveについてほげほげ言ってたことで、ナイトセミナーやろうぜって感じだったんだけど、当の本人は来ていないっていう
-&amp;mdash; Toshiaki Maki (@making) 2015, 6月 24
 初めは、マイナーなネタならそんなに人集まらないだろうと思ってたのですが、キャンセル待ちが100人超えするくらいまで期待されてて正直びっくりしました。
 当日のアンケートシステム、とても良かったので次回以降改善されるのを期待してます。
 資料 @okapiesさんの資料は、こちらです。
@@ -727,7 +716,6 @@ JJUGのスタッフ、参加者の皆様、@okapiesさん、ありがとうご�
 プログラミングGROOVY読書会 主催している「プログラミングGROOVY」の読書会の最終回でした。
 2012年に開催されていた読書会の時間数から、おおよそ3回くらいだろうと見積もっていましたが、余裕を持って終えることが出来ました。
 少し早めに終わったので、2.3から導入されたGroovyのtraitについて、スライドとサンプルを見ながら学んでました。
-Introduce Groovy 2.3 trait from * *
 サンプルは、Groovy Goodness: Chaining Traitsです。
 残り時間は、次回以降やりたいことを決めていました。
 https://github.com/yokohamagroovy/support/issues/11
@@ -743,8 +731,6 @@ http://connpass.com/event/14584/
 JVM言語の集い 初めは、JVMについてのイベントだと思ってました。
 そうではなく、JVM上で動く言語の中でも代表的な言語(Java, Scala, Clojure, Groovy)のエキスパートと呼ばれる人たちが一堂に会する機会が設けられたということで、参加してきました。
 特に印象的だったのは、この時でした。
-竹添さんが「Javaに熱気がない時期だった。新しいものが出てこないし」と言った瞬間、Javaのダイアログが開いて「アップデートがあるよ」とか出てきたｗ #渋谷JVM
-&amp;mdash; きしだﬗ (@kis) 2015, 4月 18
 個人的には、Java8になったことによって、ライブラリのコアとなる部分が置き換わって、新陳代謝が起こって欲しいなと思いました。
 パネルディスカッション 川島さんがJJUG CCCで話されていたJobStreamerに興味を持ってから、Clojureに興味が出てきました。
 Clojureについて知らなかったところが多く、とても勉強になりました。特に思想や哲学に関する部分は、惹かれました。

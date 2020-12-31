@@ -15,12 +15,13 @@ GroovyがApacheに寄贈され、codehausが停止してしまったため、ソ
 GPars/GPars
 versionは、1.2.1のままです。
 ですので、Gradleで利用する際は、以下のように依存を追加すれば利用できるようになります。
-// https://mvnrepository.com/artifact/org.codehaus.gpars/gpars compile group: &#39;org.codehaus.gpars&#39;, name: &#39;gpars&#39;, version: &#39;1.2.1&#39; Actorモデルについて アクターモデルについては、アクターモデルを見てください。
+// https://mvnrepository.com/artifact/org.codehaus.gpars/gpars compile group: &amp;#39;org.codehaus.gpars&amp;#39;, name: &amp;#39;gpars&amp;#39;, version: &amp;#39;1.2.1&amp;#39; Actorモデルについて アクターモデルについては、アクターモデルを見てください。
 アクターモデルの実装されているもので代表的なものは、ErlangとAkkaが挙げられます。
 この2つについては、もうエコシステムとも呼べるようなものになってしまっているので、アクターモデルだけを知ろうとすると、どこから手をつけていいのか分かりにくくなります。
 そこで、GParsのActorを使ってアクターモデルの考え方を理解して行こうと思います。
 GParsのActor GParsのActorのドキュメントを見ると、Actorの作り方はとてもシンプルです。
-import groovyx.gpars.actor.Actor def actor = Actors.actor { loop { react { msg -&amp;gt; println &amp;quot;Received: $msg&amp;quot; } } } actor.send &#39;Hello, GPars!&#39; actor.join() // 停止するまで立ち上がったままにする。 // 止めるときはCtrl-C or プロセスを落とす いわゆるPingPongをする場合はこんな感じです。</description></item><item><title>JJUG CCC 2016 Springに参加してきました #jjug_ccc #ccc_m61</title><link>https://www.grimrose.org/blog/2016/05/jjug-ccc-2016/</link><pubDate>Thu, 26 May 2016 00:00:00 +0900</pubDate><guid>https://www.grimrose.org/blog/2016/05/jjug-ccc-2016/</guid><description>発表のキッカケ ちょうど日々の業務でGradleのタスク機能を利用して、共有ディレクトリにあるExcelのデータとDBの値とチェックしたり、 前回の作業との差分を抽出して入力ミスがないかチェックしたり、といった小さい業務タスクを自動化していたので、 50分は無理でも新しく出来た20分枠ならイケるんではないかと思い、 Groovy枠として選ばれたら本気でやるかといった感じで応募しました。
+import groovyx.gpars.actor.Actor def actor = Actors.actor { loop { react { msg -&amp;gt; println &amp;#34;Received: $msg&amp;#34; } } } actor.send &amp;#39;Hello, GPars!&amp;#39; actor.join() // 停止するまで立ち上がったままにする。 // 止めるときはCtrl-C or プロセスを落とす いわゆるPingPongをする場合はこんな感じです。
+@Immutable class PingMessage { String message } @Immutable class PongMessage { String message } @Log class PongActor extends DefaultActor { @Override protected void act() { loop { react { msg -&amp;gt; log.</description></item><item><title>JJUG CCC 2016 Springに参加してきました #jjug_ccc #ccc_m61</title><link>https://www.grimrose.org/blog/2016/05/jjug-ccc-2016/</link><pubDate>Thu, 26 May 2016 00:00:00 +0900</pubDate><guid>https://www.grimrose.org/blog/2016/05/jjug-ccc-2016/</guid><description>発表のキッカケ ちょうど日々の業務でGradleのタスク機能を利用して、共有ディレクトリにあるExcelのデータとDBの値とチェックしたり、 前回の作業との差分を抽出して入力ミスがないかチェックしたり、といった小さい業務タスクを自動化していたので、 50分は無理でも新しく出来た20分枠ならイケるんではないかと思い、 Groovy枠として選ばれたら本気でやるかといった感じで応募しました。
 なので、十徳ナイフとしてのGradle / @grimrose #35に投票して頂いた皆様には、大変感謝しております。
 jupyter使ってる理由 ここ最近、発表資料にはjupyterを活用しています。理由としては以下のとおりです。
 日常的に使っている。 Markdownで書ける。 スライドの確認がし易い。 リンクや画像を埋めるのが楽。 コードのシンタックスハイライトもされる。 Docker imageにしてしまえば、docker runかdocker-compose upですぐに使える。 takluyver/bash_kernelを入れれば、jupyer-notebookからbashが使える。 GitHubへpublishすれば、nbviewerで閲覧できる。 標準のPythonやSpark向けのイメージを使えば、REPL代わりに使えるし、実行結果も保存出来たり等重宝してます。
@@ -58,7 +59,6 @@ Spocklight Notebook Groovy in Action, Second Edition Spock: Up and Running ま�
 プログラミングGROOVY読書会 主催している「プログラミングGROOVY」の読書会の最終回でした。
 2012年に開催されていた読書会の時間数から、おおよそ3回くらいだろうと見積もっていましたが、余裕を持って終えることが出来ました。
 少し早めに終わったので、2.3から導入されたGroovyのtraitについて、スライドとサンプルを見ながら学んでました。
-Introduce Groovy 2.3 trait from * *
 サンプルは、Groovy Goodness: Chaining Traitsです。
 残り時間は、次回以降やりたいことを決めていました。
 https://github.com/yokohamagroovy/support/issues/11

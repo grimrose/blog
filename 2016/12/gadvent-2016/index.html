@@ -2,84 +2,84 @@
 <span class=entry-meta><i class="fa fa-pencil"></i><a class=label href=https://www.grimrose.org/blog/categories/blog>Blog</a>&nbsp;
 <i class="fa fa-pencil"></i><a class=label href=https://www.grimrose.org/blog/categories/java>Java</a>&nbsp;
 <i class="fa fa-pencil"></i><a class=label href=https://www.grimrose.org/blog/categories/groovy>Groovy</a>&nbsp;
-<i class="fa fa-pencil"></i><a class=label href=https://www.grimrose.org/blog/categories/scala>Scala</a>&nbsp;</span><section itemprop=entry-text><h2 id=はじめに>はじめに</h2><p>この記事は、<a href=http://qiita.com/advent-calendar/2016/gastah>G*Advent Calendar(Groovy,Grails,Gradle,Spock&hellip;) Advent Calendar 2016</a>の10日目のエントリです。</p><p>9日目 &gt; <a href=http://qiita.com/nobeans>nobeans</a>さんの<a href=https://www.ntts.co.jp/column/nakano_blog/20161209/index.html>GrailsでUnix/Linux的実行可能WARファイルをつくる</a>です。</p><p>11日目 &gt; <a href=http://qiita.com/tyama>tyama</a>さんの<a href=http://grails.jp/guide/server-sent-events/guide/index.html>GrailsでServer Sent Eventsを送信！(意訳版)</a>です。</p><h2 id=gparsとは>GParsとは</h2><p><a href=http://www.gpars.org/>GPars</a>は、GroovyとJavaで利用できる並行・並列処理を利用しやすくなるライブラリです。</p><p><a href=http://qiita.com/saba1024/items/29bc32f3390facbaa5c5>[Groovy]GParsで並列処理（基本＆コレクション編）</a>を見ていただくと、
-旧来のThreadや、java.util.concurrentをそのまま使うよりも並行処理が書きやすそうだと感じたのではないでしょうか。</p><p>GroovyがApacheに寄贈され、codehausが停止してしまったため、ソースコードやドキュメントがgithubに移管されています。</p><p><a href=https://github.com/GPars/GPars>GPars/GPars</a></p><p>versionは、<code>1.2.1</code>のままです。</p><p>ですので、Gradleで利用する際は、以下のように依存を追加すれば利用できるようになります。</p><pre><code class=language-groovy>// https://mvnrepository.com/artifact/org.codehaus.gpars/gpars
-compile group: 'org.codehaus.gpars', name: 'gpars', version: '1.2.1'
-</code></pre><h2 id=actorモデルについて>Actorモデルについて</h2><p>アクターモデルについては、<a href=https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AF%E3%82%BF%E3%83%BC%E3%83%A2%E3%83%87%E3%83%AB>アクターモデル</a>を見てください。</p><p>アクターモデルの実装されているもので代表的なものは、<a href=http://www.erlang.org/>Erlang</a>と<a href=http://akka.io/>Akka</a>が挙げられます。</p><p>この2つについては、もうエコシステムとも呼べるようなものになってしまっているので、アクターモデルだけを知ろうとすると、どこから手をつけていいのか分かりにくくなります。</p><p>そこで、GParsのActorを使ってアクターモデルの考え方を理解して行こうと思います。</p><h2 id=gparsのactor>GParsのActor</h2><p>GParsのActorの<a href=http://www.gpars.org/guide/guide/actors.html>ドキュメント</a>を見ると、Actorの作り方はとてもシンプルです。</p><pre><code class=language-groovy>import groovyx.gpars.actor.Actor
+<i class="fa fa-pencil"></i><a class=label href=https://www.grimrose.org/blog/categories/scala>Scala</a>&nbsp;</span><section itemprop=entry-text><h2 id=はじめに>はじめに</h2><p>この記事は、<a href=http://qiita.com/advent-calendar/2016/gastah>G*Advent Calendar(Groovy,Grails,Gradle,Spock&mldr;) Advent Calendar 2016</a>の10日目のエントリです。</p><p>9日目 > <a href=http://qiita.com/nobeans>nobeans</a>さんの<a href=https://www.ntts.co.jp/column/nakano_blog/20161209/index.html>GrailsでUnix/Linux的実行可能WARファイルをつくる</a>です。</p><p>11日目 > <a href=http://qiita.com/tyama>tyama</a>さんの<a href=http://grails.jp/guide/server-sent-events/guide/index.html>GrailsでServer Sent Eventsを送信！(意訳版)</a>です。</p><h2 id=gparsとは>GParsとは</h2><p><a href=http://www.gpars.org/>GPars</a>は、GroovyとJavaで利用できる並行・並列処理を利用しやすくなるライブラリです。</p><p><a href=http://qiita.com/saba1024/items/29bc32f3390facbaa5c5>[Groovy]GParsで並列処理（基本＆コレクション編）</a>を見ていただくと、
+旧来のThreadや、java.util.concurrentをそのまま使うよりも並行処理が書きやすそうだと感じたのではないでしょうか。</p><p>GroovyがApacheに寄贈され、codehausが停止してしまったため、ソースコードやドキュメントがgithubに移管されています。</p><p><a href=https://github.com/GPars/GPars>GPars/GPars</a></p><p>versionは、<code>1.2.1</code>のままです。</p><p>ですので、Gradleで利用する際は、以下のように依存を追加すれば利用できるようになります。</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-groovy data-lang=groovy><span style=color:#75715e>// https://mvnrepository.com/artifact/org.codehaus.gpars/gpars
+</span><span style=color:#75715e></span>compile group: <span style=color:#e6db74>&#39;org.codehaus.gpars&#39;</span><span style=color:#f92672>,</span> name: <span style=color:#e6db74>&#39;gpars&#39;</span><span style=color:#f92672>,</span> version: <span style=color:#e6db74>&#39;1.2.1&#39;</span>
+</code></pre></div><h2 id=actorモデルについて>Actorモデルについて</h2><p>アクターモデルについては、<a href=https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AF%E3%82%BF%E3%83%BC%E3%83%A2%E3%83%87%E3%83%AB>アクターモデル</a>を見てください。</p><p>アクターモデルの実装されているもので代表的なものは、<a href=http://www.erlang.org/>Erlang</a>と<a href=http://akka.io/>Akka</a>が挙げられます。</p><p>この2つについては、もうエコシステムとも呼べるようなものになってしまっているので、アクターモデルだけを知ろうとすると、どこから手をつけていいのか分かりにくくなります。</p><p>そこで、GParsのActorを使ってアクターモデルの考え方を理解して行こうと思います。</p><h2 id=gparsのactor>GParsのActor</h2><p>GParsのActorの<a href=http://www.gpars.org/guide/guide/actors.html>ドキュメント</a>を見ると、Actorの作り方はとてもシンプルです。</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-groovy data-lang=groovy><span style=color:#f92672>import</span> groovyx.gpars.actor.Actor
 
-def actor = Actors.actor {
-    loop {
-        react { msg -&gt;
-            println &quot;Received: $msg&quot;
-        }
-    }
-}
+<span style=color:#66d9ef>def</span> actor <span style=color:#f92672>=</span> Actors<span style=color:#f92672>.</span><span style=color:#a6e22e>actor</span> <span style=color:#f92672>{</span>
+    loop <span style=color:#f92672>{</span>
+        react <span style=color:#f92672>{</span> msg <span style=color:#f92672>-&gt;</span>
+            println <span style=color:#e6db74>&#34;Received: $msg&#34;</span>
+        <span style=color:#f92672>}</span>
+    <span style=color:#f92672>}</span>
+<span style=color:#f92672>}</span>
 
-actor.send 'Hello, GPars!'
+actor<span style=color:#f92672>.</span><span style=color:#a6e22e>send</span> <span style=color:#e6db74>&#39;Hello, GPars!&#39;</span>
 
-actor.join() // 停止するまで立ち上がったままにする。
-
-// 止めるときはCtrl-C or プロセスを落とす
-</code></pre><p>いわゆる<code>PingPong</code>をする場合はこんな感じです。</p><pre><code class=language-groovy>@Immutable
-class PingMessage {
+actor<span style=color:#f92672>.</span><span style=color:#a6e22e>join</span><span style=color:#f92672>()</span> <span style=color:#75715e>// 停止するまで立ち上がったままにする。
+</span><span style=color:#75715e></span>
+<span style=color:#75715e>// 止めるときはCtrl-C or プロセスを落とす
+</span></code></pre></div><p>いわゆる<code>PingPong</code>をする場合はこんな感じです。</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-groovy data-lang=groovy><span style=color:#a6e22e>@Immutable</span>
+<span style=color:#66d9ef>class</span> <span style=color:#a6e22e>PingMessage</span> <span style=color:#f92672>{</span>
     String message
-}
+<span style=color:#f92672>}</span>
 
-@Immutable
-class PongMessage {
+<span style=color:#a6e22e>@Immutable</span>
+<span style=color:#66d9ef>class</span> <span style=color:#a6e22e>PongMessage</span> <span style=color:#f92672>{</span>
     String message
-}
+<span style=color:#f92672>}</span>
 
-@Log
-class PongActor extends DefaultActor {
-    @Override
-    protected void act() {
-        loop {
-            react { msg -&gt;
-                log.info &quot;Pong Received: $msg&quot;
-                switch (msg) {
-                    case PingMessage:
-                        reply new PongMessage(message: msg.message)
-                }
-            }
-        }
-    }
-}
+<span style=color:#a6e22e>@Log</span>
+<span style=color:#66d9ef>class</span> <span style=color:#a6e22e>PongActor</span> <span style=color:#66d9ef>extends</span> DefaultActor <span style=color:#f92672>{</span>
+    <span style=color:#a6e22e>@Override</span>
+    <span style=color:#66d9ef>protected</span> <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>act</span><span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+        loop <span style=color:#f92672>{</span>
+            react <span style=color:#f92672>{</span> msg <span style=color:#f92672>-&gt;</span>
+                log<span style=color:#f92672>.</span><span style=color:#a6e22e>info</span> <span style=color:#e6db74>&#34;Pong Received: $msg&#34;</span>
+                <span style=color:#66d9ef>switch</span> <span style=color:#f92672>(</span>msg<span style=color:#f92672>)</span> <span style=color:#f92672>{</span>
+                    <span style=color:#66d9ef>case</span> PingMessage:
+                        reply <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>PongMessage</span><span style=color:#f92672>(</span>message: msg<span style=color:#f92672>.</span><span style=color:#a6e22e>message</span><span style=color:#f92672>)</span>
+                <span style=color:#f92672>}</span>
+            <span style=color:#f92672>}</span>
+        <span style=color:#f92672>}</span>
+    <span style=color:#f92672>}</span>
+<span style=color:#f92672>}</span>
 
-@Log
-class Main {
-    static void main(args) {
-        log.info(&quot;start&quot;)
+<span style=color:#a6e22e>@Log</span>
+<span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Main</span> <span style=color:#f92672>{</span>
+    <span style=color:#66d9ef>static</span> <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>main</span><span style=color:#f92672>(</span>args<span style=color:#f92672>)</span> <span style=color:#f92672>{</span>
+        log<span style=color:#f92672>.</span><span style=color:#a6e22e>info</span><span style=color:#f92672>(</span><span style=color:#e6db74>&#34;start&#34;</span><span style=color:#f92672>)</span>
 
-        def pingActor = Actors.actor {
-            loop {
-                react { msg -&gt;
-                    log.info &quot;Ping Received: $msg&quot;
-                    switch (msg) {
-                        case String:
-                            reply new PingMessage(message: msg)
-                            break
-                        case PongMessage:
-                            terminate() // actorを停止させる
-                            break
-                    }
-                }
-            }
-        }
+        <span style=color:#66d9ef>def</span> pingActor <span style=color:#f92672>=</span> Actors<span style=color:#f92672>.</span><span style=color:#a6e22e>actor</span> <span style=color:#f92672>{</span>
+            loop <span style=color:#f92672>{</span>
+                react <span style=color:#f92672>{</span> msg <span style=color:#f92672>-&gt;</span>
+                    log<span style=color:#f92672>.</span><span style=color:#a6e22e>info</span> <span style=color:#e6db74>&#34;Ping Received: $msg&#34;</span>
+                    <span style=color:#66d9ef>switch</span> <span style=color:#f92672>(</span>msg<span style=color:#f92672>)</span> <span style=color:#f92672>{</span>
+                        <span style=color:#66d9ef>case</span> String:
+                            reply <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>PingMessage</span><span style=color:#f92672>(</span>message: msg<span style=color:#f92672>)</span>
+                            <span style=color:#66d9ef>break</span>
+                        <span style=color:#66d9ef>case</span> PongMessage:
+                            terminate<span style=color:#f92672>()</span> <span style=color:#75715e>// actorを停止させる
+</span><span style=color:#75715e></span>                            <span style=color:#66d9ef>break</span>
+                    <span style=color:#f92672>}</span>
+                <span style=color:#f92672>}</span>
+            <span style=color:#f92672>}</span>
+        <span style=color:#f92672>}</span>
 
-        def pongActor = new PongActor().start()
+        <span style=color:#66d9ef>def</span> pongActor <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> PongActor<span style=color:#f92672>().</span><span style=color:#a6e22e>start</span><span style=color:#f92672>()</span>
 
-        pingActor.send 'Hello, GPars!', pongActor
+        pingActor<span style=color:#f92672>.</span><span style=color:#a6e22e>send</span> <span style=color:#e6db74>&#39;Hello, GPars!&#39;</span><span style=color:#f92672>,</span> pongActor
 
-        // 1秒だけ待つ
-        [pingActor, pongActor]*.join(1, TimeUnit.SECONDS)
+        <span style=color:#75715e>// 1秒だけ待つ
+</span><span style=color:#75715e></span>        <span style=color:#f92672>[</span>pingActor<span style=color:#f92672>,</span> pongActor<span style=color:#f92672>]*.</span><span style=color:#a6e22e>join</span><span style=color:#f92672>(</span><span style=color:#ae81ff>1</span><span style=color:#f92672>,</span> TimeUnit<span style=color:#f92672>.</span><span style=color:#a6e22e>SECONDS</span><span style=color:#f92672>)</span>
 
-        log.info(&quot;end&quot;)
-    }
-}
-</code></pre><p>ちょっとAkkaのActorに似せるように書いて見ましたが、いかがでしょうか。</p><p>Groovyはswitch文の<code>case</code>にクラスを指定することも出来るので、Scalaのパターンマッチっぽく見えます。</p><p>また、<a href=http://docs.groovy-lang.org/latest/html/gapi/groovy/transform/Immutable.html>@Immutable</a>を使うことで、
+        log<span style=color:#f92672>.</span><span style=color:#a6e22e>info</span><span style=color:#f92672>(</span><span style=color:#e6db74>&#34;end&#34;</span><span style=color:#f92672>)</span>
+    <span style=color:#f92672>}</span>
+<span style=color:#f92672>}</span>
+</code></pre></div><p>ちょっとAkkaのActorに似せるように書いて見ましたが、いかがでしょうか。</p><p>Groovyはswitch文の<code>case</code>にクラスを指定することも出来るので、Scalaのパターンマッチっぽく見えます。</p><p>また、<a href=http://docs.groovy-lang.org/latest/html/gapi/groovy/transform/Immutable.html>@Immutable</a>を使うことで、
 GroovyのAST変換用いて<code>case class</code>っぽいクラスを作ることも出来ます。</p><p>Akkaでは、<a href=http://doc.akka.io/docs/akka/current/general/actor-systems.html#actor-systems>ActorSystem</a>と呼ばれる<code>Supervisor</code>を使用して、
-アクターの階層構造を構築していきますが、GParsのActorにはありません。</p><p>GParsの資料を色々探していたところ、 <a href=http://mariogarcia.github.io/gpars-workshop/#_supervising>6.2. Supervising</a>を見つけました。</p><p>以下のコードを見る限り、頑張ればやれそうです。</p><blockquote><script src=https://gist.github.com/mariogarcia/a740f0b58f80f6a6d5f3.js></script></blockquote><p>こうして見ると、AkkaのActorSystemは、かなり成熟しているので、理解することで巨人の肩に乗ることが出来ると思います。</p><h2 id=終わりに>終わりに</h2><p>駆け足でGParsのActorを紹介して見ましたが、いかがでしょうか。</p><p>同じJVMで動くAkkaに比べて機能としては少ないかもしれませんが、ここで紹介した<code>DefaultActor</code>以外にも、
+アクターの階層構造を構築していきますが、GParsのActorにはありません。</p><p>GParsの資料を色々探していたところ、 <a href=http://mariogarcia.github.io/gpars-workshop/#_supervising>6.2. Supervising</a>を見つけました。</p><p>以下のコードを見る限り、頑張ればやれそうです。</p><blockquote></blockquote><p>こうして見ると、AkkaのActorSystemは、かなり成熟しているので、理解することで巨人の肩に乗ることが出来ると思います。</p><h2 id=終わりに>終わりに</h2><p>駆け足でGParsのActorを紹介して見ましたが、いかがでしょうか。</p><p>同じJVMで動くAkkaに比べて機能としては少ないかもしれませんが、ここで紹介した<code>DefaultActor</code>以外にも、
 より柔軟に条件が書ける<code>DynamicDispatchActor</code>や、<code>Actors</code>ヘルパークラスを使って簡単にactorを作れたり等、
 Actorモデルを理解するには十分な機能が揃っています。</p><p>GPars自体は、Actorだけでなく、他にもSTMやCSPなど並行・並列処理に向いた機能を提供しています。</p><p>Jetty等のコンテナを利用していると意識しなくても並行処理が利用できてしまいますが、
 並行・並列処理をより知りたくなった際には、GParsを使って理論の理解に役立ててください。</p></section><div class=hr></div><div><div><a class=previous href=https://www.grimrose.org/blog/2016/12/scala-advent-calendar-2016/>ScalikeJDBCを使ってAmazon Athenaへアクセスしてみた</a>

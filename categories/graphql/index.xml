@@ -20,7 +20,6 @@ Sangriaとは 概要 graphql.orgでも紹介されている通り、GraphQLの�
 Sangriaは、幾つかのモジュールによって構成されていますが、おおよそ以下のような分類が可能です。
 コア JSONパーサー向けのライブラリ Relay用ライブラリ JSONパーサーに関してなんでこんなにあるんだと他の言語の人は驚くかもしれませんが、 Scalaでは歴史的経緯により様々なJSONパーサーにまつわるライブラリが作られ、そして現在に至っています。
 歴史的経緯については、eed3si9n_jaさんのスライドを参考にしてください。
-sbt, history of JSON libraries, microservices, and schema evolution (Tokyo ver) from Eugene Yokota
 JSONパーサー自体もバックグラウンドで利用する関数型プログラミング向けのライブラリを選択できるようになっているため、バリエーションは様々です。 なので自分たちの好み、チーム事情に応じたライブラリを使うことが多いです。
 初め方 2017-12-17時点でのリリースバージョンは、v1.3.3です。
 http://sangria-graphql.org/getting-started/
@@ -31,4 +30,11 @@ Schema Execution Sangriaは、Schemaと、エンドポイントで受け取っ�
 GraphQLの操作(Query, Mutation, Subscription)に応じて、予めそれぞれSchemaに定義しておきます。
 GraphQLのクエリは、QueryParserがASTへ変換します。 ここでは、Scalaのパーサコンビネータではなく、parboiledが使われています。
 エンドポイントには、Akka HTTPとPlayを用いる方法が紹介されています。
-Akka-http GraphQL Endpoint Play GraphQL Endpoint 他のフレームワークでも、応用は出来ると思いますので、導入も簡単だと思います。</description></item></channel></rss>
+Akka-http GraphQL Endpoint Play GraphQL Endpoint 他のフレームワークでも、応用は出来ると思いますので、導入も簡単だと思います。
+サンプルについて sangria-playground、sangria-relay-playgroundにて公開されています。
+どちらもベースとなるフレームワークは、Playが使われています。
+ソースコードは、sangria-graphql/sangria-playground、 sangria-graphql/sangria-relay-playgroundで公開されているので、 サクッとローカルでも立ち上げることが可能です。
+どちらも、graphiqlが導入されているので、簡単に試すことが出来ます。
+触ってみて サンプルに出てくるProductRepo等のオブジェクトの集まりであるコンテキストをどうやって実装するか、 サーバーサイドが注力すべき場所になるように、Sangriaがある程度お膳立てをしてくれているように感じました。
+特にグラフ構造を持つようなコンテキストでは、グラフ構造が得意ではないRDBMSを操作するのは、正直厳しいように思えます。 他の言語のサーバーサイド実装の事情がよく分かっていないので、このような問題をどうやって解決しているのか気になるところではあります。
+個人的には、Infinispan、Apache Geode、Apache IgniteやHazelcastといった、 In-Memory Data Gridのようなものと組み合わせて、オブジェクトをそのままメモリで扱いながら、CQRS(Command Query Responsibility Segregation)と上手く組み合わせて行くのが現状なのではないかと考えています。</description></item></channel></rss>

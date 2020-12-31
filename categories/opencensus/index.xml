@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OpenCensus on open build/reports/life/index.html</title><link>https://www.grimrose.org/blog/categories/opencensus/</link><description>Recent content in OpenCensus on open build/reports/life/index.html</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sun, 19 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://www.grimrose.org/blog/categories/opencensus/index.xml" rel="self" type="application/rss+xml"/><item><title>JJUG CCC 2019 Springに参加してきました #jjug_ccc</title><link>https://www.grimrose.org/blog/2019/05/jjug-ccc-2019/</link><pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2019/05/jjug-ccc-2019/</guid><description>はじめに http://www.java-users.jp/ccc2019spring/
-「CfPを出さないと約束したな。あれは嘘だ。」
-CfP2本出して片方当選した。
-というわけで、久しぶりにJJUG CCCで話します。
-&amp;mdash; とーますは労働なんかしないで 光合成だけで生きたい (@grimrose) 2019年3月17日 2016年の登壇からしばらく聴く側にいました。
+2016年の登壇からしばらく聴く側にいました。
 この1年くらいずっとOpenCensusを触っていましたがJJUG CCCでは話してなかったのと、micrometerを使っているので、そちらもあわせてCfPに出してみました。
 運良くOpenCensusの方が採択されたので、今回はカスタムメトリクスの取り方を調べつつ自分たちのアプリケーションに組み込む方法を勉強できればと思い、いろいろ検証内容を元に発表できればと思っていました。
 発表 OpenCensusで始める分散トレーシングと監視
 今回の発表のベースとなったのは、Stackdriver担当者の@ymotongpooさんの以下の記事でした。
 オブザーバビリティ（可観測性）がなぜ必要だと考えるのか
 その後、ajitofm 42: You must unlearn what you have learnedを聴いたときに感じた内容(ツイートでは43となっているが42の間違い)と、
-土日で #ajitofm の40, 43を聞き直して、ここ数ヶ月 trainingやmetricsに興味を持ったのは、必然だったのではないかと考えている
-&amp;mdash; とーますは労働なんかしないで 光合成だけで生きたい (@grimrose) 2019年3月4日 入門 監視を読み終えたので、これらをふまえてOpenCensusを使って実現していく方法とStackdriverによる可視化までを繋げられないかと思い、 構成を練っていました。
+入門 監視を読み終えたので、これらをふまえてOpenCensusを使って実現していく方法とStackdriverによる可視化までを繋げられないかと思い、 構成を練っていました。
 途中でOpenCensus meetup vol.1 で話す機会が得られたので、これまでに得られたOpenCensusのJava実装についてを発表しました。
 残りの期間は、OpenCensusのカスタムメトリクスの取り方とGCP上でStackdriverを利用したデモの作成に取り組んでいました。
 デモで利用したソースコードはこちらにあります。
@@ -29,21 +25,20 @@ OpenCensusの勉強会の初回ということもあり、他の言語の人達�
 今回の内容に、カスタムメトリクスの取り方をデモをでお見せできればと思いますが、詳細は未定です。
 おわりに やばかった。
 あと、 Observabilityは港区用語 というパワーワードの生まれた現場にいられてよかった。
-Observabilityは港区用語。俺たちは現実《リアル》を把握していく と表現することで足立区まで到達していける #opencensusjp
-&amp;mdash; わかめ@毎日猫がいる (@vvakame) 2019年4月3日
 次回の開催も楽しみにしています。</description></item><item><title>Japan Container Days v18.12に参加してきました #containerdaysjp</title><link>https://www.grimrose.org/blog/2018/12/opencensus-scala/</link><pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate><guid>https://www.grimrose.org/blog/2018/12/opencensus-scala/</guid><description>はじめに この記事は、Scala Advent Calendar 2018 の9日目のエントリーです。
 8日目は、@yoshiyoshifujiiさんのAkka gRPCを試してみたでした。
 10日目は、@j5ik2oさんです。
 準備の期間を含めて約4ヶ月位 census-ecosystem/opencensus-scala に触れていたので振り返りつつ、 Japan Container Daysの参加した感想を書こうかと思います。
 Japan Container Days v18.12 https://containerdays.jp/
-.@grimrose による「OpenCensusとJaegerで分散トレーシングを見てみよう」を受け付けました。このプロポーザルを聞いてみたい人はいいねやリツイートでぜひ応援してください！ #containerdaysjp の公募セッション一覧はこちら https://t.co/EEbrgf1bBv
-&amp;mdash; JapanContainerDays (@containerdaysjp) 2018年9月5日 OpenCensusとJaegerで分散トレーシングを見てみよう スライドは、こちらで公開してあります。
-OpenCensusとJaegerで分散トレーシングを見てみよう のスライドを公開しました。#containerdaysjp #TerraceRoomhttps://t.co/Y9oTfsZ7Yg
-&amp;mdash; とーます@悪いオタクらしい (@grimrose) 2018年12月5日 内容としては、Scala関西 Summit 2018へ参加してきました #scala_ks で話した内容からScalaの要素を削って、OpenCensusの内容を増やしました。
+OpenCensusとJaegerで分散トレーシングを見てみよう スライドは、こちらで公開してあります。
+内容としては、Scala関西 Summit 2018へ参加してきました #scala_ks で話した内容からScalaの要素を削って、OpenCensusの内容を増やしました。
 段取りを間違えてしまって、デモの時間を減らしてしまうという痛恨のミスを犯してしまったのが心残りです。
-心残りがあるとすれば、elasticsearchをバックエンドにした理由であるkibanaでfluentdで送ったログとjaegerのtracingが一緒に見られるところまでデモをしたかった…
-&amp;mdash; とーます@悪いオタクらしい (@grimrose) 2018年12月5日 OpenCensus Scalaについて census-ecosystem/opencensus-scala
+OpenCensus Scalaについて census-ecosystem/opencensus-scala
 Akka-HTTPで使う前にREADME.mdを見てもらうと、 どうやってRouterからSpanを受け取って、Tracingを組み立てて行くことが出来るかが分かります。
 あとは、自分が使いたいExporterの設定をapplication.confで有効にすることで、転送されるようになります。
 0.6.1で利用できるExporterは以下のとおりです。
-Stackdriver Logging Zipkin Instana 今回紹介したJaegerはZipkinと互換性があるので、転送先をJaegerのCollectorにすることで利用可能になります。</description></item></channel></rss>
+Stackdriver Logging Zipkin Instana 今回紹介したJaegerはZipkinと互換性があるので、転送先をJaegerのCollectorにすることで利用可能になります。
+あくまでwrapperなので、census-instrumentation/opencensus-javaが対応していないExporterは、自分でCustom Exporterを作る必要があります。
+その際は、Trace exporterを参考にしつつ、 census-instrumentation/opencensus-specsでSpanの中身をみつつ、 利用したいTracingのプロダクトのフォーマットにしていく必要があります。
+また、Spanは伝播させる必要があるので、ReaderTのような合成しやすい型と組み合わせて対応するといいと思われます。
+import cats.data.ReaderT // or import scalaz.ReaderT type ReaderSpanT[F[_], A] = ReaderT[F, Span[F], A] Module for tagless-final &amp;amp; cats-effectのように、そもそも組み込んでしまうissueも上がっています。</description></item></channel></rss>
