@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-ENV HUGO_VERSION=0.59.1
+ENV HUGO_VERSION=0.79.1
 
 RUN apk add --update wget ca-certificates && \
   cd /tmp/ && \
