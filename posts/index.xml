@@ -1,4 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on open build/reports/life/index.html</title><link>https://www.grimrose.org/blog/posts/</link><description>Recent content in Posts on open build/reports/life/index.html</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 31 Dec 2020 08:06:16 +0000</lastBuildDate><atom:link href="https://www.grimrose.org/blog/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>2020年の振り返り</title><link>https://www.grimrose.org/blog/2020/12/retrospect/</link><pubDate>Thu, 31 Dec 2020 08:06:16 +0000</pubDate><guid>https://www.grimrose.org/blog/2020/12/retrospect/</guid><description>はじめに 今年も大晦日になったので、振り返ってみたいと思います。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on open build/reports/life/index.html</title><link>https://www.grimrose.org/blog/posts/</link><description>Recent content in Posts on open build/reports/life/index.html</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Fri, 31 Dec 2021 09:12:36 +0000</lastBuildDate><atom:link href="https://www.grimrose.org/blog/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>2021年の振り返り</title><link>https://www.grimrose.org/blog/2021/12/retrospect/</link><pubDate>Fri, 31 Dec 2021 09:12:36 +0000</pubDate><guid>https://www.grimrose.org/blog/2021/12/retrospect/</guid><description>はじめに 今年も大晦日になったので、振り返ってみたいと思います。
+2020年の振り返りは、こちらでした。
+やってみたかったことの振り返り 2021年にやってみたかったことは、以下のとおりでした。
+4年位更新していないランディングページを新しくしてみたい 自分が趣味で利用しているGCPでもterraformを使ってみたい。 趣味でコードを書くことがめっきり減ってしまった1年でした。
+その為かランディングページとblogの更新も全くやらず仕舞いでした。また、terraformもだいぶ理解は進んだものの手つかずでした。
+一度失った習慣は取り戻すのは難しいことを実感しました。
+今年買ってよかったもの 今年から習慣になったのは自宅でコーヒーを飲むようになったことです。
+Nespressoを導入したおかけでエスプレッソを簡単に飲める様になったので仕事を始める前に飲むという習慣ができました。 その日の気分でいろいろ試してみたりして好みを見つけてみたりしました。
+また、ハンドドリップの道具も以下のものを揃えました
+キッチンスケール 細口の電気ケトル 手動のコーヒーミル ドリッパー V60 V60 MUGEN ブルーボトル Delter Coffee Press いろいろとレビューとかを参考にしてこのラインナップになっていました。
+特にドリッパーの中でもV60のMUGENは一番使い勝手がいいのでとても重宝しています。
+近所に自家焙煎をやっているお店を見つけたのもこの習慣が出来てからでした。
+コーヒー豆のサブスクリプションも2つほど試してみました
+https://white-coffee.jp/ https://postcoffee.co/ まずwhite coffeeの好み診断と好み探求を試してみて自分が好きな傾向は何なのかを知ることが出来ました。 特に深煎の中でもいろいろな方面があることが分かったのはやっていてとても良かったです。
+post coffeeの方は12月から始めてみたので今後が楽しみです。
+2022年にやってみたいこと コロナ禍でなかなか出来なかった遠出をしてみたいので、取り寄せで美味しかったクラフトビールや日本酒の産地に行って現地で呑んでみたいと思ってます。
+おわりに 今年も全くblogを書いていなかったのですが、しばらくは書く気になるまではhugoのメンテナンスをしておきたいと思います。
+2022年もよろしくお願いいたします。</description></item><item><title>2020年の振り返り</title><link>https://www.grimrose.org/blog/2020/12/retrospect/</link><pubDate>Thu, 31 Dec 2020 08:06:16 +0000</pubDate><guid>https://www.grimrose.org/blog/2020/12/retrospect/</guid><description>はじめに 今年も大晦日になったので、振り返ってみたいと思います。
 2019年の振り返りは、こちらでした。
 やってみたかったことの振り返り 2020年にやってみたかったことは、以下のとおりでした。
 typelevelのプロダクトを発表する Cloud Runを使ってGraalVMでnativeに出来るScalaのフレームワークを試す コロナ禍のおかげで、そもそも出勤することが数える程度になりずっとリモートワークになってしまったので、帰宅の途中で勉強会に参加することも無くなってしまいました。
