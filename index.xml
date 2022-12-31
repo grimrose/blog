@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>open build/reports/life/index.html</title><link>https://www.grimrose.org/blog/</link><description>Recent content on open build/reports/life/index.html</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Fri, 31 Dec 2021 09:12:36 +0000</lastBuildDate><atom:link href="https://www.grimrose.org/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>2021年の振り返り</title><link>https://www.grimrose.org/blog/2021/12/retrospect/</link><pubDate>Fri, 31 Dec 2021 09:12:36 +0000</pubDate><guid>https://www.grimrose.org/blog/2021/12/retrospect/</guid><description>はじめに 今年も大晦日になったので、振り返ってみたいと思います。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>open build/reports/life/index.html</title><link>https://www.grimrose.org/blog/</link><description>Recent content on open build/reports/life/index.html</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sat, 31 Dec 2022 05:25:37 +0000</lastBuildDate><atom:link href="https://www.grimrose.org/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>2022年の振り返り</title><link>https://www.grimrose.org/blog/2022/12/retrospect/</link><pubDate>Sat, 31 Dec 2022 05:25:37 +0000</pubDate><guid>https://www.grimrose.org/blog/2022/12/retrospect/</guid><description>はじめに 今年も大晦日になったので、振り返ってみたいと思います。
+2021年の振り返りは、こちらでした。
+やってみたかったことの振り返り 2022年にやってみたかったことは、以下のとおりでした。
+取り寄せで美味しかったクラフトビールや日本酒の産地に行って現地で呑んでみたい 取り寄せは引き続きやってはいるものの、あまり出かける機会がなく長期で休むこともなかったので行かずじまいでした。
+会社の有給休暇の残日数もだいぶ溜まっているのでちょうどよい機会だとは思うので計画して旅行しようかと思います。
+今年買ってよかったもの 今年一番の買い物といえば、Steamでモンスターハンターライズ：サンブレイクをやるためのPCをBTOで購入したことです。
+ゲーム用のPC届いた pic.twitter.com/cZ5c4h3aYB
+&amp;mdash; とーます (@grimrose) July 31, 2022 仮置きでセットアップ中 pic.twitter.com/X5bt0Im3wR
+&amp;mdash; とーます (@grimrose) July 31, 2022 今回はarkで初めてBTOをカスタマイズして注文しました。
+カスタマイズしたスペックは以下の通りです。
+[CPU] AMD Ryzen™ 9 5900X 3.7GHz 12Core [CPUクーラー] Noctua NH-U12A chromax.black 12cmファンデュアル搭載サイドフロークーラー [CPUグリス] ドイツThermal Grizzly社製 Kryonaut ハイエンドグリス [マザーボード] GIGABYTE X570S AORUS PRO AX ATX [メモリー] 32GB(16GBx2) - G.SKILL Trident Z NEO DDR4-3600 CL18 1.35Volt [グラフィックスカード] GeForce RTX 3080 - 12GB GDDR6X - ASUS TUF GAMING LHR [OS用ストレージ] CFD PG4NZL 2TB SSD (PCIEx Gen4 x4) [ケース] Fractal Design Torrent Black RGB TG Light Tint ATX [電源] Fractal Design Ion+ 2 860W 80PLUS PLATINUM AMD信者なのでRyzen使いたかったのとGPUにそこそこのメモリ積んでいて4kモニタでも大丈夫なのを中心に探してました。</description></item><item><title>2021年の振り返り</title><link>https://www.grimrose.org/blog/2021/12/retrospect/</link><pubDate>Fri, 31 Dec 2021 09:12:36 +0000</pubDate><guid>https://www.grimrose.org/blog/2021/12/retrospect/</guid><description>はじめに 今年も大晦日になったので、振り返ってみたいと思います。
 2020年の振り返りは、こちらでした。
 やってみたかったことの振り返り 2021年にやってみたかったことは、以下のとおりでした。
 4年位更新していないランディングページを新しくしてみたい 自分が趣味で利用しているGCPでもterraformを使ってみたい。 趣味でコードを書くことがめっきり減ってしまった1年でした。
