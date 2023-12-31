@@ -14,18 +14,18 @@ based on [Hugo], [hugo-zen], [Font-Awesome]
 
 ## local
 
-require [docker], [docker-compose]
+require [docker]
 
 ### create new post
 
 ```sh
-$ docker-compose run --rm hugo new posts/YYYY/MM/${_TITLE}.md
+$ docker compose run --rm hugo new posts/YYYY/MM/${_TITLE}.md
 ```
 
 ### watch local server
 
 ```sh
-$ docker-compose up -d
+$ docker compose up -d
 ```
 
 [docker]: https://www.docker.com
